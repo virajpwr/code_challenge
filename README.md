@@ -1,8 +1,8 @@
-## The src folder contains preprocessing, feature selection, feature engineering, data preparation, training script.
+# The src folder contains preprocessing, feature selection, feature engineering, data preparation, training script.
 
-## The data folder contains the data used for training and testing.
+# The data folder contains the data used for training and testing.
 
-## The models folder contains the trained models.
+# The models folder contains the trained models.
 
 ## Process:
 
