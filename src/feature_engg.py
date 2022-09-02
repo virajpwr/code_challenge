@@ -17,7 +17,7 @@ class FeatEngg(object):
     def __init__(self, df, config) -> None:
         self.df = df
         self.config = config
-
+    # Not implemented
     def feat_engg_date(self):
         self.df["expected_total_time_to_report"] = (
             self.df['reported_on_tower']) - (self.df['expected_start'])

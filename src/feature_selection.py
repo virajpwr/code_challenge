@@ -21,7 +21,7 @@ pd.pandas.set_option('display.max_rows', None)
 def feature_selection(df, var_list, target):
     '''
     Feature selection is done in following steps:
-    1. Remove highle correlated features r > 0.7.
+    1. Remove highly correlated features r > 0.7.
     2. Remove features with low mutual information score when multiple features are highly correlated.
     3. Recursively do feature selection using XGBoost to find the best features.
     The above steps are done using open source library featurewiz.
