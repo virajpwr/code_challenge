@@ -43,7 +43,7 @@ def main():
     train_model.train_baseline_model()
     error = train_model.evaluate_model()  # evaluate the model
     train_model.save_model()
-
+    train_model.shap()
     # train_model.hyperparameter_search() # Use this line to find the best hyperparameters. Not utilised in the final model.
 
 

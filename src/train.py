@@ -17,6 +17,8 @@ import pandas as pd
 import os
 import sys
 import joblib
+import shap
+
 root = os.path.abspath('..')
 sys.path.append(root)
 warnings.filterwarnings('ignore')
@@ -65,6 +67,18 @@ class model_training(object):
         with open('./eval/RMSE.txt', 'w') as f:
             f.write(str(np.sqrt(mse)))
         return self.y_pred
+
+    def shap(self):
+        # explain the model.
+        explainer = shap.TreeExplainer(self.xgb_model)
+        shap_values = explainer.shap_values(self.df[self.final_columns])
+        shap.summary_plot(
+            shap_values, self.df[self.final_columns], plot_type="bar")
+        shap.summary_plot(
+            shap_values, self.df[self.final_columns])
+        plt.savefig(os.path.join(
+            self.config['PATHS']['Project_path'] + 'plots/', 'shap_plot.png'))
+        plt.show()
 
     def hyperparameter_search(self):
         # hyperparameter search for xgboost.

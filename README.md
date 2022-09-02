@@ -15,7 +15,7 @@ The process of training the model is as follows:
    Hyperparameter tuning using RandomizedSearchCV is available in the code and can be utilized to get best hyperparameters for further tuning of the model.
 5. Root mean squared error was used as the evaluation metric. The RMSE score is 0.8
 6. Check RMSE score in eval folder
-7. The SHAP bar plot showing important features is available in plots folder.
+7. The SHAP bar plot showing important features is available in plots folder and shown below.
    ![Figure_1](https://user-images.githubusercontent.com/36328852/188136359-b2faacfe-feb7-43ae-b9b4-b2ae128a555a.png)
 
 ### Steps to run the code

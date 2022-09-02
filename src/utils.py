@@ -5,12 +5,16 @@ import yaml
 import warnings
 warnings.filterwarnings(action="ignore")
 
+# Load config file
+
 
 def load_config(file_path):
     with open(file_path, 'r') as f:
         cfg = yaml.safe_load(f)
     return cfg
+
 # Split date time column into separate columns into hour, minute, weekday, day, month
+
 
 def split_datetime(df, colname):
     df['ts_hour'] = df[colname].dt.hour
