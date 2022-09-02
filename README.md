@@ -11,10 +11,12 @@ The process of training the model is as follows:
 1. Preprocessing: The missing values were imputed using the median value if continous or with median if discrete value.
 2. feature engineering: Gauss rank transformation was used to transform the target variable to normal distribution.
 3. feature selection: Feature selection was done based on corelation and mutual information score and used recursively do feature selection using XGBoost.
-4. training: The model was trained using XGBRegressor. Hyperparameter tuning was done using RandomizedSearchCV and learning rate was set to 0.02.
-5. Root mean squared error was used as the evaluation metric. The model was trained on 3 folds and the average of the 3 folds was used as the final score. The RMSE score is 0.8
+4. training: The model was trained using XGboost. Trained XGboost baseline model with max_depth = 18, learning rate = 0.02
+   Hyperparameter tuning using RandomizedSearchCV is available in the code and can be utilized to get best hyperparameters for further tuning of the model.
+5. Root mean squared error was used as the evaluation metric. The RMSE score is 0.8
 6. Check RMSE score in eval folder
-Learning rate was tuned using grid search and the best learning rate was used for training the model.
+7. The SHAP bar plot showing important features is available in plots folder.
+   ![Figure_1](https://user-images.githubusercontent.com/36328852/188136359-b2faacfe-feb7-43ae-b9b4-b2ae128a555a.png)
 
 ### Steps to run the code
 

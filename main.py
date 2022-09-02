@@ -44,6 +44,8 @@ def main():
     error = train_model.evaluate_model()  # evaluate the model
     train_model.save_model()
 
+    # train_model.hyperparameter_search() # Use this line to find the best hyperparameters. Not utilised in the final model.
+
 
 if __name__ == "__main__":
     main()

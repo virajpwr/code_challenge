@@ -31,6 +31,7 @@ class model_training(object):
         self.final_columns = final_columns
         self.config = config
         self.model_params = self.config["logging_params"]["xgb"]
+        self.param_grid = self.config["parameter_grid"]["params"]
 
     def convert_to_DMatrix(self):
         # convert to DMatrix for xgboost which is an internal data structure for xgboost.
@@ -65,19 +66,21 @@ class model_training(object):
             f.write(str(np.sqrt(mse)))
         return self.y_pred
 
-    def hyperparameter_search(self, params):
+    def hyperparameter_search(self):
         # hyperparameter search for xgboost.
         self.xgb_model = xgb.XGBRegressor(objective="reg:linear", random_state=42,
-                                          early_stopping_rounds=5)
+                                          n_jobs=-1)
         search = RandomizedSearchCV(self.xgb_model,
-                                    param_distributions=params,
+                                    param_distributions=self.config["parameter_grid"]["params"],
                                     random_state=42, n_iter=200,
                                     cv=3, verbose=1, n_jobs=1,
                                     return_train_score=True)
 
         search.fit(self.df[self.final_columns], self.target)
 
-        self.report_best_scores(search.cv_results_, 1)
+        # self.report_best_scores(search.cv_results_, 1)
+        with open('best_params.txt', 'w') as f:
+            f.write(str(search.best_params_))
 
     def save_model(self):
         # save the model.
