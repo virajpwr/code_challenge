@@ -43,8 +43,6 @@ def main():
     train_model.train_baseline_model()
     error = train_model.evaluate_model()  # evaluate the model
     train_model.save_model()
-    df_ = df[selected_features]
-    df_.to_csv('ex.csv')
 
 
 if __name__ == "__main__":
