@@ -13,7 +13,7 @@ The process of training the model is as follows:
 3. feature selection: Feature selection was done based on corelation and mutual information score and used recursively do feature selection using XGBoost.
 4. training: The model was trained using XGBRegressor. Hyperparameter tuning was done using RandomizedSearchCV and learning rate was set to 0.02.
 5. Root mean squared error was used as the evaluation metric. The model was trained on 3 folds and the average of the 3 folds was used as the final score. The RMSE score is 0.8
-
+6. Check RMSE score in eval folder
 Learning rate was tuned using grid search and the best learning rate was used for training the model.
 
 ### Steps to run the code

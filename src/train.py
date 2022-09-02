@@ -61,6 +61,8 @@ class model_training(object):
         self.y_pred = self.xgb_model.predict(self.dtest)
         mse = mean_squared_error(self.test.target, self.y_pred)
         print('Root mean squared error', np.sqrt(mse))
+        with open('./eval/RMSE.txt', 'w') as f:
+            f.write(str(np.sqrt(mse)))
         return self.y_pred
 
     def hyperparameter_search(self, params):
