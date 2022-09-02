@@ -1,0 +1,73 @@
+PATHS:
+    Project_path: './'
+    models_path: 'models/'
+    data_path: 'data/'
+
+train_file_name: data_merged.parquet
+model_name : xgboost.dat
+final_feature_list : final_features.csv
+feature_list_before_fs: final_features_before_fs.csv
+predictions_file_name: predictions.csv
+
+logging_params:
+      num_rounds: 500
+      xgb: {
+        max_depth : 18,
+        min_child_weight: 7.0,
+        reg_lambda: 0.39, 
+        reg_alpha: 42.0,
+        learning_rate : 0.02,
+        subsample : 1.0,
+        colsample_bytree : 0.96,
+        eta: 0.5,
+        gamma: 2.95, 
+        reg_lambda: 0.015,
+        eval_metric : ['rmse'],
+        objective : 'reg:squarederror',
+        tree_method : 'gpu_hist',
+        gamma: 3.8,
+        seed : 2022
+        }
+
+test_file_name: dataset_00_with_header.csv
+
+date_cols: ['when',  'expected_start', 'start_process',
+            'start_subprocess1', 'start_critical_subprocess1',
+            'predicted_process_end', 'process_end', 'subprocess1_end',
+            'reported_on_tower']
+
+
+vars_with_na : ['crystal_weight', 'first_factor_x', 'final_factor_x', 'previous_adamantium',
+                'Unnamed: 17', 'etherium_before_start', 'opened', 'chemical_x', 'raw_kryptonite', 'argon',
+                'pure_seastone', 'groups']
+
+categorify_columns: ['super_hero_group', 'crystal_type', 'crystal_supergroup', 'Cycle', 'groups']
+
+target_encode_columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'crystal_supergroup_Categorify', 'Cycle_Categorify', 'groups_Categorify']
+
+count_encode_columns: ['TE_super_hero_group_Categorify', 'TE_crystal_type_Categorify', 'TE_crystal_supergroup_Categorify', 'TE_Cycle_Categorify', 'TE_groups_Categorify']
+
+continuous_columns: ['pure_seastone', 'argon', 'raw_kryptonite', 'human_measure', 'crystal_weight', 
+                    'expected_factor_x', 'previous_factor_x', 'first_factor_x', 'expected_final_factor_x', 
+                    'final_factor_x', 'previous_adamantium', 'Unnamed: 17']
+
+required_columns : ['index', 'super_hero_group', 'tracking', 'place',
+       'tracking_times', 'crystal_type', 'Unnamed: 7', 'human_behavior_report',
+       'human_measure', 'crystal_weight', 'expected_factor_x',
+       'previous_factor_x', 'first_factor_x', 'expected_final_factor_x',
+       'final_factor_x', 'previous_adamantium', 'Unnamed: 17',
+       'etherium_before_start', 'opened', 'chemical_x', 'raw_kryptonite', 'argon',
+       'pure_seastone', 'crystal_supergroup', 'Cycle', 'groups', 
+       'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x',
+       'NA_previous_adamantium', 'NA_Unnamed: 17', 'NA_etherium_before_start',
+       'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
+       'NA_pure_seastone', 'NA_groups', 'ts_hour', 'ts_minute', 'ts_weekday',
+       'ts_day', 'ts_month', 
+       'super_hero_group_Categorify', 'crystal_type_Categorify',
+       'crystal_supergroup_Categorify', 'Cycle_Categorify',
+       'groups_Categorify', 'TE_super_hero_group_Categorify',
+       'TE_crystal_type_Categorify', 'TE_crystal_supergroup_Categorify',
+       'TE_Cycle_Categorify', 'TE_groups_Categorify',
+       'CE_TE_super_hero_group_Categorify', 'CE_TE_crystal_type_Categorify',
+       'CE_TE_crystal_supergroup_Categorify', 'CE_TE_Cycle_Categorify',
+       'CE_TE_groups_Categorify']
