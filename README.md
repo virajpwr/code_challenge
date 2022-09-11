@@ -3,7 +3,45 @@
 ##### The data folder contains the data used for training and testing.
 
 ##### The models folder contains the trained models.
+## File structure: 
 
+Folder PATH listing for volume New Volume
+Volume serial number is 12BB-1027
+D:.
+|   .gitignore
+|   app.py
+|   best_params.txt
+|   config.yml
+|   main.py
+|   README.md
+|   requirements.txt
+|   run.sh
+|   tree.txt
+|   
++---data
+|       final_features.csv
+|       md_raw_dataset.csv
+|       md_target_dataset.csv
+|       merged_data.parquet
+|       
++---eval
+|       RMSE.txt
+|       
++---models
+|       xgboost.dat
+|       
++---plots
+|       Figure_1.png
+|       shap_plot.png
+|       
+\---src
+        data.py
+        feature_engg.py
+        feature_selection.py
+        preprocessing.py
+        train.py
+        utils.py
+        
 ## Process:
 
 The process of training the model is as follows:
