@@ -12,45 +12,43 @@ predictions_file_name: predictions.csv
 logging_params:
       num_rounds: 500
       xgb: {
-        max_depth : 18,
-        min_child_weight: 7.0,
-        reg_lambda: 0.39, 
-        reg_alpha: 42.0,
-        learning_rate : 0.02,
-        subsample : 1.0,
-        colsample_bytree : 0.96,
-        eta: 0.5,
-        gamma: 2.95, 
-        reg_lambda: 0.015,
-        eval_metric : ['rmse'],
+        max_depth : 18,  # control model complexity.
+        min_child_weight: 7.0, # control model complexity.
+        reg_lambda: 0.39,  # L2 regularization term on weights.
+        reg_alpha: 42.0, # L1 regularization
+        subsample : 1.0, # add randomness to make training robust to noise.
+        colsample_bytree : 0.96, # add randomness to make training robust to noise.
+        eta: 0.5, # step size shrinkage used in update to prevents overfitting. Also called learning rate.
+        gamma: 2.95,  # control model complexity. Used for pruning the tree. gain-gamma is the minimum loss reduction required to make a split.
+        eval_metric : ['rmse'], # evaluation metric
         objective : 'reg:squarederror',
         tree_method : 'gpu_hist',
-        gamma: 3.8,
         seed : 2022
         }
 
+# A parameter grid for XGBoost
+
 parameter_grid:
     params : {
-    'n_estimators': [50, 100],
-    'max_depth': [2, 3],
+    'n_estimators':[100, 200, 300, 500],
+    'min_child_weight': [1, 2, 3, 4], 
+    'gamma':[0.3,0.4,0.5],  
+    'subsample':[0.6, 0.7, 0.8, 0.9, 1.0],
+    'colsample_bytree':[0.6, 0.7, 0.8, 0.9, 1.0], 
+    'max_depth': [2,3,4,6,7],
+    'booster': ['gbtree', 'gblinear'],
+    'eval_metric': ['rmse'],
+    'eta': [0.3,0.4,0.5],
+    }
+
+parameter_grid:
+    params : {
+    'n_estimators': [100, 500, 900, 1100, 1500],
+    'max_depth': [2, 3, 5, 10, 15],
     'learning_rate': [0.05, 0.1, 0.15, 0.20],
     'min_child_weight': [1, 2, 3, 4]
     }
 
-# parameter_grid:
-#     params : {
-#     'n_estimators': [100, 500, 900, 1100, 1500],
-#     'max_depth': [2, 3, 5, 10, 15],
-#     'learning_rate': [0.05, 0.1, 0.15, 0.20],
-#     'min_child_weight': [1, 2, 3, 4]
-#     }
-# parameter_grid:
-#     params : {
-#     'n_estimators': [100, 500, 900, 1100, 1500],
-#     'max_depth': [2, 3, 5, 10, 15],
-#     'learning_rate': [0.05, 0.1, 0.15, 0.20],
-#     'min_child_weight': [1, 2, 3, 4]
-#     }
 test_file_name: dataset_00_with_header.csv
 
 date_cols: ['when',  'expected_start', 'start_process',
@@ -60,36 +58,36 @@ date_cols: ['when',  'expected_start', 'start_process',
 
 
 vars_with_na : ['crystal_weight', 'first_factor_x', 'final_factor_x', 'previous_adamantium',
-                'Unnamed: 17', 'etherium_before_start', 'opened', 'chemical_x', 'raw_kryptonite', 'argon',
+                'Unnamed_17', 'etherium_before_start', 'chemical_x', 'raw_kryptonite', 'argon',
                 'pure_seastone', 'groups']
 
-categorify_columns: ['super_hero_group', 'crystal_type', 'crystal_supergroup', 'Cycle', 'groups']
+categorify_columns: ['super_hero_group', 'crystal_type', 'crystal_supergroup', 'groups', 'Cycle']
 
-target_encode_columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'crystal_supergroup_Categorify', 'Cycle_Categorify', 'groups_Categorify']
+target_encode_columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'crystal_supergroup_Categorify','groups_Categorify', 'Cycle_Categorify']
 
-count_encode_columns: ['TE_super_hero_group_Categorify', 'TE_crystal_type_Categorify', 'TE_crystal_supergroup_Categorify', 'TE_Cycle_Categorify', 'TE_groups_Categorify']
+count_encode_columns: ['TE_super_hero_group_Categorify', 'TE_crystal_type_Categorify', 'TE_crystal_supergroup_Categorify',  'TE_groups_Categorify', TE_Cycle_Categorify]
 
 continuous_columns: ['pure_seastone', 'argon', 'raw_kryptonite', 'human_measure', 'crystal_weight', 
                     'expected_factor_x', 'previous_factor_x', 'first_factor_x', 'expected_final_factor_x', 
-                    'final_factor_x', 'previous_adamantium', 'Unnamed: 17']
+                    'final_factor_x', 'previous_adamantium', 'Unnamed_17','time_diff_process', 'time_diff_subprocess']
 
-required_columns : ['index', 'super_hero_group', 'tracking', 'place',
-       'tracking_times', 'crystal_type', 'Unnamed: 7', 'human_behavior_report',
+cols_to_drop : ["super_hero_group"]
+
+required_columns : ['tracking', 'place',
+       'tracking_times', 'Unnamed_7', 'human_behavior_report',
        'human_measure', 'crystal_weight', 'expected_factor_x',
        'previous_factor_x', 'first_factor_x', 'expected_final_factor_x',
-       'final_factor_x', 'previous_adamantium', 'Unnamed: 17',
-       'etherium_before_start', 'opened', 'chemical_x', 'raw_kryptonite', 'argon',
-       'pure_seastone', 'crystal_supergroup', 'Cycle', 'groups', 
+       'final_factor_x', 'previous_adamantium', 'Unnamed_17',
+       'etherium_before_start', 'chemical_x', 'raw_kryptonite', 'argon',
+       'pure_seastone', 
        'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x',
-       'NA_previous_adamantium', 'NA_Unnamed: 17', 'NA_etherium_before_start',
-       'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
-       'NA_pure_seastone', 'NA_groups', 'ts_hour', 'ts_minute', 'ts_weekday',
-       'ts_day', 'ts_month', 
+       'NA_previous_adamantium', 'NA_Unnamed_17', 'NA_etherium_before_start', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
+       'NA_pure_seastone', 'NA_groups', 'ts_hour', 'ts_minute', 'ts_weekday','ts_month', 
        'super_hero_group_Categorify', 'crystal_type_Categorify',
-       'crystal_supergroup_Categorify', 'Cycle_Categorify',
+       'crystal_supergroup_Categorify', 
        'groups_Categorify', 'TE_super_hero_group_Categorify',
        'TE_crystal_type_Categorify', 'TE_crystal_supergroup_Categorify',
-       'TE_Cycle_Categorify', 'TE_groups_Categorify',
-       'CE_TE_super_hero_group_Categorify', 'CE_TE_crystal_type_Categorify',
-       'CE_TE_crystal_supergroup_Categorify', 'CE_TE_Cycle_Categorify',
+        'TE_groups_Categorify',
+       'CE_TE_super_hero_group_Categorify', 'CE_TE_crystal_type_Categorify','time_diff_process', Cycle_Categorify, TE_Cycle_Categorify, CE_TE_Cycle_Categorify,
+       'CE_TE_crystal_supergroup_Categorify', 'time_diff_subprocess',
        'CE_TE_groups_Categorify']

@@ -1,5 +1,5 @@
 import logging
-from src.utils import split_datetime, load_config
+from src.utils import split_datetime, load_config, cal_time_diff
 import logzero
 import numpy as np
 import pandas as pd
@@ -29,4 +29,11 @@ class Preprocessing(object):
         for colname in self.df[col_names]:
             self.df[colname] = pd.to_datetime(self.df[colname])
         self.df = split_datetime(self.df, "when")
+        return self.df
+
+    def cal_time_diff(self, col_names):
+        self.df = cal_time_diff(self.df, 'process_end',
+                                'start_process', 'time_diff_process')
+        self.df = cal_time_diff(
+            self.df, 'subprocess1_end', 'start_subprocess1', 'time_diff_subprocess')
         return self.df

@@ -14,11 +14,11 @@ def main():
 
     config = load_config("config.yml")  # Load config file
     df = pd.read_parquet("./data/merged_data.parquet")  # Load merged data
-
     # 1. Preprocessing
     preprocessing = Preprocessing(df, config)
     preprocessing.processing_missing_values()
     df = preprocessing.preprocess_date_cols(config["date_cols"])
+    df = preprocessing.cal_time_diff(config["date_cols"])
 
     # 2. Feature engineering
     feat_engg = FeatEngg(df=df, config=config)
@@ -33,18 +33,23 @@ def main():
     selected_features = feature_selection(
         df, config["required_columns"], df["target"])
     save_features_after_feature_selection(selected_features, config)
-    cols_to_drop = ["Cycle", "super_hero_group",
-                    "opened", "crystal_supergroup", "groups", "index"]
-    selected_features = [e for e in selected_features if e not in cols_to_drop]
+
+    selected_features = [
+        e for e in selected_features if e not in config['cols_to_drop']]
     print(selected_features)
+    # df[selected_features].to_csv('./final_data_new.csv', index=False)
+    # df['target'].to_csv('./final_target.csv', index=False)
     target = df['target']
     train_model = model_training(df, target, selected_features, config)
     train_model.convert_to_DMatrix()
-    train_model.train_baseline_model()
+    print('training model')
+    train_model.base_model()  # Train base model
+    train_model.train_xgb()  # Train xgboost model to see performance improvement
     error = train_model.evaluate_model()  # evaluate the model
     train_model.save_model()
     train_model.shap()
-    # train_model.hyperparameter_search() # Use this line to find the best hyperparameters. Not utilised in the final model.
+    # Use this line to find the best hyperparameters. Not utilised in the final model.
+    # train_model.hyperparameter_search()
 
 
 if __name__ == "__main__":

@@ -37,8 +37,8 @@ class dataFrame(object):
             df_test = self.target_data[self.target_data.groups == _]
             df_merge = pd.merge(df_train, df_test, on='index', how='left')
             final_df = final_df.append(df_merge)
-        final_df = final_df.rename(columns={'groups_x': 'groups'})
-        final_df = final_df.drop(['groups_y'], axis=1)
+        final_df = final_df.rename(columns={'groups_x': 'groups', 'Unnamed: 17': 'Unnamed_17', 'Unnamed: 7': 'Unnamed_7'})
+        final_df = final_df.drop(['groups_y', ], axis=1)
         final_df = final_df.to_parquet('../data/merged_data.parquet')
         return final_df
 

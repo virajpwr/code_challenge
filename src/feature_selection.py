@@ -28,12 +28,14 @@ def feature_selection(df, var_list, target):
     '''
     X_train, y_train = df[var_list], target
     features = FeatureWiz(corr_limit=0.70, feature_engg='', category_encoders='',
-                          dask_xgboost_flag=False, nrows=None, verbose=2)
+                          dask_xgboost_flag=False, nrows=None, verbose=1)
     X_train_selected = features.fit_transform(X_train, y_train)
     ### provides the list of selected features ###
     return features.features
 
 # Function to save features after feature selection
+
+
 def save_features_after_feature_selection(col_names, config):
     pd.Series(col_names).to_csv(os.path.join(
         config['PATHS']['Project_path'] + 'data/', 'final_features.csv'))

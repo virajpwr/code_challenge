@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 from scipy.stats import uniform, randint
 from sklearn.model_selection import cross_val_score, GridSearchCV, KFold, RandomizedSearchCV, train_test_split
-from sklearn.metrics import auc, accuracy_score, confusion_matrix, mean_squared_error
+from sklearn.metrics import auc, accuracy_score, confusion_matrix, mean_squared_error, r2_score
 import xgboost as xgb
 from pycaret.regression import *
 from src.utils import load_config
@@ -38,7 +38,7 @@ class model_training(object):
     def convert_to_DMatrix(self):
         # convert to DMatrix for xgboost which is an internal data structure for xgboost.
         self.train, self.temp = train_test_split(
-            self.df, test_size=0.1, random_state=2022)
+            self.df, test_size=0.2, random_state=2022)
         self.test, self.valid = train_test_split(
             self.temp, test_size=0.5, random_state=2022)
         self.dtrain = xgb.DMatrix(
@@ -47,10 +47,39 @@ class model_training(object):
             data=self.valid[self.final_columns], label=self.valid.target, enable_categorical=True)
         self.dtest = xgb.DMatrix(
             data=self.test[self.final_columns], label=self.test.target, enable_categorical=True)
+        # save dmatrix into binary buffer
+        self.dtest.save_binary("dtest.dmatrix")
         self.evals = [(self.dtrain, "train"), (self.dvalid, "valid")]
         self.num_round = 500
 
-    def train_baseline_model(self):
+    # Multiple regression model is our base model
+    def base_model(self):
+        X = self.df[self.final_columns]
+        y = self.target
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.3, random_state=23)
+        # Add x0=1 to the first column of X
+        X_train_0 = np.c_[np.ones((X_train.shape[0], 1)), X_train]
+        X_test_0 = np.c_[np.ones((X_test.shape[0], 1)), X_test]
+        # Build the model
+        theta = np.matmul(np.linalg.inv(
+            np.matmul(X_train_0.T, X_train_0)), np.matmul(X_train_0.T, y_train))
+        # Make predictions
+        y_pred = np.matmul(X_test_0, theta)
+        # Evaluate the model
+        mse = mean_squared_error(y_test, y_pred)
+        # R_square
+        sse = np.sum((y_pred - y_test)**2)
+        sst = np.sum((y_test - y_test.mean())**2)
+        R_square = 1 - (sse/sst)
+        with open('./eval/RMSE_multiple_regression.txt', 'w') as f:
+            f.write(str(np.sqrt(mse)))
+            f.write(str(R_square))
+            f.close()
+        print('Root mean squared error of multiple regression model', np.sqrt(mse))
+        print('r square of multiple regression', R_square)
+
+    def train_xgb(self):
         # train baseline model for comparison.
         self.xgb_model = xgb.train(
             params=self.model_params,
@@ -63,13 +92,13 @@ class model_training(object):
         # evaluate the model.
         self.y_pred = self.xgb_model.predict(self.dtest)
         mse = mean_squared_error(self.test.target, self.y_pred)
-        print('Root mean squared error', np.sqrt(mse))
-        with open('./eval/RMSE.txt', 'w') as f:
+        print('Root mean squared error for xgboost', np.sqrt(mse))
+        with open('./eval/RMSE_xgb.txt', 'w') as f:
             f.write(str(np.sqrt(mse)))
         return self.y_pred
 
     def shap(self):
-        # explain the model.
+        # explain the model using SHAP values.
         explainer = shap.TreeExplainer(self.xgb_model)
         shap_values = explainer.shap_values(self.df[self.final_columns])
         shap.summary_plot(
@@ -87,7 +116,7 @@ class model_training(object):
         search = RandomizedSearchCV(self.xgb_model,
                                     param_distributions=self.config["parameter_grid"]["params"],
                                     random_state=42, n_iter=200,
-                                    cv=3, verbose=1, n_jobs=1,
+                                    cv=5, verbose=1, n_jobs=1,
                                     return_train_score=True)
 
         search.fit(self.df[self.final_columns], self.target)

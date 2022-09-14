@@ -17,6 +17,7 @@ class FeatEngg(object):
     def __init__(self, df, config) -> None:
         self.df = df
         self.config = config
+
     # Not implemented
     def feat_engg_date(self):
         self.df["expected_total_time_to_report"] = (
@@ -42,7 +43,7 @@ class FeatEngg(object):
         for col in self.config["count_encode_columns"]:
             self.df = count_encode(self.df, col)
         return self.df
-
+    
     def transforming_target_continuous(self):
         self.df["target"] = gaussrank_gpu(self.df["target"])
         for col in self.config["continuous_columns"]:
