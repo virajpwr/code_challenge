@@ -13,9 +13,8 @@
 11,CE_TE_groups_Categorify
 12,Cycle_Categorify
 13,super_hero_group_Categorify
-14,NA_first_factor_x
-15,TE_Cycle_Categorify
+14,TE_Cycle_Categorify
+15,chemical_x
 16,expected_final_factor_x
-17,chemical_x
+17,NA_chemical_x
 18,first_factor_x
-19,NA_chemical_x
