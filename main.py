@@ -14,6 +14,7 @@ def main():
 
     config = load_config("config.yml")  # Load config file
     df = pd.read_parquet("./data/merged_data.parquet")  # Load merged data
+    print('Total number of rows and columns in the dataset before feature engineering: ', df.shape)
     # 1. Preprocessing
     preprocessing = Preprocessing(df, config)
     preprocessing.processing_missing_values()
@@ -28,7 +29,7 @@ def main():
     df.head()
     df = feat_engg.count_encode_columns()
     df = feat_engg.transforming_target_continuous()
-
+    print('Total number of rows and columns in the dataset after feature engineering: ', df.shape)
     # 3. feature selection
     selected_features = feature_selection(
         df, config["required_columns"], df["target"])
