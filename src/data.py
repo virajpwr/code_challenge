@@ -9,7 +9,7 @@ from posixpath import split
 import warnings
 warnings.filterwarnings(action="ignore")
 
-
+# Read the data from local.
 class read_data:
     def __init__(self):
         self.raw_data = '../data/md_raw_dataset.csv'
@@ -24,7 +24,7 @@ class read_data:
             print("File not found")
         return raw_df, target_df
 
-
+# Merge features and target data on groups and index
 class dataFrame(object):
     def __init__(self, raw_data, target_data):
         self.raw_data = raw_data

@@ -23,12 +23,10 @@ def cal_time_diff(df, col1, col2, column_name):
     df[column_name] = df[column_name].dt.total_seconds()
     return df
 
-# Split date time column into separate columns into hour, minute, weekday, day, month
+# Split date time column into separate columns into  weekday, day, month
 
 
 def split_datetime(df, colname):
-    df['ts_hour'] = df[colname].dt.hour
-    df['ts_minute'] = df[colname].dt.minute
     df['ts_weekday'] = df[colname].dt.weekday
     df['ts_day'] = df[colname].dt.day
     df['ts_month'] = df[colname].dt.month
