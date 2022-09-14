@@ -17,6 +17,9 @@ The process of training the model is as follows:
 6. Check RMSE score in eval folder
 7. The SHAP bar plot showing important features is available in plots folder and shown below.
    ![Figure_1](https://user-images.githubusercontent.com/36328852/188136359-b2faacfe-feb7-43ae-b9b4-b2ae128a555a.png)
+   ![Figure_1](https://user-images.githubusercontent.com/36328852/190073735-aae60fd5-de70-4f56-a4f7-6054c424eaf1.png)
+
+
 
 ### Steps to run the code
 
