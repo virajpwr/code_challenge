@@ -28,18 +28,18 @@ logging_params:
 
 # A parameter grid for XGBoost
 
-parameter_grid:
-    params : {
-    'n_estimators':[100, 200, 300, 500],
-    'min_child_weight': [1, 2, 3, 4], 
-    'gamma':[0.3,0.4,0.5],  
-    'subsample':[0.6, 0.7, 0.8, 0.9, 1.0],
-    'colsample_bytree':[0.6, 0.7, 0.8, 0.9, 1.0], 
-    'max_depth': [2,3,4,6,7],
-    'booster': ['gbtree', 'gblinear'],
-    'eval_metric': ['rmse'],
-    'eta': [0.3,0.4,0.5],
-    }
+# parameter_grid:
+#     params : {
+#     'n_estimators':[100, 200, 300, 500],
+#     'min_child_weight': [1, 2, 3, 4], 
+#     'gamma':[0.3,0.4,0.5],  
+#     'subsample':[0.6, 0.7, 0.8, 0.9, 1.0],
+#     'colsample_bytree':[0.6, 0.7, 0.8, 0.9, 1.0], 
+#     'max_depth': [2,3,4,6,7],
+#     'booster': ['gbtree', 'gblinear'],
+#     'eval_metric': ['rmse'],
+#     'eta': [0.3,0.4,0.5],
+#     }
 
 parameter_grid:
     params : {
