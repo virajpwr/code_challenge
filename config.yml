@@ -58,7 +58,7 @@ date_cols: ['when',  'expected_start', 'start_process',
 
 
 vars_with_na : ['crystal_weight', 'first_factor_x', 'final_factor_x', 'previous_adamantium',
-                'Unnamed_17', 'etherium_before_start', 'chemical_x', 'raw_kryptonite', 'argon',
+                 'etherium_before_start', 'chemical_x', 'raw_kryptonite', 'argon',
                 'pure_seastone', 'groups']
 
 categorify_columns: ['super_hero_group', 'crystal_type', 'crystal_supergroup', 'groups', 'Cycle']
@@ -69,19 +69,18 @@ count_encode_columns: ['TE_super_hero_group_Categorify', 'TE_crystal_type_Catego
 
 continuous_columns: ['pure_seastone', 'argon', 'raw_kryptonite', 'human_measure', 'crystal_weight', 
                     'expected_factor_x', 'previous_factor_x', 'first_factor_x', 'expected_final_factor_x', 
-                    'final_factor_x', 'previous_adamantium', 'Unnamed_17','time_diff_process', 'time_diff_subprocess']
+                    'final_factor_x', 'previous_adamantium','time_diff_process', 'time_diff_subprocess']
 
 cols_to_drop : ["super_hero_group"]
 
 required_columns : ['tracking', 'place',
        'tracking_times', 'Unnamed_7', 'human_behavior_report',
        'human_measure', 'crystal_weight', 'expected_factor_x',
-       'previous_factor_x', 'first_factor_x', 'expected_final_factor_x',
-       'final_factor_x', 'previous_adamantium', 'Unnamed_17',
+       'previous_factor_x', 'first_factor_x', 'expected_final_factor_x','final_factor_x', 'previous_adamantium', 
        'etherium_before_start', 'chemical_x', 'raw_kryptonite', 'argon',
        'pure_seastone', 
        'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x',
-       'NA_previous_adamantium', 'NA_Unnamed_17', 'NA_etherium_before_start', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
+       'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
        'NA_pure_seastone', 'NA_groups','ts_weekday','ts_month', 
        'super_hero_group_Categorify', 'crystal_type_Categorify',
        'crystal_supergroup_Categorify', 
