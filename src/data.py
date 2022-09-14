@@ -9,8 +9,6 @@ from posixpath import split
 import warnings
 warnings.filterwarnings(action="ignore")
 
-# Read the data from local.
-
 
 class read_data:
     def __init__(self):
@@ -26,8 +24,6 @@ class read_data:
             print("File not found")
         return raw_df, target_df
 
-# Merge features and target data on groups and index
-
 
 class dataFrame(object):
     def __init__(self, raw_data, target_data):
@@ -41,14 +37,9 @@ class dataFrame(object):
             df_test = self.target_data[self.target_data.groups == _]
             df_merge = pd.merge(df_train, df_test, on='index', how='left')
             final_df = final_df.append(df_merge)
-<<<<<<< HEAD
-        final_df = final_df.rename(columns={'groups_x': 'groups', 'Unnamed: 17': 'Unnamed_17', 'Unnamed: 7': 'Unnamed_7'})
-        final_df = final_df.drop(['groups_y','Unnamed_17' ], axis=1)
-=======
         final_df = final_df.rename(columns={
                                    'groups_x': 'groups', 'Unnamed: 17': 'Unnamed_17', 'Unnamed: 7': 'Unnamed_7'})
         final_df = final_df.drop(['groups_y', 'Unnamed_17'], axis=1)
->>>>>>> 4d2d3ece8a22a7978db090e0e3d657750ecab6dd
         final_df = final_df.to_parquet('../data/merged_data.parquet')
         return final_df
 
