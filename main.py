@@ -14,6 +14,7 @@ def main():
 
     config = load_config("config.yml")  # Load config file
     df = pd.read_parquet("./data/merged_data.parquet")  # Load merged data
+    df = df.iloc[3:]
     print('Total number of rows and columns in the dataset before feature engineering: ', df.shape)
     #------------------------------------------------- Preprocessing --------------------------------------#
     preprocessing = Preprocessing(df, config)
