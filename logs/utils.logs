@@ -1,0 +1,265 @@
+INFO: 2022-09-27 11:51:45,008: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-09-27 11:51:45,158: Performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 11:51:45,292: Error in performing anova test for feature: place_Categorify
+INFO: 2022-09-27 11:51:45,294: Performing anova test for feature: tracking_times_Categorify
+INFO: 2022-09-27 11:51:45,444: Performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 11:51:45,570: Error in performing anova test for feature: crystal_supergroup_Categorify
+INFO: 2022-09-27 11:51:45,571: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-09-27 11:51:45,733: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 11:51:45,879: Error in performing anova test for feature: unnamed_7_Categorify
+INFO: 2022-09-27 11:51:45,880: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 11:51:45,987: Error in performing anova test for feature: human_behavior_report_Categorify
+INFO: 2022-09-27 11:51:45,988: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 11:51:46,144: Error in performing anova test for feature: cycle_Categorify
+INFO: 2022-09-27 11:51:46,146: Performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 11:51:46,301: Error in performing anova test for feature: groups_Categorify
+INFO: 2022-09-27 11:51:46,303: Performing anova test for feature: groups
+INFO: 2022-09-27 11:51:46,464: Performing anova test for feature: NA_crystal_weight
+INFO: 2022-09-27 11:51:46,614: Performing anova test for feature: NA_first_factor_x
+INFO: 2022-09-27 11:51:46,765: Performing anova test for feature: NA_final_factor_x
+INFO: 2022-09-27 11:51:46,911: Performing anova test for feature: NA_previous_adamantium
+INFO: 2022-09-27 11:51:46,993: Performing anova test for feature: NA_etherium_before_start
+INFO: 2022-09-27 11:51:47,142: Performing anova test for feature: NA_expected_start
+INFO: 2022-09-27 11:51:47,262: Performing anova test for feature: NA_start_subprocess1
+INFO: 2022-09-27 11:51:47,379: Performing anova test for feature: NA_start_critical_subprocess1
+INFO: 2022-09-27 11:51:47,500: Performing anova test for feature: NA_predicted_process_end
+INFO: 2022-09-27 11:51:47,620: Performing anova test for feature: NA_process_end
+INFO: 2022-09-27 11:51:47,741: Performing anova test for feature: NA_subprocess1_end
+INFO: 2022-09-27 11:51:47,818: Performing anova test for feature: NA_reported_on_tower
+INFO: 2022-09-27 11:51:47,938: Performing anova test for feature: NA_opened
+INFO: 2022-09-27 11:51:48,060: Performing anova test for feature: NA_chemical_x
+INFO: 2022-09-27 11:51:48,180: Performing anova test for feature: NA_raw_kryptonite
+INFO: 2022-09-27 11:51:48,303: Performing anova test for feature: NA_argon
+INFO: 2022-09-27 11:51:48,424: Performing anova test for feature: NA_pure_seastone
+INFO: 2022-09-27 11:51:48,547: Performing anova test for feature: NA_groups
+INFO: 2022-09-27 11:51:48,665: Performing anova test for feature: place
+ERROR: 2022-09-27 11:51:48,721: Error in performing anova test for feature: place
+INFO: 2022-09-27 11:51:48,722: Performing anova test for feature: tracking_times
+ERROR: 2022-09-27 11:51:48,850: Error in performing anova test for feature: tracking_times
+INFO: 2022-09-27 11:51:48,851: Performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 11:51:48,981: Error in performing anova test for feature: unnamed_7
+INFO: 2022-09-27 11:51:48,982: Performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 11:51:49,111: Error in performing anova test for feature: human_behavior_report
+INFO: 2022-09-27 11:51:49,112: Performing anova test for feature: crystal_supergroup
+INFO: 2022-09-27 11:51:49,263: Performing anova test for feature: cycle
+INFO: 2022-09-27 11:51:49,386: Selected categorical features: ['super_hero_group_Categorify', 'tracking_times_Categorify', 'groups']
+INFO: 2022-09-27 12:14:35,033: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-09-27 12:14:35,159: Performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:14:35,265: Error in performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:14:35,265: 0
+INFO: 2022-09-27 12:14:35,266: Performing anova test for feature: tracking_times_Categorify
+INFO: 2022-09-27 12:14:35,411: Performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:14:35,520: Error in performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:14:35,520: 0
+INFO: 2022-09-27 12:14:35,521: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-09-27 12:14:35,676: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:14:35,787: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:14:35,787: 0
+INFO: 2022-09-27 12:14:35,788: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:14:35,855: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:14:35,855: 0
+INFO: 2022-09-27 12:14:35,856: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:14:35,983: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:14:35,983: 0
+INFO: 2022-09-27 12:14:35,984: Performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:14:36,125: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:14:36,125: 0
+INFO: 2022-09-27 12:14:36,126: Performing anova test for feature: groups
+INFO: 2022-09-27 12:14:36,280: Performing anova test for feature: NA_crystal_weight
+INFO: 2022-09-27 12:14:36,399: Performing anova test for feature: NA_first_factor_x
+INFO: 2022-09-27 12:14:36,521: Performing anova test for feature: NA_final_factor_x
+INFO: 2022-09-27 12:14:36,649: Performing anova test for feature: NA_previous_adamantium
+INFO: 2022-09-27 12:14:36,726: Performing anova test for feature: NA_etherium_before_start
+INFO: 2022-09-27 12:14:36,846: Performing anova test for feature: NA_expected_start
+INFO: 2022-09-27 12:14:36,966: Performing anova test for feature: NA_start_subprocess1
+INFO: 2022-09-27 12:14:37,085: Performing anova test for feature: NA_start_critical_subprocess1
+INFO: 2022-09-27 12:14:37,217: Performing anova test for feature: NA_predicted_process_end
+INFO: 2022-09-27 12:14:37,365: Performing anova test for feature: NA_process_end
+INFO: 2022-09-27 12:14:37,496: Performing anova test for feature: NA_subprocess1_end
+INFO: 2022-09-27 12:14:37,580: Performing anova test for feature: NA_reported_on_tower
+INFO: 2022-09-27 12:14:37,698: Performing anova test for feature: NA_opened
+INFO: 2022-09-27 12:14:37,848: Performing anova test for feature: NA_chemical_x
+INFO: 2022-09-27 12:14:37,985: Performing anova test for feature: NA_raw_kryptonite
+INFO: 2022-09-27 12:14:38,107: Performing anova test for feature: NA_argon
+INFO: 2022-09-27 12:14:38,242: Performing anova test for feature: NA_pure_seastone
+INFO: 2022-09-27 12:14:38,365: Performing anova test for feature: NA_groups
+INFO: 2022-09-27 12:14:38,485: Performing anova test for feature: place
+ERROR: 2022-09-27 12:14:38,540: Error in performing anova test for feature: place
+ERROR: 2022-09-27 12:14:38,540: 0
+INFO: 2022-09-27 12:14:38,541: Performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:14:38,666: Error in performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:14:38,667: 0
+INFO: 2022-09-27 12:14:38,668: Performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:14:38,795: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:14:38,796: 0
+INFO: 2022-09-27 12:14:38,796: Performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:14:38,924: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:14:38,924: 0
+INFO: 2022-09-27 12:14:38,925: Performing anova test for feature: crystal_supergroup
+INFO: 2022-09-27 12:14:39,070: Performing anova test for feature: cycle
+INFO: 2022-09-27 12:14:39,191: Selected categorical features: ['super_hero_group_Categorify', 'tracking_times_Categorify', 'groups']
+INFO: 2022-09-27 12:17:07,813: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-09-27 12:17:07,931: Performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:17:08,031: Error in performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:17:08,031: 0
+INFO: 2022-09-27 12:17:08,032: Performing anova test for feature: tracking_times_Categorify
+INFO: 2022-09-27 12:17:08,174: Performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:17:08,285: Error in performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:17:08,285: 0
+INFO: 2022-09-27 12:17:08,286: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-09-27 12:17:08,438: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:17:08,544: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:17:08,544: 0
+INFO: 2022-09-27 12:17:08,545: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:17:08,616: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:17:08,616: 0
+INFO: 2022-09-27 12:17:08,617: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:17:08,749: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:17:08,749: 0
+INFO: 2022-09-27 12:17:08,750: Performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:17:08,889: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:17:08,889: 0
+INFO: 2022-09-27 12:17:08,890: Performing anova test for feature: groups
+INFO: 2022-09-27 12:17:09,038: Performing anova test for feature: NA_crystal_weight
+INFO: 2022-09-27 12:17:09,161: Performing anova test for feature: NA_first_factor_x
+INFO: 2022-09-27 12:17:09,291: Performing anova test for feature: NA_final_factor_x
+INFO: 2022-09-27 12:17:09,415: Performing anova test for feature: NA_previous_adamantium
+INFO: 2022-09-27 12:17:09,498: Performing anova test for feature: NA_etherium_before_start
+INFO: 2022-09-27 12:17:09,619: Performing anova test for feature: NA_expected_start
+INFO: 2022-09-27 12:17:09,741: Performing anova test for feature: NA_start_subprocess1
+INFO: 2022-09-27 12:17:09,857: Performing anova test for feature: NA_start_critical_subprocess1
+INFO: 2022-09-27 12:17:09,977: Performing anova test for feature: NA_predicted_process_end
+INFO: 2022-09-27 12:17:10,098: Performing anova test for feature: NA_process_end
+INFO: 2022-09-27 12:17:10,227: Performing anova test for feature: NA_subprocess1_end
+INFO: 2022-09-27 12:17:10,317: Performing anova test for feature: NA_reported_on_tower
+INFO: 2022-09-27 12:17:10,439: Performing anova test for feature: NA_opened
+INFO: 2022-09-27 12:17:10,563: Performing anova test for feature: NA_chemical_x
+INFO: 2022-09-27 12:17:10,686: Performing anova test for feature: NA_raw_kryptonite
+INFO: 2022-09-27 12:17:10,811: Performing anova test for feature: NA_argon
+INFO: 2022-09-27 12:17:10,936: Performing anova test for feature: NA_pure_seastone
+INFO: 2022-09-27 12:17:11,059: Performing anova test for feature: NA_groups
+INFO: 2022-09-27 12:17:11,179: Performing anova test for feature: place
+ERROR: 2022-09-27 12:17:11,240: Error in performing anova test for feature: place
+ERROR: 2022-09-27 12:17:11,240: 0
+INFO: 2022-09-27 12:17:11,242: Performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:17:11,375: Error in performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:17:11,375: 0
+INFO: 2022-09-27 12:17:11,376: Performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:17:11,507: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:17:11,507: 0
+INFO: 2022-09-27 12:17:11,508: Performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:17:11,636: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:17:11,636: 0
+INFO: 2022-09-27 12:17:11,637: Performing anova test for feature: crystal_supergroup
+INFO: 2022-09-27 12:17:11,781: Performing anova test for feature: cycle
+INFO: 2022-09-27 12:17:11,919: Selected categorical features: ['super_hero_group_Categorify', 'tracking_times_Categorify', 'groups']
+INFO: 2022-09-27 12:20:51,401: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-09-27 12:20:51,516: Performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:20:51,619: Error in performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:20:51,619: error: 0
+INFO: 2022-09-27 12:20:51,620: Performing anova test for feature: tracking_times_Categorify
+INFO: 2022-09-27 12:20:51,764: Performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:20:51,871: Error in performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:20:51,871: error: 0
+INFO: 2022-09-27 12:20:51,872: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-09-27 12:20:52,022: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:20:52,131: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:20:52,131: error: 0
+INFO: 2022-09-27 12:20:52,132: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:20:52,200: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:20:52,200: error: 0
+INFO: 2022-09-27 12:20:52,201: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:20:52,341: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:20:52,342: error: 0
+INFO: 2022-09-27 12:20:52,343: Performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:20:52,480: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:20:52,480: error: 0
+INFO: 2022-09-27 12:20:52,481: Performing anova test for feature: groups
+INFO: 2022-09-27 12:20:52,633: Performing anova test for feature: NA_crystal_weight
+INFO: 2022-09-27 12:20:52,751: Performing anova test for feature: NA_first_factor_x
+INFO: 2022-09-27 12:20:52,874: Performing anova test for feature: NA_final_factor_x
+INFO: 2022-09-27 12:20:52,998: Performing anova test for feature: NA_previous_adamantium
+INFO: 2022-09-27 12:20:53,073: Performing anova test for feature: NA_etherium_before_start
+INFO: 2022-09-27 12:20:53,192: Performing anova test for feature: NA_expected_start
+INFO: 2022-09-27 12:20:53,315: Performing anova test for feature: NA_start_subprocess1
+INFO: 2022-09-27 12:20:53,433: Performing anova test for feature: NA_start_critical_subprocess1
+INFO: 2022-09-27 12:20:53,558: Performing anova test for feature: NA_predicted_process_end
+INFO: 2022-09-27 12:20:53,685: Performing anova test for feature: NA_process_end
+INFO: 2022-09-27 12:20:53,813: Performing anova test for feature: NA_subprocess1_end
+INFO: 2022-09-27 12:20:53,896: Performing anova test for feature: NA_reported_on_tower
+INFO: 2022-09-27 12:20:54,013: Performing anova test for feature: NA_opened
+INFO: 2022-09-27 12:20:54,133: Performing anova test for feature: NA_chemical_x
+INFO: 2022-09-27 12:20:54,256: Performing anova test for feature: NA_raw_kryptonite
+INFO: 2022-09-27 12:20:54,376: Performing anova test for feature: NA_argon
+INFO: 2022-09-27 12:20:54,496: Performing anova test for feature: NA_pure_seastone
+INFO: 2022-09-27 12:20:54,618: Performing anova test for feature: NA_groups
+INFO: 2022-09-27 12:20:54,738: Performing anova test for feature: place
+ERROR: 2022-09-27 12:20:54,796: Error in performing anova test for feature: place
+ERROR: 2022-09-27 12:20:54,796: error: 0
+INFO: 2022-09-27 12:20:54,797: Performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:20:54,923: Error in performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:20:54,923: error: 0
+INFO: 2022-09-27 12:20:54,924: Performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:20:55,055: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:20:55,055: error: 0
+INFO: 2022-09-27 12:20:55,056: Performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:20:55,180: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:20:55,180: error: 0
+INFO: 2022-09-27 12:20:55,181: Performing anova test for feature: crystal_supergroup
+INFO: 2022-09-27 12:20:55,326: Performing anova test for feature: cycle
+INFO: 2022-09-27 12:20:55,450: Selected categorical features: ['super_hero_group_Categorify', 'tracking_times_Categorify', 'groups']
+INFO: 2022-09-27 12:25:49,285: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-09-27 12:25:49,403: Performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:25:49,505: Error in performing anova test for feature: place_Categorify
+ERROR: 2022-09-27 12:25:49,505: error: 0
+INFO: 2022-09-27 12:25:49,506: Performing anova test for feature: tracking_times_Categorify
+INFO: 2022-09-27 12:25:49,650: Performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:25:49,753: Error in performing anova test for feature: crystal_supergroup_Categorify
+ERROR: 2022-09-27 12:25:49,753: error: 0
+INFO: 2022-09-27 12:25:49,754: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-09-27 12:25:49,905: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:25:50,011: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-09-27 12:25:50,011: error: 0
+INFO: 2022-09-27 12:25:50,012: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:25:50,079: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-09-27 12:25:50,079: error: 0
+INFO: 2022-09-27 12:25:50,080: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:25:50,209: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-09-27 12:25:50,209: error: 0
+INFO: 2022-09-27 12:25:50,210: Performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:25:50,350: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-09-27 12:25:50,350: error: 0
+INFO: 2022-09-27 12:25:50,351: Performing anova test for feature: groups
+INFO: 2022-09-27 12:25:50,502: Performing anova test for feature: NA_crystal_weight
+INFO: 2022-09-27 12:25:50,620: Performing anova test for feature: NA_first_factor_x
+INFO: 2022-09-27 12:25:50,740: Performing anova test for feature: NA_final_factor_x
+INFO: 2022-09-27 12:25:50,864: Performing anova test for feature: NA_previous_adamantium
+INFO: 2022-09-27 12:25:50,940: Performing anova test for feature: NA_etherium_before_start
+INFO: 2022-09-27 12:25:51,061: Performing anova test for feature: NA_expected_start
+INFO: 2022-09-27 12:25:51,179: Performing anova test for feature: NA_start_subprocess1
+INFO: 2022-09-27 12:25:51,302: Performing anova test for feature: NA_start_critical_subprocess1
+INFO: 2022-09-27 12:25:51,425: Performing anova test for feature: NA_predicted_process_end
+INFO: 2022-09-27 12:25:51,552: Performing anova test for feature: NA_process_end
+INFO: 2022-09-27 12:25:51,675: Performing anova test for feature: NA_subprocess1_end
+INFO: 2022-09-27 12:25:51,748: Performing anova test for feature: NA_reported_on_tower
+INFO: 2022-09-27 12:25:51,864: Performing anova test for feature: NA_opened
+INFO: 2022-09-27 12:25:51,983: Performing anova test for feature: NA_chemical_x
+INFO: 2022-09-27 12:25:52,102: Performing anova test for feature: NA_raw_kryptonite
+INFO: 2022-09-27 12:25:52,226: Performing anova test for feature: NA_argon
+INFO: 2022-09-27 12:25:52,351: Performing anova test for feature: NA_pure_seastone
+INFO: 2022-09-27 12:25:52,477: Performing anova test for feature: NA_groups
+INFO: 2022-09-27 12:25:52,602: Performing anova test for feature: place
+ERROR: 2022-09-27 12:25:52,658: Error in performing anova test for feature: place
+ERROR: 2022-09-27 12:25:52,658: error: 0
+INFO: 2022-09-27 12:25:52,659: Performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:25:52,784: Error in performing anova test for feature: tracking_times
+ERROR: 2022-09-27 12:25:52,784: error: 0
+INFO: 2022-09-27 12:25:52,785: Performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:25:52,912: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-09-27 12:25:52,912: error: 0
+INFO: 2022-09-27 12:25:52,913: Performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:25:53,041: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-09-27 12:25:53,041: error: 0
+INFO: 2022-09-27 12:25:53,042: Performing anova test for feature: crystal_supergroup
+INFO: 2022-09-27 12:25:53,185: Performing anova test for feature: cycle
+INFO: 2022-09-27 12:25:53,310: Selected categorical features: ['super_hero_group_Categorify', 'tracking_times_Categorify', 'groups']

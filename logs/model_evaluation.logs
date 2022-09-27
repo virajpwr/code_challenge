@@ -1,0 +1,108 @@
+INFO: 2022-09-27 11:39:32,386: Predicting on test data using baseline model
+INFO: 2022-09-27 11:39:32,386: predicting the target values for the test data using basline model
+INFO: 2022-09-27 11:39:32,401: Predicting on test data using random forest
+INFO: 2022-09-27 11:39:32,402: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 11:39:32,579: Creating plots
+INFO: 2022-09-27 11:39:32,579: Creating plots for baseline model
+INFO: 2022-09-27 11:39:32,970: Creating plots for random forest model
+INFO: 2022-09-27 11:39:41,134: Saving the model
+INFO: 2022-09-27 11:48:55,926: Predicting on test data using baseline model
+INFO: 2022-09-27 11:48:55,926: predicting the target values for the test data using basline model
+INFO: 2022-09-27 11:48:55,929: Root mean squared error of baseline model: 0.6888549681913573
+INFO: 2022-09-27 11:48:55,929: R_square of baseline model:0.045534777915212765
+INFO: 2022-09-27 11:48:55,929: VIF of baseline model:1.047707110601425
+INFO: 2022-09-27 11:48:55,929: Mean of residuals of baseline model
+INFO: 2022-09-27 11:48:55,930: Predicting on test data using random forest
+INFO: 2022-09-27 11:48:55,930: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 11:48:56,018: Root mean squared error of random forest model:0.6130574571329053
+INFO: 2022-09-27 11:48:56,018: out of bag score:0.22707233727526366
+INFO: 2022-09-27 11:50:05,229: Predicting on test data using baseline model
+INFO: 2022-09-27 11:50:05,229: predicting the target values for the test data using basline model
+INFO: 2022-09-27 11:50:05,233: Root mean squared error of baseline model: 0.6877887413631191
+INFO: 2022-09-27 11:50:05,233: R_square of baseline model:0.04615592099475152
+INFO: 2022-09-27 11:50:05,233: VIF of baseline model:1.048389377268963
+INFO: 2022-09-27 11:50:05,233: Mean of residuals of baseline model
+INFO: 2022-09-27 11:50:05,233: Predicting on test data using random forest
+INFO: 2022-09-27 11:50:05,233: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 11:50:05,324: Root mean squared error of random forest model:0.6206418606392607
+INFO: 2022-09-27 11:50:05,324: out of bag score:0.2012163196512351
+INFO: 2022-09-27 11:50:05,385: Root mean squared error for xgboost:0.6914309771350108
+INFO: 2022-09-27 11:50:05,386: Creating plots
+INFO: 2022-09-27 11:50:05,386: Creating plots for baseline model
+INFO: 2022-09-27 11:50:05,760: Creating plots for random forest model
+INFO: 2022-09-27 11:50:13,434: Saving the model
+INFO: 2022-09-27 11:52:07,678: Predicting on test data using baseline model
+INFO: 2022-09-27 11:52:07,679: predicting the target values for the test data using basline model
+INFO: 2022-09-27 11:52:07,681: Root mean squared error of baseline model: 0.6866106151183514
+INFO: 2022-09-27 11:52:07,682: R_square of baseline model:0.04991454836466369
+INFO: 2022-09-27 11:52:07,682: VIF of baseline model:1.0525369042108246
+INFO: 2022-09-27 11:52:07,682: Mean of residuals of baseline model
+INFO: 2022-09-27 11:52:07,682: Predicting on test data using random forest
+INFO: 2022-09-27 11:52:07,682: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 11:52:07,731: Root mean squared error of random forest model:0.6259631045993321
+INFO: 2022-09-27 11:52:07,731: out of bag score:0.18551221660705874
+INFO: 2022-09-27 11:52:07,793: Root mean squared error for xgboost:0.691455985635099
+INFO: 2022-09-27 11:52:07,794: Creating plots
+INFO: 2022-09-27 11:52:07,795: Creating plots for baseline model
+INFO: 2022-09-27 11:52:08,184: Creating plots for random forest model
+INFO: 2022-09-27 11:52:12,440: Saving the model
+INFO: 2022-09-27 12:15:02,962: Predicting on test data using baseline model
+INFO: 2022-09-27 12:15:02,963: predicting the target values for the test data using basline model
+INFO: 2022-09-27 12:15:02,966: Root mean squared error of baseline model: 0.6879327187175875
+INFO: 2022-09-27 12:15:02,966: R_square of baseline model:0.046977513591777265
+INFO: 2022-09-27 12:15:02,966: VIF of baseline model:1.0492931848532006
+INFO: 2022-09-27 12:15:02,966: Mean of residuals of baseline model
+INFO: 2022-09-27 12:15:02,967: Predicting on test data using random forest
+INFO: 2022-09-27 12:15:02,967: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 12:15:03,055: Root mean squared error of random forest model:0.611641892638878
+INFO: 2022-09-27 12:15:03,055: out of bag score:0.22607316655194143
+INFO: 2022-09-27 12:15:03,078: Root mean squared error for xgboost:0.6923841683538406
+INFO: 2022-09-27 12:15:03,079: Creating plots
+INFO: 2022-09-27 12:15:03,079: Creating plots for baseline model
+INFO: 2022-09-27 12:15:03,479: Creating plots for random forest model
+INFO: 2022-09-27 12:15:11,395: Saving the model
+INFO: 2022-09-27 12:17:36,276: Predicting on test data using baseline model
+INFO: 2022-09-27 12:17:36,276: predicting the target values for the test data using basline model
+INFO: 2022-09-27 12:17:36,279: Root mean squared error of baseline model: 0.6881305377623282
+INFO: 2022-09-27 12:17:36,280: R_square of baseline model:0.046693133403296505
+INFO: 2022-09-27 12:17:36,280: VIF of baseline model:1.0489801710649485
+INFO: 2022-09-27 12:17:36,280: Mean of residuals of baseline model
+INFO: 2022-09-27 12:17:36,280: Predicting on test data using random forest
+INFO: 2022-09-27 12:17:36,280: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 12:17:36,373: Root mean squared error of random forest model:0.6290098732121724
+INFO: 2022-09-27 12:17:36,373: out of bag score:0.18557377675146147
+INFO: 2022-09-27 12:17:36,394: Root mean squared error for xgboost:0.6924271390491019
+INFO: 2022-09-27 12:17:36,395: Creating plots
+INFO: 2022-09-27 12:17:36,395: Creating plots for baseline model
+INFO: 2022-09-27 12:17:36,799: Creating plots for random forest model
+INFO: 2022-09-27 12:17:47,770: Saving the model
+INFO: 2022-09-27 12:21:17,024: Predicting on test data using baseline model
+INFO: 2022-09-27 12:21:17,025: predicting the target values for the test data using basline model
+INFO: 2022-09-27 12:21:17,027: Root mean squared error of baseline model: 0.6893134233780066
+INFO: 2022-09-27 12:21:17,027: R_square of baseline model:0.04542724104233942
+INFO: 2022-09-27 12:21:17,027: VIF of baseline model:1.0475890817290276
+INFO: 2022-09-27 12:21:17,028: Mean of residuals of baseline model
+INFO: 2022-09-27 12:21:17,028: Predicting on test data using random forest
+INFO: 2022-09-27 12:21:17,028: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 12:21:17,119: Root mean squared error of random forest model:0.6220431649936032
+INFO: 2022-09-27 12:21:17,120: out of bag score:0.21051040008982713
+INFO: 2022-09-27 12:21:17,153: Root mean squared error for xgboost:0.6882862429717026
+INFO: 2022-09-27 12:21:17,153: Creating plots
+INFO: 2022-09-27 12:21:17,154: Creating plots for baseline model
+INFO: 2022-09-27 12:21:17,505: Creating plots for random forest model
+INFO: 2022-09-27 12:21:26,326: Saving the model
+INFO: 2022-09-27 12:26:15,266: Predicting on test data using baseline model
+INFO: 2022-09-27 12:26:15,269: predicting the target values for the test data using basline model
+INFO: 2022-09-27 12:26:15,273: Root mean squared error of baseline model: 0.6873237049116917
+INFO: 2022-09-27 12:26:15,273: R_square of baseline model:0.04862168312735571
+INFO: 2022-09-27 12:26:15,273: VIF of baseline model:1.0511065706092442
+INFO: 2022-09-27 12:26:15,273: Mean of residuals of baseline model
+INFO: 2022-09-27 12:26:15,273: Predicting on test data using random forest
+INFO: 2022-09-27 12:26:15,273: predicting the target values for the test data using random forest model
+INFO: 2022-09-27 12:26:15,364: Root mean squared error of random forest model:0.5979951155841773
+INFO: 2022-09-27 12:26:15,364: out of bag score:0.24555637399103147
+INFO: 2022-09-27 12:26:15,407: Root mean squared error for xgboost:0.6886238099427177
+INFO: 2022-09-27 12:26:15,407: Creating plots
+INFO: 2022-09-27 12:26:15,408: Creating plots for baseline model
+INFO: 2022-09-27 12:26:15,815: Creating plots for random forest model
+INFO: 2022-09-27 12:26:23,702: Saving the model

@@ -1,0 +1,1379 @@
+INFO: 2022-09-21 15:26:20,979: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:26:21,108: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:31:54,566: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:31:54,693: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:31:54,694: Merging the raw data and target data
+INFO: 2022-09-21 15:31:55,503: Merge successful
+INFO: 2022-09-21 15:39:02,591: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:39:02,737: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:43:26,865: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:43:27,019: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:52:40,912: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:52:41,030: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 15:52:41,031: Merging the raw data and target data
+INFO: 2022-09-21 15:52:41,461: Merge successful
+INFO: 2022-09-21 21:39:23,592: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 21:39:23,704: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 21:39:23,705: Merging the raw data and target data
+INFO: 2022-09-21 21:40:19,729: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-21 21:40:19,844: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-21 21:40:19,845: Merging the raw data and target data
+INFO: 2022-09-21 21:40:20,198: Merge successful
+INFO: 2022-09-22 11:56:44,763: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:56:44,884: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:56:44,885: Merging the raw data and target data
+INFO: 2022-09-22 11:56:45,240: Merge successful
+INFO: 2022-09-22 11:57:06,666: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:57:06,771: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:57:06,772: Merging the raw data and target data
+INFO: 2022-09-22 11:57:07,163: Merge successful
+INFO: 2022-09-22 11:58:35,610: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:58:35,705: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:58:35,709: Merging the raw data and target data
+INFO: 2022-09-22 11:58:36,721: Merge successful
+INFO: 2022-09-22 11:59:13,042: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:59:13,042: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:59:13,155: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:59:13,155: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 11:59:13,161: Merging the raw data and target data
+INFO: 2022-09-22 11:59:13,161: Merging the raw data and target data
+INFO: 2022-09-22 11:59:14,190: Merge successful
+INFO: 2022-09-22 11:59:14,190: Merge successful
+INFO: 2022-09-22 12:00:07,771: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,771: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,771: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,869: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,869: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,869: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:07,875: Merging the raw data and target data
+INFO: 2022-09-22 12:00:07,875: Merging the raw data and target data
+INFO: 2022-09-22 12:00:07,875: Merging the raw data and target data
+INFO: 2022-09-22 12:00:08,875: Merge successful
+INFO: 2022-09-22 12:00:08,875: Merge successful
+INFO: 2022-09-22 12:00:08,875: Merge successful
+INFO: 2022-09-22 12:00:59,175: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,175: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,175: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,175: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,267: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,267: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,267: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,267: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:00:59,272: Merging the raw data and target data
+INFO: 2022-09-22 12:00:59,272: Merging the raw data and target data
+INFO: 2022-09-22 12:00:59,272: Merging the raw data and target data
+INFO: 2022-09-22 12:00:59,272: Merging the raw data and target data
+INFO: 2022-09-22 12:01:00,249: Merge successful
+INFO: 2022-09-22 12:01:00,249: Merge successful
+INFO: 2022-09-22 12:01:00,249: Merge successful
+INFO: 2022-09-22 12:01:00,249: Merge successful
+INFO: 2022-09-22 12:01:18,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,337: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,337: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,337: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,337: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,337: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:01:18,342: Merging the raw data and target data
+INFO: 2022-09-22 12:01:18,342: Merging the raw data and target data
+INFO: 2022-09-22 12:01:18,342: Merging the raw data and target data
+INFO: 2022-09-22 12:01:18,342: Merging the raw data and target data
+INFO: 2022-09-22 12:01:18,342: Merging the raw data and target data
+INFO: 2022-09-22 12:01:19,354: Merge successful
+INFO: 2022-09-22 12:01:19,354: Merge successful
+INFO: 2022-09-22 12:01:19,354: Merge successful
+INFO: 2022-09-22 12:01:19,354: Merge successful
+INFO: 2022-09-22 12:01:19,354: Merge successful
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:05,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,112: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:06,125: Merging the raw data and target data
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:29:07,167: Merge successful
+INFO: 2022-09-22 12:31:48,568: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:31:48,680: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:31:48,681: Merging the raw data and target data
+INFO: 2022-09-22 12:31:49,078: Merge successful
+INFO: 2022-09-22 12:33:13,369: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:33:13,491: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:33:13,491: Merging the raw data and target data
+INFO: 2022-09-22 12:33:13,859: Merge successful
+INFO: 2022-09-22 12:35:19,546: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:19,670: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:19,671: Merging the raw data and target data
+INFO: 2022-09-22 12:35:20,022: Merge successful
+INFO: 2022-09-22 12:35:45,002: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:45,105: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:45,106: Merging the raw data and target data
+INFO: 2022-09-22 12:35:45,499: Merge successful
+INFO: 2022-09-22 12:35:58,937: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:59,046: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 12:35:59,047: Merging the raw data and target data
+INFO: 2022-09-22 12:35:59,438: Merge successful
+INFO: 2022-09-22 13:09:12,341: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:09:12,460: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:09:12,461: Merging the raw data and target data
+INFO: 2022-09-22 13:09:12,820: Merge successful
+INFO: 2022-09-22 13:10:20,623: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:10:20,751: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:10:20,752: Merging the raw data and target data
+INFO: 2022-09-22 13:10:21,110: Merge successful
+INFO: 2022-09-22 13:10:54,286: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:10:54,418: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:10:54,419: Merging the raw data and target data
+INFO: 2022-09-22 13:10:54,764: Merge successful
+INFO: 2022-09-22 13:11:06,271: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:11:06,369: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:11:06,371: Merging the raw data and target data
+INFO: 2022-09-22 13:11:06,735: Merge successful
+INFO: 2022-09-22 13:11:31,956: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:11:32,044: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:11:32,045: Merging the raw data and target data
+INFO: 2022-09-22 13:11:32,381: Merge successful
+INFO: 2022-09-22 13:24:02,159: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:02,250: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:02,250: Merging the raw data and target data
+INFO: 2022-09-22 13:24:02,655: Merge successful
+INFO: 2022-09-22 13:24:20,319: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:20,447: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:20,448: Merging the raw data and target data
+INFO: 2022-09-22 13:24:20,851: Merge successful
+INFO: 2022-09-22 13:24:36,005: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:36,093: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:24:36,094: Merging the raw data and target data
+INFO: 2022-09-22 13:24:36,508: Merge successful
+INFO: 2022-09-22 13:25:53,166: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:25:53,271: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:25:53,272: Merging the raw data and target data
+INFO: 2022-09-22 13:25:53,686: Merge successful
+INFO: 2022-09-22 13:32:41,211: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:32:41,343: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:32:41,344: Merging the raw data and target data
+INFO: 2022-09-22 13:32:41,739: Merge successful
+INFO: 2022-09-22 13:36:18,449: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:36:18,539: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:36:18,540: Merging the raw data and target data
+INFO: 2022-09-22 13:36:18,941: Merge successful
+INFO: 2022-09-22 13:36:33,327: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:36:33,453: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:36:33,454: Merging the raw data and target data
+INFO: 2022-09-22 13:36:33,933: Merge successful
+INFO: 2022-09-22 13:39:53,094: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:39:53,185: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:39:53,186: Merging the raw data and target data
+INFO: 2022-09-22 13:39:53,566: Merge successful
+INFO: 2022-09-22 13:40:05,791: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:40:05,903: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:40:05,904: Merging the raw data and target data
+INFO: 2022-09-22 13:40:06,233: Merge successful
+INFO: 2022-09-22 13:40:44,099: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:40:44,208: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:40:44,210: Merging the raw data and target data
+INFO: 2022-09-22 13:40:44,554: Merge successful
+INFO: 2022-09-22 13:41:16,101: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:41:16,193: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:41:16,194: Merging the raw data and target data
+INFO: 2022-09-22 13:41:16,519: Merge successful
+INFO: 2022-09-22 13:42:04,288: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:42:04,381: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:42:04,382: Merging the raw data and target data
+INFO: 2022-09-22 13:42:04,729: Merge successful
+INFO: 2022-09-22 13:43:50,207: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:43:50,361: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:43:50,362: Merging the raw data and target data
+INFO: 2022-09-22 13:43:50,818: Merge successful
+INFO: 2022-09-22 13:44:41,799: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:44:41,902: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:44:41,903: Merging the raw data and target data
+INFO: 2022-09-22 13:44:42,263: Merge successful
+INFO: 2022-09-22 13:44:52,816: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:44:52,910: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:44:52,911: Merging the raw data and target data
+INFO: 2022-09-22 13:44:53,298: Merge successful
+INFO: 2022-09-22 13:45:10,487: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:45:10,580: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:45:10,580: Merging the raw data and target data
+INFO: 2022-09-22 13:45:10,904: Merge successful
+INFO: 2022-09-22 13:45:22,606: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:45:22,706: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:45:22,707: Merging the raw data and target data
+INFO: 2022-09-22 13:45:23,110: Merge successful
+INFO: 2022-09-22 13:46:39,913: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:46:40,004: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:46:40,005: Merging the raw data and target data
+INFO: 2022-09-22 13:46:40,355: Merge successful
+INFO: 2022-09-22 13:47:00,082: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:47:00,174: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:47:00,175: Merging the raw data and target data
+INFO: 2022-09-22 13:47:00,491: Merge successful
+INFO: 2022-09-22 13:50:05,363: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:50:05,491: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 13:50:05,491: Merging the raw data and target data
+INFO: 2022-09-22 13:50:05,831: Merge successful
+INFO: 2022-09-22 14:06:57,861: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:06:57,957: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:06:57,958: Merging the raw data and target data
+INFO: 2022-09-22 14:06:58,361: Merge successful
+INFO: 2022-09-22 14:07:25,621: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:07:25,764: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:07:25,765: Merging the raw data and target data
+INFO: 2022-09-22 14:07:26,209: Merge successful
+INFO: 2022-09-22 14:15:05,740: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:15:05,855: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:15:05,856: Merging the raw data and target data
+INFO: 2022-09-22 14:15:06,215: Merge successful
+INFO: 2022-09-22 14:15:34,930: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:15:35,029: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:15:35,030: Merging the raw data and target data
+INFO: 2022-09-22 14:15:35,389: Merge successful
+INFO: 2022-09-22 14:23:47,912: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:23:48,007: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:23:48,007: Merging the raw data and target data
+INFO: 2022-09-22 14:23:48,373: Merge successful
+INFO: 2022-09-22 14:24:10,700: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:24:10,791: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:24:10,792: Merging the raw data and target data
+INFO: 2022-09-22 14:24:11,139: Merge successful
+INFO: 2022-09-22 14:24:30,965: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:24:31,056: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:24:31,057: Merging the raw data and target data
+INFO: 2022-09-22 14:24:31,395: Merge successful
+INFO: 2022-09-22 14:25:37,137: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:25:37,216: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:25:37,217: Merging the raw data and target data
+INFO: 2022-09-22 14:25:37,547: Merge successful
+INFO: 2022-09-22 14:52:26,152: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:52:26,274: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:52:26,276: Merging the raw data and target data
+INFO: 2022-09-22 14:52:26,671: Merge successful
+INFO: 2022-09-22 14:54:29,956: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:54:30,054: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 14:54:30,055: Merging the raw data and target data
+INFO: 2022-09-22 14:54:30,419: Merge successful
+INFO: 2022-09-22 15:22:53,842: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:22:53,957: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:22:53,973: Merging the raw data and target data
+INFO: 2022-09-22 15:23:41,095: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:23:41,221: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:23:41,222: Merging the raw data and target data
+INFO: 2022-09-22 15:23:41,566: Merge successful
+INFO: 2022-09-22 15:25:42,920: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:25:42,920: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:25:43,052: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:25:43,052: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:25:43,058: Merging the raw data and target data
+INFO: 2022-09-22 15:25:43,058: Merging the raw data and target data
+INFO: 2022-09-22 15:25:44,322: Merge successful
+INFO: 2022-09-22 15:25:44,322: Merge successful
+INFO: 2022-09-22 15:44:35,566: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,566: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,566: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,675: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,675: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,675: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:44:35,681: Merging the raw data and target data
+INFO: 2022-09-22 15:44:35,681: Merging the raw data and target data
+INFO: 2022-09-22 15:44:35,681: Merging the raw data and target data
+INFO: 2022-09-22 15:44:36,755: Merge successful
+INFO: 2022-09-22 15:44:36,755: Merge successful
+INFO: 2022-09-22 15:44:36,755: Merge successful
+INFO: 2022-09-22 15:45:45,343: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,343: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,343: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,343: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,424: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,424: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,424: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,424: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:45:45,428: Merging the raw data and target data
+INFO: 2022-09-22 15:45:45,428: Merging the raw data and target data
+INFO: 2022-09-22 15:45:45,428: Merging the raw data and target data
+INFO: 2022-09-22 15:45:45,428: Merging the raw data and target data
+INFO: 2022-09-22 15:45:46,768: Merge successful
+INFO: 2022-09-22 15:45:46,768: Merge successful
+INFO: 2022-09-22 15:45:46,768: Merge successful
+INFO: 2022-09-22 15:45:46,768: Merge successful
+INFO: 2022-09-22 15:46:01,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,689: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,689: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,689: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,689: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,689: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:01,695: Merging the raw data and target data
+INFO: 2022-09-22 15:46:01,695: Merging the raw data and target data
+INFO: 2022-09-22 15:46:01,695: Merging the raw data and target data
+INFO: 2022-09-22 15:46:01,695: Merging the raw data and target data
+INFO: 2022-09-22 15:46:01,695: Merging the raw data and target data
+INFO: 2022-09-22 15:46:02,877: Merge successful
+INFO: 2022-09-22 15:46:02,877: Merge successful
+INFO: 2022-09-22 15:46:02,877: Merge successful
+INFO: 2022-09-22 15:46:02,877: Merge successful
+INFO: 2022-09-22 15:46:02,877: Merge successful
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,213: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:08,221: Merging the raw data and target data
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:46:09,278: Merge successful
+INFO: 2022-09-22 15:47:18,520: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:47:18,624: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:47:18,625: Merging the raw data and target data
+INFO: 2022-09-22 15:47:18,985: Merge successful
+INFO: 2022-09-22 15:52:06,108: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:52:06,230: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:52:06,231: Merging the raw data and target data
+INFO: 2022-09-22 15:52:06,593: Merge successful
+INFO: 2022-09-22 15:52:24,614: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:52:24,732: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:52:24,733: Merging the raw data and target data
+INFO: 2022-09-22 15:52:25,124: Merge successful
+INFO: 2022-09-22 15:54:38,082: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:54:38,224: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 15:54:38,225: Merging the raw data and target data
+INFO: 2022-09-22 15:54:38,654: Merge successful
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,616: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:20,625: Merging the raw data and target data
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 16:07:21,824: Merge successful
+INFO: 2022-09-22 17:30:49,219: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:30:49,388: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:30:49,389: Merging the raw data and target data
+INFO: 2022-09-22 17:30:49,790: Merge successful
+INFO: 2022-09-22 17:31:58,322: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:31:58,431: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:31:58,432: Merging the raw data and target data
+INFO: 2022-09-22 17:31:58,795: Merge successful
+INFO: 2022-09-22 17:34:09,413: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:34:09,516: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:34:09,517: Merging the raw data and target data
+INFO: 2022-09-22 17:34:09,866: Merge successful
+INFO: 2022-09-22 17:35:01,126: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:35:01,229: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:35:01,230: Merging the raw data and target data
+INFO: 2022-09-22 17:35:01,634: Merge successful
+INFO: 2022-09-22 17:35:22,635: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:35:22,729: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:35:22,730: Merging the raw data and target data
+INFO: 2022-09-22 17:35:23,090: Merge successful
+INFO: 2022-09-22 17:39:43,581: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:39:43,676: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:39:43,677: Merging the raw data and target data
+INFO: 2022-09-22 17:39:44,019: Merge successful
+INFO: 2022-09-22 17:50:01,913: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:50:02,020: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:50:02,021: Merging the raw data and target data
+INFO: 2022-09-22 17:50:02,460: Merge successful
+INFO: 2022-09-22 17:53:36,327: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:53:36,469: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:53:36,470: Merging the raw data and target data
+INFO: 2022-09-22 17:53:36,852: Merge successful
+INFO: 2022-09-22 17:56:42,310: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:56:42,472: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 17:56:42,473: Merging the raw data and target data
+INFO: 2022-09-22 17:56:42,913: Merge successful
+INFO: 2022-09-22 18:48:21,398: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:48:21,531: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:48:21,532: Merging the raw data and target data
+INFO: 2022-09-22 18:48:21,950: Merge successful
+INFO: 2022-09-22 18:49:00,429: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:49:00,528: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:49:00,529: Merging the raw data and target data
+INFO: 2022-09-22 18:49:00,865: Merge successful
+INFO: 2022-09-22 18:50:52,017: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:50:52,124: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 18:50:52,125: Merging the raw data and target data
+INFO: 2022-09-22 18:50:52,539: Merge successful
+INFO: 2022-09-22 20:05:14,770: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:14,908: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:14,909: Merging the raw data and target data
+INFO: 2022-09-22 20:05:15,248: Merge successful
+INFO: 2022-09-22 20:05:26,238: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:26,331: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:26,332: Merging the raw data and target data
+INFO: 2022-09-22 20:05:26,773: Merge successful
+INFO: 2022-09-22 20:05:53,606: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:53,700: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:05:53,701: Merging the raw data and target data
+INFO: 2022-09-22 20:05:54,088: Merge successful
+INFO: 2022-09-22 20:06:44,290: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:06:44,417: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:06:44,418: Merging the raw data and target data
+INFO: 2022-09-22 20:06:44,756: Merge successful
+INFO: 2022-09-22 20:07:02,660: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:07:02,755: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:07:02,757: Merging the raw data and target data
+INFO: 2022-09-22 20:07:03,108: Merge successful
+INFO: 2022-09-22 20:07:23,694: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:07:23,814: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:07:23,815: Merging the raw data and target data
+INFO: 2022-09-22 20:07:24,145: Merge successful
+INFO: 2022-09-22 20:13:57,057: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:13:57,142: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 20:13:57,143: Merging the raw data and target data
+INFO: 2022-09-22 20:13:57,476: Merge successful
+INFO: 2022-09-22 21:16:38,463: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:16:38,586: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:16:38,587: Merging the raw data and target data
+INFO: 2022-09-22 21:16:38,938: Merge successful
+INFO: 2022-09-22 21:17:19,139: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:17:19,231: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:17:19,232: Merging the raw data and target data
+INFO: 2022-09-22 21:17:19,610: Merge successful
+INFO: 2022-09-22 21:24:47,565: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:24:47,662: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 21:24:47,663: Merging the raw data and target data
+INFO: 2022-09-22 21:24:47,979: Merge successful
+INFO: 2022-09-22 23:16:59,987: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:17:00,067: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:17:00,067: Merging the raw data and target data
+INFO: 2022-09-22 23:17:00,440: Merge successful
+INFO: 2022-09-22 23:17:24,062: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:17:24,141: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:17:24,142: Merging the raw data and target data
+INFO: 2022-09-22 23:17:24,464: Merge successful
+INFO: 2022-09-22 23:18:17,330: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:18:17,401: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:18:17,402: Merging the raw data and target data
+INFO: 2022-09-22 23:18:17,715: Merge successful
+INFO: 2022-09-22 23:39:53,799: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:39:53,870: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:39:53,871: Merging the raw data and target data
+INFO: 2022-09-22 23:39:54,209: Merge successful
+INFO: 2022-09-22 23:40:09,751: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:40:09,830: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-22 23:40:09,832: Merging the raw data and target data
+INFO: 2022-09-22 23:40:10,184: Merge successful
+INFO: 2022-09-23 10:17:38,593: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:17:38,768: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:17:38,768: Merging the raw data and target data
+INFO: 2022-09-23 10:17:39,178: Merge successful
+INFO: 2022-09-23 10:19:01,769: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:19:01,875: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:19:01,876: Merging the raw data and target data
+INFO: 2022-09-23 10:19:02,314: Merge successful
+INFO: 2022-09-23 10:19:31,191: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:19:31,316: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:19:31,317: Merging the raw data and target data
+INFO: 2022-09-23 10:19:31,679: Merge successful
+INFO: 2022-09-23 10:20:26,064: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:20:26,187: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 10:20:26,188: Merging the raw data and target data
+INFO: 2022-09-23 10:20:26,558: Merge successful
+INFO: 2022-09-23 11:03:15,191: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:03:15,328: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:03:15,329: Merging the raw data and target data
+INFO: 2022-09-23 11:03:15,629: Merge successful
+INFO: 2022-09-23 11:04:16,409: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:04:16,524: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:04:16,525: Merging the raw data and target data
+INFO: 2022-09-23 11:04:16,861: Merge successful
+INFO: 2022-09-23 11:05:07,760: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:05:07,870: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:05:07,871: Merging the raw data and target data
+INFO: 2022-09-23 11:05:08,206: Merge successful
+INFO: 2022-09-23 11:08:24,759: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:08:24,850: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:08:24,851: Merging the raw data and target data
+INFO: 2022-09-23 11:08:25,198: Merge successful
+INFO: 2022-09-23 11:10:44,949: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:10:45,032: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:10:45,033: Merging the raw data and target data
+INFO: 2022-09-23 11:10:45,378: Merge successful
+INFO: 2022-09-23 11:11:18,004: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:11:18,120: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:11:18,121: Merging the raw data and target data
+INFO: 2022-09-23 11:11:18,445: Merge successful
+INFO: 2022-09-23 11:11:46,244: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:11:46,334: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:11:46,335: Merging the raw data and target data
+INFO: 2022-09-23 11:11:46,662: Merge successful
+INFO: 2022-09-23 11:28:11,742: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:28:11,819: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:28:11,820: Merging the raw data and target data
+INFO: 2022-09-23 11:28:12,156: Merge successful
+INFO: 2022-09-23 11:29:03,221: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:29:03,326: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:29:03,327: Merging the raw data and target data
+INFO: 2022-09-23 11:29:03,687: Merge successful
+INFO: 2022-09-23 11:29:38,781: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:29:38,856: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:29:38,858: Merging the raw data and target data
+INFO: 2022-09-23 11:29:39,185: Merge successful
+INFO: 2022-09-23 11:30:01,833: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:30:01,915: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:30:01,916: Merging the raw data and target data
+INFO: 2022-09-23 11:30:02,250: Merge successful
+INFO: 2022-09-23 11:30:36,571: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:30:36,653: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:30:36,654: Merging the raw data and target data
+INFO: 2022-09-23 11:30:37,015: Merge successful
+INFO: 2022-09-23 11:37:08,443: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:37:25,198: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:37:25,289: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:37:25,291: Merging the raw data and target data
+INFO: 2022-09-23 11:37:25,676: Merge successful
+INFO: 2022-09-23 11:38:00,600: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:00,718: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:00,719: Merging the raw data and target data
+INFO: 2022-09-23 11:38:01,075: Merge successful
+INFO: 2022-09-23 11:38:10,780: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:10,888: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:10,888: Merging the raw data and target data
+INFO: 2022-09-23 11:38:11,192: Merge successful
+INFO: 2022-09-23 11:38:23,973: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:24,068: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:24,068: Merging the raw data and target data
+INFO: 2022-09-23 11:38:24,407: Merge successful
+INFO: 2022-09-23 11:38:47,435: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:47,523: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:38:47,524: Merging the raw data and target data
+INFO: 2022-09-23 11:38:47,887: Merge successful
+INFO: 2022-09-23 11:39:08,658: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:39:08,758: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:39:08,759: Merging the raw data and target data
+INFO: 2022-09-23 11:39:09,098: Merge successful
+INFO: 2022-09-23 11:39:26,678: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:39:26,792: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:39:26,792: Merging the raw data and target data
+INFO: 2022-09-23 11:39:27,100: Merge successful
+INFO: 2022-09-23 11:42:08,609: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:42:08,728: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:42:08,729: Merging the raw data and target data
+INFO: 2022-09-23 11:42:09,056: Merge successful
+INFO: 2022-09-23 11:42:41,205: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:42:41,311: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:42:41,312: Merging the raw data and target data
+INFO: 2022-09-23 11:42:41,633: Merge successful
+INFO: 2022-09-23 11:58:21,972: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:58:22,068: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 11:58:22,069: Merging the raw data and target data
+INFO: 2022-09-23 11:58:22,437: Merge successful
+INFO: 2022-09-23 12:04:29,278: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:04:29,390: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:04:29,392: Merging the raw data and target data
+INFO: 2022-09-23 12:04:29,809: Merge successful
+INFO: 2022-09-23 12:07:48,979: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:07:49,074: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:07:49,075: Merging the raw data and target data
+INFO: 2022-09-23 12:07:49,439: Merge successful
+INFO: 2022-09-23 12:10:13,192: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:10:13,315: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:10:13,316: Merging the raw data and target data
+INFO: 2022-09-23 12:10:13,647: Merge successful
+INFO: 2022-09-23 12:11:06,088: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:11:06,179: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:11:06,180: Merging the raw data and target data
+INFO: 2022-09-23 12:11:06,518: Merge successful
+INFO: 2022-09-23 12:24:25,323: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:24:25,425: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 12:24:25,427: Merging the raw data and target data
+INFO: 2022-09-23 12:24:25,754: Merge successful
+INFO: 2022-09-23 13:32:40,505: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 13:32:40,625: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 13:32:40,626: Merging the raw data and target data
+INFO: 2022-09-23 13:32:40,947: Merge successful
+INFO: 2022-09-23 15:46:41,298: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-23 15:46:41,441: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-23 15:46:41,442: Merging the raw data and target data
+INFO: 2022-09-23 15:46:41,839: Merge successful
+INFO: 2022-09-24 08:17:18,668: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 08:17:18,807: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 08:17:18,808: Merging the raw data and target data
+INFO: 2022-09-24 08:17:19,182: Merge successful
+INFO: 2022-09-24 08:17:49,612: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 08:17:49,733: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 08:17:49,734: Merging the raw data and target data
+INFO: 2022-09-24 08:17:50,096: Merge successful
+INFO: 2022-09-24 09:39:19,131: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 09:39:19,269: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 09:39:19,270: Merging the raw data and target data
+INFO: 2022-09-24 09:39:19,633: Merge successful
+INFO: 2022-09-24 21:14:11,373: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:14:11,510: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:14:11,511: Merging the raw data and target data
+INFO: 2022-09-24 21:14:11,942: Merge successful
+INFO: 2022-09-24 21:14:37,302: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:14:37,435: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:14:37,436: Merging the raw data and target data
+INFO: 2022-09-24 21:14:37,880: Merge successful
+INFO: 2022-09-24 21:15:20,264: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:15:20,393: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:15:20,394: Merging the raw data and target data
+INFO: 2022-09-24 21:15:20,859: Merge successful
+INFO: 2022-09-24 21:16:02,572: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:16:02,702: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:16:02,703: Merging the raw data and target data
+INFO: 2022-09-24 21:16:03,107: Merge successful
+INFO: 2022-09-24 21:16:38,209: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:16:38,300: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:16:38,301: Merging the raw data and target data
+INFO: 2022-09-24 21:16:38,632: Merge successful
+INFO: 2022-09-24 21:17:52,607: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:17:52,722: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:17:52,723: Merging the raw data and target data
+INFO: 2022-09-24 21:17:53,083: Merge successful
+INFO: 2022-09-24 21:39:52,771: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:39:52,914: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-24 21:39:52,915: Merging the raw data and target data
+INFO: 2022-09-24 21:39:53,281: Merge successful
+INFO: 2022-09-25 01:26:15,660: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:26:15,832: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:26:15,832: Merging the raw data and target data
+INFO: 2022-09-25 01:26:16,286: Merge successful
+INFO: 2022-09-25 01:26:38,324: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:26:38,410: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:26:38,411: Merging the raw data and target data
+INFO: 2022-09-25 01:26:38,763: Merge successful
+INFO: 2022-09-25 01:31:24,478: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:31:24,566: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:31:24,567: Merging the raw data and target data
+INFO: 2022-09-25 01:31:24,959: Merge successful
+INFO: 2022-09-25 01:31:48,298: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:31:48,422: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:31:48,422: Merging the raw data and target data
+INFO: 2022-09-25 01:31:48,775: Merge successful
+INFO: 2022-09-25 01:32:35,494: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:32:35,586: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:32:35,587: Merging the raw data and target data
+INFO: 2022-09-25 01:32:36,022: Merge successful
+INFO: 2022-09-25 01:33:15,591: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:33:15,724: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:33:15,725: Merging the raw data and target data
+INFO: 2022-09-25 01:33:16,121: Merge successful
+INFO: 2022-09-25 01:33:39,305: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:33:39,423: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 01:33:39,424: Merging the raw data and target data
+INFO: 2022-09-25 01:33:39,749: Merge successful
+INFO: 2022-09-25 02:23:03,382: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:23:03,472: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:23:03,473: Merging the raw data and target data
+INFO: 2022-09-25 02:23:03,880: Merge successful
+INFO: 2022-09-25 02:25:12,760: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:25:12,849: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:25:12,850: Merging the raw data and target data
+INFO: 2022-09-25 02:25:13,165: Merge successful
+INFO: 2022-09-25 02:26:50,109: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:26:50,230: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:26:50,231: Merging the raw data and target data
+INFO: 2022-09-25 02:26:50,555: Merge successful
+INFO: 2022-09-25 02:28:18,301: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:28:18,387: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:28:18,388: Merging the raw data and target data
+INFO: 2022-09-25 02:28:18,744: Merge successful
+INFO: 2022-09-25 02:28:54,111: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:28:54,250: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:28:54,251: Merging the raw data and target data
+INFO: 2022-09-25 02:28:54,621: Merge successful
+INFO: 2022-09-25 02:29:28,798: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:29:28,884: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-25 02:29:28,885: Merging the raw data and target data
+INFO: 2022-09-25 02:29:29,214: Merge successful
+INFO: 2022-09-26 09:07:39,113: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:07:39,326: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:07:39,328: Merging the raw data and target data
+INFO: 2022-09-26 09:07:40,155: Merge successful
+INFO: 2022-09-26 09:08:58,436: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:08:58,679: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:08:58,680: Merging the raw data and target data
+INFO: 2022-09-26 09:08:59,495: Merge successful
+INFO: 2022-09-26 09:10:07,163: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:10:07,403: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:10:07,405: Merging the raw data and target data
+INFO: 2022-09-26 09:10:08,109: Merge successful
+INFO: 2022-09-26 09:10:27,284: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:10:27,607: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:10:27,610: Merging the raw data and target data
+INFO: 2022-09-26 09:10:28,533: Merge successful
+INFO: 2022-09-26 09:19:00,344: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:19:00,538: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:19:00,539: Merging the raw data and target data
+INFO: 2022-09-26 09:19:01,257: Merge successful
+INFO: 2022-09-26 09:21:06,869: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:21:07,085: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:21:07,086: Merging the raw data and target data
+INFO: 2022-09-26 09:21:07,803: Merge successful
+INFO: 2022-09-26 09:22:01,343: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:22:01,525: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 09:22:01,526: Merging the raw data and target data
+INFO: 2022-09-26 09:22:02,225: Merge successful
+INFO: 2022-09-26 11:37:45,177: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 11:37:45,298: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 11:37:45,299: Merging the raw data and target data
+INFO: 2022-09-26 11:37:45,661: Merge successful
+INFO: 2022-09-26 11:39:12,667: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 11:39:12,793: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 11:39:12,794: Merging the raw data and target data
+INFO: 2022-09-26 11:39:13,197: Merge successful
+INFO: 2022-09-26 12:05:48,483: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:05:48,593: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:05:48,594: Merging the raw data and target data
+INFO: 2022-09-26 12:05:48,925: Merge successful
+INFO: 2022-09-26 12:08:13,113: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:08:13,197: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:08:13,198: Merging the raw data and target data
+INFO: 2022-09-26 12:08:13,522: Merge successful
+INFO: 2022-09-26 12:09:24,863: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:09:24,945: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:09:24,946: Merging the raw data and target data
+INFO: 2022-09-26 12:09:25,274: Merge successful
+INFO: 2022-09-26 12:09:51,178: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:09:51,264: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:09:51,265: Merging the raw data and target data
+INFO: 2022-09-26 12:09:51,568: Merge successful
+INFO: 2022-09-26 12:23:23,420: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:23:23,501: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:23:23,502: Merging the raw data and target data
+INFO: 2022-09-26 12:23:23,934: Merge successful
+INFO: 2022-09-26 12:23:56,075: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:23:56,158: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:23:56,159: Merging the raw data and target data
+INFO: 2022-09-26 12:23:56,508: Merge successful
+INFO: 2022-09-26 12:24:45,726: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:24:45,813: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:24:45,814: Merging the raw data and target data
+INFO: 2022-09-26 12:24:46,138: Merge successful
+INFO: 2022-09-26 12:26:18,867: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:26:18,956: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:26:18,957: Merging the raw data and target data
+INFO: 2022-09-26 12:26:19,266: Merge successful
+INFO: 2022-09-26 12:43:54,697: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:43:54,792: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:43:54,793: Merging the raw data and target data
+INFO: 2022-09-26 12:43:55,100: Merge successful
+INFO: 2022-09-26 12:44:36,381: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:44:36,471: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:44:36,472: Merging the raw data and target data
+INFO: 2022-09-26 12:44:36,802: Merge successful
+INFO: 2022-09-26 12:45:25,686: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:45:25,784: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:45:25,785: Merging the raw data and target data
+INFO: 2022-09-26 12:45:26,203: Merge successful
+INFO: 2022-09-26 12:47:27,702: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:47:27,802: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:47:27,803: Merging the raw data and target data
+INFO: 2022-09-26 12:47:28,135: Merge successful
+INFO: 2022-09-26 12:54:10,946: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:54:11,033: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:54:11,034: Merging the raw data and target data
+INFO: 2022-09-26 12:54:11,388: Merge successful
+INFO: 2022-09-26 12:54:41,602: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:54:41,688: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:54:41,689: Merging the raw data and target data
+INFO: 2022-09-26 12:54:42,026: Merge successful
+INFO: 2022-09-26 12:55:54,589: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:55:54,673: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:55:54,675: Merging the raw data and target data
+INFO: 2022-09-26 12:55:55,012: Merge successful
+INFO: 2022-09-26 12:59:32,890: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:59:32,973: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 12:59:32,974: Merging the raw data and target data
+INFO: 2022-09-26 12:59:33,303: Merge successful
+INFO: 2022-09-26 13:02:17,884: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:02:17,965: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:02:17,966: Merging the raw data and target data
+INFO: 2022-09-26 13:02:18,450: Merge successful
+INFO: 2022-09-26 13:04:05,413: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:04:05,498: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:04:05,498: Merging the raw data and target data
+INFO: 2022-09-26 13:04:05,850: Merge successful
+INFO: 2022-09-26 13:08:23,416: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:08:23,503: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:08:23,504: Merging the raw data and target data
+INFO: 2022-09-26 13:08:23,826: Merge successful
+INFO: 2022-09-26 13:10:06,581: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:10:06,666: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:10:06,667: Merging the raw data and target data
+INFO: 2022-09-26 13:10:07,015: Merge successful
+INFO: 2022-09-26 13:11:51,647: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:11:51,732: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:11:51,733: Merging the raw data and target data
+INFO: 2022-09-26 13:11:52,067: Merge successful
+INFO: 2022-09-26 13:12:31,115: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:12:31,199: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:12:31,200: Merging the raw data and target data
+INFO: 2022-09-26 13:12:31,530: Merge successful
+INFO: 2022-09-26 13:22:24,663: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:22:24,749: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:22:24,750: Merging the raw data and target data
+INFO: 2022-09-26 13:22:25,082: Merge successful
+INFO: 2022-09-26 13:22:55,874: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:22:55,977: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:22:55,978: Merging the raw data and target data
+INFO: 2022-09-26 13:22:56,507: Merge successful
+INFO: 2022-09-26 13:46:50,111: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:46:50,195: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:46:50,196: Merging the raw data and target data
+INFO: 2022-09-26 13:46:50,512: Merge successful
+INFO: 2022-09-26 13:47:49,621: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:47:49,739: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:47:49,740: Merging the raw data and target data
+INFO: 2022-09-26 13:47:50,209: Merge successful
+INFO: 2022-09-26 13:49:27,868: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:49:27,954: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:49:27,955: Merging the raw data and target data
+INFO: 2022-09-26 13:49:28,303: Merge successful
+INFO: 2022-09-26 13:50:16,580: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:50:16,663: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:50:16,664: Merging the raw data and target data
+INFO: 2022-09-26 13:50:17,024: Merge successful
+INFO: 2022-09-26 13:51:01,586: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:51:01,666: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:51:01,667: Merging the raw data and target data
+INFO: 2022-09-26 13:51:02,083: Merge successful
+INFO: 2022-09-26 13:52:03,887: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:52:03,971: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:52:03,972: Merging the raw data and target data
+INFO: 2022-09-26 13:52:04,289: Merge successful
+INFO: 2022-09-26 13:53:32,358: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:53:32,439: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 13:53:32,439: Merging the raw data and target data
+INFO: 2022-09-26 13:53:32,763: Merge successful
+INFO: 2022-09-26 15:14:00,781: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:14:00,879: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:14:00,880: Merging the raw data and target data
+INFO: 2022-09-26 15:14:01,219: Merge successful
+INFO: 2022-09-26 15:30:08,605: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:30:08,695: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:30:08,696: Merging the raw data and target data
+INFO: 2022-09-26 15:30:09,037: Merge successful
+INFO: 2022-09-26 15:30:49,333: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:30:49,436: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:30:49,437: Merging the raw data and target data
+INFO: 2022-09-26 15:30:49,922: Merge successful
+INFO: 2022-09-26 15:33:14,386: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:33:14,478: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:33:14,479: Merging the raw data and target data
+INFO: 2022-09-26 15:33:14,910: Merge successful
+INFO: 2022-09-26 15:34:20,004: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:34:20,109: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 15:34:20,110: Merging the raw data and target data
+INFO: 2022-09-26 15:34:20,516: Merge successful
+INFO: 2022-09-26 16:28:29,026: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:28:29,138: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:28:29,139: Merging the raw data and target data
+INFO: 2022-09-26 16:28:29,637: Merge successful
+INFO: 2022-09-26 16:29:54,229: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:29:54,310: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:29:54,310: Merging the raw data and target data
+INFO: 2022-09-26 16:29:54,614: Merge successful
+INFO: 2022-09-26 16:31:28,115: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:31:28,199: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:31:28,199: Merging the raw data and target data
+INFO: 2022-09-26 16:31:28,527: Merge successful
+INFO: 2022-09-26 16:50:00,200: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:50:00,316: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:50:00,317: Merging the raw data and target data
+INFO: 2022-09-26 16:50:00,699: Merge successful
+INFO: 2022-09-26 16:57:09,253: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:57:09,341: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 16:57:09,343: Merging the raw data and target data
+INFO: 2022-09-26 16:57:09,676: Merge successful
+INFO: 2022-09-26 17:03:49,959: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:03:50,048: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:03:50,049: Merging the raw data and target data
+INFO: 2022-09-26 17:03:50,422: Merge successful
+INFO: 2022-09-26 17:05:40,416: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:05:40,507: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:05:40,508: Merging the raw data and target data
+INFO: 2022-09-26 17:05:40,843: Merge successful
+INFO: 2022-09-26 17:07:31,584: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:07:31,666: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:07:31,668: Merging the raw data and target data
+INFO: 2022-09-26 17:07:31,991: Merge successful
+INFO: 2022-09-26 17:10:46,949: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:10:47,032: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:10:47,033: Merging the raw data and target data
+INFO: 2022-09-26 17:10:47,376: Merge successful
+INFO: 2022-09-26 17:12:28,715: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:12:28,799: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:12:28,800: Merging the raw data and target data
+INFO: 2022-09-26 17:12:29,153: Merge successful
+INFO: 2022-09-26 17:13:23,157: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:13:23,264: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:13:23,265: Merging the raw data and target data
+INFO: 2022-09-26 17:13:23,668: Merge successful
+INFO: 2022-09-26 17:15:04,974: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:15:05,071: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:15:05,072: Merging the raw data and target data
+INFO: 2022-09-26 17:15:05,513: Merge successful
+INFO: 2022-09-26 17:22:51,404: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:22:51,489: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:22:51,490: Merging the raw data and target data
+INFO: 2022-09-26 17:22:51,842: Merge successful
+INFO: 2022-09-26 17:26:01,193: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:26:01,306: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:26:01,307: Merging the raw data and target data
+INFO: 2022-09-26 17:26:01,635: Merge successful
+INFO: 2022-09-26 17:27:26,421: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:27:26,506: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:27:26,507: Merging the raw data and target data
+INFO: 2022-09-26 17:27:26,847: Merge successful
+INFO: 2022-09-26 17:30:18,349: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:30:18,448: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:30:18,449: Merging the raw data and target data
+INFO: 2022-09-26 17:30:18,818: Merge successful
+INFO: 2022-09-26 17:58:01,821: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:58:01,903: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:58:01,904: Merging the raw data and target data
+INFO: 2022-09-26 17:58:02,217: Merge successful
+INFO: 2022-09-26 17:59:19,784: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:59:19,872: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:59:19,873: Merging the raw data and target data
+INFO: 2022-09-26 17:59:20,189: Merge successful
+INFO: 2022-09-26 17:59:51,468: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:59:51,552: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 17:59:51,553: Merging the raw data and target data
+INFO: 2022-09-26 17:59:51,882: Merge successful
+INFO: 2022-09-26 18:05:50,484: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:05:50,569: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:05:50,569: Merging the raw data and target data
+INFO: 2022-09-26 18:05:50,905: Merge successful
+INFO: 2022-09-26 18:07:05,632: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:07:05,724: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:07:05,724: Merging the raw data and target data
+INFO: 2022-09-26 18:07:06,133: Merge successful
+INFO: 2022-09-26 18:08:52,993: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:08:53,077: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:08:53,078: Merging the raw data and target data
+INFO: 2022-09-26 18:08:53,418: Merge successful
+INFO: 2022-09-26 18:10:59,674: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:10:59,756: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:10:59,757: Merging the raw data and target data
+INFO: 2022-09-26 18:11:00,198: Merge successful
+INFO: 2022-09-26 18:14:44,634: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:14:44,719: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:14:44,720: Merging the raw data and target data
+INFO: 2022-09-26 18:14:45,029: Merge successful
+INFO: 2022-09-26 18:19:08,439: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:19:08,523: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:19:08,524: Merging the raw data and target data
+INFO: 2022-09-26 18:19:09,031: Merge successful
+INFO: 2022-09-26 18:21:05,713: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:21:05,793: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:21:05,794: Merging the raw data and target data
+INFO: 2022-09-26 18:21:06,120: Merge successful
+INFO: 2022-09-26 18:22:20,918: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:22:21,018: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:22:21,019: Merging the raw data and target data
+INFO: 2022-09-26 18:22:21,351: Merge successful
+INFO: 2022-09-26 18:24:53,987: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:24:54,068: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:24:54,069: Merging the raw data and target data
+INFO: 2022-09-26 18:24:54,501: Merge successful
+INFO: 2022-09-26 18:49:05,296: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:49:05,376: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:49:05,377: Merging the raw data and target data
+INFO: 2022-09-26 18:49:05,699: Merge successful
+INFO: 2022-09-26 18:54:14,696: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:54:14,801: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:54:14,802: Merging the raw data and target data
+INFO: 2022-09-26 18:54:15,120: Merge successful
+INFO: 2022-09-26 18:54:56,790: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:54:56,872: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:54:56,872: Merging the raw data and target data
+INFO: 2022-09-26 18:54:57,194: Merge successful
+INFO: 2022-09-26 18:56:45,856: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:56:45,942: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:56:45,943: Merging the raw data and target data
+INFO: 2022-09-26 18:56:46,262: Merge successful
+INFO: 2022-09-26 18:57:33,555: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:57:33,641: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:57:33,642: Merging the raw data and target data
+INFO: 2022-09-26 18:57:34,000: Merge successful
+INFO: 2022-09-26 18:58:28,911: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:58:28,994: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 18:58:28,995: Merging the raw data and target data
+INFO: 2022-09-26 18:58:29,587: Merge successful
+INFO: 2022-09-26 19:03:08,537: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:03:08,619: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:03:08,620: Merging the raw data and target data
+INFO: 2022-09-26 19:03:08,937: Merge successful
+INFO: 2022-09-26 19:04:18,513: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:04:18,619: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:04:18,620: Merging the raw data and target data
+INFO: 2022-09-26 19:04:19,080: Merge successful
+INFO: 2022-09-26 19:06:04,469: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:06:04,557: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:06:04,558: Merging the raw data and target data
+INFO: 2022-09-26 19:06:04,901: Merge successful
+INFO: 2022-09-26 19:08:54,579: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:08:54,660: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:08:54,661: Merging the raw data and target data
+INFO: 2022-09-26 19:08:54,982: Merge successful
+INFO: 2022-09-26 19:09:50,296: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:09:50,379: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:09:50,380: Merging the raw data and target data
+INFO: 2022-09-26 19:09:50,688: Merge successful
+INFO: 2022-09-26 19:12:52,319: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:12:52,403: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:12:52,403: Merging the raw data and target data
+INFO: 2022-09-26 19:12:52,798: Merge successful
+INFO: 2022-09-26 19:13:07,864: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:13:07,951: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:13:07,952: Merging the raw data and target data
+INFO: 2022-09-26 19:13:08,276: Merge successful
+INFO: 2022-09-26 19:18:52,139: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:18:52,238: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:18:52,239: Merging the raw data and target data
+INFO: 2022-09-26 19:18:52,561: Merge successful
+INFO: 2022-09-26 19:20:33,514: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:20:33,596: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:20:33,597: Merging the raw data and target data
+INFO: 2022-09-26 19:20:33,919: Merge successful
+INFO: 2022-09-26 19:21:34,203: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:21:34,294: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:21:34,295: Merging the raw data and target data
+INFO: 2022-09-26 19:21:34,609: Merge successful
+INFO: 2022-09-26 19:31:30,346: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:31:30,428: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:31:30,430: Merging the raw data and target data
+INFO: 2022-09-26 19:31:30,743: Merge successful
+INFO: 2022-09-26 19:33:35,035: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:33:35,116: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:33:35,117: Merging the raw data and target data
+INFO: 2022-09-26 19:33:35,445: Merge successful
+INFO: 2022-09-26 19:35:02,412: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:35:02,514: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:35:02,514: Merging the raw data and target data
+INFO: 2022-09-26 19:35:03,024: Merge successful
+INFO: 2022-09-26 19:45:02,165: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:45:02,264: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:45:02,265: Merging the raw data and target data
+INFO: 2022-09-26 19:45:02,607: Merge successful
+INFO: 2022-09-26 19:47:27,456: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:47:27,537: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:47:27,538: Merging the raw data and target data
+INFO: 2022-09-26 19:47:27,949: Merge successful
+INFO: 2022-09-26 19:50:13,038: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:50:13,124: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:50:13,124: Merging the raw data and target data
+INFO: 2022-09-26 19:50:13,538: Merge successful
+INFO: 2022-09-26 19:50:47,293: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:50:47,377: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:50:47,378: Merging the raw data and target data
+INFO: 2022-09-26 19:50:47,706: Merge successful
+INFO: 2022-09-26 19:57:14,564: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:57:14,646: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:57:14,647: Merging the raw data and target data
+INFO: 2022-09-26 19:57:14,992: Merge successful
+INFO: 2022-09-26 19:59:24,990: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:59:25,081: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 19:59:25,082: Merging the raw data and target data
+INFO: 2022-09-26 19:59:25,426: Merge successful
+INFO: 2022-09-26 20:00:03,438: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:00:03,519: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:00:03,520: Merging the raw data and target data
+INFO: 2022-09-26 20:00:03,837: Merge successful
+INFO: 2022-09-26 20:00:51,948: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:00:52,035: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:00:52,036: Merging the raw data and target data
+INFO: 2022-09-26 20:00:52,393: Merge successful
+INFO: 2022-09-26 20:12:23,169: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:12:23,255: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:12:23,255: Merging the raw data and target data
+INFO: 2022-09-26 20:12:23,580: Merge successful
+INFO: 2022-09-26 20:41:38,795: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:41:38,887: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:41:38,888: Merging the raw data and target data
+INFO: 2022-09-26 20:41:39,207: Merge successful
+INFO: 2022-09-26 20:42:27,861: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:42:27,944: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:42:27,945: Merging the raw data and target data
+INFO: 2022-09-26 20:42:28,294: Merge successful
+INFO: 2022-09-26 20:43:42,331: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:43:42,424: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 20:43:42,425: Merging the raw data and target data
+INFO: 2022-09-26 20:43:42,842: Merge successful
+INFO: 2022-09-26 21:10:07,144: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:10:07,229: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:10:07,230: Merging the raw data and target data
+INFO: 2022-09-26 21:10:07,559: Merge successful
+INFO: 2022-09-26 21:11:17,250: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:11:17,328: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:11:17,329: Merging the raw data and target data
+INFO: 2022-09-26 21:11:17,631: Merge successful
+INFO: 2022-09-26 21:12:09,007: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:12:09,110: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:12:09,111: Merging the raw data and target data
+INFO: 2022-09-26 21:12:09,521: Merge successful
+INFO: 2022-09-26 21:13:18,966: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:13:19,052: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:13:19,053: Merging the raw data and target data
+INFO: 2022-09-26 21:13:19,404: Merge successful
+INFO: 2022-09-26 21:15:50,938: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:15:51,023: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:15:51,024: Merging the raw data and target data
+INFO: 2022-09-26 21:15:51,372: Merge successful
+INFO: 2022-09-26 21:17:55,571: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:17:55,663: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:17:55,664: Merging the raw data and target data
+INFO: 2022-09-26 21:17:56,049: Merge successful
+INFO: 2022-09-26 21:23:54,069: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:23:54,150: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:23:54,151: Merging the raw data and target data
+INFO: 2022-09-26 21:23:54,480: Merge successful
+INFO: 2022-09-26 21:41:17,732: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:41:17,819: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:41:17,820: Merging the raw data and target data
+INFO: 2022-09-26 21:41:18,126: Merge successful
+INFO: 2022-09-26 21:42:36,864: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:42:36,979: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:42:36,980: Merging the raw data and target data
+INFO: 2022-09-26 21:42:37,463: Merge successful
+INFO: 2022-09-26 21:43:26,997: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:43:27,089: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:43:27,089: Merging the raw data and target data
+INFO: 2022-09-26 21:43:27,474: Merge successful
+INFO: 2022-09-26 21:44:36,361: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:44:36,439: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:44:36,440: Merging the raw data and target data
+INFO: 2022-09-26 21:44:36,786: Merge successful
+INFO: 2022-09-26 21:49:01,756: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:49:01,841: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 21:49:01,842: Merging the raw data and target data
+INFO: 2022-09-26 21:49:02,148: Merge successful
+INFO: 2022-09-26 23:10:01,281: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 23:10:01,381: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 23:10:01,382: Merging the raw data and target data
+INFO: 2022-09-26 23:10:01,695: Merge successful
+INFO: 2022-09-26 23:12:32,421: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-26 23:12:32,507: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-26 23:12:32,508: Merging the raw data and target data
+INFO: 2022-09-26 23:12:32,846: Merge successful
+INFO: 2022-09-27 00:02:24,326: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:02:24,411: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:02:24,412: Merging the raw data and target data
+INFO: 2022-09-27 00:02:24,758: Merge successful
+INFO: 2022-09-27 00:10:33,635: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:10:33,726: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:10:33,727: Merging the raw data and target data
+INFO: 2022-09-27 00:10:34,210: Merge successful
+INFO: 2022-09-27 00:15:00,338: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:15:00,423: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:15:00,424: Merging the raw data and target data
+INFO: 2022-09-27 00:15:00,826: Merge successful
+INFO: 2022-09-27 00:15:00,834: Converting dtypes
+INFO: 2022-09-27 00:15:00,857: Replacing values
+INFO: 2022-09-27 00:15:00,911: Interpolating dattime columns
+INFO: 2022-09-27 00:15:06,466: Converting dtypes
+INFO: 2022-09-27 00:15:06,536: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 00:28:34,748: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:28:34,849: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:28:34,850: Merging the raw data and target data
+INFO: 2022-09-27 00:28:35,314: Merge successful
+INFO: 2022-09-27 00:28:35,321: Converting dtypes
+INFO: 2022-09-27 00:28:35,350: Replacing values
+INFO: 2022-09-27 00:28:35,405: Interpolating dattime columns
+INFO: 2022-09-27 00:28:41,327: Converting dtypes
+INFO: 2022-09-27 00:28:41,393: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 00:29:28,068: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:29:28,158: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:29:28,159: Merging the raw data and target data
+INFO: 2022-09-27 00:29:28,534: Merge successful
+INFO: 2022-09-27 00:29:28,537: Converting dtypes
+INFO: 2022-09-27 00:29:28,558: Replacing values
+INFO: 2022-09-27 00:29:28,614: Interpolating dattime columns
+INFO: 2022-09-27 00:29:34,180: Converting dtypes
+INFO: 2022-09-27 00:29:34,254: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 00:59:51,780: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:59:51,878: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 00:59:51,879: Merging the raw data and target data
+INFO: 2022-09-27 00:59:52,212: Merge successful
+INFO: 2022-09-27 00:59:52,216: Converting dtypes
+INFO: 2022-09-27 00:59:52,247: Replacing values
+INFO: 2022-09-27 00:59:52,314: Interpolating dattime columns
+INFO: 2022-09-27 00:59:57,736: Converting dtypes
+INFO: 2022-09-27 00:59:57,818: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 01:12:19,325: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:12:19,408: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:12:19,409: Merging the raw data and target data
+INFO: 2022-09-27 01:12:19,746: Merge successful
+INFO: 2022-09-27 01:12:19,751: Converting dtypes
+INFO: 2022-09-27 01:12:19,771: Replacing values
+INFO: 2022-09-27 01:12:19,845: Interpolating dattime columns
+INFO: 2022-09-27 01:12:25,543: Converting dtypes
+INFO: 2022-09-27 01:12:25,612: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 01:13:24,840: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:13:24,929: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:13:24,930: Merging the raw data and target data
+INFO: 2022-09-27 01:13:25,250: Merge successful
+INFO: 2022-09-27 01:13:25,256: Converting dtypes
+INFO: 2022-09-27 01:13:25,279: Replacing values
+INFO: 2022-09-27 01:13:25,353: Interpolating dattime columns
+INFO: 2022-09-27 01:13:30,709: Converting dtypes
+INFO: 2022-09-27 01:13:30,781: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 01:17:26,832: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:17:26,961: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:17:26,962: Merging the raw data and target data
+INFO: 2022-09-27 01:17:27,627: Merge successful
+INFO: 2022-09-27 01:17:27,636: Converting dtypes
+INFO: 2022-09-27 01:17:27,673: Replacing values
+INFO: 2022-09-27 01:17:27,758: Interpolating dattime columns
+INFO: 2022-09-27 01:17:34,679: Converting dtypes
+INFO: 2022-09-27 01:17:34,749: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 01:18:42,799: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:18:42,978: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:18:42,979: Merging the raw data and target data
+INFO: 2022-09-27 01:18:43,390: Merge successful
+INFO: 2022-09-27 01:18:43,394: Converting dtypes
+INFO: 2022-09-27 01:18:43,414: Replacing values
+INFO: 2022-09-27 01:18:43,466: Interpolating dattime columns
+INFO: 2022-09-27 01:18:48,898: Converting dtypes
+INFO: 2022-09-27 01:18:48,967: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 01:35:11,559: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:35:11,645: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 01:35:11,646: Merging the raw data and target data
+INFO: 2022-09-27 01:35:11,979: Merge successful
+INFO: 2022-09-27 01:35:11,983: Converting dtypes
+INFO: 2022-09-27 01:35:12,004: Replacing values
+INFO: 2022-09-27 01:35:12,052: Interpolating dattime columns
+INFO: 2022-09-27 01:35:17,966: Converting dtypes
+INFO: 2022-09-27 01:35:18,044: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 07:44:22,412: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 07:44:22,515: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 07:44:22,516: Merging the raw data and target data
+INFO: 2022-09-27 07:44:22,912: Merge successful
+INFO: 2022-09-27 07:44:22,917: Converting dtypes
+INFO: 2022-09-27 07:44:22,944: Replacing values
+INFO: 2022-09-27 07:44:22,999: Interpolating dattime columns
+INFO: 2022-09-27 07:44:29,150: Converting dtypes
+INFO: 2022-09-27 07:44:29,220: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 07:56:33,767: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 07:56:33,857: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 07:56:33,858: Merging the raw data and target data
+INFO: 2022-09-27 07:56:34,191: Merge successful
+INFO: 2022-09-27 07:56:34,195: Converting dtypes
+INFO: 2022-09-27 07:56:34,214: Replacing values
+INFO: 2022-09-27 07:56:34,272: Interpolating dattime columns
+INFO: 2022-09-27 07:56:39,618: Converting dtypes
+INFO: 2022-09-27 07:56:39,691: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 08:38:28,623: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 08:38:28,732: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 08:38:28,733: Merging the raw data and target data
+INFO: 2022-09-27 08:38:29,111: Merge successful
+INFO: 2022-09-27 08:38:29,116: Converting dtypes
+INFO: 2022-09-27 08:38:29,139: Replacing values
+INFO: 2022-09-27 08:38:29,207: Interpolating dattime columns
+INFO: 2022-09-27 08:38:34,638: Converting dtypes
+INFO: 2022-09-27 08:38:34,713: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:01:52,929: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:01:53,065: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:01:53,066: Merging the raw data and target data
+INFO: 2022-09-27 09:01:53,416: Merge successful
+INFO: 2022-09-27 09:01:53,421: Converting dtypes
+INFO: 2022-09-27 09:01:53,442: Replacing values
+INFO: 2022-09-27 09:01:53,493: Interpolating dattime columns
+INFO: 2022-09-27 09:01:58,617: Converting dtypes
+INFO: 2022-09-27 09:01:58,694: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:03:48,518: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:03:48,626: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:03:48,627: Merging the raw data and target data
+INFO: 2022-09-27 09:03:49,205: Merge successful
+INFO: 2022-09-27 09:03:49,210: Converting dtypes
+INFO: 2022-09-27 09:03:49,234: Replacing values
+INFO: 2022-09-27 09:03:49,290: Interpolating dattime columns
+INFO: 2022-09-27 09:03:54,555: Converting dtypes
+INFO: 2022-09-27 09:03:54,630: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:05:06,262: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:05:06,360: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:05:06,361: Merging the raw data and target data
+INFO: 2022-09-27 09:05:06,878: Merge successful
+INFO: 2022-09-27 09:05:06,884: Converting dtypes
+INFO: 2022-09-27 09:05:06,904: Replacing values
+INFO: 2022-09-27 09:05:06,957: Interpolating dattime columns
+INFO: 2022-09-27 09:05:12,297: Converting dtypes
+INFO: 2022-09-27 09:05:12,371: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:06:46,767: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:06:46,849: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:06:46,851: Merging the raw data and target data
+INFO: 2022-09-27 09:06:47,247: Merge successful
+INFO: 2022-09-27 09:06:47,251: Converting dtypes
+INFO: 2022-09-27 09:06:47,270: Replacing values
+INFO: 2022-09-27 09:06:47,323: Interpolating dattime columns
+INFO: 2022-09-27 09:06:52,897: Converting dtypes
+INFO: 2022-09-27 09:06:52,975: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:09:37,039: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:09:37,125: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:09:37,126: Merging the raw data and target data
+INFO: 2022-09-27 09:09:37,489: Merge successful
+INFO: 2022-09-27 09:09:37,493: Converting dtypes
+INFO: 2022-09-27 09:09:37,512: Replacing values
+INFO: 2022-09-27 09:09:37,563: Interpolating dattime columns
+INFO: 2022-09-27 09:09:42,895: Converting dtypes
+INFO: 2022-09-27 09:09:42,969: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 09:12:49,944: Reading the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:12:50,026: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-09-27 09:12:50,027: Merging the raw data and target data
+INFO: 2022-09-27 09:12:50,490: Merge successful
+INFO: 2022-09-27 09:12:50,495: Converting dtypes
+INFO: 2022-09-27 09:12:50,518: Replacing values
+INFO: 2022-09-27 09:12:50,568: Interpolating dattime columns
+INFO: 2022-09-27 09:12:56,299: Converting dtypes
+INFO: 2022-09-27 09:12:56,367: Dropping duplicates rows for columns: start_process
