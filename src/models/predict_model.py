@@ -58,12 +58,12 @@ class model_predictions(object):
         print('VIF of multiple regression', VIF)
         self.logger.info(
             "Root mean squared error of baseline model: {}".format(rmse))
-        self.logger.info('R_square of baseline model:{}'.format(R_square))
+
         self.logger.info('VIF of baseline model:{}'.format(VIF))
         self.logger.info(
             'Mean of residuals of baseline model'.format(mean_residuals))
 
-        result = ['rmse', str(rmse), 'r_square', str(R_square), 'VIF', str(
+        result = ['rmse', str(rmse),  'VIF', str(
             VIF), 'mean_residuals', str(mean_residuals)]
         # Save the results in reports/eval folder
         with open('./reports/eval/base_model_result.txt', 'w') as f:

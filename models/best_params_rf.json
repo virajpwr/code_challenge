@@ -1,1 +1,1 @@
-{"n_estimators": 500, "max_features": 2, "bootstrap": true}
+{"n_estimators": 200, "max_features": 2, "bootstrap": true}
