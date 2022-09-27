@@ -13,4 +13,4 @@
 7. Rename and drop columns.
 
 #### The flow chart below shows the steps taken to prepare the data.
-![](flowchart/data_preparation.jpeg)
+![](flowchart/new/dataprep.jpg)
