@@ -125,7 +125,7 @@
 
 #### config.yml - Contains the configuration for the project
 
-#### main.py - Contains the code to run the project
+#### main.py - Contains the code to run the project. The code runs sequentially from data preparation to model evaluation.
 
 #### requirements.txt - Contains the required packages for the project
 
