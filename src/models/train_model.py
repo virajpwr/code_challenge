@@ -15,7 +15,7 @@ class model_training(object):
         convert_to_DMatrix: Convert the dataframe to DMatrix for xgboost and split the data into train, test and validation with 80:10:10 ratio.
         split_data: Split the data into train and test. Ratio of 80:20 for baseline model. 80% of the data is taken for training to reduce variance in the data which causes overfitting.  
         base_model: Train the baseline model and save the model.
-        hyperparameter_tuning_randomforest: Hyperparameter tuning for random forest model.
+        hyperparameter_tuning_randomforest: Hyperparameter tuning for random forest model. Perform randomized search to find the best parameters for the model with 5 fold cross validation.
         train_random_forest_from_best_params: Train the random forest model with best parameters and save the model.
         hyperparameter_tuning_xgb: Function forHyperparameter tuning for xgboost model.
         save_model: Function to Save the model.
@@ -147,18 +147,16 @@ class model_training(object):
         self.logger.info("Hyperparameter tuning for random forest model")
         # hyperparameter tuning for random forest.
         self.rf_model = RandomForestRegressor()
-        self.grid_search = RandomizedSearchCV(
+        self.random_search = RandomizedSearchCV(
             self.rf_model, self.config["parameter_grid_rf"]["param_grid"], scoring='neg_mean_squared_error', cv=5, verbose=2, n_jobs=-1)
-        self.grid_search.fit(self.df[self.final_columns],
+        self.random_search.fit(self.df[self.final_columns],
                              self.df.target)
-        self.best_params = self.grid_search.best_params_
+        self.best_params = self.random_search.best_params_
 
-        # print("Best parameters:", self.grid_search.best_params_)
-        # print("Lowest RMSE: ", (-self.grid_search.best_score_)**(1/2.0))
         self.logger.info(
-            "Best parameters for random forest model: %s", self.grid_search.best_params_)
+            "Best parameters for random forest model: %s", self.random_search.best_params_)
         self.logger.info("Lowest RMSE for random forest model: %s",
-                         (-self.grid_search.best_score_)**(1/2.0))
+                         (-self.random_search.best_score_)**(1/2.0))
         # save the best parameters for random forest model.
         with open(os.path.join(self.config['PATHS']['Project_path'] + 'models/', self.config['best_params_rf']), 'w') as file:
             file.write(json.dumps(self.best_params))

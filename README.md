@@ -1,3 +1,3 @@
-# This is a heading.
+# Coding Challenge
 
 ![](reports/plots/actual_vs_predicted.png)

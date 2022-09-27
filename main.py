@@ -142,6 +142,7 @@ def main():
     rf_model = train_model.train_random_forest_from_best_params(
         params, X_train, y_train)
 
+    train_model.save_model()  # save models
 #------------------------------------------------------ Model Evaluation ----------------------------------------------------------#
 
     # predict on test data using baseline model
@@ -161,6 +162,7 @@ def main():
     pred.model = xgb
     pred.predict_xgb(dtest, test_set, xgb)
 
+
 #----------------------------------------- Create plots ----------------------------------------------------------#
     logger.info("Creating plots")
     plots = visualize(X_test, y_test, y_pred_rf,
@@ -175,14 +177,6 @@ def main():
     plots.visualize_learning_curve(rf_model)
     plots.y_pred = y_pred_rf
     plots.pred_plot(y_pred_rf)  # plot actual vs predicted for random forest
-
-    # vis.create_plot(y_pred)
-    # pred.model = rf_model
-    # vis.rf_feature_importance(rf_model)
-
-    # error = train_model.evaluate_model()
-    train_model.save_model()
-    # train_model.shap()
 
 
 if __name__ == "__main__":
