@@ -32,9 +32,9 @@ logging_params:
 # Create the parameter grid based on the results of random search 
 parameter_grid_rf:
     param_grid : {
-    'bootstrap': [True],
-    'max_features': [2, 3],
-    'n_estimators': [100, 200]
+    'bootstrap': [True], # Consider bootstapping
+    'max_features': [2, 3, 4, 5, 6], # number of features to consider at every split
+    'n_estimators': [100, 200, 500, 600] # Number of trees in random forest
                 }
 # A parameter grid for XGBoost
 
