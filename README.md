@@ -46,72 +46,91 @@
 
 ![](flowchart/feature%20engineering.jpeg)
 
-
 ## Feature selection
 
 ### The following steps were taken to select features:
-#### Continous variable: 
+
+#### Continous variable:
+
 1. Calculate Mutual information score between continous variables and target.
 2. Take non zero mutual information score variables.
 3. Calculate correlation between the non zero mutual information score variables.
 4. In highly corrrelated variable > 0.7 take the variable with higher mutual information score.
 
 #### Categorical variable:
+
 1. Perform oneway ANOVA test on categorical variables and target.
 2. Take variables with p value < 0.05.
 
 #### The flow chart below shows the steps taken to select features.
+
 ![](flowchart/features_selection.jpeg)
 
 ## Model building
+
 ### The following steps were taken to build the model:
+
 1. Build a baseline model on the selected features. Multiple regression model was used as the baseline model.
 2. Perform hyperparameter tuning on random forest model using random search cv.
 3. Build Random forest model on best parameters from random search cv.
 4. Build XGBoost model.
 
 #### The flow chart below shows the steps taken to build the model.
+
 ![](flowchart/model%20training.jpeg)
 
-
 ## Model evaluation
+
 ### The models were evaluted on test data using the following metrics:
-1. RMSE, 
+
+1. RMSE, VIF, mean_residuals
 2. OOB error, RMSE for random forest model.
 3. RMSE for XGBoost model.
 
-## Build folder tree
-├── README.md
-├── data
-│   ├── raw
-│   │   ├── test.csv
-│   │   └── train.csv
-│   └── target
-│       └── target.csv
-├── flowchart
-│   ├── dataprep.jpg
-│   ├── feature engineering.jpeg
-│   ├── features_selection.jpeg
-│   ├── model training.jpeg
-│   └── preprocessing.jpg
-├── notebooks
-│   ├── 01_data_preparation.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_feature_selection.ipynb
-│   ├── 05_model_building.ipynb
-│   └── 06_model_evaluation.ipynb
-├── output
-│   ├── model
-│   │   ├── baseline_model.pkl
-│   │   ├── random_forest_model.pkl
-│   │   └── xgboost_model.pkl
-│   └── submission
-│       └── submission.csv
-├── src
-│   ├── __init__.py
+#### The flow chart shows the evaluation metric from the model.
+
+![](flowchart/model%20evaluation.jpeg)
+
+### Folder structure
+
+#### Data
+
+1. interim - Contains the preprocessed data, data from feature engineering and feature selection.
+2. processed - Contains the final data used for model building.
+3. raw - Contains the raw data and merged data
+
+#### Flowchart
+
+1. Contains the flowchart for each step of the project.
+
+#### logs
+
+1. Contains the logs for each step of the project.
+
+#### models
+
+1. eval: Contains the evaluation metrics for each model.
+2. plots: Contains the plots for each model.
+
+#### reports
+
+1. Contains plots and tables for the project.
+
+#### src
+
+1. data - Contains the code for data preparation
+2. features - Contains the code for preprocessing, feature engineering, feature selection
+3. models - Contains the code for model building and evaluation
+4. utils - Contains the code for helper functions
+
+#### config.yml - Contains the configuration for the project
+
+#### main.py - Contains the code to run the project
+
+#### requirements.txt - Contains the required packages for the project
 
 ## How to run the code
+
 1. Clone the repository
 2. Create a virtual environment
 3. Install the requirements
