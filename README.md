@@ -129,43 +129,6 @@
 |   README.md - Readme file for the project.
 |   requirements.txt - Contains the requirements for the project.
 ```
-
-#### Data
-
-1. interim - Contains the preprocessed data, data from feature engineering and feature selection.
-2. processed - Contains the final data used for model building.
-3. raw - Contains the raw data and merged data
-
-#### Flowchart
-
-1. Contains the flowchart for each step of the project.
-
-#### logs
-
-1. Contains the logs for each step of the project.
-
-#### models
-
-1. eval: Contains the evaluation metrics for each model.
-2. plots: Contains the plots for each model.
-
-#### reports
-
-1. Contains plots and tables for the project.
-
-#### src
-
-1. data - Contains the code for data preparation
-2. features - Contains the code for preprocessing, feature engineering, feature selection
-3. models - Contains the code for model building and evaluation
-4. utils - Contains the code for helper functions
-
-#### config.yml - Contains the configuration for the project
-
-#### main.py - Contains the code to run the project. The code runs sequentially from data preparation to model evaluation.
-
-#### requirements.txt - Contains the required packages for the project
-
 ## How to run the code
 
 1. Clone the repository
