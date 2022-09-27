@@ -68,7 +68,8 @@ cat_cols: ['super_hero_group', 'place','tracking_times','crystal_supergroup', 'c
 continous_cols: ['tracking', 'human_measure', 'crystal_weight','expected_factor_x',
  'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
 'chemical_x','raw_kryptonite','argon','pure_seastone']
-
+one_hot_encoded_weekday: ['ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3',
+       'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
 vars_with_na : ['crystal_weight',
  'first_factor_x',
  'final_factor_x',

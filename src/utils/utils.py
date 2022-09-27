@@ -142,7 +142,8 @@ def split_datetime(df: pd.DataFrame, colname: str) -> pd.DataFrame:
 
 def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfrequency_id=0) -> pd.DataFrame:
     """__summary__: This function is used perform label encoding on the categorical features. 
-    A frequency threshold is used to replace the categories with low frequency with a single category.
+    A frequency threshold is used to replace the categories with low frequency with a single category. 
+    To deal with high cardinality, we will replace the categories with low frequency with a single category.
     parameters: 
         df {pd.DataFrame} -- [dataframe]
         cat {str} -- [name of the categorical column]

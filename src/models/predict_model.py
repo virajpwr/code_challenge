@@ -83,17 +83,17 @@ class model_predictions(object):
         # R_square
         R_square = r2_score(self.y_test, y_pred)
         # out of bag score
-        oob_score = self.model.oob_score_
+        oob_error = 1 - self.model.oob_score_
 
         print('Root mean squared error of random forest model', np.sqrt(mse))
-        print('out of bag score', self.model.oob_score_)
+        print('out of bag error', oob_error)
         self.logger.info(
             'Root mean squared error of random forest model:{}'.format(rmse))
-        self.logger.info('out of bag score:{}'.format(oob_score))
+        self.logger.info('out of bag score:{}'.format(oob_error))
 
         # Save the results in reports/eval folder
         results = ['rmse', str(rmse), 'oob_score',
-                   str(oob_score)]
+                   str(oob_error)]
         with open('./reports/eval/rf_model_result.txt', 'w') as f:
             f.write('\n'.join(results))
             f.close()

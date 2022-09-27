@@ -104,7 +104,7 @@ class FeatEngg(object):
         returns:
             df {dataframe}: A dataframe with the split datetime columns
         """
-        self.logger.info("Splitting the datetime column into year, month, day")
+        self.logger.info("Splitting the datetime column into year, month, day, weekday")
         # Split datetime columns into year, month, day.
         for colname in self.df[self.config['date_cols']]:
             self.df[colname] = self.df[colname].astype('datetime64[ns]')

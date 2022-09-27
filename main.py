@@ -103,6 +103,7 @@ def main():
     final_cat_var = cat_features_selection.perform_anova_test()
     selected_features = final_continous_var + \
         final_cat_var  # Concatenate the selected features
+    selected_features = selected_features + config['one_hot_encoded_weekday']
     # save the selected features in the data/interim folder
     pd.DataFrame(selected_features).to_csv(
         './data/interim/selected_features.csv', index=False)
