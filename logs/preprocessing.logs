@@ -732,3 +732,49 @@ INFO: 2022-09-27 15:13:00,637: outlier removed for column: chemical_x
 INFO: 2022-09-27 15:13:00,639: outlier removed for column: raw_kryptonite
 INFO: 2022-09-27 15:13:00,641: outlier removed for column: argon
 INFO: 2022-09-27 15:13:00,643: outlier removed for column: pure_seastone
+INFO: 2022-09-27 15:49:26,325: Reading the merged data from the data/raw folder and preprocessing it
+INFO: 2022-09-27 15:49:26,326: Dropping duplicate columns
+INFO: 2022-09-27 15:49:26,329: Converting dtypes
+INFO: 2022-09-27 15:49:26,343: Replacing values
+INFO: 2022-09-27 15:49:26,348: Processing missing values
+INFO: 2022-09-27 15:49:26,380: Interpolating dattime columns
+INFO: 2022-09-27 15:49:32,026: Converting dtypes
+INFO: 2022-09-27 15:49:32,138: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 15:49:32,148: Removing outliers IQR method
+INFO: 2022-09-27 15:49:32,153: outlier removed for column: tracking
+INFO: 2022-09-27 15:49:32,156: outlier removed for column: human_measure
+INFO: 2022-09-27 15:49:32,159: outlier removed for column: crystal_weight
+INFO: 2022-09-27 15:49:32,162: outlier removed for column: expected_factor_x
+INFO: 2022-09-27 15:49:32,165: outlier removed for column: previous_factor_x
+INFO: 2022-09-27 15:49:32,168: outlier removed for column: first_factor_x
+INFO: 2022-09-27 15:49:32,171: outlier removed for column: expected_final_factor_x
+INFO: 2022-09-27 15:49:32,173: outlier removed for column: final_factor_x
+INFO: 2022-09-27 15:49:32,176: outlier removed for column: previous_adamantium
+INFO: 2022-09-27 15:49:32,180: outlier removed for column: etherium_before_start
+INFO: 2022-09-27 15:49:32,184: outlier removed for column: chemical_x
+INFO: 2022-09-27 15:49:32,188: outlier removed for column: raw_kryptonite
+INFO: 2022-09-27 15:49:32,191: outlier removed for column: argon
+INFO: 2022-09-27 15:49:32,195: outlier removed for column: pure_seastone
+INFO: 2022-09-27 20:32:10,420: Reading the merged data from the data/raw folder and preprocessing it
+INFO: 2022-09-27 20:32:10,421: Dropping duplicate columns
+INFO: 2022-09-27 20:32:10,423: Converting dtypes
+INFO: 2022-09-27 20:32:10,436: Replacing values
+INFO: 2022-09-27 20:32:10,441: Processing missing values
+INFO: 2022-09-27 20:32:10,473: Interpolating dattime columns
+INFO: 2022-09-27 20:32:16,129: Converting dtypes
+INFO: 2022-09-27 20:32:16,200: Dropping duplicates rows for columns: start_process
+INFO: 2022-09-27 20:32:16,210: Removing outliers IQR method
+INFO: 2022-09-27 20:32:16,218: outlier removed for column: tracking
+INFO: 2022-09-27 20:32:16,223: outlier removed for column: human_measure
+INFO: 2022-09-27 20:32:16,226: outlier removed for column: crystal_weight
+INFO: 2022-09-27 20:32:16,230: outlier removed for column: expected_factor_x
+INFO: 2022-09-27 20:32:16,233: outlier removed for column: previous_factor_x
+INFO: 2022-09-27 20:32:16,236: outlier removed for column: first_factor_x
+INFO: 2022-09-27 20:32:16,239: outlier removed for column: expected_final_factor_x
+INFO: 2022-09-27 20:32:16,243: outlier removed for column: final_factor_x
+INFO: 2022-09-27 20:32:16,245: outlier removed for column: previous_adamantium
+INFO: 2022-09-27 20:32:16,248: outlier removed for column: etherium_before_start
+INFO: 2022-09-27 20:32:16,251: outlier removed for column: chemical_x
+INFO: 2022-09-27 20:32:16,255: outlier removed for column: raw_kryptonite
+INFO: 2022-09-27 20:32:16,258: outlier removed for column: argon
+INFO: 2022-09-27 20:32:16,261: outlier removed for column: pure_seastone

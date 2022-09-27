@@ -93,6 +93,43 @@
 
 ### Folder structure
 
+```
++---data - Data folder containing processed data, raw data, interim data
+|   +---interim - Contains the preprocessed data, data from feature engineering and feature selection.
+|   |
+|   +---processed - Contains the final data used for model building.
+|   |
+|   \---raw - Contains the raw data and merged data
+|
++---flowchart - Contains the flowchart for the project
+|
++---logs - Contains the logs for the project
+|
++---models - Contains the trained models for the project
+|
++---reports
+|   +---eval - Contains evalaution metrics for the models
+|   |
+|   \---plots - Contains plots for the models.
+|
++---src - Contains the source code for the project
+|   +---data - Code for data preparation
+|   |
+|   +---features - Contains the code for preprocessing, feature engineering, feature selection
+|   |
+|   +---models- Contains the code for model building and evaluation
+|   |
+|   +---utils - Contains the code for helper functions
+|   |
+|   \---visualization - Contains visualization code
+|
+|   config.yml - Configuration file for the project containing parameters for the project.
+|   imports.py - Contains the imports for the project.
+|   main.py - Main file for the project.
+|   README.md - Readme file for the project.
+|   requirements.txt - Contains the requirements for the project.
+```
+
 #### Data
 
 1. interim - Contains the preprocessed data, data from feature engineering and feature selection.
