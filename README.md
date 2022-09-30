@@ -24,12 +24,13 @@
 2. convert datatypes.
 3. replace values for columns cycle, crystal_supergroup, etherium_before_start.
 4. replace missing values of continous variables with the median of the variable and missing values of categorical variables with the mode of the variable.
-5. Drop duplicate rows.
-6. Remove outliers with IQR method.
+5. Interpolate datetime columns.
+6. Drop duplicate rows by start column.
+7. Remove outliers with IQR method.
 
 #### The flow chart below shows the steps taken to preprocess the data.
-![](flowchart/preprocessing.jpg)
 
+![](flowchart/preprocessing.jpg)
 
 ## Feature Engineering
 
@@ -38,7 +39,15 @@
 1. Spit the 'when' column in day, weekday, month. Perform one hot encoding on the weekday column.
 2. Calculate time difference between timestamps
 3. label encoding for categorical columns. To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
-4. Target encoding done to deal with high cardinality in the categorical columns. It is done to calculate the mean of the target variable for each category in the categorical column.
+4. Target encoding done to deal with high cardinality in the categorical columns. Calculate mean for the target variable grouped by the unique values of the categorical feauters. Since target encoding lacks to generalize well and it will tend to overfit. Smoothing is used to generalize the target encoding. The smoothing parameter is calculated using the formula below
+
+```
+TE = (count(cat) * mean(target) + smoothing  * global mean(target))
+     ____________________________________________________________ 
+     
+                        count(cat) + smoothing
+```
+
 5. Count encoding on categorical columns. It is done to calculate frequency from one or more categorical features. The advantage of Count Encoding is that the category values are grouped together based on behavior. Particularly in cases with only a few observation, a decision tree is not able to create a split.
 6. Gaussian rank normalization on continous columns and target to normalize the data and reduce the effect of outliers.
 
@@ -100,7 +109,7 @@ XGBoost model: RMSE = 0.61
 #### Interpretation:
 
 1. Baseline model: The Value of Root mean squared error is 0.65. and Normalized RMSE = 0.09. The value of VIF is 1.16. This means that there is no multicollinearity in the model. The mean_residuals is 0.01.
-2. Random forest model: The value of Root mean squared error is 0.51. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting. 
+2. Random forest model: The value of Root mean squared error is 0.51. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting.
 3. XGBoost model: The value of Root mean squared error is 0.63.
 
 #### Plots:

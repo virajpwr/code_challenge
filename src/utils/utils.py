@@ -258,11 +258,15 @@ def count_encode(df: pd.DataFrame, col: str) -> pd.DataFrame:
 def target_encode(df: pd.DataFrame, col: str, target: str, kfold=5, smooth=20) -> pd.DataFrame:
     '''
     __summary__: This function is used to perform target encoding on the categorical features. Target encoding done due to high cardinality of categorical columns.
-    Taking groupby mean of categorical column and smoothing it using the formula: ((mean_cat*count_cat)+(mean_global*p_smooth)) / (count_cat+p_smooth)
+    Taking groupby mean of categorical column and smoothing it using the formula: 
+
+    TE = ((mean_cat*count_cat)+(mean_global*p_smooth)) / (count_cat+p_smooth)
+
     count_cat := count of the categorical value
     mean_cat := mean target value of the categorical value
     mean_global := mean target value of the whole dataset
     p_smooth := smoothing factor
+
     In smoothing 
     1. if the number of observation is high, we want to use the mean of this category value
     2. if the number of observation is low, we want to use the global mean
