@@ -101,7 +101,7 @@ XGBoost model: RMSE = 0.61
 
 1. Baseline model: The Value of Root mean squared error is 0.65. and Normalized RMSE = 0.09. The value of VIF is 1.16. This means that there is no multicollinearity in the model. The mean_residuals is 0.01.
 2. Random forest model: The value of Root mean squared error is 0.51. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting. 
-3. XGBoost model: The value of Root mean squared error is 0.63 and has the lowest RMSE among the three models.
+3. XGBoost model: The value of Root mean squared error is 0.63.
 
 #### Plots:
 
