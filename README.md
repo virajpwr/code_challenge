@@ -28,8 +28,8 @@
 6. Remove outliers with IQR method.
 
 #### The flow chart below shows the steps taken to preprocess the data.
+![](flowchart/preprocessing.jpg)
 
-![](flowchart/new/preprocessing.jpg)
 
 ## Feature Engineering
 
