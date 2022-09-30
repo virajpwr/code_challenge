@@ -43,8 +43,8 @@
 
 ```
 TE = (count(cat) * mean(target) + smoothing  * global mean(target))
-     ____________________________________________________________ 
-     
+     ____________________________________________________________
+
                         count(cat) + smoothing
 ```
 
@@ -142,39 +142,41 @@ The histogram shows that residuals are normally distributed.
 
 ```
 +---data - Data folder containing processed data, raw data, interim data
-|   +---interim - Contains the preprocessed data, data from feature engineering and feature selection.
+|   +---interim -> Contains the preprocessed data, data from feature engineering and feature selection.
 |   |
-|   +---processed - Contains the final data used for model building.
+|   +---processed -> Contains the final data used for model building.
 |   |
-|   \---raw - Contains the raw data and merged data
+|   \---raw -> Contains the raw data and merged data
 |
-+---flowchart - Contains the flowchart for the project
++---flowchart -> Contains the flowchart for the project
 |
-+---logs - Contains the logs for the project
++---logs -> Contains the logs for the project
 |
-+---models - Contains the trained models for the project
++---models -> Contains the trained models for the project
 |
-+---reports
-|   +---eval - Contains evalaution metrics for the models
++---reports -> Contains the plots and evaluation metrics for the project
+|   +---eval -> Contains evalaution metrics for the models
 |   |
-|   \---plots - Contains plots for the models.
+|   \---plots -> Contains plots for the models.
 |
-+---src - Contains the source code for the project
-|   +---data - Code for data preparation
++---src -> Contains the source code for the project
+|   +---data -> Code for data preparation
 |   |
-|   +---features - Contains the code for preprocessing, feature engineering, feature selection
+|   +---features -> Contains the code for preprocessing, feature engineering, feature selection
 |   |
-|   +---models- Contains the code for model building and evaluation
+|   +---models -> Contains the code for model building and evaluation
 |   |
-|   +---utils - Contains the code for helper functions
+|   +---utils -> Contains the code for helper functions
 |   |
-|   \---visualization - Contains visualization code
+|   \---visualization -> Contains visualization code
 |
-|   config.yml - Configuration file for the project containing parameters for the project.
-|   imports.py - Contains the imports for the project.
-|   main.py - Main file for the project.
-|   README.md - Readme file for the project.
-|   requirements.txt - Contains the requirements for the project.
+|   config.yml -> Configuration file for the project containing parameters for the project.
+|   imports.py -> Contains the imports for the project.
+|   main.py -> Main file for the project.
+|   Makefile -> Makefile for the project.
+|   README.md -> Readme file for the project.
+|   requirements.txt -> Contains the requirements for the project.
+|   setup.py -> Setup file for the project.
 ```
 
 ## How to run the code
