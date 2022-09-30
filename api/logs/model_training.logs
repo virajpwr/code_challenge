@@ -1916,3 +1916,62 @@ INFO: 2022-09-30 14:02:15,983: df transformation done
 INFO: 2022-09-30 14:02:16,271: Prediction done
 INFO: 2022-09-30 14:02:16,297: 127.0.0.1 - - [30/Sep/2022 14:02:16] "POST /predict HTTP/1.1" 200 -
 INFO: 2022-09-30 14:02:34,553: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 14:02:35,205: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-09-30 14:02:35,288: Calculating the time difference between two datetime columns
+INFO: 2022-09-30 14:02:35,316: Label encoding the categorical columns
+INFO: 2022-09-30 14:02:35,331: performing label encoding on column: super_hero_group
+INFO: 2022-09-30 14:02:35,345: performing label encoding on column: place
+INFO: 2022-09-30 14:02:35,358: performing label encoding on column: tracking_times
+INFO: 2022-09-30 14:02:35,372: performing label encoding on column: crystal_supergroup
+INFO: 2022-09-30 14:02:35,385: performing label encoding on column: crystal_type
+INFO: 2022-09-30 14:02:35,397: performing label encoding on column: unnamed_7
+INFO: 2022-09-30 14:02:35,409: performing label encoding on column: human_behavior_report
+INFO: 2022-09-30 14:02:35,434: performing label encoding on column: cycle
+INFO: 2022-09-30 14:02:35,449: performing label encoding on column: groups
+INFO: 2022-09-30 14:02:35,462: performing label encoding on column: ts_weekday
+INFO: 2022-09-30 14:02:35,472: performing label encoding on column: ts_day
+INFO: 2022-09-30 14:02:35,483: performing label encoding on column: ts_month
+INFO: 2022-09-30 14:02:35,483: Target encoding the categorical columns
+INFO: 2022-09-30 14:02:35,573: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-09-30 14:02:35,664: performing target encoding on column: place_Categorify
+INFO: 2022-09-30 14:02:35,760: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-09-30 14:02:35,853: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-09-30 14:02:35,951: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-09-30 14:02:36,042: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-09-30 14:02:36,132: performing target encoding on column: ts_day_Categorify
+INFO: 2022-09-30 14:02:36,225: performing target encoding on column: ts_month_Categorify
+INFO: 2022-09-30 14:02:36,315: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-09-30 14:02:36,413: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-09-30 14:02:36,527: performing target encoding on column: cycle_Categorify
+INFO: 2022-09-30 14:02:36,643: performing target encoding on column: groups_Categorify
+INFO: 2022-09-30 14:02:36,643: Count encoding the categorical columns
+INFO: 2022-09-30 14:02:36,654: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-09-30 14:02:36,665: performing count encoding on column: TE_place_Categorify
+INFO: 2022-09-30 14:02:36,678: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-09-30 14:02:36,693: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-09-30 14:02:36,708: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-09-30 14:02:36,721: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-09-30 14:02:36,733: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-09-30 14:02:36,744: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-09-30 14:02:36,755: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-09-30 14:02:36,765: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-09-30 14:02:36,777: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-09-30 14:02:36,787: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-09-30 14:02:36,788: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-09-30 14:02:36,795: performing gaussrank on column: tracking
+INFO: 2022-09-30 14:02:36,798: performing gaussrank on column: human_measure
+INFO: 2022-09-30 14:02:36,801: performing gaussrank on column: crystal_weight
+INFO: 2022-09-30 14:02:36,803: performing gaussrank on column: expected_factor_x
+INFO: 2022-09-30 14:02:36,806: performing gaussrank on column: previous_factor_x
+INFO: 2022-09-30 14:02:36,809: performing gaussrank on column: first_factor_x
+INFO: 2022-09-30 14:02:36,812: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-09-30 14:02:36,814: performing gaussrank on column: final_factor_x
+INFO: 2022-09-30 14:02:36,817: performing gaussrank on column: previous_adamantium
+INFO: 2022-09-30 14:02:36,819: performing gaussrank on column: etherium_before_start
+INFO: 2022-09-30 14:02:36,822: performing gaussrank on column: chemical_x
+INFO: 2022-09-30 14:02:36,825: performing gaussrank on column: raw_kryptonite
+INFO: 2022-09-30 14:02:36,827: performing gaussrank on column: argon
+INFO: 2022-09-30 14:02:36,830: performing gaussrank on column: pure_seastone
+INFO: 2022-09-30 14:02:36,830: df transformation done
+INFO: 2022-09-30 14:02:37,158: Prediction done
+INFO: 2022-09-30 14:02:37,177: 127.0.0.1 - - [30/Sep/2022 14:02:37] "POST /predict HTTP/1.1" 200 -
