@@ -219,4 +219,4 @@ The API can also be tested using postman. Copy the test_data.json from api/test 
 
 ##### Below shows the output from postman
 
-![](postman.jpg)
+![](api/output/postman.jpg)
