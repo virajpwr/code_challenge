@@ -2,7 +2,7 @@ from imports import *
 
 
 class visualize(object):
-    """_summary_: This function is used to plot the learning curve for the model, feature importance and actual vs predicted plots, residual plot and qq plot for the baseline model and 
+    """_summary_: This function is used to plot the learning curve for the model, feature importance and actual vs predicted plots, residual plot and historgram of residuals for the baseline model and 
     save them in the reports/plots folder. It also saves the feature importance in the reports/eval folder.
 
     methods: 
