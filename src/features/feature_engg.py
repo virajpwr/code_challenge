@@ -1,6 +1,7 @@
 
 from imports import *
 
+
 class FeatEngg(object):
     """_summary_: This function is used to create new features from existing features.
 
@@ -47,7 +48,8 @@ class FeatEngg(object):
 
         for col in self.config["categorify_columns"]:
             self.df = categorify(df=self.df, cat=col, freq_treshhold=20)
-            self.logger.info("performing label encoding on column: {}".format(col))
+            self.logger.info(
+                "performing label encoding on column: {}".format(col))
         return self.df
 
     def target_encode_columns(self):
@@ -61,7 +63,8 @@ class FeatEngg(object):
         """
         for col in self.config["target_encode_columns"]:
             self.df = target_encode(self.df, [col], 'target')
-            self.logger.info("performing target encoding on column: {}".format(col))
+            self.logger.info(
+                "performing target encoding on column: {}".format(col))
         return self.df
 
     def count_encode_columns(self):
@@ -78,7 +81,8 @@ class FeatEngg(object):
         """
         for col in self.config["count_encode_columns"]:
             self.df = count_encode(self.df, col)
-            self.logger.info("performing count encoding on column: {}".format(col))
+            self.logger.info(
+                "performing count encoding on column: {}".format(col))
         return self.df
 
     def transforming_target_continuous(self):
@@ -104,10 +108,12 @@ class FeatEngg(object):
         returns:
             df {dataframe}: A dataframe with the split datetime columns
         """
-        self.logger.info("Splitting the datetime column into year, month, day, weekday")
+        self.logger.info(
+            "Splitting the datetime column into year, month, day, weekday")
         # Split datetime columns into year, month, day.
         for colname in self.df[self.config['date_cols']]:
             self.df[colname] = self.df[colname].astype('datetime64[ns]')
+        # Using split_datetime function from utils.
         self.df = split_datetime(self.df, "when")
         return self.df
 
@@ -119,7 +125,8 @@ class FeatEngg(object):
             df {dataframe}: A dataframe with the time difference columns
 
         """
-        self.logger.info("Calculating the time difference between two datetime columns")
+        self.logger.info(
+            "Calculating the time difference between two datetime columns")
         # Calculate time difference between two datetime columns.
         self.df = cal_time_diff(self.df, 'process_end',
                                 'start_process', 'time_diff_process')

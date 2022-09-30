@@ -125,18 +125,6 @@ class model_training(object):
         )
         return self.xgb_model
 
-    # def shap(self):
-    #     # explain the model using SHAP values.
-    #     explainer = shap.TreeExplainer(self.xgb_model)
-    #     shap_values = explainer.shap_values(self.df[self.final_columns])
-    #     shap.summary_plot(
-    #         shap_values, self.df[self.final_columns], plot_type="bar")
-    #     shap.summary_plot(
-    #         shap_values, self.df[self.final_columns])
-    #     plt.savefig(os.path.join(
-    #         self.config['PATHS']['Project_path'] + 'plots/', 'shap_plot.png'))
-    #     plt.show()
-
     def hyperparameter_tuning_randomforest(self):
         """
         __summary__: Function for Hyperparameter tuning for random forest model.
@@ -150,7 +138,7 @@ class model_training(object):
         self.random_search = RandomizedSearchCV(
             self.rf_model, self.config["parameter_grid_rf"]["param_grid"], scoring='neg_mean_squared_error', cv=5, verbose=2, n_jobs=-1)
         self.random_search.fit(self.df[self.final_columns],
-                             self.df.target)
+                               self.df.target)
         self.best_params = self.random_search.best_params_
 
         self.logger.info(
@@ -182,21 +170,6 @@ class model_training(object):
             self.config['PATHS']['Project_path'] + 'models/', self.config['model_name_random_forest']), "wb"), compress=3)  # compress the model to reduce the size of the model
         return self.randomforest
 
-    def hyperparameter_tuning(self):
-        # hyperparameter tuning.
-        # enable categorical features
-        self.xgb_model = XGBRegressor(
-            objective='reg:squarederror', enable_categorical=True)
-        self.grid_search = RandomizedSearchCV(
-            self.xgb_model, self.param_grid, scoring='neg_mean_squared_error', cv=3, verbose=2, n_jobs=-1)
-        self.grid_search.fit(self.train[self.final_columns],
-                             self.train.target)
-        self.best_params = self.grid_search.best_params_
-        # save the best parameters
-        with open(os.path.join(self.config['PATHS']['Project_path'] + 'models/', self.config['best_params']), 'w') as f:
-            json.dump(self.best_params, f)
-        print(self.best_params)
-
     def save_model(self):
         """
         __summary__: Save the model to the models folder.
@@ -208,7 +181,3 @@ class model_training(object):
         # save the model.
         pickle.dump(self.xgb_model, open(os.path.join(
             self.config['PATHS']['Project_path'] + 'models/', self.config['model_name']), "wb"))
-
-    # def load_model(self, path):
-    #     # load the model.
-    #     self.xgb_model = pickle.load(open(path, "rb"))

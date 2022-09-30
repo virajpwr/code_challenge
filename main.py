@@ -37,7 +37,7 @@ def main():
     df = merge_data.merge_dataset()
 
 # --------------------------------------------------------------------------- Preprocessing the data --------------------------------------------------------------------------- #
-    # preprocessing the data
+#     # preprocessing the data
     logger = logs(path="logs/", file="preprocessing.logs")
     logger.info(
         "Reading the merged data from the data/raw folder and preprocessing it")
@@ -58,15 +58,15 @@ def main():
     df = preprocess.remove_outliers()  # Remove the outliers using the IQR method
     df.to_csv('./data/interim/preprocessed_data.csv', index=False)
 
-# ---------------------------------------------------------- Feature Engineering ----------------------------------------------------------------------------- #
-    # Feature engineering
+# # ---------------------------------------------------------- Feature Engineering ----------------------------------------------------------------------------- #
+#     # Feature engineering
     logger = logs(path="logs/", file="feature_engg.logs")
     logger.info(
         "Reading the preprocessed data from the data/interim folder and performing feature engineering")
 
     feat_engg = FeatEngg(df, config, logger)
     df = feat_engg.split_datetime_col()  # split datetime column
-    # df = feat_engg.split_datetime_col()
+
     # calculate time difference between two datetime columns
     df = feat_engg.cal_time_diff()
     df = feat_engg.categorify_columns()  # label encode the categorical columns
@@ -74,43 +74,45 @@ def main():
     df = feat_engg.count_encode_columns()  # count encode the categorical columns
     # transform to gaussian distribution.
     df = feat_engg.transforming_target_continuous()
-    df.to_csv('./data/interim/feature_engg.csv', index=False)
+    df.to_csv('./data/interim/feature_engg_tranformed.csv', index=False)
 
-# ---------------------------------------------------------- Feature Selection ----------------------------------------------------------------------------- #
-    # Feature selection process for continous variables
+#---------------------------------------------------------- Feature Selection ----------------------------------------------------------------------------- #
+#  Feature selection process for continous variables
     logger = logs(path="logs/", file="feature_selection.logs")
     logger.info(
         "Reading the feature engineered data and performing feature selection")
 
-    cont_features_df = features_selection_cont_var(
-        df, config['continous_col_feature_selection'], config['target_col'], logger)
-    # Mutual information feature selection
-    mi_df, selected_cols = cont_features_df.mutual_info()
-    # Assign the selected columns to the var_list attribute
-    cont_features_df.var_list = selected_cols
-    cor_var = cont_features_df.find_correlated_feature(
-        selected_cols)  # Find the correlated features
-    # Assign the selected columns to the var_list attribute
-    cont_features_df.var_list = cor_var
-    cont_features_df.df = mi_df  # Assign the selected dataframe to the df attribute
-    # Remove the correlated features from the dataframe with low mutual information
-    final_continous_var = cont_features_df.remove_corr_features(mi_df, cor_var)
+    # Feature selection using lasso regression
 
-    # Feature selection process for categorical variables using one way ANOVA.
+    cont_features = features_selection_continous_var(
+        df, config['continous_col_feature_selection'], config['target_col'], config['lasso_params']['params'], logger)
+    var_sel_features = cont_features.variance_threshold()  # Variance threshold
+
+    cont_features.var_list = var_sel_features
+    print("variance threshold features: ", var_sel_features)
+    lasso_var = cont_features.lasso_reg(var_sel_features)
+    print("Lasso regression features: ", lasso_var)
+    cont_features.var_list = lasso_var
+    # df[lasso_var].to_csv('./data/interim/lasso_features.csv', index=False)
+    corr_features = cont_features.find_correlated_feature(lasso_var)
+    print("Correlated features: ", corr_features)
+    final_continous_features = cont_features.mutual_info(
+        corr_features, lasso_var)
+    print("Mutual information score: ", final_continous_features)
+
+    # feature selection for categorical variables
     cat_features_selection = features_selection_cat_var(
         df, config['cat_cols_feature_selection'], logger)
-    # Perform one way ANOVA test
-    final_cat_var = cat_features_selection.perform_anova_test()
-    selected_features = final_continous_var + \
-        final_cat_var  # Concatenate the selected features
-    selected_features = selected_features + config['one_hot_encoded_weekday']
-    # save the selected features in the data/interim folder
-    pd.DataFrame(selected_features).to_csv(
-        './data/interim/selected_features.csv', index=False)
+    var_sel_cat = cat_features_selection.variance_threshold()
+    print("Variance threshold features: ", var_sel_cat)
+    cat_features_selection.var_list = var_sel_cat
+    final_cat_var = cat_features_selection.perform_anova_test(var_sel_cat)
+    print('final cat', final_cat_var)
+    selected_features = list(final_continous_features) + list(final_cat_var)
     df[selected_features].to_csv(
-        './data/processed/final_data.csv', index=False)
+        './data/processed/final_features_data.csv', index=False)
 
-# ---------------------------------------------------------- Model Training ----------------------------------------------------------------------------- #
+# #--------------------------------------------- Model Training ----------------------------------------------------------------------------- #
     # Model training
     logger = logs(path="logs/", file="model_training.logs")
     logger.info(
@@ -144,7 +146,7 @@ def main():
         params, X_train, y_train)
 
     train_model.save_model()  # save models
-#------------------------------------------------------ Model Evaluation ----------------------------------------------------------#
+# # #------------------------------------------------------ Model Evaluation ----------------------------------------------------------#
 
     # predict on test data using baseline model
     logger = logs(path="logs/", file="model_evaluation.logs")
@@ -168,12 +170,13 @@ def main():
     logger.info("Creating plots")
     plots = visualize(X_test, y_test, y_pred_rf,
                       rf_model, df, selected_features)
-    plots.y_pred = y_pred_reg
+    # plots.y_pred = y_pred_reg
     logger.info("Creating plots for baseline model")
     plots.base_model_plots(y_pred_reg)  # Plot for baseline model
 
     logger.info("Creating plots for random forest model")
     plots.rf_feature_importance()  # Get the feature importance for random forest
+
     # Plot the learning curve for random forest
     plots.visualize_learning_curve(rf_model)
     plots.y_pred = y_pred_rf

@@ -1,6 +1,41 @@
 from imports import *
 
 
+def find_remove_duplicates(list_of_values):
+    """
+    # Removes duplicates from a list to return unique values - USED ONLY ONCE
+    """
+    output = []
+    seen = set()
+    for value in list_of_values:
+        if value not in seen:
+            output.append(value)
+            seen.add(value)
+    return output
+
+
+def find_remove_duplicates(list_of_values):
+    """
+    # Removes duplicates from a list to return unique values - USED ONLY ONCE
+    """
+    output = []
+    seen = set()
+    for value in list_of_values:
+        if value not in seen:
+            output.append(value)
+            seen.add(value)
+    return output
+
+
+def return_dictionary_list(lst_of_tuples):
+    """ Returns a dictionary of lists if you send in a list of Tuples"""
+    orDict = defaultdict(list)
+    # iterating over list of tuples
+    for key, val in lst_of_tuples:
+        orDict[key].append(val)
+    return orDict
+
+
 def logs(path: str, file: str) -> object:
     """[Create a log file to record the experiment's logs]
     parameters:
@@ -42,6 +77,20 @@ def logs(path: str, file: str) -> object:
     logger.addHandler(file_handler)
 
     return logger
+
+
+def left_subtract(l1: list, l2: list) -> list:
+    # Used for removing the common elements from two lists
+    """
+    l1: list
+    l2: list
+    return: list
+    """
+    lst = []
+    for i in l1:
+        if i not in l2:
+            lst.append(i)
+    return lst
 
 
 def load_config(file_path: str) -> dict:
@@ -143,7 +192,8 @@ def split_datetime(df: pd.DataFrame, colname: str) -> pd.DataFrame:
 def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfrequency_id=0) -> pd.DataFrame:
     """__summary__: This function is used perform label encoding on the categorical features. 
     A frequency threshold is used to replace the categories with low frequency with a single category. 
-    To deal with high cardinality, we will replace the categories with low frequency with a single category.
+    To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
+    The category id 1 or 0 is reserved for unknown and low frequency categories respectively. 
     parameters: 
         df {pd.DataFrame} -- [dataframe]
         cat {str} -- [name of the categorical column]
@@ -177,7 +227,12 @@ def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfr
 def count_encode(df: pd.DataFrame, col: str) -> pd.DataFrame:
     """"
     __summary__: This function is used to perform count encoding on the categorical features. Count encoding done due to high cardinality of categorical columns.
+                It calculates the frequency from one or more categorical features.
+    Count Encoding (CE) calculates the frequency from one or more categorical features given the training dataset.
 
+    Count Encoding creates a new feature, which can be used by the model for training.
+     It groups categorical values based on the frequency together.
+     Count Encoding creates a new feature, which can be used by the model for training. It groups categorical values based on the frequency together.
     parameters:
         df {pd.DataFrame} -- [dataframe]
         col {str} -- [name of the categorical column]
@@ -208,6 +263,9 @@ def target_encode(df: pd.DataFrame, col: str, target: str, kfold=5, smooth=20) -
     mean_cat := mean target value of the categorical value
     mean_global := mean target value of the whole dataset
     p_smooth := smoothing factor
+    In smoothing 
+    1. if the number of observation is high, we want to use the mean of this category value
+    2. if the number of observation is low, we want to use the global mean
 
     To prevent overfitting we use kfold cross validation. 
     To prevent overfitting for low cardinality columns, the means are smoothed with the overall target mean.

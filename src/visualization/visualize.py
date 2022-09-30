@@ -41,23 +41,44 @@ class visualize(object):
             y_pred_reg {np.array}: The predicted values from baseline model
         """
         self.y_pred = y_pred_reg
-        # create linear regression plot, residuals plot and qq plot using scipy
-        fig, ax = plt.subplots(1, 3, figsize=(15, 5))
-        # Scatter plot of actual vs predicted
-        ax[0].scatter(self.y_test, self.y_pred)
-        ax[0].set_xlabel('Actual')
-        ax[0].set_ylabel('Predicted')
-        ax[0].set_title('Actual vs Predicted')
-        # Scatter plot of residuals
-        ax[1].scatter(self.y_pred,  self.y_test - self.y_pred)
-        ax[1].set_xlabel('Predicted')
-        ax[1].set_ylabel('Residuals')
-        ax[2].set_title('Residuals vs Predicted')
-        # qq plot
-        # qq plot of residuals to check normality.
-        stats.probplot(self.y_test - self.y_pred, dist="norm", plot=ax[2])
-        ax[2].set_title('QQ plot of residuals')
+        # create linear regression plot, residuals plot and histogram of residuals
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 5))
+        fig.suptitle('Linear Regression Model')
+        ax1.scatter(self.y_test, self.y_pred)
+        ax1.set_xlabel('Actual')
+        ax1.set_ylabel('Predicted')
+        ax1.set_title('Actual vs Predicted')
+        ax2.scatter(self.y_pred, self.y_test-self.y_pred)
+        ax2.set_xlabel('Predicted')
+        ax2.set_ylabel('Residual')
+        ax2.set_title('Residual Plot')
+        ax3.hist(self.y_pred - self.y_test)
+        ax3.set_xlabel('Residual')
+        ax3.set_ylabel('Frequency')
+        ax3.set_title('Histogram of Residuals')
         plt.savefig('./reports/plots/linear_regression_plots.png')
+
+        # fig, ax = plt.subplots(1, 3, figsize=(15, 5))
+        # # Scatter plot of actual vs predicted
+        # ax[0].scatter(self.y_test, self.y_pred)
+        # ax[0].set_xlabel('Actual')
+        # ax[0].set_ylabel('Predicted')
+        # ax[0].set_title('Actual vs Predicted')
+        # # Scatter plot of residuals
+        # ax[1].scatter(self.y_pred,  self.y_test - self.y_pred)
+        # ax[1].set_xlabel('Predicted')
+        # ax[1].set_ylabel('Residuals')
+        # ax[2].set_title('Residuals vs Predicted')
+        # # qq plot
+        # # qq plot of residuals to check normality.
+        # stats.probplot(self.y_test - self.y_pred, dist="norm", plot=ax[2])
+        # ax[2].set_title('QQ plot of residuals')
+        # plt.savefig('./reports/plots/linear_regression_plots.png')
+
+        # ## histogram of residuals
+        # plt.figure(figsize=(10, 10))
+        # ax[3].hist(self.y_test - self.y_pred)
+        # ax[3].xlabel('Residuals')
 
     def rf_feature_importance(self):
         """_summary_: This function is used to plot the feature importance for the random forest model.

@@ -92,7 +92,7 @@ class model_predictions(object):
         self.logger.info('out of bag score:{}'.format(oob_error))
 
         # Save the results in reports/eval folder
-        results = ['rmse', str(rmse), 'oob_score',
+        results = ['rmse', str(rmse), 'oob_error',
                    str(oob_error)]
         with open('./reports/eval/rf_model_result.txt', 'w') as f:
             f.write('\n'.join(results))

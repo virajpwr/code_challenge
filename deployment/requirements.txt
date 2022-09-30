@@ -1,0 +1,12 @@
+pandas
+matplotlib
+numpy
+PyYAML
+scikit_learn
+scipy
+seaborn
+joblib
+uvicorn[standard]
+flask
+uvicorn==0.14.0
+fastapi==0.68.0

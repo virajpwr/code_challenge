@@ -368,3 +368,365 @@ INFO: 2022-09-27 20:33:44,277: Lowest RMSE for random forest model: 0.7100508829
 INFO: 2022-09-27 20:33:44,278: Training the random forest model
 INFO: 2022-09-27 20:33:44,278: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 2, 'bootstrap': True}
 INFO: 2022-09-27 20:33:54,366: Saving the model
+INFO: 2022-09-28 07:54:44,538: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 07:54:44,539: Splitting the data into train and test
+INFO: 2022-09-28 07:54:44,581: X_train shape: (6436, 22)
+INFO: 2022-09-28 07:54:44,582: X_test shape: (1609, 22)
+INFO: 2022-09-28 07:54:44,582: Training the XGB model
+INFO: 2022-09-28 07:54:44,582: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 07:54:44,725: Training the xgboost model
+INFO: 2022-09-28 07:54:49,938: Hyper parameter tuning for random forest
+INFO: 2022-09-28 07:54:49,938: Hyperparameter tuning for random forest model
+ERROR: 2022-09-28 07:54:52,044: exception calling callback for <Future at 0x28a84b169a0 state=finished raised TerminatedWorkerError>
+Traceback (most recent call last):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 177, in submit
+    return super(_ReusablePoolExecutor, self).submit(
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\process_executor.py", line 1115, in submit
+    raise self._flags.broken
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+INFO: 2022-09-28 08:38:12,541: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 08:38:12,542: Splitting the data into train and test
+INFO: 2022-09-28 08:38:12,594: X_train shape: (6436, 23)
+INFO: 2022-09-28 08:38:12,594: X_test shape: (1609, 23)
+INFO: 2022-09-28 08:38:12,594: Training the baseline model
+INFO: 2022-09-28 08:38:12,594: Training the baseline model
+INFO: 2022-09-28 08:38:12,600: Training the XGB model
+INFO: 2022-09-28 08:38:12,601: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 08:38:12,768: Training the xgboost model
+INFO: 2022-09-28 08:38:17,502: Hyper parameter tuning for random forest
+INFO: 2022-09-28 08:38:17,502: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 08:39:31,766: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 08:39:31,766: Lowest RMSE for random forest model: 0.7124156090349977
+INFO: 2022-09-28 08:39:31,769: Training the random forest model
+INFO: 2022-09-28 08:39:31,769: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 08:39:42,172: Saving the model
+INFO: 2022-09-28 09:01:25,205: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 09:01:25,206: Splitting the data into train and test
+INFO: 2022-09-28 09:01:25,250: X_train shape: (6436, 21)
+INFO: 2022-09-28 09:01:25,250: X_test shape: (1609, 21)
+INFO: 2022-09-28 09:01:25,250: Training the baseline model
+INFO: 2022-09-28 09:01:25,251: Training the baseline model
+INFO: 2022-09-28 09:01:25,258: Training the XGB model
+INFO: 2022-09-28 09:01:25,258: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 09:01:25,431: Training the xgboost model
+INFO: 2022-09-28 09:01:31,592: Hyper parameter tuning for random forest
+INFO: 2022-09-28 09:01:31,593: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 09:02:51,992: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 09:02:51,994: Lowest RMSE for random forest model: 0.7142888692400011
+INFO: 2022-09-28 09:02:52,001: Training the random forest model
+INFO: 2022-09-28 09:02:52,001: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 09:03:02,977: Saving the model
+INFO: 2022-09-28 09:20:07,923: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 09:21:54,206: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 19:57:24,835: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 19:57:24,835: Splitting the data into train and test
+INFO: 2022-09-28 19:57:24,863: X_train shape: (6436, 17)
+INFO: 2022-09-28 19:57:24,863: X_test shape: (1609, 17)
+INFO: 2022-09-28 19:57:24,864: Training the baseline model
+INFO: 2022-09-28 19:57:24,864: Training the baseline model
+INFO: 2022-09-28 19:57:24,869: Training the XGB model
+INFO: 2022-09-28 19:57:24,869: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 19:57:25,010: Training the xgboost model
+INFO: 2022-09-28 19:57:29,539: Hyper parameter tuning for random forest
+INFO: 2022-09-28 19:57:29,540: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 19:58:29,243: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 19:58:29,243: Lowest RMSE for random forest model: 0.7290249345760205
+INFO: 2022-09-28 19:58:29,244: Training the random forest model
+INFO: 2022-09-28 19:58:29,244: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 19:58:39,417: Saving the model
+INFO: 2022-09-28 20:14:05,703: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 20:14:05,706: Splitting the data into train and test
+INFO: 2022-09-28 20:14:05,731: X_train shape: (6436, 17)
+INFO: 2022-09-28 20:14:05,731: X_test shape: (1609, 17)
+INFO: 2022-09-28 20:14:05,731: Training the baseline model
+INFO: 2022-09-28 20:14:05,731: Training the baseline model
+INFO: 2022-09-28 20:14:05,735: Training the XGB model
+INFO: 2022-09-28 20:14:05,735: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 20:14:05,846: Training the xgboost model
+INFO: 2022-09-28 20:14:10,042: Hyper parameter tuning for random forest
+INFO: 2022-09-28 20:14:10,042: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 20:14:55,229: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:14:55,229: Lowest RMSE for random forest model: 0.734937581056365
+INFO: 2022-09-28 20:14:55,230: Training the random forest model
+INFO: 2022-09-28 20:14:55,230: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:14:58,903: Saving the model
+INFO: 2022-09-28 20:29:34,059: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 20:29:34,080: Splitting the data into train and test
+INFO: 2022-09-28 20:29:34,115: X_train shape: (6436, 17)
+INFO: 2022-09-28 20:29:34,115: X_test shape: (1609, 17)
+INFO: 2022-09-28 20:29:34,115: Training the baseline model
+INFO: 2022-09-28 20:29:34,115: Training the baseline model
+INFO: 2022-09-28 20:29:34,120: Training the XGB model
+INFO: 2022-09-28 20:29:34,120: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 20:29:34,281: Training the xgboost model
+INFO: 2022-09-28 20:29:40,998: Hyper parameter tuning for random forest
+INFO: 2022-09-28 20:29:40,999: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 20:31:13,149: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:31:13,152: Lowest RMSE for random forest model: 0.7342929450312508
+INFO: 2022-09-28 20:31:13,167: Training the random forest model
+INFO: 2022-09-28 20:31:13,167: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:31:22,582: Saving the model
+INFO: 2022-09-28 20:33:57,717: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 20:33:57,717: Splitting the data into train and test
+INFO: 2022-09-28 20:33:57,750: X_train shape: (6436, 17)
+INFO: 2022-09-28 20:33:57,750: X_test shape: (1609, 17)
+INFO: 2022-09-28 20:33:57,750: Training the baseline model
+INFO: 2022-09-28 20:33:57,750: Training the baseline model
+INFO: 2022-09-28 20:33:57,753: Training the XGB model
+INFO: 2022-09-28 20:33:57,753: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 20:33:57,864: Training the xgboost model
+INFO: 2022-09-28 20:34:02,828: Hyper parameter tuning for random forest
+INFO: 2022-09-28 20:34:02,828: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 20:35:15,819: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-28 20:35:15,820: Lowest RMSE for random forest model: 0.7387118314251307
+INFO: 2022-09-28 20:35:15,821: Training the random forest model
+INFO: 2022-09-28 20:35:15,821: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-28 20:35:27,343: Saving the model
+INFO: 2022-09-28 20:38:21,116: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 20:38:21,116: Splitting the data into train and test
+INFO: 2022-09-28 20:38:21,143: X_train shape: (6436, 17)
+INFO: 2022-09-28 20:38:21,143: X_test shape: (1609, 17)
+INFO: 2022-09-28 20:38:21,144: Training the baseline model
+INFO: 2022-09-28 20:38:21,144: Training the baseline model
+INFO: 2022-09-28 20:38:21,147: Training the XGB model
+INFO: 2022-09-28 20:38:21,147: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 20:38:21,229: Training the xgboost model
+INFO: 2022-09-28 20:38:25,565: Hyper parameter tuning for random forest
+INFO: 2022-09-28 20:38:25,565: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 20:39:27,907: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:39:27,907: Lowest RMSE for random forest model: 0.7347712969533984
+INFO: 2022-09-28 20:39:27,907: Training the random forest model
+INFO: 2022-09-28 20:39:27,907: Best parameters for random forest model: {'n_estimators': 500, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 20:39:36,720: Saving the model
+INFO: 2022-09-28 21:06:15,774: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-28 21:06:15,774: Splitting the data into train and test
+INFO: 2022-09-28 21:06:15,801: X_train shape: (6436, 17)
+INFO: 2022-09-28 21:06:15,801: X_test shape: (1609, 17)
+INFO: 2022-09-28 21:06:15,801: Training the baseline model
+INFO: 2022-09-28 21:06:15,801: Training the baseline model
+INFO: 2022-09-28 21:06:15,807: Training the XGB model
+INFO: 2022-09-28 21:06:15,807: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-28 21:06:15,924: Training the xgboost model
+INFO: 2022-09-28 21:06:20,525: Hyper parameter tuning for random forest
+INFO: 2022-09-28 21:06:20,525: Hyperparameter tuning for random forest model
+INFO: 2022-09-28 21:07:27,262: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 21:07:27,262: Lowest RMSE for random forest model: 0.7338636554002407
+INFO: 2022-09-28 21:07:27,263: Training the random forest model
+INFO: 2022-09-28 21:07:27,263: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-28 21:07:31,476: Saving the model
+INFO: 2022-09-29 08:56:24,704: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-29 08:56:24,705: Splitting the data into train and test
+INFO: 2022-09-29 08:56:24,741: X_train shape: (6436, 19)
+INFO: 2022-09-29 08:56:24,741: X_test shape: (1609, 19)
+INFO: 2022-09-29 08:56:24,741: Training the baseline model
+INFO: 2022-09-29 08:56:24,741: Training the baseline model
+INFO: 2022-09-29 08:56:24,748: Training the XGB model
+INFO: 2022-09-29 08:56:24,748: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-29 08:56:24,917: Training the xgboost model
+INFO: 2022-09-29 08:56:30,128: Hyper parameter tuning for random forest
+INFO: 2022-09-29 08:56:30,129: Hyperparameter tuning for random forest model
+INFO: 2022-09-29 08:57:28,336: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-29 08:57:28,336: Lowest RMSE for random forest model: 0.7342271901376728
+INFO: 2022-09-29 08:57:28,337: Training the random forest model
+INFO: 2022-09-29 08:57:28,337: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-29 08:57:32,051: Saving the model
+INFO: 2022-09-30 00:11:52,914: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:12:43,362: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:12:43,363: Hyperparameter tuning for xgboost model
+INFO: 2022-09-30 00:13:43,034: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:13:43,034: Hyperparameter tuning for xgboost model
+INFO: 2022-09-30 00:14:17,371: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:14:17,371: Hyperparameter tuning for xgboost model
+ERROR: 2022-09-30 00:14:21,854: exception calling callback for <Future at 0x22c1c327a90 state=finished raised BrokenProcessPool>
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\process_executor.py", line 407, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\python38\lib\multiprocessing\queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\__init__.py", line 6, in <module>
+    from .core import (
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\core.py", line 231, in <module>
+    _LIB = _load_lib()
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\core.py", line 184, in _load_lib
+    raise XGBoostError(
+xgboost.core.XGBoostError: 
+XGBoost Library (xgboost.dll) could not be loaded.
+Likely causes:
+  * OpenMP runtime is not installed
+    - vcomp140.dll or libgomp-1.dll for Windows
+    - libomp.dylib for Mac OSX
+    - libgomp.so for Linux and other UNIX-like OSes
+    Mac OSX users: Run `brew install libomp` to install OpenMP runtime.
+
+  * You are running 32-bit Python on a 64-bit OS
+
+Error message(s): ['[WinError 1455] The paging file is too small for this operation to complete']
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 177, in submit
+    return super(_ReusablePoolExecutor, self).submit(
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\process_executor.py", line 1115, in submit
+    raise self._flags.broken
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+INFO: 2022-09-30 00:15:37,366: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:15:37,366: Hyperparameter tuning for xgboost model
+ERROR: 2022-09-30 00:15:41,579: exception calling callback for <Future at 0x2df3cfd5a60 state=finished raised BrokenProcessPool>
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\process_executor.py", line 407, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\python38\lib\multiprocessing\queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\__init__.py", line 6, in <module>
+    from .core import (
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\core.py", line 231, in <module>
+    _LIB = _load_lib()
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\xgboost\core.py", line 184, in _load_lib
+    raise XGBoostError(
+xgboost.core.XGBoostError: 
+XGBoost Library (xgboost.dll) could not be loaded.
+Likely causes:
+  * OpenMP runtime is not installed
+    - vcomp140.dll or libgomp-1.dll for Windows
+    - libomp.dylib for Mac OSX
+    - libgomp.so for Linux and other UNIX-like OSes
+    Mac OSX users: Run `brew install libomp` to install OpenMP runtime.
+
+  * You are running 32-bit Python on a 64-bit OS
+
+Error message(s): ['[WinError 1455] The paging file is too small for this operation to complete']
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 177, in submit
+    return super(_ReusablePoolExecutor, self).submit(
+  File "D:\final_solution\code_challenge\myenv\lib\site-packages\joblib\externals\loky\process_executor.py", line 1115, in submit
+    raise self._flags.broken
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+INFO: 2022-09-30 00:17:36,756: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:17:36,756: Splitting the data into train and test
+INFO: 2022-09-30 00:17:36,790: X_train shape: (6436, 19)
+INFO: 2022-09-30 00:17:36,790: X_test shape: (1609, 19)
+INFO: 2022-09-30 00:17:36,790: Training the baseline model
+INFO: 2022-09-30 00:17:36,790: Training the baseline model
+INFO: 2022-09-30 00:17:36,796: Training the XGB model
+INFO: 2022-09-30 00:17:36,796: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-30 00:17:36,938: Training the xgboost model
+INFO: 2022-09-30 00:17:42,508: Hyper parameter tuning for random forest
+INFO: 2022-09-30 00:17:42,509: Hyperparameter tuning for random forest model
+INFO: 2022-09-30 00:18:21,095: Best parameters for random forest model: {'n_estimators': 100, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-30 00:18:21,095: Lowest RMSE for random forest model: 0.747074571237682
+INFO: 2022-09-30 00:18:21,096: Training the random forest model
+INFO: 2022-09-30 00:18:21,096: Best parameters for random forest model: {'n_estimators': 100, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-30 00:18:24,373: Saving the model
+INFO: 2022-09-30 00:19:00,275: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:19:00,275: Splitting the data into train and test
+INFO: 2022-09-30 00:19:00,306: X_train shape: (6436, 19)
+INFO: 2022-09-30 00:19:00,307: X_test shape: (1609, 19)
+INFO: 2022-09-30 00:19:00,307: Training the baseline model
+INFO: 2022-09-30 00:19:00,307: Training the baseline model
+INFO: 2022-09-30 00:19:00,310: Training the XGB model
+INFO: 2022-09-30 00:19:00,310: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-30 00:19:00,409: Training the xgboost model
+INFO: 2022-09-30 00:19:05,470: Hyper parameter tuning for random forest
+INFO: 2022-09-30 00:19:05,471: Hyperparameter tuning for random forest model
+INFO: 2022-09-30 00:19:51,576: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-30 00:19:51,576: Lowest RMSE for random forest model: 0.7353151789339766
+INFO: 2022-09-30 00:19:51,577: Training the random forest model
+INFO: 2022-09-30 00:19:51,577: Best parameters for random forest model: {'n_estimators': 200, 'max_features': 2, 'bootstrap': True}
+INFO: 2022-09-30 00:19:55,613: Saving the model
+INFO: 2022-09-30 00:53:27,642: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 00:53:27,643: Splitting the data into train and test
+INFO: 2022-09-30 00:53:27,689: X_train shape: (6436, 19)
+INFO: 2022-09-30 00:53:27,689: X_test shape: (1609, 19)
+INFO: 2022-09-30 00:53:27,689: Training the baseline model
+INFO: 2022-09-30 00:53:27,690: Training the baseline model
+INFO: 2022-09-30 00:53:27,696: Training the XGB model
+INFO: 2022-09-30 00:53:27,696: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-30 00:53:27,834: Training the xgboost model
+INFO: 2022-09-30 00:53:33,797: Hyper parameter tuning for random forest
+INFO: 2022-09-30 00:53:33,797: Hyperparameter tuning for random forest model
+INFO: 2022-09-30 00:54:40,963: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-30 00:54:40,964: Lowest RMSE for random forest model: 0.7468120524712232
+INFO: 2022-09-30 00:54:40,964: Training the random forest model
+INFO: 2022-09-30 00:54:40,964: Best parameters for random forest model: {'n_estimators': 600, 'max_features': 3, 'bootstrap': True}
+INFO: 2022-09-30 00:54:52,912: Saving the model
+INFO: 2022-09-30 01:20:14,811: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 01:20:14,811: Splitting the data into train and test
+INFO: 2022-09-30 01:20:14,841: X_train shape: (6436, 19)
+INFO: 2022-09-30 01:20:14,841: X_test shape: (1609, 19)
+INFO: 2022-09-30 01:20:14,841: Training the baseline model
+INFO: 2022-09-30 01:20:14,842: Training the baseline model
+INFO: 2022-09-30 01:20:14,844: Training the XGB model
+INFO: 2022-09-30 01:20:14,844: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-30 01:20:14,949: Training the xgboost model
+INFO: 2022-09-30 01:20:20,336: Hyper parameter tuning for random forest
+INFO: 2022-09-30 01:20:20,336: Hyperparameter tuning for random forest model
+INFO: 2022-09-30 01:21:02,326: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 100, 'bootstrap': True}
+INFO: 2022-09-30 01:21:02,326: Lowest RMSE for random forest model: 0.7246445986076976
+INFO: 2022-09-30 01:21:02,327: Training the random forest model
+INFO: 2022-09-30 01:21:02,327: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 100, 'bootstrap': True}
+INFO: 2022-09-30 01:21:03,218: Saving the model
+INFO: 2022-09-30 01:22:13,331: Reading the final data from the data/processed folder and training the model
+INFO: 2022-09-30 01:22:13,332: Splitting the data into train and test
+INFO: 2022-09-30 01:22:13,370: X_train shape: (6436, 19)
+INFO: 2022-09-30 01:22:13,370: X_test shape: (1609, 19)
+INFO: 2022-09-30 01:22:13,370: Training the baseline model
+INFO: 2022-09-30 01:22:13,370: Training the baseline model
+INFO: 2022-09-30 01:22:13,373: Training the XGB model
+INFO: 2022-09-30 01:22:13,374: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-09-30 01:22:13,487: Training the xgboost model
+INFO: 2022-09-30 01:22:19,001: Hyper parameter tuning for random forest
+INFO: 2022-09-30 01:22:19,001: Hyperparameter tuning for random forest model
+INFO: 2022-09-30 01:23:16,771: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 20, 'bootstrap': True}
+INFO: 2022-09-30 01:23:16,771: Lowest RMSE for random forest model: 0.7244819633075281
+INFO: 2022-09-30 01:23:16,771: Training the random forest model
+INFO: 2022-09-30 01:23:16,772: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 20, 'bootstrap': True}
+INFO: 2022-09-30 01:23:21,715: Saving the model
