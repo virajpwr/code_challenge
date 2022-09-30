@@ -141,6 +141,9 @@ The histogram shows that residuals are normally distributed.
 ### Folder structure
 
 ```
++---api - Contains the code for the API
+|
+|
 +---data - Data folder containing processed data, raw data, interim data
 |   +---interim -> Contains the preprocessed data, data from feature engineering and feature selection.
 |   |
@@ -181,7 +184,39 @@ The histogram shows that residuals are normally distributed.
 
 ## How to run the code
 
+```
 1. Clone the repository
-2. Create a virtual environment
-3. Install the requirements
-4. Run main.py
+2. py -m pip install --upgrade pip
+3. py -m pip install virtualenv
+4. py -m virtualenv venv
+5. .\venv\Scripts\activate
+6. py -m pip install -r requirements.txt
+7. py main.py
+```
+
+#### Alternatively methods to run the code:
+
+```
+1. make run
+2. bash run.sh
+```
+
+## API
+
+The API is built using flask. The API takes the input as a json file and returns the predicted value as a json file. The model used for the API output is hyperparameter tuned random forest model.
+
+The API can be test by executing the following command:
+
+```
+python api/app.py
+python api/test/predict.py
+```
+
+The API takes the input as a json file and returns the predicted value as a json file. A sample test file can
+The prediction.json file contains the output of the API.
+
+The API can also be tested using postman. Copy the test_data.json from api/test folder and paste it in the body of the postman. The API will return the predicted value in the response.
+
+##### Below shows the output from postman
+
+![](postman.jpg)

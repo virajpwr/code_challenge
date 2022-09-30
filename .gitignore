@@ -30,6 +30,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 rf.dat
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -141,7 +142,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+postman.jpg
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -155,7 +156,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
+api_dev/
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
