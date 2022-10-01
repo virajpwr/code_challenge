@@ -133,10 +133,10 @@ class features_selection_continous_var(features_selection_cat_var):
         # remove the duplicate features
         corrdf1 = corrdf1[corrdf1['var1'] != corrdf1['var2']]
         correlated_pair = list(
-            zip(corrdf1['var1'].values.tolist(), corrdf1['var2'].values.tolist()))
-        corr_pair_dict = dict(return_dictionary_list(correlated_pair))
+            zip(corrdf1['var1'].values.tolist(), corrdf1['var2'].values.tolist())) # create a list of tuples with correlated features
+        corr_pair_dict = dict(return_dictionary_list(correlated_pair)) # convert the list of tuples to dictionary
         corr_list = find_remove_duplicates(
-            corrdf1['var1'].values.tolist()+corrdf1['var2'].values.tolist())
+            corrdf1['var1'].values.tolist()+corrdf1['var2'].values.tolist()) # create a list of correlated features
         print(len(corr_list))
         if len(corr_list) == 0:
             return self.var_list
@@ -185,7 +185,7 @@ class features_selection_continous_var(features_selection_cat_var):
             self.logger.info("Correlated features and Lasso features are same")
             return lasso_col
         else:
-            fs = SelectKBest(score_func=mutual_info_regression, k = 20) # find MI score of the correlated features
+            fs = SelectKBest(score_func = mutual_info_regression, k = 20) # find MI score of the correlated features
             fs.fit(self.df[corr_list], self.df[self.target])
             mutual_info = dict(zip(corr_list, fs.scores_)) # convert the series to dictionary of features and MI score
             # The first variable in list has the highest correlation to the target variable 

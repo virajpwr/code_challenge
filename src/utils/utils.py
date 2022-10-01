@@ -1,22 +1,13 @@
 from imports import *
 
 
-def find_remove_duplicates(list_of_values):
+def find_remove_duplicates(list_of_values: list) -> list:
     """
-    # Removes duplicates from a list to return unique values - USED ONLY ONCE
-    """
-    output = []
-    seen = set()
-    for value in list_of_values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
-
-def find_remove_duplicates(list_of_values):
-    """
-    # Removes duplicates from a list to return unique values - USED ONLY ONCE
+    __summary__: This function is used to remove duplicates from a list to return unique values.
+    parameters:
+        list_of_values {list} -- [list of values]
+    returns:
+        output {list} -- [list of unique values]
     """
     output = []
     seen = set()
@@ -27,8 +18,14 @@ def find_remove_duplicates(list_of_values):
     return output
 
 
-def return_dictionary_list(lst_of_tuples):
-    """ Returns a dictionary of lists if you send in a list of Tuples"""
+def return_dictionary_list(lst_of_tuples: list) -> list:
+    """ 
+    __summary__: This function is used to convert a list of tuples to a list of dictionaries.
+    parameters:
+        lst_of_tuples {list} -- [list of tuples]    
+    returns:
+        lst_of_dicts {list} -- [list of dictionaries]
+   """
     orDict = defaultdict(list)
     # iterating over list of tuples
     for key, val in lst_of_tuples:
