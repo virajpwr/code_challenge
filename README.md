@@ -203,20 +203,43 @@ The histogram shows that residuals are normally distributed.
 
 ## API
 
-The API is built using flask. The API takes the input as a json file and returns the predicted value as a json file. The model used for the API output is hyperparameter tuned random forest model.
+The API is built using fastAPI. The API takes the input as a json file and returns the predicted value as a json file. The model used for the API output is hyperparameter tuned random forest model.
 
 The API can be test by executing the following command:
 
 ```
-python api/app.py
-python api/test/predict.py
+1. cd api
+2. uvicorn main:app --reload
+3. Open the browser and go to http://127.0.0.1:8000/docs to test the API.
+4. Copy the input json file from api/tests/test_data_json/test.json and paste it in the request body.
+5. Click on execute button to get the output.
+6. The output can be seen in the response body. which is a json file with predicted value 'target' as float.
+
 ```
 
-The API takes the input as a json file and returns the predicted value as a json file. A sample test file can
-The prediction.json file contains the output of the API.
+##### Below shows input json to the API.
 
-The API can also be tested using postman. Copy the test_data.json from api/test folder and paste it in the body of the postman. The API will return the predicted value in the response.
+![](flowchart/presentation/fastapi.jpg)
 
-##### Below shows the output from postman
+##### Below shows output of the API.
 
-![](api/output/postman.jpg)
+![](flowchart/presentation/prediction.jpg)
+
+### Azure container deployment.
+
+1. The API is deployed on azure container instance.
+2. The dockerfile is present in the api folder. and used to build the docker image.
+3. The docker image is pushed to the Azure container registry.
+4. The docker image is deployed on Azure container instance. and the API is tested on the deployed API.
+
+```
+Link to the API: http://20.23.111.32:8000/predict
+```
+
+### Output of the API on deployed API.
+
+![](flowchart/presentation/endpoint.jpg)
+
+### Azure container instance
+
+![](flowchart/presentation/azure.jpg)

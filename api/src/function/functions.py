@@ -6,16 +6,16 @@ from imports import *
 
 def get_model_response(input):
 
-    config = load_config(r".\config.yml")
+    config = load_config(r"./config.yml")
     logger = logs(path="logs/", file="preidctions.logs")
 
     logger.info('Loading the model')
 
     model = joblib.load(r'./models/rf.dat')
+    X =  pd.json_normalize(input)
+    # X = pd.json_normalize(input.__dict__)
 
-    X = pd.json_normalize(input.__dict__)
-
-    logger.info('the input is {}'.format(type(X)))
+    # logger.info('the input is {}'.format(type(X)))
 
     df_processed = pd.read_csv(r'./data/preprocessed_data.csv')
 
