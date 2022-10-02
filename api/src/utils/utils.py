@@ -1,41 +1,6 @@
 from imports import *
 
 
-def find_remove_duplicates(list_of_values):
-    """
-    # Removes duplicates from a list to return unique values - USED ONLY ONCE
-    """
-    output = []
-    seen = set()
-    for value in list_of_values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
-
-def find_remove_duplicates(list_of_values):
-    """
-    # Removes duplicates from a list to return unique values - USED ONLY ONCE
-    """
-    output = []
-    seen = set()
-    for value in list_of_values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
-
-def return_dictionary_list(lst_of_tuples):
-    """ Returns a dictionary of lists if you send in a list of Tuples"""
-    orDict = defaultdict(list)
-    # iterating over list of tuples
-    for key, val in lst_of_tuples:
-        orDict[key].append(val)
-    return orDict
-
-
 def logs(path: str, file: str) -> object:
     """[Create a log file to record the experiment's logs]
     parameters:
@@ -78,21 +43,6 @@ def logs(path: str, file: str) -> object:
 
     return logger
 
-
-def left_subtract(l1: list, l2: list) -> list:
-    # Used for removing the common elements from two lists
-    """
-    l1: list
-    l2: list
-    return: list
-    """
-    lst = []
-    for i in l1:
-        if i not in l2:
-            lst.append(i)
-    return lst
-
-
 def load_config(file_path: str) -> dict:
     """
     __summary__: This function is used to load the config file.
@@ -124,47 +74,6 @@ def cal_time_diff(df: pd.DataFrame, col1: pd.Series, col2: pd.Series, column_nam
     df[column_name] = df[column_name].dt.total_seconds()
     return df
 
-
-def anova(data: pd.DataFrame, i: str) -> float:
-    """"
-    __summary__: This function is used to calculate the anova score for each feature.
-    parameters:
-        data {pd.DataFrame} -- [dataframe]  
-        i {str} -- [name of the feature]
-    returns:
-        p-value {float} -- p-value of the anova test
-    """
-    logger = logs(path="logs/", file="utils.logs")
-    logger.info("Performing anova test for feature: {}".format(i))
-    try:
-        from scipy import stats
-        grps = pd.unique(data[i].values)
-        d_dat = {grp: data[i][data[i] == grp] for grp in grps}
-        k = len(pd.unique(data[i]))  # number of conditions
-        N = len(data.values)  # conditions times participants
-        n = data.groupby(i).size()[0]  # Participants in each condition
-        ss_between = (sum(data.groupby(i).sum()[
-                      'target'] ** 2)/n) - (data['target'].sum() ** 2)/N  # calculate sum of squares between groups
-        # calculate sum of squares within groups
-        sum_y_pred = sum([value**2 for value in data['target'].values])
-        # calculate sum of squares total
-        ss_within = sum_y_pred - sum(data.groupby(i).sum()['target'] ** 2)/n
-        ss_total = sum_y_pred - (data['target'].sum() ** 2)/N
-        ms_between = ss_between/(k-1)  # calculate mean square between groups
-        ms_within = ss_within/(N-k)  # calculate mean square within groups
-        f = ms_between/ms_within  # calculate f-statistic
-        p = stats.f.sf(f, k-1, N-k)  # calculate p-value
-        eta_squared = ss_between/ss_total
-        omega_squared = (ss_between - (k-1)*ms_within)/(ss_total + ms_within)
-        # print(f, p)
-        return p
-    except Exception as e:
-        logger.error(
-            "Error in performing anova test for feature: {}".format(i))
-        logger.error('error: {}'.format(e))
-        print(e)
-
-
 def split_datetime(df: pd.DataFrame, colname: str) -> pd.DataFrame:
     """_summary_: This function is used to split the datetime column into separate columns.
 
@@ -182,17 +91,11 @@ def split_datetime(df: pd.DataFrame, colname: str) -> pd.DataFrame:
     return df
 
 
-# Handling categorical features.
-# To handle categorical features, we will use the following approach:
-# 1. Categorify: We will replace the categories with a unique integer id.
-# 2. Target encoding: We will replace the categories with the mean of the target variable and smoothed to prevent overfitting.
-# 3. Count encode: We will replace the categories with the count of the category in the dataset.
-
-
 def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfrequency_id=0) -> pd.DataFrame:
     """__summary__: This function is used perform label encoding on the categorical features. 
     A frequency threshold is used to replace the categories with low frequency with a single category. 
-    To deal with high cardinality, we will replace the categories with low frequency with a single category.
+    To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
+    The category id 1 or 0 is reserved for unknown and low frequency categories respectively. 
     parameters: 
         df {pd.DataFrame} -- [dataframe]
         cat {str} -- [name of the categorical column]
@@ -226,7 +129,12 @@ def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfr
 def count_encode(df: pd.DataFrame, col: str) -> pd.DataFrame:
     """"
     __summary__: This function is used to perform count encoding on the categorical features. Count encoding done due to high cardinality of categorical columns.
-                It calculates the frequency from one or more categorical features
+                It calculates the frequency from one or more categorical features.
+    Count Encoding (CE) calculates the frequency from one or more categorical features given the training dataset.
+
+    Count Encoding creates a new feature, which can be used by the model for training.
+     It groups categorical values based on the frequency together.
+     Count Encoding creates a new feature, which can be used by the model for training. It groups categorical values based on the frequency together.
     parameters:
         df {pd.DataFrame} -- [dataframe]
         col {str} -- [name of the categorical column]
@@ -252,11 +160,18 @@ def count_encode(df: pd.DataFrame, col: str) -> pd.DataFrame:
 def target_encode(df: pd.DataFrame, col: str, target: str, kfold=5, smooth=20) -> pd.DataFrame:
     '''
     __summary__: This function is used to perform target encoding on the categorical features. Target encoding done due to high cardinality of categorical columns.
-    Taking groupby mean of categorical column and smoothing it using the formula: ((mean_cat*count_cat)+(mean_global*p_smooth)) / (count_cat+p_smooth)
+    Taking groupby mean of categorical column and smoothing it using the formula: 
+
+    TE = ((mean_cat*count_cat)+(mean_global*p_smooth)) / (count_cat+p_smooth)
+
     count_cat := count of the categorical value
     mean_cat := mean target value of the categorical value
     mean_global := mean target value of the whole dataset
     p_smooth := smoothing factor
+
+    In smoothing 
+    1. if the number of observation is high, we want to use the mean of this category value
+    2. if the number of observation is low, we want to use the global mean
 
     To prevent overfitting we use kfold cross validation. 
     To prevent overfitting for low cardinality columns, the means are smoothed with the overall target mean.
@@ -338,52 +253,7 @@ def gaussrank_gpu(data: np.array, epsilon=1e-6) -> np.array:
     # apply inverse error function to get normal distribution.
     r_gpu = erfinv(r_gpu)
     return (r_gpu)
-
-
-def merge_data_func(raw_data: pd.DataFrame, target_data: pd.DataFrame) -> pd.DataFrame:
-    """
-    [This function will create a dataframe from the raw data and target data]
-
-    Arguments:
-        raw_data {pd.DataFrame} -- [raw data]
-        target_data {pd.DataFrame} -- [target data]
-
-    Returns:
-        final_df{pd.DataFrame} -- [dataframe]
-    """
-
-    final_df = pd.DataFrame()  # Create an empty dataframe
-
-    # Loop through unqiue values of group and join the groups number on id and append to final_df (dataframe).
-
-    for _ in raw_data.groups.unique():
-        df_raw = raw_data[raw_data.groups == _]
-        df_target = target_data[target_data.groups == _]
-        df_merge = pd.merge(df_target, df_raw, on='index')
-        final_df = pd.concat([final_df, df_merge], axis=0)
-    return final_df
-
-
-def interpolate_date_time_features(df: pd.DataFrame, config) -> pd.DataFrame:
-    """
-    [This function will interpolate the date time features]
-
-    Arguments:
-        df {pd.DataFrame} -- [dataframe]
-
-    Returns:
-        df{pd.DataFrame} -- [dataframe]
-    """
-    df = shuffle(df)
-    # Interpolate the date time features
-    for col in df[config]:
-        df[col] = pd.to_datetime(df[col], errors='coerce')
-        df[col] = df[col].values.astype('int64')
-        df[col][df[col] < 0] = np.nan
-        df[col] = pd.to_datetime(df[col].interpolate(), unit='ns')
-    return df
-
-
+    
 def calculate_time_difference(df: pd.DataFrame,
                               col1: pd.Series, col2: pd.Series) -> str:
     """[Calculate the time difference between two timestamps]
@@ -397,22 +267,3 @@ def calculate_time_difference(df: pd.DataFrame,
     """
     time_difference: pd.timedelta[ns] = end_time - start_time
     return str(datetime.timedelta(seconds=time_difference))
-
-
-def remove_outliers(df: pd.DataFrame, cols: pd.Series) -> pd.DataFrame:
-    """[Remove outliers from the dataframe]
-
-    Arguments:
-        df {pd.DataFrame} -- [dataframe]
-        cols {pd.Series} -- [columns]
-
-    Returns:
-        [pd.DataFrame] -- [dataframe]
-    """
-    q1 = df[cols].quantile(0.25)
-    q3 = df[cols].quantile(0.75)
-    iqr = q3 - q1  # Interquartile range
-    fence_low = q1 - (1.5 * iqr)
-    fence_high = q3 + (1.5 * iqr)
-    df = df.loc[(df[cols] > fence_low) & (df[cols] < fence_high)]
-    return df

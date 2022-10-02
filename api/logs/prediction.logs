@@ -1,0 +1,1428 @@
+INFO: 2022-10-02 13:08:02,265: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:08:02,286: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:08:02,404: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:08:02,445: Label encoding the categorical columns
+INFO: 2022-10-02 13:08:02,463: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:08:02,480: performing label encoding on column: place
+INFO: 2022-10-02 13:08:02,495: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:08:02,512: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:08:02,528: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:08:02,544: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:08:02,560: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:08:02,576: performing label encoding on column: cycle
+INFO: 2022-10-02 13:08:02,592: performing label encoding on column: groups
+INFO: 2022-10-02 13:08:02,607: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:08:02,620: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:08:02,660: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:08:02,661: Target encoding the categorical columns
+INFO: 2022-10-02 13:08:02,799: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:08:02,896: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:08:02,995: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:08:03,096: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:08:03,201: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:08:03,300: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:08:03,400: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:08:03,504: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:08:03,601: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:08:03,692: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:08:03,779: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:08:03,867: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:08:03,868: Count encoding the categorical columns
+INFO: 2022-10-02 13:08:03,876: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:08:03,885: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:08:03,894: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:08:03,905: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:08:03,915: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:08:03,925: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:08:03,933: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:08:03,943: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:08:03,952: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:08:03,961: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:08:03,970: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:08:03,979: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:08:03,979: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:08:03,987: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:08:03,989: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:08:03,992: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:08:03,994: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:08:03,997: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:08:03,999: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:08:04,002: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:08:04,004: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:08:04,007: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:08:04,008: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:08:04,010: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:08:04,012: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:08:04,014: performing gaussrank on column: argon
+INFO: 2022-10-02 13:08:04,016: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:08:04,022: Performing prediction on the new data
+ERROR: 2022-10-02 13:08:04,024: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 39, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:09:33,695: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:09:33,706: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:09:33,793: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:09:33,858: Label encoding the categorical columns
+INFO: 2022-10-02 13:09:33,870: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:09:33,881: performing label encoding on column: place
+INFO: 2022-10-02 13:09:33,891: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:09:33,901: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:09:33,911: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:09:33,922: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:09:33,933: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:09:33,946: performing label encoding on column: cycle
+INFO: 2022-10-02 13:09:33,957: performing label encoding on column: groups
+INFO: 2022-10-02 13:09:33,968: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:09:33,979: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:09:33,990: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:09:33,991: Target encoding the categorical columns
+INFO: 2022-10-02 13:09:34,093: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:09:34,195: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:09:34,294: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:09:34,392: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:09:34,484: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:09:34,576: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:09:34,663: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:09:34,756: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:09:34,856: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:09:34,956: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:09:35,067: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:09:35,169: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:09:35,170: Count encoding the categorical columns
+INFO: 2022-10-02 13:09:35,180: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:09:35,190: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:09:35,199: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:09:35,210: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:09:35,223: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:09:35,235: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:09:35,245: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:09:35,257: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:09:35,268: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:09:35,276: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:09:35,287: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:09:35,301: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:09:35,302: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:09:35,313: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:09:35,316: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:09:35,320: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:09:35,324: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:09:35,327: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:09:35,330: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:09:35,333: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:09:35,335: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:09:35,338: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:09:35,342: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:09:35,345: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:09:35,347: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:09:35,350: performing gaussrank on column: argon
+INFO: 2022-10-02 13:09:35,353: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:09:35,358: Performing prediction on the new data
+ERROR: 2022-10-02 13:09:35,360: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 39, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:10:14,474: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:10:14,482: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:10:14,597: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:10:14,631: Label encoding the categorical columns
+INFO: 2022-10-02 13:10:14,642: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:10:14,654: performing label encoding on column: place
+INFO: 2022-10-02 13:10:14,664: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:10:14,675: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:10:14,686: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:10:14,697: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:10:14,709: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:10:14,720: performing label encoding on column: cycle
+INFO: 2022-10-02 13:10:14,732: performing label encoding on column: groups
+INFO: 2022-10-02 13:10:14,743: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:10:14,754: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:10:14,764: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:10:14,765: Target encoding the categorical columns
+INFO: 2022-10-02 13:10:14,858: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:10:14,941: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:10:15,025: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:10:15,110: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:10:15,215: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:10:15,330: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:10:15,445: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:10:15,544: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:10:15,634: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:10:15,725: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:10:15,822: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:10:15,932: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:10:15,932: Count encoding the categorical columns
+INFO: 2022-10-02 13:10:15,941: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:10:15,952: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:10:15,962: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:10:15,971: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:10:15,981: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:10:15,990: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:10:15,999: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:10:16,009: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:10:16,017: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:10:16,026: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:10:16,036: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:10:16,045: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:10:16,045: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:10:16,051: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:10:16,053: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:10:16,056: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:10:16,059: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:10:16,062: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:10:16,064: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:10:16,066: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:10:16,070: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:10:16,072: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:10:16,074: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:10:16,076: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:10:16,078: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:10:16,080: performing gaussrank on column: argon
+INFO: 2022-10-02 13:10:16,083: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:10:16,087: Performing prediction on the new data
+ERROR: 2022-10-02 13:10:16,089: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 39, in get_model_response
+    return prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:11:20,680: Shutting down
+INFO: 2022-10-02 13:11:20,790: Waiting for application shutdown.
+INFO: 2022-10-02 13:11:20,790: Application shutdown complete.
+INFO: 2022-10-02 13:11:20,791: Finished server process [22544]
+ERROR: 2022-10-02 13:11:28,795: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 12, in get_model_response
+    input_df = pd.DataFrame([data.dict()])
+AttributeError: 'dict' object has no attribute 'dict'
+ERROR: 2022-10-02 13:11:30,773: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 12, in get_model_response
+    input_df = pd.DataFrame([data.dict()])
+AttributeError: 'dict' object has no attribute 'dict'
+ERROR: 2022-10-02 13:11:32,166: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 12, in get_model_response
+    input_df = pd.DataFrame([data.dict()])
+AttributeError: 'dict' object has no attribute 'dict'
+ERROR: 2022-10-02 13:11:40,524: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 12, in get_model_response
+    input_df = pd.DataFrame([data.dict()])
+AttributeError: 'dict' object has no attribute 'dict'
+ERROR: 2022-10-02 13:12:03,266: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 12, in get_model_response
+    input_df = pd.DataFrame([input.dict()])
+AttributeError: 'dict' object has no attribute 'dict'
+INFO: 2022-10-02 13:13:05,840: Shutting down
+INFO: 2022-10-02 13:13:05,950: Waiting for application shutdown.
+INFO: 2022-10-02 13:13:05,950: Application shutdown complete.
+INFO: 2022-10-02 13:13:05,950: Finished server process [13380]
+INFO: 2022-10-02 13:13:15,089: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:13:15,098: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:13:15,200: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:13:15,234: Label encoding the categorical columns
+INFO: 2022-10-02 13:13:15,246: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:13:15,259: performing label encoding on column: place
+INFO: 2022-10-02 13:13:15,274: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:13:15,289: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:13:15,308: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:13:15,320: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:13:15,332: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:13:15,345: performing label encoding on column: cycle
+INFO: 2022-10-02 13:13:15,358: performing label encoding on column: groups
+INFO: 2022-10-02 13:13:15,370: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:13:15,381: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:13:15,392: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:13:15,393: Target encoding the categorical columns
+INFO: 2022-10-02 13:13:15,521: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:13:15,636: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:13:15,732: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:13:15,818: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:13:15,914: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:13:16,006: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:13:16,100: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:13:16,192: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:13:16,279: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:13:16,368: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:13:16,459: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:13:16,548: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:13:16,548: Count encoding the categorical columns
+INFO: 2022-10-02 13:13:16,556: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:13:16,565: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:13:16,573: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:13:16,581: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:13:16,590: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:13:16,599: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:13:16,607: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:13:16,616: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:13:16,624: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:13:16,633: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:13:16,642: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:13:16,650: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:13:16,651: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:13:16,657: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:13:16,660: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:13:16,662: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:13:16,664: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:13:16,667: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:13:16,669: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:13:16,671: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:13:16,674: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:13:16,676: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:13:16,679: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:13:16,681: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:13:16,683: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:13:16,685: performing gaussrank on column: argon
+INFO: 2022-10-02 13:13:16,688: performing gaussrank on column: pure_seastone
+ERROR: 2022-10-02 13:13:16,689: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 35, in get_model_response
+    == data['pure_seastone'].values[0]]
+NameError: name 'data' is not defined
+INFO: 2022-10-02 13:13:38,710: Shutting down
+INFO: 2022-10-02 13:13:38,821: Finished server process [26404]
+ERROR: 2022-10-02 13:13:38,868: Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<LifespanOn.main() running at D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\lifespan\on.py:84> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001D5728172E0>()]>>
+INFO: 2022-10-02 13:13:38,868: ASGI 'lifespan' protocol appears unsupported.
+INFO: 2022-10-02 13:13:45,996: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:13:46,006: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:13:46,133: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:13:46,169: Label encoding the categorical columns
+INFO: 2022-10-02 13:13:46,179: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:13:46,191: performing label encoding on column: place
+INFO: 2022-10-02 13:13:46,201: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:13:46,211: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:13:46,222: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:13:46,232: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:13:46,242: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:13:46,253: performing label encoding on column: cycle
+INFO: 2022-10-02 13:13:46,264: performing label encoding on column: groups
+INFO: 2022-10-02 13:13:46,274: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:13:46,285: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:13:46,297: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:13:46,297: Target encoding the categorical columns
+INFO: 2022-10-02 13:13:46,391: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:13:46,474: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:13:46,565: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:13:46,650: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:13:46,732: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:13:46,830: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:13:46,915: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:13:47,001: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:13:47,089: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:13:47,176: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:13:47,264: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:13:47,360: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:13:47,361: Count encoding the categorical columns
+INFO: 2022-10-02 13:13:47,369: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:13:47,377: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:13:47,385: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:13:47,394: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:13:47,402: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:13:47,411: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:13:47,419: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:13:47,428: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:13:47,438: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:13:47,448: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:13:47,458: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:13:47,468: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:13:47,469: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:13:47,475: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:13:47,477: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:13:47,480: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:13:47,483: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:13:47,486: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:13:47,489: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:13:47,492: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:13:47,494: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:13:47,497: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:13:47,500: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:13:47,502: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:13:47,504: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:13:47,507: performing gaussrank on column: argon
+INFO: 2022-10-02 13:13:47,510: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:13:47,515: Performing prediction on the new data
+ERROR: 2022-10-02 13:13:47,517: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 39, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:14:14,711: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:14:14,717: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:14:14,828: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:14:14,902: Label encoding the categorical columns
+INFO: 2022-10-02 13:14:14,912: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:14:14,922: performing label encoding on column: place
+INFO: 2022-10-02 13:14:14,932: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:14:14,942: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:14:14,952: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:14:14,962: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:14:14,971: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:14:14,981: performing label encoding on column: cycle
+INFO: 2022-10-02 13:14:14,991: performing label encoding on column: groups
+INFO: 2022-10-02 13:14:15,000: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:14:15,010: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:14:15,020: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:14:15,020: Target encoding the categorical columns
+INFO: 2022-10-02 13:14:15,111: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:14:15,207: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:14:15,310: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:14:15,422: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:15,512: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:14:15,600: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:14:15,691: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:14:15,784: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:14:15,878: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:14:15,968: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:16,062: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:14:16,156: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:14:16,156: Count encoding the categorical columns
+INFO: 2022-10-02 13:14:16,165: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:14:16,173: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:14:16,183: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:14:16,191: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:16,199: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:14:16,209: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:14:16,218: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:16,228: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:14:16,237: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:14:16,247: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:14:16,257: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:14:16,266: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:14:16,267: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:14:16,273: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:14:16,276: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:14:16,279: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:14:16,282: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:14:16,284: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:14:16,287: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:14:16,289: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:14:16,292: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:14:16,294: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:14:16,296: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:14:16,298: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:14:16,301: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:14:16,303: performing gaussrank on column: argon
+INFO: 2022-10-02 13:14:16,305: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:14:16,309: Performing prediction on the new data
+ERROR: 2022-10-02 13:14:16,311: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 39, in get_model_response
+    df_test.to_csv('test.csv')
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:14:45,260: Shutting down
+INFO: 2022-10-02 13:14:45,371: Waiting for application shutdown.
+INFO: 2022-10-02 13:14:45,371: Application shutdown complete.
+INFO: 2022-10-02 13:14:45,372: Finished server process [22168]
+INFO: 2022-10-02 13:14:51,905: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:14:51,915: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:14:52,008: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:14:52,034: Label encoding the categorical columns
+INFO: 2022-10-02 13:14:52,044: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:14:52,054: performing label encoding on column: place
+INFO: 2022-10-02 13:14:52,064: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:14:52,074: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:14:52,083: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:14:52,093: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:14:52,102: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:14:52,112: performing label encoding on column: cycle
+INFO: 2022-10-02 13:14:52,121: performing label encoding on column: groups
+INFO: 2022-10-02 13:14:52,131: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:14:52,140: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:14:52,150: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:14:52,151: Target encoding the categorical columns
+INFO: 2022-10-02 13:14:52,238: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:14:52,326: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:14:52,410: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:14:52,493: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:52,575: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:14:52,660: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:14:52,743: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:14:52,831: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:14:52,917: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:14:53,005: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:53,096: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:14:53,182: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:14:53,182: Count encoding the categorical columns
+INFO: 2022-10-02 13:14:53,190: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:14:53,199: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:14:53,207: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:14:53,215: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:53,224: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:14:53,234: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:14:53,242: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:53,251: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:14:53,260: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:14:53,269: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:14:53,277: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:14:53,285: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:14:53,286: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:14:53,292: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:14:53,295: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:14:53,297: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:14:53,298: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:14:53,301: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:14:53,303: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:14:53,305: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:14:53,307: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:14:53,309: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:14:53,311: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:14:53,314: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:14:53,316: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:14:53,318: performing gaussrank on column: argon
+INFO: 2022-10-02 13:14:53,319: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:14:53,323: shape of the data after transformation for prediction (0, 17)
+ERROR: 2022-10-02 13:14:53,326: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 40, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:14:55,849: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:14:55,860: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:14:55,962: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:14:56,037: Label encoding the categorical columns
+INFO: 2022-10-02 13:14:56,049: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:14:56,062: performing label encoding on column: place
+INFO: 2022-10-02 13:14:56,074: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:14:56,087: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:14:56,100: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:14:56,114: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:14:56,125: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:14:56,136: performing label encoding on column: cycle
+INFO: 2022-10-02 13:14:56,149: performing label encoding on column: groups
+INFO: 2022-10-02 13:14:56,160: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:14:56,174: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:14:56,185: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:14:56,186: Target encoding the categorical columns
+INFO: 2022-10-02 13:14:56,289: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:14:56,382: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:14:56,479: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:14:56,579: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:56,695: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:14:56,849: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:14:57,006: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:14:57,139: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:14:57,265: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:14:57,389: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:57,510: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:14:57,630: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:14:57,631: Count encoding the categorical columns
+INFO: 2022-10-02 13:14:57,642: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:14:57,655: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:14:57,665: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:14:57,676: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:14:57,688: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:14:57,698: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:14:57,709: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:14:57,721: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:14:57,733: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:14:57,744: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:14:57,754: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:14:57,765: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:14:57,766: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:14:57,773: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:14:57,776: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:14:57,780: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:14:57,782: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:14:57,785: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:14:57,788: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:14:57,791: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:14:57,794: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:14:57,796: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:14:57,798: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:14:57,802: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:14:57,805: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:14:57,807: performing gaussrank on column: argon
+INFO: 2022-10-02 13:14:57,810: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:14:57,815: shape of the data after transformation for prediction (0, 17)
+ERROR: 2022-10-02 13:14:57,817: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 40, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:15:47,717: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:15:47,729: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:15:47,834: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:15:47,863: Label encoding the categorical columns
+INFO: 2022-10-02 13:15:47,876: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:15:47,888: performing label encoding on column: place
+INFO: 2022-10-02 13:15:47,898: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:15:47,908: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:15:47,918: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:15:47,927: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:15:47,936: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:15:47,946: performing label encoding on column: cycle
+INFO: 2022-10-02 13:15:47,955: performing label encoding on column: groups
+INFO: 2022-10-02 13:15:47,966: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:15:47,975: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:15:47,984: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:15:47,985: Target encoding the categorical columns
+INFO: 2022-10-02 13:15:48,075: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:15:48,185: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:15:48,288: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:15:48,387: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:15:48,507: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:15:48,626: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:15:48,733: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:15:48,833: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:15:48,928: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:15:49,014: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:15:49,127: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:15:49,227: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:15:49,228: Count encoding the categorical columns
+INFO: 2022-10-02 13:15:49,235: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:15:49,244: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:15:49,252: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:15:49,260: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:15:49,269: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:15:49,278: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:15:49,286: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:15:49,295: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:15:49,304: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:15:49,313: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:15:49,322: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:15:49,331: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:15:49,332: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:15:49,341: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:15:49,343: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:15:49,346: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:15:49,349: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:15:49,351: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:15:49,353: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:15:49,355: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:15:49,357: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:15:49,360: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:15:49,362: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:15:49,366: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:15:49,368: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:15:49,370: performing gaussrank on column: argon
+INFO: 2022-10-02 13:15:49,372: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:15:49,377: shape of the data after transformation for prediction (0, 17)
+ERROR: 2022-10-02 13:15:49,378: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 71, in predict_target
+    prediction = get_model_response(data)
+  File "D:\27_september\code_challenge\api\.\src\function\functions.py", line 40, in get_model_response
+    prediction = model.predict(df_test)  # make prediction
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 991, in predict
+    X = self._validate_X_predict(X)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\sklearn\utils\validation.py", line 909, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 17)) while a minimum of 1 is required by RandomForestRegressor.
+INFO: 2022-10-02 13:15:54,649: Shutting down
+INFO: 2022-10-02 13:15:54,759: Waiting for application shutdown.
+INFO: 2022-10-02 13:15:54,760: Application shutdown complete.
+INFO: 2022-10-02 13:15:54,760: Finished server process [24072]
+INFO: 2022-10-02 13:16:26,323: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:16:26,336: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:16:26,463: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:16:26,497: Label encoding the categorical columns
+INFO: 2022-10-02 13:16:26,515: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:16:26,527: performing label encoding on column: place
+INFO: 2022-10-02 13:16:26,536: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:16:26,548: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:16:26,560: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:16:26,569: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:16:26,580: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:16:26,593: performing label encoding on column: cycle
+INFO: 2022-10-02 13:16:26,604: performing label encoding on column: groups
+INFO: 2022-10-02 13:16:26,614: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:16:26,625: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:16:26,635: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:16:26,636: Target encoding the categorical columns
+INFO: 2022-10-02 13:16:26,730: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:16:26,820: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:16:26,909: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:16:26,997: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:16:27,084: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:16:27,176: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:16:27,266: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:16:27,366: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:16:27,457: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:16:27,548: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:16:27,639: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:16:27,732: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:16:27,732: Count encoding the categorical columns
+INFO: 2022-10-02 13:16:27,740: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:16:27,749: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:16:27,758: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:16:27,766: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:16:27,775: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:16:27,784: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:16:27,793: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:16:27,801: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:16:27,811: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:16:27,821: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:16:27,829: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:16:27,838: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:16:27,839: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:16:27,845: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:16:27,847: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:16:27,849: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:16:27,852: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:16:27,855: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:16:27,857: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:16:27,859: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:16:27,862: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:16:27,865: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:16:27,867: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:16:27,869: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:16:27,872: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:16:27,874: performing gaussrank on column: argon
+INFO: 2022-10-02 13:16:27,876: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:16:27,880: shape of the data after transformation for prediction (8046, 17)
+ERROR: 2022-10-02 13:16:28,146: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 73, in predict_target
+    logger.info(
+NameError: name 'logger' is not defined
+INFO: 2022-10-02 13:32:17,081: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:32:17,090: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:32:17,193: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:32:17,297: Label encoding the categorical columns
+INFO: 2022-10-02 13:32:17,319: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:32:17,339: performing label encoding on column: place
+INFO: 2022-10-02 13:32:17,354: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:32:17,367: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:32:17,380: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:32:17,391: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:32:17,402: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:32:17,413: performing label encoding on column: cycle
+INFO: 2022-10-02 13:32:17,424: performing label encoding on column: groups
+INFO: 2022-10-02 13:32:17,436: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:32:17,446: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:32:17,457: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:32:17,457: Target encoding the categorical columns
+INFO: 2022-10-02 13:32:17,544: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:32:17,630: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:32:17,722: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:32:17,810: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:32:17,898: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:32:17,989: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:32:18,078: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:32:18,167: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:32:18,256: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:32:18,345: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:32:18,436: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:32:18,530: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:32:18,530: Count encoding the categorical columns
+INFO: 2022-10-02 13:32:18,539: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:32:18,547: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:32:18,556: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:32:18,566: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:32:18,574: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:32:18,584: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:32:18,594: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:32:18,602: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:32:18,614: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:32:18,624: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:32:18,635: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:32:18,646: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:32:18,646: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:32:18,652: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:32:18,654: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:32:18,657: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:32:18,660: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:32:18,662: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:32:18,664: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:32:18,667: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:32:18,669: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:32:18,671: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:32:18,673: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:32:18,676: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:32:18,678: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:32:18,679: performing gaussrank on column: argon
+INFO: 2022-10-02 13:32:18,682: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:32:18,685: shape of the data after transformation for prediction (8046, 17)
+ERROR: 2022-10-02 13:32:18,954: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 73, in predict_target
+    "prediction": prediction
+NameError: name 'logger' is not defined
+INFO: 2022-10-02 13:34:11,680: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:34:11,693: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:34:11,810: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:34:11,854: Label encoding the categorical columns
+INFO: 2022-10-02 13:34:11,868: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:34:11,878: performing label encoding on column: place
+INFO: 2022-10-02 13:34:11,887: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:34:11,897: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:34:11,907: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:34:11,917: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:34:11,932: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:34:11,949: performing label encoding on column: cycle
+INFO: 2022-10-02 13:34:11,964: performing label encoding on column: groups
+INFO: 2022-10-02 13:34:11,981: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:34:11,995: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:34:12,010: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:34:12,010: Target encoding the categorical columns
+INFO: 2022-10-02 13:34:12,138: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:34:12,263: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:34:12,388: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:34:12,508: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:34:12,605: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:34:12,703: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:34:12,799: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:34:12,891: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:34:12,979: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:34:13,068: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:34:13,157: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:34:13,262: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:34:13,262: Count encoding the categorical columns
+INFO: 2022-10-02 13:34:13,270: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:34:13,280: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:34:13,288: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:34:13,296: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:34:13,304: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:34:13,314: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:34:13,322: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:34:13,331: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:34:13,339: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:34:13,348: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:34:13,357: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:34:13,365: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:34:13,366: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:34:13,373: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:34:13,375: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:34:13,377: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:34:13,379: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:34:13,381: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:34:13,384: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:34:13,386: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:34:13,388: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:34:13,391: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:34:13,393: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:34:13,395: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:34:13,397: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:34:13,399: performing gaussrank on column: argon
+INFO: 2022-10-02 13:34:13,401: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:34:13,405: shape of the data after transformation for prediction (8046, 17)
+ERROR: 2022-10-02 13:34:13,665: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 73, in predict_target
+    "prediction": prediction
+NameError: name 'logger' is not defined
+INFO: 2022-10-02 13:34:30,458: appending the new data to the preprocessed data for transformation
+INFO: 2022-10-02 13:34:30,467: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-02 13:34:30,587: Calculating the time difference between two datetime columns
+INFO: 2022-10-02 13:34:30,674: Label encoding the categorical columns
+INFO: 2022-10-02 13:34:30,684: performing label encoding on column: super_hero_group
+INFO: 2022-10-02 13:34:30,695: performing label encoding on column: place
+INFO: 2022-10-02 13:34:30,705: performing label encoding on column: tracking_times
+INFO: 2022-10-02 13:34:30,715: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-02 13:34:30,725: performing label encoding on column: crystal_type
+INFO: 2022-10-02 13:34:30,736: performing label encoding on column: unnamed_7
+INFO: 2022-10-02 13:34:30,748: performing label encoding on column: human_behavior_report
+INFO: 2022-10-02 13:34:30,758: performing label encoding on column: cycle
+INFO: 2022-10-02 13:34:30,770: performing label encoding on column: groups
+INFO: 2022-10-02 13:34:30,781: performing label encoding on column: ts_weekday
+INFO: 2022-10-02 13:34:30,791: performing label encoding on column: ts_day
+INFO: 2022-10-02 13:34:30,803: performing label encoding on column: ts_month
+INFO: 2022-10-02 13:34:30,803: Target encoding the categorical columns
+INFO: 2022-10-02 13:34:30,900: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-02 13:34:30,994: performing target encoding on column: place_Categorify
+INFO: 2022-10-02 13:34:31,090: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-02 13:34:31,185: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-02 13:34:31,286: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-02 13:34:31,379: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-02 13:34:31,473: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-02 13:34:31,569: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-02 13:34:31,669: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-02 13:34:31,764: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-02 13:34:31,852: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-02 13:34:31,943: performing target encoding on column: groups_Categorify
+INFO: 2022-10-02 13:34:31,943: Count encoding the categorical columns
+INFO: 2022-10-02 13:34:31,951: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-02 13:34:31,959: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-02 13:34:31,968: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-02 13:34:31,977: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-02 13:34:31,986: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-02 13:34:31,995: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-02 13:34:32,004: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-02 13:34:32,014: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-02 13:34:32,024: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-02 13:34:32,032: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-02 13:34:32,040: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-02 13:34:32,049: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-02 13:34:32,049: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-02 13:34:32,055: performing gaussrank on column: tracking
+INFO: 2022-10-02 13:34:32,058: performing gaussrank on column: human_measure
+INFO: 2022-10-02 13:34:32,060: performing gaussrank on column: crystal_weight
+INFO: 2022-10-02 13:34:32,062: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-02 13:34:32,064: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-02 13:34:32,066: performing gaussrank on column: first_factor_x
+INFO: 2022-10-02 13:34:32,068: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-02 13:34:32,070: performing gaussrank on column: final_factor_x
+INFO: 2022-10-02 13:34:32,072: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-02 13:34:32,074: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-02 13:34:32,076: performing gaussrank on column: chemical_x
+INFO: 2022-10-02 13:34:32,079: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-02 13:34:32,081: performing gaussrank on column: argon
+INFO: 2022-10-02 13:34:32,083: performing gaussrank on column: pure_seastone
+INFO: 2022-10-02 13:34:32,087: shape of the data after transformation for prediction (8046, 17)
+ERROR: 2022-10-02 13:34:32,346: Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "D:\27_september\code_challenge\venv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\27_september\code_challenge\api\.\main.py", line 73, in predict_target
+    "prediction": prediction
+NameError: name 'logger' is not defined
+INFO: 2022-10-02 13:34:58,574: Shutting down
+INFO: 2022-10-02 13:34:58,685: Waiting for application shutdown.
+INFO: 2022-10-02 13:34:58,686: Application shutdown complete.
+INFO: 2022-10-02 13:34:58,686: Finished server process [19564]
