@@ -1,7 +1,5 @@
 pandas
-featurewiz
 logzero
-matplotlib
 mlxtend
 numpy
 shap
@@ -9,14 +7,12 @@ pycaret
 PyYAML
 scikit_learn
 scipy
-seaborn
-xgboost
-streamlit
 protobuf
 joblib
 fastapi
 uvicorn[standard]
 papermill
 flask
+requests
 uvicorn==0.14.0
 fastapi==0.68.0
