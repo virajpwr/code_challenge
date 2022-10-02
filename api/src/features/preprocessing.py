@@ -1,171 +1,134 @@
 
 from imports import *
 
+class FeatEngg(object):
+    """_summary_: This function is used to create new features from existing features.
 
-class preprocessing(object):
-    """_summary_: A class to preprocess the raw data and target data
-
-    parameters:
+    Parameters:
         df {dataframe}: A dataframe with the raw data
-        config {dict}: A dictionary with the configuration
+        config {dict}: A dictionary with the configuration parameters
+    methods:
+        categorify_columns(): A function to label encode the categorical columns
 
-    Methods:
-        convert_dtypes(): A function to convert the data types of the dataframe
+        target_encode_columns(): A function to take groupy mean of the target column for categorical columns.
 
-        replace_values(): A function to replace the values of the columns [cycle, crystal_supergroup, etherium_before_start]
+        count_encode_columns(): A function to take count (value_count) of the categorical columns.
 
-        interpolate_datetime(): A function to interpolate the datetime columns
+        transforming_target_continuous(): A function to transform the target and continous columns distribution to guassian distribution using gaussrank. 
 
-        drop_duplicate_rows(): A function to drop the duplicate rows
+        split_datetime_col(): A function to split the datetime columns into year, month, day for the column 'when'.
 
-        processing_missing_values(): A function to fill na with median for continous columns and mode for categorical columns
-
-        remove_outliers(): A function to remove the outliers
+        cal_time_diff(): A function to calculate the time difference between two datetime columns.
     """
 
-    def __init__(self, df: pd.DataFrame, config: dict, logger: Logger) -> None:
+    def __init__(self, df, config, logger) -> None:
+        """
+        __Summary__: Initialize the class
+
+        Parameters:
+            df {dataframe}: A dataframe with the raw data
+            config {dict}: A dictionary with the configuration parameters
+        returns:
+            None
+        """
         self.df = df
         self.config = config
         self.logger = logger
 
-    def convert_dtypes(self) -> pd.DataFrame:
-        """_summary_: A function to convert the data types of the dataframe
+    def categorify_columns(self):
+        """_summary_: A function to label encode the categorical columns using categorify function from utils.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the converted data types
+        returns:
+            df {dataframe}: A dataframe with the label encoded columns
+
         """
+        self.logger.info("Label encoding the categorical columns")
 
-        self.logger.info("Converting dtypes")
-
-        # self.df[self.config['cat_cols']] = self.df[self.config['cat_cols']].astype(
-        #     'category', errors='ignore')  # converting the categorical columns to category type
-        self.df[self.config['cat_cols']] = self.df[self.config['cat_cols']].astype(
-            'int64', errors='ignore')  # converting the categorical columns to int type
-        self.df[self.config['continous_cols']] = self.df[self.config['continous_cols']].astype(
-            'float', errors='ignore')  # converting the continous columns to float type
-
+        for col in self.config["categorify_columns"]:
+            self.df = categorify(df=self.df, cat=col, freq_treshhold=20)
+            self.logger.info(
+                "performing label encoding on column: {}".format(col))
         return self.df
 
-    def replace_values(self) -> pd.DataFrame:
-        """_summary_: A function to replace the values of the columns [cycle, crystal_supergroup, etherium_before_start]
+    def target_encode_columns(self):
+        self.logger.info("Target encoding the categorical columns")
+        """"
+        __Summary__: A function to take groupy mean of the target column for categorical columns using target_encode function from utils.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the replaced values
+        returns:
+            df {dataframe}: A dataframe with the target encoded columns
         """
-
-        self.logger.info("Replacing values")
-
-        self.df['cycle'] = self.df['cycle'].replace(
-            ['33', '1ª', '2ª', '3ª', '131'], ['1', '1', '2', '3', '4'])  # replace the categorical values.
-        self.df['crystal_supergroup'] = self.df['crystal_supergroup'].replace(
-            '1ª', '0')  # replace the unknown value by 0.
-        self.df['etherium_before_start'] = self.df['etherium_before_start'].replace(
-            ['21/12/2020 12:11'], 441.78)  # replace the date value with the mean of the column.
+        for col in self.config["target_encode_columns"]:
+            self.df = target_encode(self.df, [col], 'target')
+            self.logger.info(
+                "performing target encoding on column: {}".format(col))
         return self.df
 
-    def interpolate_datetime(self) -> pd.DataFrame:
-        """_summary_: A function to interpolate the datetime columns
+    def count_encode_columns(self):
+        self.logger.info("Count encoding the categorical columns")
+        """_summary_: A function to take count (value_count) of the categorical columns using count_encode function from utils.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the interpolated datetime column
+        returns:
+            df {dataframe}: A dataframe with the count encoded columns
+
+        for col in self.config["count_encode_columns"]:
+            self.df = count_encode(self.df, col)
+        return self.df
         """
+        for col in self.config["count_encode_columns"]:
+            self.df = count_encode(self.df, col)
+            self.logger.info(
+                "performing count encoding on column: {}".format(col))
+        return self.df
 
-        self.logger.info("Interpolating dattime columns")
-
-        self.df = shuffle(self.df)  # suffling the dataframe
-        self.df = interpolate_date_time_features(
-            self.df, self.config['date_cols'])  # interpolating the datetime columns
-        self.df['start_critical_subprocess1'] = pd.to_datetime(
-            self.df['start_critical_subprocess1'], errors='coerce')  # converting the datetime columns to datetime type
-        self.df['start_critical_subprocess1'] = self.df['start_critical_subprocess1'].values.astype(
-            'int64')  # converting the datetime columns to int type
-        self.df['start_critical_subprocess1'][self.df['start_critical_subprocess1']
-                                              < 0] = np.nan  # replacing the negative values with nan
-        self.df['start_critical_subprocess1'] = pd.to_datetime(
-            self.df['start_critical_subprocess1'].interpolate(), unit='ns')  # interpolating the datetime columns
-        self.df[self.config['date_cols']
-                ] = self.df[self.config['date_cols']].astype('datetime64[ns]')  # converting the datetime columns to datetime type
-        self.df['start_critical_subprocess1'] = self.df['start_critical_subprocess1'].astype(
-            'datetime64[ns]')  # converting the datetime columns to datetime type
-        return self.df  # returning the dataframe with interpolated datetime columns
-
-    def drop_duplicate_rows(self) -> pd.DataFrame:
-        """_summary_: A function to drop the duplicates
+    def transforming_target_continuous(self):
+        """_summary_: A function to transform the target and continous columns distribution to guassian distribution using
+                     gaussrank_gpu function from utils.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the dropped duplicates
+        returns:
+            df {dataframe}: A dataframe with the transformed columns
         """
-
         self.logger.info(
-            "Dropping duplicates rows for columns: {}".format('start_process'))
-
-        self.df['start_process'] = self.df['start_process'].astype(
-            'datetime64[ns]')  # converting the datetime columns to datetime type
-        # sorting the dataframe by start_process to remove the duplicates
-        self.df = self.df.sort_values(by='start_process')
-        # Drop duplicate and keep the first row
-        self.df = self.df.drop_duplicates('start_process', keep='first')
+            "Transforming the target and continous columns distribution to guassian distribution")
+        self.df["target"] = gaussrank_gpu(self.df["target"])
+        for col in self.config["continous_cols"]:
+            self.df[col] = gaussrank_gpu(self.df[col].values)
+            self.logger.info("performing gaussrank on column: {}".format(col))
         return self.df
 
-    # def processing_missing_values(self) -> pd.DataFrame:
-    #     """_summary_: A function to process the missing values using MICE
-    #     parameters:
-    #         None
-    #     Returns:
-    #         df {dataframe}: A dataframe with the processed missing values
-    #     """
-    #     cols_imputed = mice(self.df[self.config['vars_with_na']].values)
-    #     imputed_df = pd.DataFrame(
-    #         cols_imputed, columns=self.df[self.config['vars_with_na']].columns)
-    #     df_ = self.df.drop(self.df[self.config['vars_with_na']], axis=1)
-    #     df_ = df_.reset_index()
-    #     imputed_df_ = imputed_df.reset_index()
-    #     df_imputed_final = pd.merge(df_, imputed_df_, on='index')
-    #     return df_imputed_final
-
-    def processing_missing_values(self) -> pd.DataFrame:
-        """_summary_: A function to fill na with median for continous columns and mode for categorical columns
+    def split_datetime_col(self):
+        """_summary_: A function to split the datetime columns into year, month, day for the column 'when'.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the processed missing values
+        returns:
+            df {dataframe}: A dataframe with the split datetime columns
         """
-        self.logger.info("Processing missing values")
-        for col in self.config["vars_with_na"]:
-            self.df["NA_" + col] = self.df[col].isna().astype(np.int8)
-            if str(self.df[col].dtypes) in ['int64', 'float64']:
-                self.df[col].fillna(self.df[col].median(), inplace=True)
-            else:
-                self.df[col].fillna(self.df[col].mode()[0], inplace=True)
+        self.logger.info(
+            "Splitting the datetime column into year, month, day, weekday")
+        # Split datetime columns into year, month, day.
+        for colname in self.df[self.config['date_cols']]:
+            self.df[colname] = self.df[colname].astype('datetime64[ns]')
+        # Using split_datetime function from utils.
+        self.df = split_datetime(self.df, "when")
         return self.df
 
-    def drop_duplicate_columns(self) -> pd.DataFrame:
-        """_summary_: A function to drop the duplicate columns
+    def cal_time_diff(self):
+        """_summary_: A function to calculate the time difference between two datetime columns.
         parameters:
             None
-        Returns:
-            df {dataframe}: A dataframe with the dropped duplicate columns
-        """
-        self.logger.info("Dropping duplicate columns")
-        self.df = self.df.drop(
-            columns=self.config['duplicate_cols'])  # dropping the duplicate columns unnamed_17
-        # self.df = self.df.T.drop_duplicates().T # Doesnt work
-        return self.df
+        returns:
+            df {dataframe}: A dataframe with the time difference columns
 
-    def remove_outliers(self) -> pd.DataFrame:
-        """_summary_: A function to remove the outliers
-        parameters:
-            None
-        Returns:
-            df {dataframe}: A dataframe with the removed outliers
         """
-        self.logger.info("Removing outliers IQR method")
-        for i in self.df[self.config['continous_cols']]:
-            # removing the outliers using the remove_outliers function from utils.
-            df_temp = remove_outliers(self.df, i)
-            self.logger.info("outlier removed for column: {}".format(i))
-        return df_temp
+        self.logger.info(
+            "Calculating the time difference between two datetime columns")
+        # Calculate time difference between two datetime columns.
+        self.df = cal_time_diff(self.df, 'process_end',
+                                'start_process', 'time_diff_process')
+        self.df = cal_time_diff(
+            self.df, 'subprocess1_end', 'start_subprocess1', 'time_diff_subprocess')
+        return self.df
