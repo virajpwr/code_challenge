@@ -1,0 +1,1 @@
+curl --request POST --header 'Content-Type: application/json' --data @test_data_json/test_data.json --url http://0.0.0.0:8000/predict
