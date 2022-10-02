@@ -69,6 +69,7 @@ class FeatEngg(object):
     def count_encode_columns(self):
         self.logger.info("Count encoding the categorical columns")
         """_summary_: A function to take count (value_count) of the categorical columns using count_encode function from utils.
+        Count Encoding (CE) calculates the frequency from one or more categorical features given the training dataset.
         parameters:
             None
         returns:

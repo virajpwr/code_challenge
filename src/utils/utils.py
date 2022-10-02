@@ -240,13 +240,15 @@ def count_encode(df: pd.DataFrame, col: str) -> pd.DataFrame:
     df['org_sorting'] = np.arange(len(df), dtype="int32")
 
     # count the number of each category
-    df_tmp = df[col].value_counts().reset_index()
-    df_tmp.columns = [col,  'CE_' + col]  # rename the columns
+    df_tmp = df[col].value_counts().reset_index()  # reset the index
+    df_tmp.columns = [col,  'CE_' + col]  # rename the columns with CE prefix
     df_tmp = df[[col, 'org_sorting']].merge(
         df_tmp, how='left', left_on=col, right_on=col).sort_values('org_sorting')  # merge the count with the original dataframe
     # fill the missing values with 0
+
     df['CE_' + col] = df_tmp['CE_' + col].fillna(0).values
     df = df.drop('org_sorting', axis=1)  # drop the temporary column
+    # convert the column to int32
     # convert the column to int32
     df['CE_' + col] = df['CE_' + col].astype('int32')
     return df
@@ -262,7 +264,7 @@ def target_encode(df: pd.DataFrame, col: str, target: str, kfold=5, smooth=20) -
     count_cat := count of the categorical value
     mean_cat := mean target value of the categorical value
     mean_global := mean target value of the whole dataset
-    p_smooth := smoothing factor
+    p_smooth := smoothing factor randomly chosen between 10 and 30
 
     In smoothing 
     1. if the number of observation is high, we want to use the mean of this category value
@@ -281,10 +283,10 @@ def target_encode(df: pd.DataFrame, col: str, target: str, kfold=5, smooth=20) -
         df {pd.DataFrame} -- [dataframe with new column]
 
     '''
-    # We assume that the df dataset is shuffled
+    # Assume that the df dataset is shuffled
     df['kfold'] = ((df.index) % kfold)
     df['org_sorting'] = np.arange(len(df), dtype="int32")
-    # We create the output column, we fill with 0
+    # Create the output column, we fill with 0
     col_name = '_'.join(col)
     df['TE_' + col_name] = 0.
     for i in range(kfold):

@@ -1,3 +1,23 @@
+required_cols_prediction:
+  [
+    "TE_crystal_type_Categorify",
+    "TE_groups_Categorify",
+    "TE_ts_day_Categorify",
+    "TE_ts_weekday_Categorify",
+    "TE_ts_month_Categorify",
+    "TE_unnamed_7_Categorify",
+    "CE_TE_groups_Categorify",
+    "CE_TE_ts_day_Categorify",
+    "CE_TE_ts_weekday_Categorify",
+    "CE_TE_ts_month_Categorify",
+    "CE_TE_unnamed_7_Categorify",
+    "CE_TE_super_hero_group_Categorify",
+    "CE_TE_place_Categorify",
+    "TE_cycle_Categorify",
+    "CE_TE_human_behavior_report_Categorify",
+    "super_hero_group_Categorify",
+    "groups"
+  ]
 PATHS:
     Project_path: './'
     models_path: 'models/'
@@ -34,8 +54,12 @@ parameter_grid_rf:
     param_grid : {
     'bootstrap': [True], # Consider bootstapping
     'max_features': [2, 3, 4, 5, 6], # number of features to consider at every split
-    'n_estimators': [100, 200, 500, 600] # Number of trees in random forest
-                }
+    'n_estimators': [100, 200, 500, 600, 1000], # Number of trees in random forest
+    'max_depth': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100], # Maximum number of levels in tree
+    'min_samples_split': [2, 5, 10], # Minimum number of samples required to split a node
+    'min_samples_leaf': [1, 2, 4], # Minimum number of samples required at each leaf node
+    'random_state': [2022]
+}
 # A parameter grid for XGBoost
 
 # parameter_grid:
@@ -51,17 +75,17 @@ parameter_grid_rf:
 #     'eta': [0.3,0.4,0.5],
 #     }
 
-parameter_grid:
+parameter_grid_xgboost:
     params : {
-    'n_estimators': [100, 500, 900, 1100, 1500],
-    'max_depth': [2, 3, 5, 10, 15],
-    'learning_rate': [0.05, 0.1, 0.15, 0.20],
-    'min_child_weight': [1, 2, 3, 4]
+    'n_estimators': [100, 500, 900, 1100, 1500], # Number of trees in random forest
+    'max_depth': [2, 3, 5, 10, 15], # Maximum number of levels in tree
+    'learning_rate': [0.05, 0.1, 0.15, 0.20], # Boosting learning rate
+    'min_child_weight': [1, 2, 3, 4] # Minimum number of data points required in a child node
     }
 
 lasso_params: 
     params : {
-        'alpha':[0.02, 0.024, 0.025, 0.026, 0.03]}
+        'alpha':[0.02, 0.024, 0.025, 0.026, 0.03]} # Tuning parameter for the Lasso model that controls the degree of regularization.
 
 
 test_file_name: dataset_00_with_header.csv
@@ -183,25 +207,3 @@ required_columns : ['super_hero_group_Categorify',
         'chemical_x','raw_kryptonite','argon','pure_seastone', 
         'TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 'TE_ts_month_Categorify', 'ts_weekday_Categorify', 'ts_day_Categorify', 'ts_month_Categorify', 'ts_weekday', 'ts_day', 'ts_month',
         'CE_TE_ts_weekday_Categorify', 'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify']
-
-
-required_cols_prediction:
-  [
-    "TE_crystal_type_Categorify",
-    "TE_groups_Categorify",
-    "TE_ts_day_Categorify",
-    "TE_ts_weekday_Categorify",
-    "TE_ts_month_Categorify",
-    "TE_unnamed_7_Categorify",
-    "CE_TE_groups_Categorify",
-    "CE_TE_ts_day_Categorify",
-    "CE_TE_ts_weekday_Categorify",
-    "CE_TE_ts_month_Categorify",
-    "CE_TE_unnamed_7_Categorify",
-    "CE_TE_super_hero_group_Categorify",
-    "CE_TE_place_Categorify",
-    "TE_cycle_Categorify",
-    "CE_TE_human_behavior_report_Categorify",
-    "super_hero_group_Categorify",
-    "groups",
-  ]
