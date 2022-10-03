@@ -2,11 +2,11 @@
 
 ## Summary:
 
-
-The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The random forest model was the best model with the lowest RMSE of 0.51. 
+The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The random forest model was the best model with the lowest RMSE of 0.51.
 The code was transformed into an API and deployed as a docked container instance in Azure.
 
 The API from Azure container instance can be accessed at:
+
 ```
 20.23.111.32:8000/predict
 ```
@@ -33,6 +33,7 @@ The following steps were taken to solve the problem:
 7. The column cycle contains unknown character: ['2ª', '1ª', '3ª']
 8. The target variable is right skewed. The target variable is not normally distributed.
 9. Since the target variable is continous, the problem is a regression problem.
+
 ## Data Preparation
 
 ### The following steps were taken to prepare the data:
@@ -171,8 +172,10 @@ The histogram shows that residuals are normally distributed.
 
 #### Further improovements:
 
-1. Use more data to train the model. Try different feature selection techniques like wrapper method like recursive feature elimination.
-2. Try different models.
+1. Use more data to train the model.
+2. Try different feature selection techniques like wrapper method like recursive feature elimination.
+3. Try different feature engineering techniques.
+4. Try different models.
 
 ### Folder structure
 
@@ -280,7 +283,6 @@ Link to the API: http://20.23.111.32:8000/predict
 
 ![](flowchart/presentation/azure.jpg)
 
+ref:
 
-
-ref: 
 1. Dobbin, K.K. and Simon, R.M., 2011. Optimally splitting cases for training and testing high dimensional classifiers. BMC medical genomics, 4(1), pp.1-8.
