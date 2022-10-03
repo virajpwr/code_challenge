@@ -3,7 +3,12 @@
 ## Summary:
 
 ```
-The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used.
+The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The random forest model was the best model with the lowest RMSE of 0.51. 
+The code was transformed into an API and deployed as a docked container instance in Azure.
+
+The API from Azure container instance can be accessed at:
+
+20.23.111.32:8000/predict
 
 ```
 
@@ -17,7 +22,18 @@ The following steps were taken to solve the problem:
 
 1. The data contains two files two files; raw data and target data containing the indepedent variables and dependent variable respectively.
 2. The raw data contains 34 features, 1 id column. The target data file contains dependent feature.
+3. There are missing values in the raw data features with 'etherium_before_start' containing the highest number of missing values.
+4. There are 14 continous features, 8 categorical features, 9 datetime features.
+5. There are duplicate column 'Unnamed: 17' which is a copy of 'first_factor_x' and duplicate rows.
+6. There exist multicollinearity between the features. The following features are highle correlated (>0.70) to each other by. The pearson correlation between those features is shown below:
+   final_factor_x -> previous_adamantium ->0.777342
+   Unnamed: 17 -> previous_factor_x 0.803016
+   previous_factor_x -> first_factor_x -> 0.803064
+   chemical_x -> previous_adamantium 0.851631.
 
+7. The column cycle contains unknown character: ['2ª', '1ª', '3ª']
+8. The target variable is right skewed. The target variable is not normally distributed.
+9. Since the target variable is continous, the problem is a regression problem.
 ## Data Preparation
 
 ### The following steps were taken to prepare the data:
@@ -136,7 +152,10 @@ XGBoost model: RMSE = 0.61
    ![](reports/plots/linear_regression_plots.png)
 
 From the above actual vs predicted plot, we can see that there is no linear relation between actual and predicted valeues. So the linear assumption is violated.
-In residual plot we can see that the residuals are not close to zero. The predictions are not accurate and contains mix of high and low errors.
+
+In residual plot we can see that the residuals are not close to zero. The predictions are not
+accurate and contains mix of high and low errors. The assumption of Homoscedasticity is violated.
+
 The histogram shows that residuals are normally distributed.
 
 2. Learning curve for random forest model.
@@ -261,3 +280,8 @@ Link to the API: http://20.23.111.32:8000/predict
 ### Azure container instance
 
 ![](flowchart/presentation/azure.jpg)
+
+
+
+ref: 
+1. Dobbin, K.K. and Simon, R.M., 2011. Optimally splitting cases for training and testing high dimensional classifiers. BMC medical genomics, 4(1), pp.1-8.
