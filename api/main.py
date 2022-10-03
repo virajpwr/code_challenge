@@ -1,4 +1,3 @@
-# from model import SentimentModel, SentimentQueryModel
 from datetime import timedelta
 from imports import *
 from pydantic import BaseModel
