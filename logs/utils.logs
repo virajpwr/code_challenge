@@ -1599,3 +1599,26 @@ ERROR: 2022-10-01 13:06:16,682: Error in performing anova test for feature: huma
 ERROR: 2022-10-01 13:06:16,682: error: 0
 INFO: 2022-10-01 13:06:16,683: Performing anova test for feature: cycle
 INFO: 2022-10-01 13:06:16,844: Selected categorical features: ['super_hero_group_Categorify', 'groups']
+INFO: 2022-10-03 09:20:10,013: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-10-03 09:20:10,185: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-10-03 09:20:10,323: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-03 09:20:10,437: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-03 09:20:10,437: error: 0
+INFO: 2022-10-03 09:20:10,438: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-03 09:20:10,575: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-03 09:20:10,575: error: 0
+INFO: 2022-10-03 09:20:10,576: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-03 09:20:10,658: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-03 09:20:10,658: error: 0
+INFO: 2022-10-03 09:20:10,659: Performing anova test for feature: groups_Categorify
+ERROR: 2022-10-03 09:20:10,807: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-10-03 09:20:10,807: error: 0
+INFO: 2022-10-03 09:20:10,808: Performing anova test for feature: groups
+INFO: 2022-10-03 09:20:10,981: Performing anova test for feature: unnamed_7
+ERROR: 2022-10-03 09:20:11,099: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-10-03 09:20:11,099: error: 0
+INFO: 2022-10-03 09:20:11,100: Performing anova test for feature: human_behavior_report
+ERROR: 2022-10-03 09:20:11,236: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-10-03 09:20:11,236: error: 0
+INFO: 2022-10-03 09:20:11,237: Performing anova test for feature: cycle
+INFO: 2022-10-03 09:20:11,387: Selected categorical features: ['super_hero_group_Categorify', 'groups']

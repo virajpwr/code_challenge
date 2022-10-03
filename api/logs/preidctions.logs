@@ -921,3 +921,49 @@ INFO: 2022-10-03 00:34:35,878: performing count encoding on column: TE_groups_Ca
 INFO: 2022-10-03 00:34:35,892: performing count encoding on column: TE_ts_weekday_Categorify
 INFO: 2022-10-03 00:34:35,907: performing count encoding on column: TE_ts_day_Categorify
 INFO: 2022-10-03 00:34:35,920: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-03 09:19:44,862: Loading the model
+INFO: 2022-10-03 09:19:45,626: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-03 09:19:45,719: Calculating the time difference between two datetime columns
+INFO: 2022-10-03 09:19:45,752: Label encoding the categorical columns
+INFO: 2022-10-03 09:19:45,773: performing label encoding on column: super_hero_group
+INFO: 2022-10-03 09:19:45,795: performing label encoding on column: place
+INFO: 2022-10-03 09:19:45,811: performing label encoding on column: tracking_times
+INFO: 2022-10-03 09:19:45,831: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-03 09:19:45,851: performing label encoding on column: crystal_type
+INFO: 2022-10-03 09:19:45,865: performing label encoding on column: unnamed_7
+INFO: 2022-10-03 09:19:45,885: performing label encoding on column: human_behavior_report
+INFO: 2022-10-03 09:19:45,898: performing label encoding on column: cycle
+INFO: 2022-10-03 09:19:45,909: performing label encoding on column: groups
+INFO: 2022-10-03 09:19:45,920: performing label encoding on column: ts_weekday
+INFO: 2022-10-03 09:19:45,931: performing label encoding on column: ts_day
+INFO: 2022-10-03 09:19:45,943: performing label encoding on column: ts_month
+INFO: 2022-10-03 09:19:45,944: Target encoding the categorical columns
+INFO: 2022-10-03 09:19:46,041: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-03 09:19:46,128: performing target encoding on column: place_Categorify
+INFO: 2022-10-03 09:19:46,218: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-03 09:19:46,336: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-03 09:19:46,450: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-03 09:19:46,545: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-03 09:19:46,646: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-03 09:19:46,772: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-03 09:19:46,903: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-03 09:19:47,055: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-03 09:19:47,197: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-03 09:19:47,310: performing target encoding on column: groups_Categorify
+INFO: 2022-10-03 09:19:47,311: Count encoding the categorical columns
+INFO: 2022-10-03 09:19:47,323: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-03 09:19:47,335: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-03 09:19:47,348: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-03 09:19:47,360: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-03 09:19:47,372: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-03 09:19:47,384: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-03 09:19:47,395: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-03 09:19:47,405: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-03 09:19:47,415: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-03 09:19:47,424: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-03 09:19:47,433: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-03 09:19:47,443: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-03 09:19:51,661: Shutting down
+INFO: 2022-10-03 09:19:51,768: Waiting for application shutdown.
+INFO: 2022-10-03 09:19:51,768: Application shutdown complete.
+INFO: 2022-10-03 09:19:51,769: Finished server process [6488]
