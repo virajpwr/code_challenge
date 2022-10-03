@@ -826,3 +826,35 @@ INFO: 2022-10-03 09:21:08,050: Lowest RMSE for random forest model: 0.7133584435
 INFO: 2022-10-03 09:21:08,051: Training the random forest model
 INFO: 2022-10-03 09:21:08,051: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
 INFO: 2022-10-03 09:21:09,121: Saving the model
+INFO: 2022-10-03 09:52:31,529: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-03 09:52:31,529: Splitting the data into train and test
+INFO: 2022-10-03 09:52:31,558: X_train shape: (6436, 17)
+INFO: 2022-10-03 09:52:31,558: X_test shape: (1609, 17)
+INFO: 2022-10-03 09:52:31,558: Training the baseline model
+INFO: 2022-10-03 09:52:31,558: Training the baseline model
+INFO: 2022-10-03 09:52:31,564: Training the XGB model
+INFO: 2022-10-03 09:52:31,564: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-10-03 09:52:31,763: Training the xgboost model
+INFO: 2022-10-03 09:52:35,973: Hyper parameter tuning for random forest
+INFO: 2022-10-03 09:52:35,973: Hyperparameter tuning for random forest model
+INFO: 2022-10-03 09:53:38,410: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-03 09:53:38,411: Lowest RMSE for random forest model: 0.7182718024711234
+INFO: 2022-10-03 09:53:38,411: Training the random forest model
+INFO: 2022-10-03 09:53:38,412: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-03 09:53:45,653: Saving the model
+INFO: 2022-10-03 10:29:24,496: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-03 10:29:24,497: Splitting the data into train and test
+INFO: 2022-10-03 10:29:24,522: X_train shape: (6436, 17)
+INFO: 2022-10-03 10:29:24,522: X_test shape: (1609, 17)
+INFO: 2022-10-03 10:29:24,522: Training the baseline model
+INFO: 2022-10-03 10:29:24,522: Training the baseline model
+INFO: 2022-10-03 10:29:24,526: Training the XGB model
+INFO: 2022-10-03 10:29:24,526: Converting to DMatrix and splitting the data in 80:10:10 ratio
+INFO: 2022-10-03 10:29:24,726: Training the xgboost model
+INFO: 2022-10-03 10:29:29,248: Hyper parameter tuning for random forest
+INFO: 2022-10-03 10:29:29,248: Hyperparameter tuning for random forest model
+INFO: 2022-10-03 10:30:30,664: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 3, 'max_depth': 60, 'bootstrap': True}
+INFO: 2022-10-03 10:30:30,665: Lowest RMSE for random forest model: 0.7430927884535418
+INFO: 2022-10-03 10:30:30,665: Training the random forest model
+INFO: 2022-10-03 10:30:30,665: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 3, 'max_depth': 60, 'bootstrap': True}
+INFO: 2022-10-03 10:30:44,582: Saving the model

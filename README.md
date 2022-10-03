@@ -1,5 +1,23 @@
 # Coding Challenge
 
+## Summary:
+
+```
+The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used.
+
+```
+
+# Methodology:
+
+To approach the problem of this coding challenge CRIP-DM methodology was used.
+
+The following steps were taken to solve the problem:
+
+## Data understanding
+
+1. The data contains two files two files; raw data and target data containing the indepedent variables and dependent variable respectively.
+2. The raw data contains 34 features, 1 id column. The target data file contains dependent feature.
+
 ## Data Preparation
 
 ### The following steps were taken to prepare the data:
@@ -20,10 +38,10 @@
 
 ### The following steps were taken to preprocess the data:
 
-1. Drop duplicate column.
-2. convert datatypes.
-3. replace values for columns cycle, crystal_supergroup, etherium_before_start.
-4. replace missing values of continous variables with the median of the variable and missing values of categorical variables with the mode of the variable.
+1. Drop duplicate column 'Unnamed: 17' which is a copy of 'first_factor_x'.
+2. Convert datatypes of the features.
+3. Replace values for columns cycle, crystal_supergroup, etherium_before_start.
+4. Replace missing values of continous variables with the median of the variable and missing values of categorical variables with the mode of the variable.
 5. Interpolate datetime columns.
 6. Drop duplicate rows by start column.
 7. Remove outliers with IQR method.
@@ -236,7 +254,7 @@ The API can be test by executing the following command:
 Link to the API: http://20.23.111.32:8000/predict
 ```
 
-### Output of the API on deployed API.
+### Output of the API from deployed Azure container instance.
 
 ![](flowchart/presentation/endpoint.jpg)
 
