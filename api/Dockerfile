@@ -1,6 +1,11 @@
 # Base image
+<<<<<<< HEAD
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
+=======
+# FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM python:3.8-slim-buster
+>>>>>>> v1.2
 
 # Set the working directory to /app
 WORKDIR /app

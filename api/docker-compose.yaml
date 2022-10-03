@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 version: "3.9"
+=======
+version: "3"
+>>>>>>> v1.2
 services:
   web:
     build: .

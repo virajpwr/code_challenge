@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Creating the deployment for the Iris FastAPI
 apiVersion: apps/v1
 kind: Deployment
@@ -5,10 +6,20 @@ metadata:
   name: code-challenge
   labels:
     app: code-challenge
+=======
+# Creating the deployment for the code
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: codechallenge-test
+  labels:
+    app: codechallenge-test
+>>>>>>> v1.2
 spec:
   replicas: 1
   selector:
     matchLabels:
+<<<<<<< HEAD
       app: code-challenge
   template:
     metadata:
@@ -20,11 +31,25 @@ spec:
         image: code-challenge:1.0.0
         ports:
         = containerPort: 5000
+=======
+      app: codechallenge-test
+  template:
+    metadata:
+      labels:
+        app: codechallenge-test
+    spec:
+      containers:
+        name: codechallenge-test
+        image: codechallenge-test:1.0.0
+        ports:
+        = containerPort: 8000
+>>>>>>> v1.2
         resources:
           requests:
             cpu: 100m
             memory: 100Mi
 
+<<<<<<< HEAD
 # Creating the service to support the deployment
 apiVersion: v1
 kind: Service
@@ -32,11 +57,26 @@ metadata:
   name: code-challenge-service
   labels:
     app: code-challenge
+=======
+# Creating the service to support the code deployment
+apiVersion: v1
+kind: Service
+metadata:
+  name: codechallenge-test-service
+  labels:
+    app: codechallenge-test
+>>>>>>> v1.2
 spec:
   type: LoadBalancer
   ports:
   - port: 5000
     protocol: TCP
+<<<<<<< HEAD
     targetPort: 5000
   selector:
     app: code-challenge
+=======
+    targetPort: 8000
+  selector:
+    app: codechallenge-test
+>>>>>>> v1.2
