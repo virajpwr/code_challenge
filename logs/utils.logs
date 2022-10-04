@@ -1714,3 +1714,95 @@ ERROR: 2022-10-04 10:43:21,005: Error in performing anova test for feature: huma
 ERROR: 2022-10-04 10:43:21,005: error: 0
 INFO: 2022-10-04 10:43:21,006: Performing anova test for feature: cycle
 INFO: 2022-10-04 10:43:21,173: Selected categorical features: ['super_hero_group_Categorify', 'groups']
+INFO: 2022-10-04 13:58:16,610: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-10-04 13:58:16,769: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-10-04 13:58:16,907: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 13:58:17,030: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 13:58:17,030: error: 0
+INFO: 2022-10-04 13:58:17,031: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 13:58:17,168: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 13:58:17,168: error: 0
+INFO: 2022-10-04 13:58:17,169: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 13:58:17,239: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 13:58:17,239: error: 0
+INFO: 2022-10-04 13:58:17,240: Performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 13:58:17,392: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 13:58:17,392: error: 0
+INFO: 2022-10-04 13:58:17,393: Performing anova test for feature: groups
+INFO: 2022-10-04 13:58:17,545: Performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 13:58:17,658: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 13:58:17,658: error: 0
+INFO: 2022-10-04 13:58:17,659: Performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 13:58:17,794: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 13:58:17,794: error: 0
+INFO: 2022-10-04 13:58:17,795: Performing anova test for feature: cycle
+INFO: 2022-10-04 13:58:17,943: Selected categorical features: ['super_hero_group_Categorify', 'groups']
+INFO: 2022-10-04 14:00:24,349: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-10-04 14:00:24,504: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-10-04 14:00:24,647: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 14:00:24,772: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 14:00:24,772: error: 0
+INFO: 2022-10-04 14:00:24,773: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 14:00:24,929: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 14:00:24,929: error: 0
+INFO: 2022-10-04 14:00:24,930: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 14:00:25,003: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 14:00:25,004: error: 0
+INFO: 2022-10-04 14:00:25,004: Performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 14:00:25,163: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 14:00:25,163: error: 0
+INFO: 2022-10-04 14:00:25,164: Performing anova test for feature: groups
+INFO: 2022-10-04 14:00:25,327: Performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 14:00:25,448: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 14:00:25,448: error: 0
+INFO: 2022-10-04 14:00:25,449: Performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 14:00:25,583: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 14:00:25,583: error: 0
+INFO: 2022-10-04 14:00:25,584: Performing anova test for feature: cycle
+INFO: 2022-10-04 14:00:25,733: Selected categorical features: ['super_hero_group_Categorify', 'groups']
+INFO: 2022-10-04 15:01:49,648: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-10-04 15:01:49,833: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-10-04 15:01:49,981: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 15:01:50,092: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 15:01:50,092: error: 0
+INFO: 2022-10-04 15:01:50,093: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 15:01:50,233: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 15:01:50,233: error: 0
+INFO: 2022-10-04 15:01:50,234: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 15:01:50,307: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 15:01:50,307: error: 0
+INFO: 2022-10-04 15:01:50,308: Performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 15:01:50,456: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 15:01:50,456: error: 0
+INFO: 2022-10-04 15:01:50,457: Performing anova test for feature: groups
+INFO: 2022-10-04 15:01:50,616: Performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 15:01:50,732: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 15:01:50,732: error: 0
+INFO: 2022-10-04 15:01:50,733: Performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 15:01:50,870: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 15:01:50,870: error: 0
+INFO: 2022-10-04 15:01:50,871: Performing anova test for feature: cycle
+INFO: 2022-10-04 15:01:51,038: Selected categorical features: ['super_hero_group_Categorify', 'groups']
+INFO: 2022-10-04 15:07:30,555: Performing anova test for feature: super_hero_group_Categorify
+INFO: 2022-10-04 15:07:30,723: Performing anova test for feature: crystal_type_Categorify
+INFO: 2022-10-04 15:07:30,875: Performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 15:07:30,994: Error in performing anova test for feature: unnamed_7_Categorify
+ERROR: 2022-10-04 15:07:30,994: error: 0
+INFO: 2022-10-04 15:07:30,994: Performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 15:07:31,146: Error in performing anova test for feature: human_behavior_report_Categorify
+ERROR: 2022-10-04 15:07:31,146: error: 0
+INFO: 2022-10-04 15:07:31,147: Performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 15:07:31,231: Error in performing anova test for feature: cycle_Categorify
+ERROR: 2022-10-04 15:07:31,231: error: 0
+INFO: 2022-10-04 15:07:31,232: Performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 15:07:31,397: Error in performing anova test for feature: groups_Categorify
+ERROR: 2022-10-04 15:07:31,397: error: 0
+INFO: 2022-10-04 15:07:31,399: Performing anova test for feature: groups
+INFO: 2022-10-04 15:07:31,572: Performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 15:07:31,695: Error in performing anova test for feature: unnamed_7
+ERROR: 2022-10-04 15:07:31,695: error: 0
+INFO: 2022-10-04 15:07:31,696: Performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 15:07:31,862: Error in performing anova test for feature: human_behavior_report
+ERROR: 2022-10-04 15:07:31,862: error: 0
+INFO: 2022-10-04 15:07:31,863: Performing anova test for feature: cycle
+INFO: 2022-10-04 15:07:32,042: Selected categorical features: ['super_hero_group_Categorify', 'groups']

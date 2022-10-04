@@ -127,11 +127,12 @@ class visualize(object):
             None
 
         """
+        train_size = np.int64(np.linspace(1, 6000, 5))
         self.model = model
         # plot learning curve
         train_sizes, train_scores, test_scores = learning_curve(
             self.model, self.df[self.selected_features], self.df['target'], cv=5,
-            scoring='neg_mean_squared_error', n_jobs=-1, train_sizes=np.int64(np.linspace(1, 6000, 5)))
+            scoring='neg_mean_squared_error', n_jobs=-1, train_sizes=train_size)
 
         train_scores_mean = -train_scores.mean(axis=1)
         test_scores_mean = -test_scores.mean(axis=1)

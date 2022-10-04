@@ -42,7 +42,7 @@ class preprocessing(object):
         #     'category', errors='ignore')  # converting the categorical columns to category type
         self.df[self.config['cat_cols']] = self.df[self.config['cat_cols']].astype(
             'int64', errors='ignore')  # converting the categorical columns to int type
-        self.df[self.config['continous_cols']] = self.df[self.config['continous_cols']].astype(
+        self.df[self.config['continous_cols_before_preprocess']] = self.df[self.config['continous_cols_before_preprocess']].astype(
             'float', errors='ignore')  # converting the continous columns to float type
 
         return self.df
@@ -164,7 +164,7 @@ class preprocessing(object):
             df {dataframe}: A dataframe with the removed outliers
         """
         self.logger.info("Removing outliers IQR method")
-        for i in self.df[self.config['continous_cols']]:
+        for i in self.df[self.config['continous_cols_before_preprocess']]:
             # removing the outliers using the remove_outliers function from utils.
             df_temp = remove_outliers(self.df, i)
             self.logger.info("outlier removed for column: {}".format(i))
