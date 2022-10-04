@@ -100,7 +100,7 @@ def main():
         corr_features, lasso_var)
     print("Mutual information score: ", final_continous_features)
 
-    # feature selection for categorical variables
+    # Feature selection for categorical variables
     cat_features_selection = features_selection_cat_var(
         df, config['cat_cols_feature_selection'], logger)
     var_sel_cat = cat_features_selection.variance_threshold()

@@ -14,22 +14,22 @@ help:
 	@echo "       run project"
 
 # Comment this when using Linux
-venv: $(VENV_NAME)/Scripts/activate
-$(VENV_NAME)/Scripts/activate: setup.py
-	test -d $(VENV_NAME) || python3 -m venv $(VENV_NAME)
-	${PYTHON} -m pip install -U pip
-	${PYTHON} -m pip install -e .
-	rm -rf ./*.egg-info
-	touch $(VENV_NAME)/Scripts/activate
-
-# Comment this when using windows
-# venv: $(VENV_NAME)/bin/activate
-# $(VENV_NAME)/bin/activate: setup.py
+# venv: $(VENV_NAME)/Scripts/activate
+# $(VENV_NAME)/Scripts/activate: setup.py
 # 	test -d $(VENV_NAME) || python3 -m venv $(VENV_NAME)
 # 	${PYTHON} -m pip install -U pip
 # 	${PYTHON} -m pip install -e .
 # 	rm -rf ./*.egg-info
-# 	touch $(VENV_NAME)/bin/activate
+# 	touch $(VENV_NAME)/Scripts/activate
+
+# Comment this when using windows
+venv: $(VENV_NAME)/bin/activate
+$(VENV_NAME)/bin/activate: setup.py
+	test -d $(VENV_NAME) || python3 -m venv $(VENV_NAME)
+	${PYTHON} -m pip install -U pip
+	${PYTHON} -m pip install -e .
+	rm -rf ./*.egg-info
+	touch $(VENV_NAME)/bin/activate
 
 lint: venv
 	${PYTHON} -m pylint main.py
