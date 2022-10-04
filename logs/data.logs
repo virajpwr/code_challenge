@@ -656,3 +656,9 @@ INFO: 2022-10-04 15:07:22,150: Successfully read the raw data and target data fr
 INFO: 2022-10-04 15:07:22,150: Merging the raw data and target data
 INFO: 2022-10-04 15:07:22,150: Merging the raw data and target data
 INFO: 2022-10-04 15:07:22,516: Merge successful
+INFO: 2022-10-04 15:42:28,492: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-04 15:42:28,496: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-04 15:42:28,642: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-04 15:42:28,642: Merging the raw data and target data
+INFO: 2022-10-04 15:42:28,643: Merging the raw data and target data
+INFO: 2022-10-04 15:42:29,504: Merge successful
