@@ -4885,3 +4885,60 @@ INFO: 2022-10-03 15:38:57,809: performing gaussrank on column: chemical_x
 INFO: 2022-10-03 15:38:57,812: performing gaussrank on column: raw_kryptonite
 INFO: 2022-10-03 15:38:57,814: performing gaussrank on column: argon
 INFO: 2022-10-03 15:38:57,816: performing gaussrank on column: pure_seastone
+INFO: 2022-10-04 10:43:17,267: Reading the preprocessed data from the data/interim folder and performing feature engineering
+INFO: 2022-10-04 10:43:17,268: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-04 10:43:17,281: Calculating the time difference between two datetime columns
+INFO: 2022-10-04 10:43:17,304: Label encoding the categorical columns
+INFO: 2022-10-04 10:43:17,314: performing label encoding on column: super_hero_group
+INFO: 2022-10-04 10:43:17,323: performing label encoding on column: place
+INFO: 2022-10-04 10:43:17,333: performing label encoding on column: tracking_times
+INFO: 2022-10-04 10:43:17,344: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-04 10:43:17,352: performing label encoding on column: crystal_type
+INFO: 2022-10-04 10:43:17,361: performing label encoding on column: unnamed_7
+INFO: 2022-10-04 10:43:17,373: performing label encoding on column: human_behavior_report
+INFO: 2022-10-04 10:43:17,383: performing label encoding on column: cycle
+INFO: 2022-10-04 10:43:17,392: performing label encoding on column: groups
+INFO: 2022-10-04 10:43:17,401: performing label encoding on column: ts_weekday
+INFO: 2022-10-04 10:43:17,411: performing label encoding on column: ts_day
+INFO: 2022-10-04 10:43:17,420: performing label encoding on column: ts_month
+INFO: 2022-10-04 10:43:17,421: Target encoding the categorical columns
+INFO: 2022-10-04 10:43:17,507: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-04 10:43:17,587: performing target encoding on column: place_Categorify
+INFO: 2022-10-04 10:43:17,670: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-04 10:43:17,756: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-04 10:43:17,849: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-04 10:43:17,932: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-04 10:43:18,015: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-04 10:43:18,097: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-04 10:43:18,180: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-04 10:43:18,264: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-04 10:43:18,357: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-04 10:43:18,445: performing target encoding on column: groups_Categorify
+INFO: 2022-10-04 10:43:18,445: Count encoding the categorical columns
+INFO: 2022-10-04 10:43:18,457: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-04 10:43:18,466: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-04 10:43:18,473: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-04 10:43:18,482: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-04 10:43:18,492: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-04 10:43:18,500: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-04 10:43:18,507: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-04 10:43:18,516: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-04 10:43:18,526: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-04 10:43:18,534: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-04 10:43:18,543: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-04 10:43:18,551: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-04 10:43:18,552: Transforming the target and continous columns distribution to guassian distribution
+INFO: 2022-10-04 10:43:18,561: performing gaussrank on column: tracking
+INFO: 2022-10-04 10:43:18,563: performing gaussrank on column: human_measure
+INFO: 2022-10-04 10:43:18,565: performing gaussrank on column: crystal_weight
+INFO: 2022-10-04 10:43:18,567: performing gaussrank on column: expected_factor_x
+INFO: 2022-10-04 10:43:18,568: performing gaussrank on column: previous_factor_x
+INFO: 2022-10-04 10:43:18,570: performing gaussrank on column: first_factor_x
+INFO: 2022-10-04 10:43:18,573: performing gaussrank on column: expected_final_factor_x
+INFO: 2022-10-04 10:43:18,576: performing gaussrank on column: final_factor_x
+INFO: 2022-10-04 10:43:18,577: performing gaussrank on column: previous_adamantium
+INFO: 2022-10-04 10:43:18,579: performing gaussrank on column: etherium_before_start
+INFO: 2022-10-04 10:43:18,581: performing gaussrank on column: chemical_x
+INFO: 2022-10-04 10:43:18,583: performing gaussrank on column: raw_kryptonite
+INFO: 2022-10-04 10:43:18,585: performing gaussrank on column: argon
+INFO: 2022-10-04 10:43:18,587: performing gaussrank on column: pure_seastone

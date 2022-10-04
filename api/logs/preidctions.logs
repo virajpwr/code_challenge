@@ -967,3 +967,45 @@ INFO: 2022-10-03 09:19:51,661: Shutting down
 INFO: 2022-10-03 09:19:51,768: Waiting for application shutdown.
 INFO: 2022-10-03 09:19:51,768: Application shutdown complete.
 INFO: 2022-10-03 09:19:51,769: Finished server process [6488]
+INFO: 2022-10-04 11:55:37,426: Loading the model
+INFO: 2022-10-04 11:55:37,613: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-04 11:55:37,737: Calculating the time difference between two datetime columns
+INFO: 2022-10-04 11:55:37,782: Label encoding the categorical columns
+INFO: 2022-10-04 11:55:37,806: performing label encoding on column: super_hero_group
+INFO: 2022-10-04 11:55:37,825: performing label encoding on column: place
+INFO: 2022-10-04 11:55:37,838: performing label encoding on column: tracking_times
+INFO: 2022-10-04 11:55:37,852: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-04 11:55:37,863: performing label encoding on column: crystal_type
+INFO: 2022-10-04 11:55:37,875: performing label encoding on column: unnamed_7
+INFO: 2022-10-04 11:55:37,887: performing label encoding on column: human_behavior_report
+INFO: 2022-10-04 11:55:37,899: performing label encoding on column: cycle
+INFO: 2022-10-04 11:55:37,912: performing label encoding on column: groups
+INFO: 2022-10-04 11:55:37,924: performing label encoding on column: ts_weekday
+INFO: 2022-10-04 11:55:37,936: performing label encoding on column: ts_day
+INFO: 2022-10-04 11:55:37,948: performing label encoding on column: ts_month
+INFO: 2022-10-04 11:55:37,949: Target encoding the categorical columns
+INFO: 2022-10-04 11:55:38,075: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-04 11:55:38,181: performing target encoding on column: place_Categorify
+INFO: 2022-10-04 11:55:38,284: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-04 11:55:38,386: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-04 11:55:38,494: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-04 11:55:38,601: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-04 11:55:38,716: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-04 11:55:38,830: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-04 11:55:38,943: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-04 11:55:39,044: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-04 11:55:39,156: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-04 11:55:39,264: performing target encoding on column: groups_Categorify
+INFO: 2022-10-04 11:55:39,265: Count encoding the categorical columns
+INFO: 2022-10-04 11:55:39,279: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-04 11:55:39,290: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-04 11:55:39,299: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-04 11:55:39,309: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-04 11:55:39,321: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-04 11:55:39,330: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-04 11:55:39,340: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-04 11:55:39,349: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-04 11:55:39,360: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-04 11:55:39,369: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-04 11:55:39,379: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-04 11:55:39,389: performing count encoding on column: TE_ts_month_Categorify
