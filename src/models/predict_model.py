@@ -54,7 +54,10 @@ class model_predictions(object):
         VIF = 1/(1 - R_square)
         # Mean of residuals
         mean_residuals = np.mean(self.y_test - y_pred)
-
+        # adjusted R_square
+        adj_R_square = 1 - (1 - R_square) * \
+            (X_test_0.shape[0] - 1) / (X_test_0.shape[0] - X_test_0.shape[1] - 1)
+        
         print('VIF of multiple regression', VIF)
         self.logger.info(
             "Root mean squared error of baseline model: {}".format(rmse))
@@ -64,7 +67,7 @@ class model_predictions(object):
             'Mean of residuals of baseline model'.format(mean_residuals))
 
         result = ['rmse', str(rmse),  'VIF', str(
-            VIF), 'mean_residuals', str(mean_residuals)]
+            VIF), 'mean_residuals', str(mean_residuals), 'R_square', str(R_square)]
         # Save the results in reports/eval folder
         with open('./reports/eval/base_model_result.txt', 'w') as f:
             f.write('\n'.join(result))
@@ -93,11 +96,12 @@ class model_predictions(object):
 
         # Save the results in reports/eval folder
         results = ['rmse', str(rmse), 'oob_error',
-                   str(oob_error)]
+                   str(oob_error), 'R_square', str(R_square)]
         with open('./reports/eval/rf_model_result.txt', 'w') as f:
             f.write('\n'.join(results))
             f.close()
         return y_pred
+        
 
     def predict_xgb(self, dtest, test, xgb_model):
         # evaluate the model.

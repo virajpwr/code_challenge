@@ -14,13 +14,14 @@ class visualize(object):
 
     """
 
-    def __init__(self, X_test, y_test, y_pred, model, df, selected_features) -> None:
+    def __init__(self, X_test, y_test, y_pred_baseline, y_pred_random_forest, model, df, selected_features) -> None:
         """
         Initialize the class with the required parameters
         parameters:
             - X_test : The test data
             - y_test : The test target
-            - y_pred : The predicted values
+            - y_pred_baseline : The predicted values from the baseline model
+            - y_pred_random_forest : The predicted values from the random forest model
             - model : The model
             - df : The dataframe
             - selected_features : The selected features
@@ -31,57 +32,47 @@ class visualize(object):
         self.model = model
         self.df = df
         self.selected_features = selected_features
-        self.y_pred = y_pred
+        self.y_pred_random_forest = y_pred_random_forest
+        self.y_pred_baseline = y_pred_baseline
         self.X_test = X_test
 
-    def base_model_plots(self, y_pred_reg):
-        """_summary_: This function is used to plot the residual plot, qq plot and actual vs predicted plot for the baseline model.
-
+    def base_model_plots(self):
+        """_summary_: This function is used to plot the residual plot, qq plot and actual vs predicted plot for the baseline model 
+            and save the plots in eval/plots folder.
+        
         parameters:
-            y_pred_reg {np.array}: The predicted values from baseline model
+            y_pred_baseline {np.array}: The predicted values from the baseline model
+            y_test {np.array}: The test target
+            
+        returns:
+            None
         """
-        self.y_pred = y_pred_reg
         # create linear regression plot, residuals plot and histogram of residuals
         fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 5))
         fig.suptitle('Linear Regression Model')
-        ax1.scatter(self.y_test, self.y_pred)
+        ax1.scatter(self.y_test, self.y_pred_baseline, color='blue')
+        p1 = max(max(self.y_pred_baseline), max(self.y_test))
+        p2 = min(min(self.y_pred_baseline), min(self.y_test))
+        ax1.plot([p1, p2], [p1, p2], 'b-')
         ax1.set_xlabel('Actual')
         ax1.set_ylabel('Predicted')
         ax1.set_title('Actual vs Predicted')
-        ax2.scatter(self.y_pred, self.y_test-self.y_pred)
+        ax2.scatter(self.y_pred_baseline, self.y_test-self.y_pred_baseline)
         ax2.set_xlabel('Predicted')
         ax2.set_ylabel('Residual')
         ax2.set_title('Residual Plot')
-        ax3.hist(self.y_pred - self.y_test)
+        ax3.hist(self.y_pred_baseline - self.y_test)
         ax3.set_xlabel('Residual')
         ax3.set_ylabel('Frequency')
         ax3.set_title('Histogram of Residuals')
         plt.savefig('./reports/plots/linear_regression_plots.png')
 
-        # fig, ax = plt.subplots(1, 3, figsize=(15, 5))
-        # # Scatter plot of actual vs predicted
-        # ax[0].scatter(self.y_test, self.y_pred)
-        # ax[0].set_xlabel('Actual')
-        # ax[0].set_ylabel('Predicted')
-        # ax[0].set_title('Actual vs Predicted')
-        # # Scatter plot of residuals
-        # ax[1].scatter(self.y_pred,  self.y_test - self.y_pred)
-        # ax[1].set_xlabel('Predicted')
-        # ax[1].set_ylabel('Residuals')
-        # ax[2].set_title('Residuals vs Predicted')
-        # # qq plot
-        # # qq plot of residuals to check normality.
-        # stats.probplot(self.y_test - self.y_pred, dist="norm", plot=ax[2])
-        # ax[2].set_title('QQ plot of residuals')
-        # plt.savefig('./reports/plots/linear_regression_plots.png')
 
-        # ## histogram of residuals
-        # plt.figure(figsize=(10, 10))
-        # ax[3].hist(self.y_test - self.y_pred)
-        # ax[3].xlabel('Residuals')
 
     def rf_feature_importance(self):
-        """_summary_: This function is used to plot the feature importance for the random forest model.
+        """_summary_: This function is used to plot the feature importance for the random forest model 
+            and save the dataframe with feature importance in reports/eval folder. Save the Feature Importance 
+            plot in reports/plots folder.
 
         Returns:
             feature_importance {Dataframe}: Dtaframe containing the feature importance values and the corresponding feature names
@@ -100,25 +91,39 @@ class visualize(object):
         plt.savefig('./reports/plots/rf_feature_importance.png')
         return feature_importance
 
-    def pred_plot(self, y_pred):
+
+    def pred_plot(self):
         """_summary_: This function is used to plot the actual vs predicted plot for the random forest model.
+                        and save the plot in reports/plots folder.
         parameters:
-            y_pred {np.array}: The predicted values from random forest model
+            y_pred_random_forest {np.array}: The predicted values from random forest model
 
         returns:
             None
         """
-        self.y_pred = y_pred
         # plot predicted vs actual
         plt.figure(figsize=(10, 10))
-        plt.scatter(self.y_test, self.y_pred)
+        plt.scatter(self.y_test, self.y_pred_random_forest, c='crimson')
+        p1 = max(max(self.y_pred_random_forest), max(self.y_test))
+        p2 = min(min(self.y_pred_random_forest), min(self.y_test))
+        plt.plot([p1, p2], [p1, p2], 'b-')
         plt.xlabel('Actual')
         plt.ylabel('Predicted')
         plt.title('Actual vs Predicted for Random Forest')
         plt.savefig('./reports/plots/actual_vs_predicted_random_forest.png')
+    
+    def actual_fitted_plot(self):
+        """_summary_: This function is used to plot the actual vs fitted distribution plot for the random forest model."""
+        plt.figure(figsize=(10, 10))
+        ax = sns.distplot(self.y_test, hist=False, color="r", label="Actual Value") 
+        sns.distplot(self.y_pred_random_forest, hist=False, color="b", label="Fitted Values" , ax=ax)
+        plt.legend()
+        plt.title('Actual vs Fitted Values for Random Forest')
+        plt.savefig('./reports/plots/actual_vs_fitted_random_forest.png')
 
-    def visualize_learning_curve(self, model):
+    def visualize_learning_curve(self):
         """_summary_: This function is used to plot the learning curve for the random forest model.
+                        and save the plot in reports/plots folder.
 
         parameters:
             model {sklearn model}: The random forest model
@@ -127,8 +132,7 @@ class visualize(object):
             None
 
         """
-        train_size = np.int64(np.linspace(1, 6000, 5))
-        self.model = model
+        train_size = np.int64(np.linspace(1, 6000, 5)) # split the training data into 5 parts
         # plot learning curve
         train_sizes, train_scores, test_scores = learning_curve(
             self.model, self.df[self.selected_features], self.df['target'], cv=5,

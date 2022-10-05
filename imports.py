@@ -1,4 +1,5 @@
 import yaml
+from yellowbrick.regressor import PredictionError
 from sklearn import linear_model
 from scipy.special import erfinv
 import pandas as pd

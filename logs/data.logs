@@ -662,3 +662,250 @@ INFO: 2022-10-04 15:42:28,642: Successfully read the raw data and target data fr
 INFO: 2022-10-04 15:42:28,642: Merging the raw data and target data
 INFO: 2022-10-04 15:42:28,643: Merging the raw data and target data
 INFO: 2022-10-04 15:42:29,504: Merge successful
+INFO: 2022-10-05 11:21:04,525: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-05 11:21:04,616: Calculating the time difference between two datetime columns
+INFO: 2022-10-05 11:21:04,652: Label encoding the categorical columns
+INFO: 2022-10-05 11:21:04,681: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO: 2022-10-05 11:21:04,681: NumExpr defaulting to 8 threads.
+INFO: 2022-10-05 11:21:04,707: performing label encoding on column: super_hero_group
+INFO: 2022-10-05 11:21:04,722: performing label encoding on column: place
+INFO: 2022-10-05 11:21:04,733: performing label encoding on column: tracking_times
+INFO: 2022-10-05 11:21:04,746: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-05 11:21:04,759: performing label encoding on column: crystal_type
+INFO: 2022-10-05 11:21:04,773: performing label encoding on column: unnamed_7
+INFO: 2022-10-05 11:21:04,789: performing label encoding on column: human_behavior_report
+INFO: 2022-10-05 11:21:04,804: performing label encoding on column: cycle
+INFO: 2022-10-05 11:21:04,827: performing label encoding on column: groups
+INFO: 2022-10-05 11:21:04,842: performing label encoding on column: ts_weekday
+INFO: 2022-10-05 11:21:04,857: performing label encoding on column: ts_day
+INFO: 2022-10-05 11:21:04,872: performing label encoding on column: ts_month
+INFO: 2022-10-05 11:21:04,873: Target encoding the categorical columns
+INFO: 2022-10-05 11:21:05,000: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-05 11:21:05,118: performing target encoding on column: place_Categorify
+INFO: 2022-10-05 11:21:05,276: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-05 11:21:05,396: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-05 11:21:05,514: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-05 11:21:05,708: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-05 11:21:05,856: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-05 11:21:05,984: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-05 11:21:06,098: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-05 11:21:06,266: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-05 11:21:06,415: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-05 11:21:06,528: performing target encoding on column: groups_Categorify
+INFO: 2022-10-05 11:21:06,529: Count encoding the categorical columns
+INFO: 2022-10-05 11:21:06,548: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-05 11:21:06,561: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-05 11:21:06,576: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-05 11:21:06,593: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-05 11:21:06,605: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-05 11:21:06,619: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-05 11:21:06,633: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-05 11:21:06,645: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-05 11:21:06,659: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-05 11:21:06,672: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-05 11:21:06,686: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-05 11:21:06,699: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-05 11:22:03,178: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-05 11:22:03,272: Calculating the time difference between two datetime columns
+INFO: 2022-10-05 11:22:03,306: Label encoding the categorical columns
+INFO: 2022-10-05 11:22:03,319: performing label encoding on column: super_hero_group
+INFO: 2022-10-05 11:22:03,333: performing label encoding on column: place
+INFO: 2022-10-05 11:22:03,346: performing label encoding on column: tracking_times
+INFO: 2022-10-05 11:22:03,360: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-05 11:22:03,372: performing label encoding on column: crystal_type
+INFO: 2022-10-05 11:22:03,383: performing label encoding on column: unnamed_7
+INFO: 2022-10-05 11:22:03,398: performing label encoding on column: human_behavior_report
+INFO: 2022-10-05 11:22:03,412: performing label encoding on column: cycle
+INFO: 2022-10-05 11:22:03,429: performing label encoding on column: groups
+INFO: 2022-10-05 11:22:03,450: performing label encoding on column: ts_weekday
+INFO: 2022-10-05 11:22:03,465: performing label encoding on column: ts_day
+INFO: 2022-10-05 11:22:03,480: performing label encoding on column: ts_month
+INFO: 2022-10-05 11:22:03,481: Target encoding the categorical columns
+INFO: 2022-10-05 11:22:03,586: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-05 11:22:03,702: performing target encoding on column: place_Categorify
+INFO: 2022-10-05 11:22:03,806: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-05 11:22:03,916: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-05 11:22:04,027: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-05 11:22:04,146: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-05 11:22:04,270: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-05 11:22:04,393: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-05 11:22:04,510: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-05 11:22:04,624: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-05 11:22:04,742: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-05 11:22:04,845: performing target encoding on column: groups_Categorify
+INFO: 2022-10-05 11:22:04,846: Count encoding the categorical columns
+INFO: 2022-10-05 11:22:04,858: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-05 11:22:04,873: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-05 11:22:04,886: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-05 11:22:04,901: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-05 11:22:04,916: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-05 11:22:04,930: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-05 11:22:04,944: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-05 11:22:04,957: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-05 11:22:04,972: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-05 11:22:04,986: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-05 11:22:05,001: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-05 11:22:05,016: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-05 11:22:22,723: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-05 11:22:25,632: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-05 11:22:25,713: Calculating the time difference between two datetime columns
+INFO: 2022-10-05 11:22:25,743: Label encoding the categorical columns
+INFO: 2022-10-05 11:22:25,756: performing label encoding on column: super_hero_group
+INFO: 2022-10-05 11:22:25,769: performing label encoding on column: place
+INFO: 2022-10-05 11:22:25,784: performing label encoding on column: tracking_times
+INFO: 2022-10-05 11:22:25,804: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-05 11:22:25,818: performing label encoding on column: crystal_type
+INFO: 2022-10-05 11:22:25,832: performing label encoding on column: unnamed_7
+INFO: 2022-10-05 11:22:25,846: performing label encoding on column: human_behavior_report
+INFO: 2022-10-05 11:22:25,859: performing label encoding on column: cycle
+INFO: 2022-10-05 11:22:25,872: performing label encoding on column: groups
+INFO: 2022-10-05 11:22:25,887: performing label encoding on column: ts_weekday
+INFO: 2022-10-05 11:22:25,900: performing label encoding on column: ts_day
+INFO: 2022-10-05 11:22:25,916: performing label encoding on column: ts_month
+INFO: 2022-10-05 11:22:25,916: Target encoding the categorical columns
+INFO: 2022-10-05 11:22:26,011: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-05 11:22:26,115: performing target encoding on column: place_Categorify
+INFO: 2022-10-05 11:22:26,217: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-05 11:22:26,322: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-05 11:22:26,417: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-05 11:22:26,537: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-05 11:22:26,666: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-05 11:22:26,833: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-05 11:22:26,964: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-05 11:22:27,124: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-05 11:22:27,248: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-05 11:22:27,414: performing target encoding on column: groups_Categorify
+INFO: 2022-10-05 11:22:27,415: Count encoding the categorical columns
+INFO: 2022-10-05 11:22:27,437: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-05 11:22:27,472: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-05 11:22:27,498: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-05 11:22:27,518: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-05 11:22:27,536: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-05 11:22:27,553: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-05 11:22:27,573: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-05 11:22:27,589: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-05 11:22:27,606: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-05 11:22:27,624: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-05 11:22:27,643: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-05 11:22:27,663: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-05 11:23:31,088: Splitting the datetime column into year, month, day, weekday
+INFO: 2022-10-05 11:23:31,159: Calculating the time difference between two datetime columns
+INFO: 2022-10-05 11:23:31,186: Label encoding the categorical columns
+INFO: 2022-10-05 11:23:31,197: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO: 2022-10-05 11:23:31,198: NumExpr defaulting to 8 threads.
+INFO: 2022-10-05 11:23:31,210: performing label encoding on column: super_hero_group
+INFO: 2022-10-05 11:23:31,222: performing label encoding on column: place
+INFO: 2022-10-05 11:23:31,233: performing label encoding on column: tracking_times
+INFO: 2022-10-05 11:23:31,244: performing label encoding on column: crystal_supergroup
+INFO: 2022-10-05 11:23:31,258: performing label encoding on column: crystal_type
+INFO: 2022-10-05 11:23:31,271: performing label encoding on column: unnamed_7
+INFO: 2022-10-05 11:23:31,284: performing label encoding on column: human_behavior_report
+INFO: 2022-10-05 11:23:31,297: performing label encoding on column: cycle
+INFO: 2022-10-05 11:23:31,311: performing label encoding on column: groups
+INFO: 2022-10-05 11:23:31,325: performing label encoding on column: ts_weekday
+INFO: 2022-10-05 11:23:31,340: performing label encoding on column: ts_day
+INFO: 2022-10-05 11:23:31,353: performing label encoding on column: ts_month
+INFO: 2022-10-05 11:23:31,354: Target encoding the categorical columns
+INFO: 2022-10-05 11:23:31,463: performing target encoding on column: super_hero_group_Categorify
+INFO: 2022-10-05 11:23:31,573: performing target encoding on column: place_Categorify
+INFO: 2022-10-05 11:23:31,683: performing target encoding on column: tracking_times_Categorify
+INFO: 2022-10-05 11:23:31,784: performing target encoding on column: crystal_supergroup_Categorify
+INFO: 2022-10-05 11:23:31,895: performing target encoding on column: crystal_type_Categorify
+INFO: 2022-10-05 11:23:32,013: performing target encoding on column: ts_weekday_Categorify
+INFO: 2022-10-05 11:23:32,122: performing target encoding on column: ts_day_Categorify
+INFO: 2022-10-05 11:23:32,227: performing target encoding on column: ts_month_Categorify
+INFO: 2022-10-05 11:23:32,326: performing target encoding on column: unnamed_7_Categorify
+INFO: 2022-10-05 11:23:32,427: performing target encoding on column: human_behavior_report_Categorify
+INFO: 2022-10-05 11:23:32,527: performing target encoding on column: cycle_Categorify
+INFO: 2022-10-05 11:23:32,636: performing target encoding on column: groups_Categorify
+INFO: 2022-10-05 11:23:32,637: Count encoding the categorical columns
+INFO: 2022-10-05 11:23:32,651: performing count encoding on column: TE_super_hero_group_Categorify
+INFO: 2022-10-05 11:23:32,671: performing count encoding on column: TE_place_Categorify
+INFO: 2022-10-05 11:23:32,687: performing count encoding on column: TE_tracking_times_Categorify
+INFO: 2022-10-05 11:23:32,702: performing count encoding on column: TE_crystal_supergroup_Categorify
+INFO: 2022-10-05 11:23:32,716: performing count encoding on column: TE_crystal_type_Categorify
+INFO: 2022-10-05 11:23:32,730: performing count encoding on column: TE_unnamed_7_Categorify
+INFO: 2022-10-05 11:23:32,745: performing count encoding on column: TE_human_behavior_report_Categorify
+INFO: 2022-10-05 11:23:32,760: performing count encoding on column: TE_cycle_Categorify
+INFO: 2022-10-05 11:23:32,778: performing count encoding on column: TE_groups_Categorify
+INFO: 2022-10-05 11:23:32,798: performing count encoding on column: TE_ts_weekday_Categorify
+INFO: 2022-10-05 11:23:32,814: performing count encoding on column: TE_ts_day_Categorify
+INFO: 2022-10-05 11:23:32,832: performing count encoding on column: TE_ts_month_Categorify
+INFO: 2022-10-05 11:48:26,718: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 11:48:26,719: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 11:48:26,806: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 11:48:26,806: Merging the raw data and target data
+INFO: 2022-10-05 11:48:26,806: Merging the raw data and target data
+INFO: 2022-10-05 11:48:27,274: Merge successful
+INFO: 2022-10-05 12:10:14,386: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:10:14,386: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:10:14,460: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:10:14,460: Merging the raw data and target data
+INFO: 2022-10-05 12:10:14,461: Merging the raw data and target data
+INFO: 2022-10-05 12:10:14,875: Merge successful
+INFO: 2022-10-05 12:21:43,077: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:21:43,077: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:21:43,144: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:21:43,144: Merging the raw data and target data
+INFO: 2022-10-05 12:21:43,144: Merging the raw data and target data
+INFO: 2022-10-05 12:21:43,510: Merge successful
+INFO: 2022-10-05 12:22:06,797: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:22:06,798: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:22:06,872: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:22:06,872: Merging the raw data and target data
+INFO: 2022-10-05 12:22:06,872: Merging the raw data and target data
+INFO: 2022-10-05 12:22:07,240: Merge successful
+INFO: 2022-10-05 12:25:08,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:25:08,466: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:25:08,537: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:25:08,537: Merging the raw data and target data
+INFO: 2022-10-05 12:25:08,537: Merging the raw data and target data
+INFO: 2022-10-05 12:25:08,930: Merge successful
+INFO: 2022-10-05 12:29:08,035: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:29:08,035: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:29:08,101: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:29:08,101: Merging the raw data and target data
+INFO: 2022-10-05 12:29:08,101: Merging the raw data and target data
+INFO: 2022-10-05 12:29:08,477: Merge successful
+INFO: 2022-10-05 12:34:16,426: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:34:16,426: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:34:16,499: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:34:16,499: Merging the raw data and target data
+INFO: 2022-10-05 12:34:16,499: Merging the raw data and target data
+INFO: 2022-10-05 12:34:16,851: Merge successful
+INFO: 2022-10-05 12:37:10,344: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:37:10,344: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:37:10,413: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:37:10,413: Merging the raw data and target data
+INFO: 2022-10-05 12:37:10,413: Merging the raw data and target data
+INFO: 2022-10-05 12:37:10,771: Merge successful
+INFO: 2022-10-05 12:41:09,901: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:41:09,902: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:41:09,994: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:41:09,994: Merging the raw data and target data
+INFO: 2022-10-05 12:41:09,994: Merging the raw data and target data
+INFO: 2022-10-05 12:41:10,399: Merge successful
+INFO: 2022-10-05 12:51:37,858: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:51:37,858: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:51:37,969: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:51:37,969: Merging the raw data and target data
+INFO: 2022-10-05 12:51:37,969: Merging the raw data and target data
+INFO: 2022-10-05 12:51:38,364: Merge successful
+INFO: 2022-10-05 12:58:43,505: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:58:43,505: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:58:43,575: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 12:58:43,575: Merging the raw data and target data
+INFO: 2022-10-05 12:58:43,575: Merging the raw data and target data
+INFO: 2022-10-05 12:58:44,035: Merge successful
+INFO: 2022-10-05 13:05:01,152: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:05:01,152: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:05:01,249: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:05:01,249: Merging the raw data and target data
+INFO: 2022-10-05 13:05:01,249: Merging the raw data and target data
+INFO: 2022-10-05 13:05:01,876: Merge successful
+INFO: 2022-10-05 13:09:34,871: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:09:34,871: Reading the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:09:34,996: Successfully read the raw data and target data from the data/raw folder
+INFO: 2022-10-05 13:09:34,996: Merging the raw data and target data
+INFO: 2022-10-05 13:09:34,996: Merging the raw data and target data
+INFO: 2022-10-05 13:09:35,487: Merge successful

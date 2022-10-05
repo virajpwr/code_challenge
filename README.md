@@ -114,7 +114,7 @@ TE = (count(cat) * mean(target) + smoothing  * global mean(target))
 ### The following steps were taken to build the model:
 
 1. Build a baseline model on the selected features. Multiple regression model was used as the baseline model.
-2. Perform hyperparameter tuning on random forest model using random search cv.
+2. Perform hyperparameter tuning on random forest model using randomized search CV.
 3. Build Random forest model on best parameters from random search cv.
 4. Build XGBoost model.
 
@@ -156,13 +156,22 @@ From the above actual vs predicted plot, we can see that there is no linear rela
 In residual plot we can see that the residuals are not close to zero. The predictions are not
 accurate and contains mix of high and low errors. The assumption of Homoscedasticity is violated.
 
-The histogram shows that residuals are normally distributed.
+The histogram shows that residuals is normally distributed.
 
 2. Learning curve for random forest model.
    The gap between training and validation score is large. Due to high variance the model is overfitting. To overcome this, we can do the following: Increase the number of training examples. Use regularization. Reduce the features. Train model on important features.
    ![](reports/plots/learning_curve.png)
 
-3. Feature Impotance plot for random forest model.
+3. Actual vs prediction plot for random forest model:
+   The plot below shows the scatter plot of actual and predicted values. The plot shows that the model is not able to predict the values accurately. The predictions are not along the line of best fit.
+
+![](reports/plots/actual_vs_predicted.png)
+
+4. Actual vs prediction distribution plot for random forest model:
+   The plot below shows the distribution of actual and predicted values. The distribution of predicted value is not similar to the distribution of actual values.
+   ![](reports/plots/actual_vs_fitted_random_forest.png)
+
+5. Feature Impotance plot for random forest model.
    From the plot we can see that which features are important for the model which is determined by the number of times a feature is used to split the data across all trees. The features with higher number of splits are more important. The features with lower number of splits are less important. The features with zero splits are not important.
    ![](reports/plots/rf_feature_importance.png)
 
@@ -170,12 +179,12 @@ The histogram shows that residuals are normally distributed.
 
 1. The Random forest model performs comparitively better than the baseline model and XGBoost model. However, futher improvement needs to be done since the model is overfitting.
 
-#### Further improovements:
+#### Further improvements:
 
 1. Use more data to train the model.
 2. Try different feature selection techniques like wrapper method like recursive feature elimination.
 3. Try different feature engineering techniques.
-4. Try different models.
+4. Try different models. Use Regression-Enhanced Random Forests (RERF) model.
 
 ### Folder structure
 

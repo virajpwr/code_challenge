@@ -168,20 +168,18 @@ def main():
 
 #----------------------------------------- Create plots ----------------------------------------------------------#
     logger.info("Creating plots")
-    plots = visualize(X_test, y_test, y_pred_rf,
-                      rf_model, df, selected_features)
-    # plots.y_pred = y_pred_reg
+    plots = visualize(X_test, y_test, y_pred_reg , y_pred_rf,  rf_model, df, selected_features)
+    
     logger.info("Creating plots for baseline model")
-    plots.base_model_plots(y_pred_reg)  # Plot for baseline model
+    plots.base_model_plots()  # Plot for baseline model
 
     logger.info("Creating plots for random forest model")
     plots.rf_feature_importance()  # Get the feature importance for random forest
 
     # Plot the learning curve for random forest
-    plots.visualize_learning_curve(rf_model)
-    plots.y_pred = y_pred_rf
-    plots.pred_plot(y_pred_rf)  # plot actual vs predicted for random forest
-
+    plots.visualize_learning_curve()
+    plots.pred_plot()  # plot actual vs predicted for random forest
+    plots.actual_fitted_plot()  # plot actual vs fitted for random forest
 
 if __name__ == "__main__":
     main()
