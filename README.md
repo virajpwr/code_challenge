@@ -5,10 +5,10 @@
 The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The random forest model was the best model with the lowest RMSE of 0.51.
 The code was transformed into an API and deployed as a docked container instance in Azure.
 
-The API from Azure container instance can be accessed at:
+The API from Azure container instance can be accessed at with a post request:
 
 ```
-20.23.111.32:8000/predict
+20.126.198.51:8000/predict
 ```
 
 # Methodology:
@@ -272,7 +272,7 @@ The API can be test by executing the following command:
 4. The docker image is deployed on Azure container instance. and the API is tested on the deployed API.
 
 ```
-Link to the API: http://20.23.111.32:8000/predict
+Link to the public API: 20.126.198.51:8000/predict
 ```
 
 ### Output of the API from deployed Azure container instance.
