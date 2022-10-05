@@ -112,7 +112,7 @@ def main():
     df[selected_features].to_csv(
         './data/processed/final_features_data.csv', index=False)
 
-# #--------------------------------------------- Model Training ----------------------------------------------------------------------------- #
+#--------------------------------------------- Model Training ----------------------------------------------------------------------------- #
     # Model training
     logger = logs(path="logs/", file="model_training.logs")
     logger.info(

@@ -140,7 +140,7 @@ cat_cols_feature_selection: ['super_hero_group_Categorify',
   'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
   'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', unnamed_7,'human_behavior_report', 'crystal_supergroup',
   'cycle','ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3',
-       'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+  'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
 target_col: ['target']
 
 continous_col_feature_selection: ['TE_super_hero_group_Categorify',
@@ -153,9 +153,10 @@ continous_col_feature_selection: ['TE_super_hero_group_Categorify',
        'CE_TE_crystal_supergroup_Categorify', 'CE_TE_crystal_type_Categorify',
        'CE_TE_unnamed_7_Categorify', 'CE_TE_human_behavior_report_Categorify',
        'CE_TE_cycle_Categorify', 'CE_TE_groups_Categorify', 'tracking', 'human_measure', 'crystal_weight','expected_factor_x',
-        'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
-        'chemical_x','raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
-        'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify','TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 'TE_ts_month_Categorify']
+       'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
+       'chemical_x','raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
+       'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify','TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 
+       'TE_ts_month_Categorify']
 
 categorify_columns: ['super_hero_group', 'place','tracking_times','crystal_supergroup', 'crystal_type','unnamed_7','human_behavior_report','cycle','groups','ts_weekday', 'ts_day', 'ts_month']
 

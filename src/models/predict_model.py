@@ -102,6 +102,13 @@ class model_predictions(object):
             f.close()
         return y_pred
         
+    def rd_model_interpret():
+        row  = X_test.values[None, 6]
+        prediction, bias, contributions = ti.predict(self.model, row)
+        sorted_idx = np.argsort(contributions[0])
+        for i in sorted_idx:
+            print(X_test.columns[i], contributions[0][i])
+        return contributions
 
     def predict_xgb(self, dtest, test, xgb_model):
         # evaluate the model.

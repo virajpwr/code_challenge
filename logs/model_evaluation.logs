@@ -785,3 +785,29 @@ INFO: 2022-10-05 13:11:16,187: Root mean squared error for xgboost:0.63151076937
 INFO: 2022-10-05 13:11:16,188: Creating plots
 INFO: 2022-10-05 13:11:16,188: Creating plots for baseline model
 INFO: 2022-10-05 13:11:16,674: Creating plots for random forest model
+INFO: 2022-10-05 14:07:41,729: Predicting on test data using baseline model
+INFO: 2022-10-05 14:07:41,729: predicting the target values for the test data using basline model
+INFO: 2022-10-05 14:07:41,735: Root mean squared error of baseline model: 0.6509380903329556
+INFO: 2022-10-05 14:07:41,735: VIF of baseline model:1.1691952785563005
+INFO: 2022-10-05 14:07:41,735: Mean of residuals of baseline model
+INFO: 2022-10-05 14:07:41,736: Predicting on test data using random forest
+INFO: 2022-10-05 14:07:41,736: predicting the target values for the test data using random forest model
+INFO: 2022-10-05 14:07:41,946: Root mean squared error of random forest model:0.49465842527624937
+INFO: 2022-10-05 14:07:41,946: out of bag score:0.5113368107687714
+INFO: 2022-10-05 14:07:41,965: Root mean squared error for xgboost:0.626162680297849
+INFO: 2022-10-05 14:07:41,966: Creating plots
+INFO: 2022-10-05 14:07:41,966: Creating plots for baseline model
+INFO: 2022-10-05 14:07:42,611: Creating plots for random forest model
+INFO: 2022-10-05 14:11:58,795: Predicting on test data using baseline model
+INFO: 2022-10-05 14:11:58,796: predicting the target values for the test data using basline model
+INFO: 2022-10-05 14:11:58,799: Root mean squared error of baseline model: 0.6500047086054646
+INFO: 2022-10-05 14:11:58,799: VIF of baseline model:1.1763120077402496
+INFO: 2022-10-05 14:11:58,800: Mean of residuals of baseline model
+INFO: 2022-10-05 14:11:58,800: Predicting on test data using random forest
+INFO: 2022-10-05 14:11:58,800: predicting the target values for the test data using random forest model
+INFO: 2022-10-05 14:11:58,894: Root mean squared error of random forest model:0.4979395825654392
+INFO: 2022-10-05 14:11:58,894: out of bag score:0.5195738638974171
+INFO: 2022-10-05 14:11:58,898: Root mean squared error for xgboost:0.6314335805483507
+INFO: 2022-10-05 14:11:58,899: Creating plots
+INFO: 2022-10-05 14:11:58,899: Creating plots for baseline model
+INFO: 2022-10-05 14:11:59,361: Creating plots for random forest model

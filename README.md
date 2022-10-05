@@ -169,11 +169,13 @@ The histogram shows that residuals is normally distributed.
 
 4. Actual vs prediction distribution plot for random forest model:
    The plot below shows the distribution of actual and predicted values. The distribution of predicted value is not similar to the distribution of actual values.
-   ![](reports/plots/actual_vs_fitted_random_forest.png)
+
+![](reports/plots/actual_vs_fitted_random_forest.png)
 
 5. Feature Impotance plot for random forest model.
    From the plot we can see that which features are important for the model which is determined by the number of times a feature is used to split the data across all trees. The features with higher number of splits are more important. The features with lower number of splits are less important. The features with zero splits are not important.
-   ![](reports/plots/rf_feature_importance.png)
+
+![](reports/plots/rf_feature_importance.png)
 
 #### Conclusion:
 
