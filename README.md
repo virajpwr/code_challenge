@@ -165,11 +165,11 @@ XGBoost model: RMSE = 0.52
 
 3. Actual vs prediction plot for random forest model:
    The plot below shows the scatter plot of actual and predicted values. The prediction are not close to the
-   ![](reports/plots/actual_vs_predicted.png)
+   ![](reports/plots/actual_vs_predicted_random_forest.png)
 
 4. Actual vs prediction distribution plot for random forest model:
    The plot below shows the distribution of actual and predicted values. The distribution of predicted value is not similar to the distribution of actual values.
-   ![](reports/plots/actual_vs_predicted_random_forest.png)
+   ![](reports/plots/actual_vs_fitted_random_forest.png)
 
 5. Feature Impotance plot for random forest model.
    From the plot we can see that which features are important for the model which is determined by the number of times a feature is used to split the data across all trees. The features with higher number of splits are more important. The features with lower number of splits are less important. The features with zero splits are not important.
