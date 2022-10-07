@@ -103,10 +103,10 @@ class model_training(object):
         returns:    
             best_params {dict}: Dictionary of best parameters for the model.
         """
-        self.xgb = xgb.XGBRegressor(objective="reg:squarederror", random_state=42)
+        self.xgb = xgb.XGBRegressor(objective="reg:squarederror", random_state=42, eval_metric=["rmse"])
 
         self.xgb_search = RandomizedSearchCV(self.xgb , param_distributions=self.config["param_grid"]["xgb"], random_state=42,
-             n_iter=4, cv=5, verbose=1, n_jobs=1, return_train_score=True)
+             n_iter=4, cv=5, verbose=1, n_jobs=1, return_train_score=True, scoring="neg_root_mean_squared_error")
         self.xgb_search.fit(self.X_train, self.y_train)
         self.logger.info("Best parameters for XGBoost: {}".format(self.xgb_search.best_params_))
         self.logger.info("Best score for XGBoost: {}".format(self.xgb_search.best_score_))

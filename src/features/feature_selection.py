@@ -4,6 +4,10 @@ from imports import *
 class features_selection_cat_var(object):
     """_summary_: A class to select the features for the categorical variables
 
+    1. Removes all the low variance features from the dataset that are of no great use in model training. Drop Columns that are 75% or more similar.
+    2. Perform Oneway ANOVA test on categorical variables and target to check if there is any statistical differences among the means of two or more groups.
+    3. Take variables with p value < 0.05. since there is difference in the groups in those variables.
+
     parameters:
         df {dataframe}: A dataframe with the raw data
         var_list {list}: A list with the categorical variables
@@ -78,10 +82,10 @@ class features_selection_continous_var(features_selection_cat_var):
     """_summary_: A class to select the features for the continous variables
     feature selection for continous variables. Inherit variance_threshold() from features_selection_cat_var class.
     Steps:
-        1. If MI score of all continous variable.
-        2. select columns with non zero MI score.
-        3. Find correlated features with non zero MI score with coeff >= 0.70.
-        4. Remove the correlated feature with low MI score.
+        1.Removes all the low variance features from the dataset that are of no great use in model training. Drop Columns that are 75% or more similar.
+        2. Perform Lasso regression with gridsearch CV for different values of alpha to select the best features from step 1.
+        3. Find correlated features from the best features selected in step 2 and drop the features that are highly correlated with low mutual information score.
+
 
         Eg: MI score of feature1 = 0.5, feature2 = 0.4, feature3 = 0.3
         feature1 and feature2 are correlated with coeff = 0.8
@@ -134,14 +138,14 @@ class features_selection_continous_var(features_selection_cat_var):
         corrdf1 = corrdf1[corrdf1['var1'] != corrdf1['var2']]
         correlated_pair = list(
             zip(corrdf1['var1'].values.tolist(), corrdf1['var2'].values.tolist())) # create a list of tuples with correlated features
-        corr_pair_dict = dict(return_dictionary_list(correlated_pair)) # convert the list of tuples to dictionary
+        self.corr_pair_dict = dict(return_dictionary_list(correlated_pair)) # convert the list of tuples to dictionary
         corr_list = find_remove_duplicates(
             corrdf1['var1'].values.tolist()+corrdf1['var2'].values.tolist()) # create a list of correlated features
         print(len(corr_list))
         if len(corr_list) == 0:
             return self.var_list
         else:
-            logger.info("Correlated features: {}".format(corr_list))
+            self.logger.info("Correlated features: {}".format(corr_list))
             return corr_list
 
     def lasso_reg(self, variance_threshold_cols: list) -> list:
@@ -185,7 +189,8 @@ class features_selection_continous_var(features_selection_cat_var):
             self.logger.info("Correlated features and Lasso features are same")
             return lasso_col
         else:
-            fs = SelectKBest(score_func = mutual_info_regression, k = 20) # find MI score of the correlated features
+
+            fs = SelectKBest(score_func = mutual_info_regression, k = 'all') # find MI score of the correlated features
             fs.fit(self.df[corr_list], self.df[self.target])
             mutual_info = dict(zip(corr_list, fs.scores_)) # convert the series to dictionary of features and MI score
             # The first variable in list has the highest correlation to the target variable 
@@ -193,14 +198,19 @@ class features_selection_continous_var(features_selection_cat_var):
                 mutual_info.items(), key=lambda kv: kv[1], reverse=True)]
             # select the final list of correlated variables
             selected_corr_list = []
+            print('selected', sorted_by_mutual_info)
             ## making multiple copies of this sorted list since it is iterated many times ####
             orig_sorted = copy.deepcopy(sorted_by_mutual_info)
             copy_sorted = copy.deepcopy(sorted_by_mutual_info)
+            copy_pair = copy.deepcopy(self.corr_pair_dict)
+            print('copy_sorted',copy_pair)
             # select each variable by the highest mutual info and see what vars are correlated to it
             for each_corr_name in copy_sorted:
                 # add the selected var to the selected_corr_list
                 selected_corr_list.append(each_corr_name)
+                print('dfasdf asdf asdf adf ',each_corr_name)
                 for each_remove in copy_pair[each_corr_name]:
+                    print(each_remove)
                     # Now remove each variable that is highly correlated to the selected variable
                     if each_remove in copy_sorted:
                         copy_sorted.remove(each_remove)

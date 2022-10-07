@@ -2145,3 +2145,651 @@ INFO: 2022-10-07 00:31:04,575: Lowest RMSE for random forest model: 0.6995309983
 INFO: 2022-10-07 00:31:04,576: Training the random forest model
 INFO: 2022-10-07 00:31:04,576: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
 INFO: 2022-10-07 00:31:11,332: Random forest model saved
+INFO: 2022-10-07 06:09:34,913: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 06:09:34,914: Splitting the data into train and test
+INFO: 2022-10-07 06:09:34,986: Training the baseline model
+INFO: 2022-10-07 06:09:34,986: Training the baseline model
+INFO: 2022-10-07 06:09:34,993: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 06:09:44,694: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 06:09:44,694: Best score for XGBoost: 0.39537530676043264
+INFO: 2022-10-07 06:09:44,701: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 06:09:44,702: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 06:09:44,702: Training the XGBoost model
+INFO: 2022-10-07 06:09:45,141: XGB model Model saved
+INFO: 2022-10-07 06:09:45,142: Hyper parameter tuning for random forest
+INFO: 2022-10-07 06:09:45,142: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 06:11:51,962: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 600, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 60, 'bootstrap': True}
+INFO: 2022-10-07 06:11:51,963: Lowest RMSE for random forest model: 0.7058397599958003
+INFO: 2022-10-07 06:11:51,972: Training the random forest model
+INFO: 2022-10-07 06:11:51,972: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 600, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 60, 'bootstrap': True}
+INFO: 2022-10-07 06:11:59,892: Random forest model saved
+INFO: 2022-10-07 06:36:54,933: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 06:36:54,933: Splitting the data into train and test
+INFO: 2022-10-07 06:36:54,949: Training the baseline model
+INFO: 2022-10-07 06:36:54,949: Training the baseline model
+INFO: 2022-10-07 06:36:54,952: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 06:37:03,557: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 06:37:03,558: Best score for XGBoost: 0.41896303458981105
+INFO: 2022-10-07 06:37:03,567: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 06:37:03,567: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 06:37:03,567: Training the XGBoost model
+INFO: 2022-10-07 06:37:03,928: XGB model Model saved
+INFO: 2022-10-07 06:37:03,929: Hyper parameter tuning for random forest
+INFO: 2022-10-07 06:37:03,929: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 06:38:29,755: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 06:38:29,755: Lowest RMSE for random forest model: 56.37305469029798
+INFO: 2022-10-07 06:38:29,756: Training the random forest model
+INFO: 2022-10-07 06:38:29,756: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 06:38:35,090: Random forest model saved
+INFO: 2022-10-07 06:41:43,209: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 06:41:43,209: Splitting the data into train and test
+INFO: 2022-10-07 06:41:43,223: Training the baseline model
+INFO: 2022-10-07 06:41:43,224: Training the baseline model
+INFO: 2022-10-07 06:41:43,225: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 06:41:52,666: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 06:41:52,667: Best score for XGBoost: 0.38807591265456776
+INFO: 2022-10-07 06:41:52,673: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 06:41:52,673: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 06:41:52,673: Training the XGBoost model
+INFO: 2022-10-07 06:41:53,105: XGB model Model saved
+INFO: 2022-10-07 06:41:53,105: Hyper parameter tuning for random forest
+INFO: 2022-10-07 06:41:53,106: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 06:43:49,096: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-07 06:43:49,096: Lowest RMSE for random forest model: 0.7041705349868865
+INFO: 2022-10-07 06:43:49,097: Training the random forest model
+INFO: 2022-10-07 06:43:49,097: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-07 06:43:51,393: Random forest model saved
+INFO: 2022-10-07 07:32:03,730: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:32:03,731: Splitting the data into train and test
+INFO: 2022-10-07 07:32:03,806: Training the baseline model
+INFO: 2022-10-07 07:32:03,806: Training the baseline model
+INFO: 2022-10-07 07:32:03,813: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:32:13,789: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:32:13,789: Best score for XGBoost: 0.39417747252376456
+INFO: 2022-10-07 07:32:13,796: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:32:13,796: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:32:13,796: Training the XGBoost model
+INFO: 2022-10-07 07:32:14,250: XGB model Model saved
+INFO: 2022-10-07 07:32:14,251: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:32:14,251: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:33:50,099: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:33:50,099: Lowest RMSE for random forest model: 0.6998904551257046
+INFO: 2022-10-07 07:33:50,099: Training the random forest model
+INFO: 2022-10-07 07:33:50,099: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:33:53,778: Random forest model saved
+INFO: 2022-10-07 07:37:49,951: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:37:49,951: Splitting the data into train and test
+INFO: 2022-10-07 07:37:50,023: Training the baseline model
+INFO: 2022-10-07 07:37:50,023: Training the baseline model
+INFO: 2022-10-07 07:37:50,025: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:37:59,144: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:37:59,144: Best score for XGBoost: 0.39526591647701326
+INFO: 2022-10-07 07:37:59,150: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:37:59,150: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:37:59,151: Training the XGBoost model
+INFO: 2022-10-07 07:37:59,750: XGB model Model saved
+INFO: 2022-10-07 07:37:59,750: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:37:59,751: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:39:54,475: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 20, 'bootstrap': True}
+INFO: 2022-10-07 07:39:54,476: Lowest RMSE for random forest model: 0.7069632607641453
+INFO: 2022-10-07 07:39:54,476: Training the random forest model
+INFO: 2022-10-07 07:39:54,476: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 500, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 20, 'bootstrap': True}
+INFO: 2022-10-07 07:39:59,660: Random forest model saved
+INFO: 2022-10-07 07:41:22,287: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:41:22,287: Splitting the data into train and test
+INFO: 2022-10-07 07:41:22,372: Training the baseline model
+INFO: 2022-10-07 07:41:22,372: Training the baseline model
+INFO: 2022-10-07 07:41:22,374: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:41:33,384: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:41:33,384: Best score for XGBoost: 0.4016591328181655
+INFO: 2022-10-07 07:41:33,390: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:41:33,390: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:41:33,391: Training the XGBoost model
+INFO: 2022-10-07 07:41:33,899: XGB model Model saved
+INFO: 2022-10-07 07:41:33,899: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:41:33,899: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:43:05,396: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 70, 'bootstrap': True}
+INFO: 2022-10-07 07:43:05,396: Lowest RMSE for random forest model: 0.7052022642259864
+INFO: 2022-10-07 07:43:05,397: Training the random forest model
+INFO: 2022-10-07 07:43:05,397: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 70, 'bootstrap': True}
+INFO: 2022-10-07 07:43:06,346: Random forest model saved
+INFO: 2022-10-07 07:44:05,896: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:44:05,896: Splitting the data into train and test
+INFO: 2022-10-07 07:44:06,007: Training the baseline model
+INFO: 2022-10-07 07:44:06,007: Training the baseline model
+INFO: 2022-10-07 07:44:06,008: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:44:16,785: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:44:16,785: Best score for XGBoost: 0.3974514840996458
+INFO: 2022-10-07 07:44:16,791: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:44:16,792: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:44:16,792: Training the XGBoost model
+INFO: 2022-10-07 07:44:17,311: XGB model Model saved
+INFO: 2022-10-07 07:44:17,311: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:44:17,311: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:44:40,125: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:44:40,125: Lowest RMSE for random forest model: 0.700931935585323
+INFO: 2022-10-07 07:44:40,126: Training the random forest model
+INFO: 2022-10-07 07:44:40,126: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:44:40,949: Random forest model saved
+INFO: 2022-10-07 07:45:05,076: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:45:05,076: Splitting the data into train and test
+INFO: 2022-10-07 07:45:05,150: Training the baseline model
+INFO: 2022-10-07 07:45:05,150: Training the baseline model
+INFO: 2022-10-07 07:45:05,152: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:45:15,231: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:45:15,231: Best score for XGBoost: 0.3981536590332004
+INFO: 2022-10-07 07:45:15,237: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:45:15,237: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:45:15,237: Training the XGBoost model
+INFO: 2022-10-07 07:45:15,720: XGB model Model saved
+INFO: 2022-10-07 07:45:15,721: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:45:15,721: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:45:35,853: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:45:35,853: Lowest RMSE for random forest model: 0.6988448498506555
+INFO: 2022-10-07 07:45:35,854: Training the random forest model
+INFO: 2022-10-07 07:45:35,854: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:45:36,530: Random forest model saved
+INFO: 2022-10-07 07:52:53,352: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:52:53,352: Splitting the data into train and test
+INFO: 2022-10-07 07:52:53,424: Training the baseline model
+INFO: 2022-10-07 07:52:53,424: Training the baseline model
+INFO: 2022-10-07 07:52:53,425: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:53:02,582: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:53:02,583: Best score for XGBoost: 0.3784521085126979
+INFO: 2022-10-07 07:53:02,589: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:53:02,589: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:53:02,589: Training the XGBoost model
+INFO: 2022-10-07 07:53:02,995: XGB model Model saved
+INFO: 2022-10-07 07:53:02,996: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:53:02,996: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:53:21,949: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:53:21,949: Lowest RMSE for random forest model: 0.7010830990222078
+INFO: 2022-10-07 07:53:21,950: Training the random forest model
+INFO: 2022-10-07 07:53:21,950: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:53:22,578: Random forest model saved
+INFO: 2022-10-07 07:56:00,606: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:56:00,606: Splitting the data into train and test
+INFO: 2022-10-07 07:56:00,677: Training the baseline model
+INFO: 2022-10-07 07:56:00,677: Training the baseline model
+INFO: 2022-10-07 07:56:00,679: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:56:09,550: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:56:09,550: Best score for XGBoost: 0.3879346152719614
+INFO: 2022-10-07 07:56:09,556: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:56:09,556: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:56:09,556: Training the XGBoost model
+INFO: 2022-10-07 07:56:10,093: XGB model Model saved
+INFO: 2022-10-07 07:56:10,094: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:56:10,094: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 07:56:36,649: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:56:36,649: Lowest RMSE for random forest model: 0.7013701036464891
+INFO: 2022-10-07 07:56:36,649: Training the random forest model
+INFO: 2022-10-07 07:56:36,650: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 07:56:37,373: Random forest model saved
+INFO: 2022-10-07 07:59:45,736: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 07:59:45,736: Splitting the data into train and test
+INFO: 2022-10-07 07:59:45,824: Training the baseline model
+INFO: 2022-10-07 07:59:45,825: Training the baseline model
+INFO: 2022-10-07 07:59:45,826: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 07:59:56,177: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 07:59:56,178: Best score for XGBoost: 0.4029118964297004
+INFO: 2022-10-07 07:59:56,183: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 07:59:56,184: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 07:59:56,184: Training the XGBoost model
+INFO: 2022-10-07 07:59:56,670: XGB model Model saved
+INFO: 2022-10-07 07:59:56,670: Hyper parameter tuning for random forest
+INFO: 2022-10-07 07:59:56,671: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:00:19,665: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:00:19,665: Lowest RMSE for random forest model: 0.7002522754049745
+INFO: 2022-10-07 08:00:19,666: Training the random forest model
+INFO: 2022-10-07 08:00:19,666: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:00:20,375: Random forest model saved
+INFO: 2022-10-07 08:00:41,455: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:00:41,456: Splitting the data into train and test
+INFO: 2022-10-07 08:00:41,548: Training the baseline model
+INFO: 2022-10-07 08:00:41,548: Training the baseline model
+INFO: 2022-10-07 08:00:41,550: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:00:53,594: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:00:53,594: Best score for XGBoost: 0.39137085227844765
+INFO: 2022-10-07 08:00:53,603: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:00:53,604: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:00:53,604: Training the XGBoost model
+INFO: 2022-10-07 08:00:54,393: XGB model Model saved
+INFO: 2022-10-07 08:00:54,393: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:00:54,393: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:01:18,499: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:01:18,499: Lowest RMSE for random forest model: 0.6995964208554545
+INFO: 2022-10-07 08:01:18,499: Training the random forest model
+INFO: 2022-10-07 08:01:18,499: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:01:19,261: Random forest model saved
+INFO: 2022-10-07 08:01:42,325: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:01:42,325: Splitting the data into train and test
+INFO: 2022-10-07 08:01:42,345: Training the baseline model
+INFO: 2022-10-07 08:01:42,345: Training the baseline model
+INFO: 2022-10-07 08:01:42,346: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:01:55,764: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:01:55,764: Best score for XGBoost: 0.4127703886277837
+INFO: 2022-10-07 08:01:55,770: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:01:55,770: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:01:55,770: Training the XGBoost model
+INFO: 2022-10-07 08:01:56,277: XGB model Model saved
+INFO: 2022-10-07 08:01:56,278: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:01:56,278: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:02:17,175: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:02:17,176: Lowest RMSE for random forest model: 0.6994617065339848
+INFO: 2022-10-07 08:02:17,176: Training the random forest model
+INFO: 2022-10-07 08:02:17,176: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:02:17,905: Random forest model saved
+INFO: 2022-10-07 08:04:30,060: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:04:30,060: Splitting the data into train and test
+INFO: 2022-10-07 08:04:30,148: Training the baseline model
+INFO: 2022-10-07 08:04:30,149: Training the baseline model
+INFO: 2022-10-07 08:04:30,150: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:04:40,450: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:04:40,450: Best score for XGBoost: 0.3809506524115175
+INFO: 2022-10-07 08:04:40,456: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:04:40,457: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:04:40,457: Training the XGBoost model
+INFO: 2022-10-07 08:04:40,987: XGB model Model saved
+INFO: 2022-10-07 08:04:40,987: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:04:40,987: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:05:03,542: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:05:03,542: Lowest RMSE for random forest model: 0.6977100165122846
+INFO: 2022-10-07 08:05:03,543: Training the random forest model
+INFO: 2022-10-07 08:05:03,543: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:05:04,232: Random forest model saved
+INFO: 2022-10-07 08:05:48,081: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:05:48,082: Splitting the data into train and test
+INFO: 2022-10-07 08:05:48,161: Training the baseline model
+INFO: 2022-10-07 08:05:48,161: Training the baseline model
+INFO: 2022-10-07 08:05:48,163: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:05:59,644: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:05:59,644: Best score for XGBoost: 0.40184703954874673
+INFO: 2022-10-07 08:05:59,651: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:05:59,651: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:05:59,651: Training the XGBoost model
+INFO: 2022-10-07 08:06:00,356: XGB model Model saved
+INFO: 2022-10-07 08:06:00,357: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:06:00,357: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:06:25,048: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:06:25,048: Lowest RMSE for random forest model: 0.6992307699648225
+INFO: 2022-10-07 08:06:25,049: Training the random forest model
+INFO: 2022-10-07 08:06:25,049: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:06:25,897: Random forest model saved
+INFO: 2022-10-07 08:08:27,002: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:08:27,002: Splitting the data into train and test
+INFO: 2022-10-07 08:08:27,074: Training the baseline model
+INFO: 2022-10-07 08:08:27,074: Training the baseline model
+INFO: 2022-10-07 08:08:27,076: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:08:36,391: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:08:36,391: Best score for XGBoost: 0.3932597300807276
+INFO: 2022-10-07 08:08:36,397: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:08:36,397: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:08:36,397: Training the XGBoost model
+INFO: 2022-10-07 08:08:36,834: XGB model Model saved
+INFO: 2022-10-07 08:08:36,834: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:08:36,834: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:08:56,547: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:08:56,548: Lowest RMSE for random forest model: 0.6998710169265298
+INFO: 2022-10-07 08:08:56,548: Training the random forest model
+INFO: 2022-10-07 08:08:56,548: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:08:57,259: Random forest model saved
+INFO: 2022-10-07 08:18:05,845: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:18:05,845: Splitting the data into train and test
+INFO: 2022-10-07 08:18:05,916: Training the baseline model
+INFO: 2022-10-07 08:18:05,916: Training the baseline model
+INFO: 2022-10-07 08:18:05,922: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:18:15,121: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:18:15,122: Best score for XGBoost: 0.3815838604156327
+INFO: 2022-10-07 08:18:15,128: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:18:15,128: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:18:15,128: Training the XGBoost model
+INFO: 2022-10-07 08:18:15,578: XGB model Model saved
+INFO: 2022-10-07 08:18:15,579: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:18:15,579: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:18:36,091: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:18:36,091: Lowest RMSE for random forest model: 0.69956691324819
+INFO: 2022-10-07 08:18:36,091: Training the random forest model
+INFO: 2022-10-07 08:18:36,091: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:18:36,797: Random forest model saved
+INFO: 2022-10-07 08:19:27,672: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:19:27,672: Splitting the data into train and test
+INFO: 2022-10-07 08:19:27,745: Training the baseline model
+INFO: 2022-10-07 08:19:27,745: Training the baseline model
+INFO: 2022-10-07 08:19:27,747: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:19:36,900: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:19:36,900: Best score for XGBoost: 0.39761256990557164
+INFO: 2022-10-07 08:19:36,906: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:19:36,906: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:19:36,906: Training the XGBoost model
+INFO: 2022-10-07 08:19:37,310: XGB model Model saved
+INFO: 2022-10-07 08:19:37,311: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:19:37,311: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:19:57,125: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:19:57,125: Lowest RMSE for random forest model: 0.6988188702023046
+INFO: 2022-10-07 08:19:57,125: Training the random forest model
+INFO: 2022-10-07 08:19:57,126: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:19:57,771: Random forest model saved
+INFO: 2022-10-07 08:21:23,318: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:21:23,318: Splitting the data into train and test
+INFO: 2022-10-07 08:21:23,400: Training the baseline model
+INFO: 2022-10-07 08:21:23,400: Training the baseline model
+INFO: 2022-10-07 08:21:23,402: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:21:33,580: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:21:33,580: Best score for XGBoost: 0.38970609144442336
+INFO: 2022-10-07 08:21:33,586: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:21:33,587: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:21:33,587: Training the XGBoost model
+INFO: 2022-10-07 08:21:34,227: XGB model Model saved
+INFO: 2022-10-07 08:21:34,227: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:21:34,228: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:22:10,685: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:22:10,685: Lowest RMSE for random forest model: 0.7000716554957914
+INFO: 2022-10-07 08:22:10,685: Training the random forest model
+INFO: 2022-10-07 08:22:10,685: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:22:11,397: Random forest model saved
+INFO: 2022-10-07 08:42:55,469: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:42:55,469: Splitting the data into train and test
+INFO: 2022-10-07 08:42:55,489: Training the baseline model
+INFO: 2022-10-07 08:42:55,489: Training the baseline model
+INFO: 2022-10-07 08:42:55,495: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:43:04,873: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:43:04,874: Best score for XGBoost: 0.38719210260002945
+INFO: 2022-10-07 08:43:04,880: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:43:04,880: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:43:04,880: Training the XGBoost model
+INFO: 2022-10-07 08:43:05,360: XGB model Model saved
+INFO: 2022-10-07 08:43:05,361: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:43:05,361: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:43:26,831: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:43:26,832: Lowest RMSE for random forest model: 0.7018934582528897
+INFO: 2022-10-07 08:43:26,832: Training the random forest model
+INFO: 2022-10-07 08:43:26,832: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 2, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:43:27,526: Random forest model saved
+INFO: 2022-10-07 08:44:12,677: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:44:12,677: Splitting the data into train and test
+INFO: 2022-10-07 08:44:12,752: Training the baseline model
+INFO: 2022-10-07 08:44:12,752: Training the baseline model
+INFO: 2022-10-07 08:44:12,754: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:44:21,951: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:44:21,951: Best score for XGBoost: 0.3827805504435527
+INFO: 2022-10-07 08:44:21,957: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=None, gamma=0.2, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.3, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=4, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=42,
+             reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:44:21,957: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:44:21,958: Training the XGBoost model
+INFO: 2022-10-07 08:44:22,440: XGB model Model saved
+INFO: 2022-10-07 08:44:22,440: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:44:22,440: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:46:30,969: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 3, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:46:30,969: Lowest RMSE for random forest model: 0.7078231266707596
+INFO: 2022-10-07 08:46:30,970: Training the random forest model
+INFO: 2022-10-07 08:46:30,970: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 3, 'max_depth': 10, 'bootstrap': True}
+INFO: 2022-10-07 08:46:40,752: Random forest model saved
+INFO: 2022-10-07 08:49:37,960: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:49:37,960: Splitting the data into train and test
+INFO: 2022-10-07 08:49:38,039: Training the baseline model
+INFO: 2022-10-07 08:49:38,039: Training the baseline model
+INFO: 2022-10-07 08:49:38,041: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:49:48,008: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:49:48,008: Best score for XGBoost: 0.37879224016695046
+INFO: 2022-10-07 08:49:48,015: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=['rmse'], gamma=0.2, gpu_id=-1,
+             grow_policy='depthwise', importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_bin=256,
+             max_cat_to_onehot=4, max_delta_step=0, max_depth=4, max_leaves=0,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=100, n_jobs=0, num_parallel_tree=1, predictor='auto',
+             random_state=42, reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:49:48,015: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:49:48,015: Training the XGBoost model
+INFO: 2022-10-07 08:49:48,584: XGB model Model saved
+INFO: 2022-10-07 08:49:48,584: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:49:48,585: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:51:50,162: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 50, 'bootstrap': True}
+INFO: 2022-10-07 08:51:50,163: Lowest RMSE for random forest model: 0.7037269971572665
+INFO: 2022-10-07 08:51:50,170: Training the random forest model
+INFO: 2022-10-07 08:51:50,170: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 1000, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 50, 'bootstrap': True}
+INFO: 2022-10-07 08:51:59,867: Random forest model saved
+INFO: 2022-10-07 08:52:54,926: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:52:54,927: Splitting the data into train and test
+INFO: 2022-10-07 08:52:55,053: Training the baseline model
+INFO: 2022-10-07 08:52:55,054: Training the baseline model
+INFO: 2022-10-07 08:52:55,057: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:53:05,766: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:53:05,767: Best score for XGBoost: -0.5490628008125493
+INFO: 2022-10-07 08:53:05,774: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=['rmse'], gamma=0.2, gpu_id=-1,
+             grow_policy='depthwise', importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_bin=256,
+             max_cat_to_onehot=4, max_delta_step=0, max_depth=4, max_leaves=0,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=100, n_jobs=0, num_parallel_tree=1, predictor='auto',
+             random_state=42, reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:53:05,774: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:53:05,774: Training the XGBoost model
+INFO: 2022-10-07 08:53:06,403: XGB model Model saved
+INFO: 2022-10-07 08:53:06,404: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:53:06,404: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 08:54:06,759: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-07 08:54:06,760: Lowest RMSE for random forest model: 0.7050382683743902
+INFO: 2022-10-07 08:54:06,760: Training the random forest model
+INFO: 2022-10-07 08:54:06,760: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 40, 'bootstrap': True}
+INFO: 2022-10-07 08:54:08,539: Random forest model saved
+INFO: 2022-10-07 08:58:30,115: Reading the final data from the data/processed folder and training the model
+INFO: 2022-10-07 08:58:30,116: Splitting the data into train and test
+INFO: 2022-10-07 08:58:30,234: Training the baseline model
+INFO: 2022-10-07 08:58:30,235: Training the baseline model
+INFO: 2022-10-07 08:58:30,240: Hyperparameter tuning of XGBoost model
+INFO: 2022-10-07 08:58:49,928: Best parameters for XGBoost: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.3, 'gamma': 0.2, 'colsample_bytree': 0.7}
+INFO: 2022-10-07 08:58:49,928: Best score for XGBoost: -0.5590524361596221
+INFO: 2022-10-07 08:58:49,936: Best estimator for XGBoost: XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
+             early_stopping_rounds=None, enable_categorical=False,
+             eval_metric=['rmse'], gamma=0.2, gpu_id=-1,
+             grow_policy='depthwise', importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_bin=256,
+             max_cat_to_onehot=4, max_delta_step=0, max_depth=4, max_leaves=0,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=100, n_jobs=0, num_parallel_tree=1, predictor='auto',
+             random_state=42, reg_alpha=0, reg_lambda=1, ...)
+INFO: 2022-10-07 08:58:49,936: Training the XGBoost model with best hyperparameters
+INFO: 2022-10-07 08:58:49,936: Training the XGBoost model
+INFO: 2022-10-07 08:58:50,822: XGB model Model saved
+INFO: 2022-10-07 08:58:50,822: Hyper parameter tuning for random forest
+INFO: 2022-10-07 08:58:50,822: Hyperparameter tuning for random forest model
+INFO: 2022-10-07 09:00:09,521: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 80, 'bootstrap': True}
+INFO: 2022-10-07 09:00:09,522: Lowest RMSE for random forest model: 0.704917498846308
+INFO: 2022-10-07 09:00:09,523: Training the random forest model
+INFO: 2022-10-07 09:00:09,523: Best parameters for random forest model: {'random_state': 2022, 'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 2, 'max_depth': 80, 'bootstrap': True}
+INFO: 2022-10-07 09:00:10,952: Random forest model saved

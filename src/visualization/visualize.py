@@ -38,7 +38,7 @@ class visualize(object):
         self.y_pred_baseline = y_pred_baseline
         self.X_test = X_test
 
-    def base_model_plots(self):
+    def base_model_plots(self) -> None:
         """_summary_: This function is used to plot the residual plot, qq plot and actual vs predicted plot for the baseline model 
             and save the plots in eval/plots folder.
         
@@ -71,7 +71,7 @@ class visualize(object):
 
 
 
-    def rf_feature_importance(self):
+    def rf_feature_importance(self) -> pd.DataFrame:
         """_summary_: This function is used to plot the feature importance for the random forest model 
             and save the dataframe with feature importance in reports/eval folder. Save the Feature Importance 
             plot in reports/plots folder.
@@ -94,7 +94,7 @@ class visualize(object):
         return feature_importance
 
 
-    def pred_plot(self):
+    def pred_plot(self) -> None:
         """_summary_: This function is used to plot the actual vs predicted plot for the random forest model.
                         and save the plot in reports/plots folder.
         """
@@ -109,7 +109,7 @@ class visualize(object):
         plt.title('Actual vs Predicted for Random Forest')
         plt.savefig('./reports/plots/actual_vs_predicted_random_forest.png')
     
-    def actual_fitted_plot(self):
+    def actual_fitted_plot(self) -> None:
         """_summary_: This function is used to plot the actual vs fitted 
             distribution plot for the random forest model. 
             The plot is saved in reports/plots folder.
@@ -121,7 +121,7 @@ class visualize(object):
         plt.title('Actual vs Fitted Values for Random Forest')
         plt.savefig('./reports/plots/actual_vs_fitted_random_forest.png')
 
-    def visualize_learning_curve(self):
+    def visualize_learning_curve(self) -> None:
         """_summary_: This function is used to plot the learning curve for the random forest model.
                         and save the plot in reports/plots folder.
 
@@ -150,7 +150,7 @@ class visualize(object):
         plt.legend()
         plt.savefig('./reports/plots/learning_curve.png')
 
-    def plot_learning_curve_xgb(self, xgb_model):
+    def plot_learning_curve_xgb(self, xgb_model)->None:
         """_summary_: This function is used to plot the learning curve for the xgboost model.
                         and save the plot in reports/plots folder.
 
@@ -173,3 +173,21 @@ class visualize(object):
         plt.ylabel('RMSE')
         plt.title('Learning curve for XGBoost')
         plt.savefig('./reports/plots/learning_curve_xgb.png')
+
+    def tree_interpreter(self, model):
+        self.model = model
+        row = self.X_test.values[None, 0]
+
+        prediction, bias, contributions = ti.predict(self.model, row)
+        sorted_idx = np.argsort(contributions[0])
+
+        # create dataframe for column, row and contribution
+        df = pd.DataFrame(columns=['column', 'true_value', 'contribution'])
+        df['column'] = self.X_test.columns[sorted_idx]
+        df['true_value'] = row[0][sorted_idx]
+        df['contribution'] = contributions[0][sorted_idx]
+        df['contribution'] = df['contribution'].apply(lambda x: round(x, 2))
+        print(row)
+        # features = [(self.df[self.selected_features].columns[i], row[0,i], contributions[0,i]) for i in sorted_idx]
+        df.to_csv('./reports/eval/tree_interpreter.csv', index=False)
+        # print(features)

@@ -2,10 +2,10 @@
 
 ## Summary:
 
-The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The XGboost model was the best model with the lowest RMSE of 0.51.
+The coding challenge approach: To approach the problem of this coding challenge CRIP-DM methodology was used. The raw data and target data joined on groups and index. The data preprocessing, feature engineering and feature selection were done. The prepared data was trained on 80:20 split (optimum split is 40-80% training data [1]) on based model (multiple linear regression). Hyperparameter tuning was performed on random forest model and a random forest model was trained on best parameters. XGBoost model was also trained on the data with hyperparameter tuning. The models were evaluated using Root mean squared error (RMSE), OOB error (for random forest). The XGBoost model was the best model with the lowest RMSE of 0.52.
 The code was transformed into an API and deployed as a docked container instance in Azure.
 
-The API from Azure container instance can be accessed at with a post request:
+The API from Azure container instance can be accessed at with a post request for the link below:
 
 ```
 20.126.198.51:8000/predict
@@ -146,7 +146,7 @@ XGBoost model: RMSE = 0.52
 
 1. Baseline model: The Value of Root mean squared error is 0.65. and Normalized RMSE = 0.09. The value of VIF is 1.16. This means that there is no multicollinearity in the model. The mean_residuals is 0.01.
 2. Random forest model: The value of Root mean squared error is 0.54. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting.
-3. XGBoost model: The value of Root mean squared error is 0.52.
+3. XGBoost model: The value of Root mean squared error is 0.52 and Normalized RMSE = 0.07.
 
 #### Plots:
 
@@ -183,19 +183,24 @@ XGBoost model: RMSE = 0.52
 
 #### Model interpretation:
 
-1. Random forest:
+##### Random forest model interpretation:
+
+The figure below shows how each feature contributes to the prediction. From below fig we can see that for the value of 0.63 for pure_seastone it adds 0.03 to the prediction of the target prediction. While for a value of -1.5 for column TE_groups_categorify it reduces 0.17 to the target prediction.
+
+![](flowchart/depedency_plot.jpg)
 
 #### Conclusion:
 
-1. The XGBoost model performs better than the baseline model and random forest model.
+1. The XGBoost model performs better than the baseline model and random forest model. The model was deployed in Azure in an azure container instance.
 
 #### Further improvements:
 
 1. Use more data to train the model.
-2. Try entity embedding for categorical variables
-3. Try different feature selection techniques like wrapper method like recursive feature elimination.
-4. Try different feature engineering techniques.
-5. Try different models. Use Regression-Enhanced Random Forests (RERF) model.
+2. Try entity embedding for representation categorical variables.
+3. Better use of datetime features.
+4. Try different feature selection techniques like wrapper method like recursive feature elimination.
+5. Try different feature engineering techniques.
+6. Try different models. Use Regression-Enhanced Random Forests (RERF) model.
 
 ### Folder structure
 

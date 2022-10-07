@@ -2511,3 +2511,810 @@ INFO: 2022-10-07 00:29:32,213: Find correlaion in the following columns: ['TE_gr
 INFO: 2022-10-07 00:29:32,224: Correlated features and Lasso features are same
 INFO: 2022-10-07 00:29:32,294: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
 INFO: 2022-10-07 00:29:32,294: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 06:08:51,837: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:08:51,888: Feature removed due to low variance: ['TE_crystal_supergroup_Categorify']
+INFO: 2022-10-07 06:08:51,890: Perform feature selection using Lasso
+INFO: 2022-10-07 06:08:53,435: Selected features using Lasso: ['TE_crystal_type_Categorify' 'TE_groups_Categorify' 'previous_adamantium'
+ 'TE_ts_weekday_Categorify' 'TE_ts_day_Categorify'
+ 'TE_ts_month_Categorify' 'TE_cycle_Categorify' 'chemical_x'
+ 'TE_tracking_times_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_groups_Categorify' 'expected_final_factor_x' 'final_factor_x'
+ 'TE_human_behavior_report_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:08:53,436: Find correlaion in the following columns: ['TE_crystal_type_Categorify' 'TE_groups_Categorify' 'previous_adamantium'
+ 'TE_ts_weekday_Categorify' 'TE_ts_day_Categorify'
+ 'TE_ts_month_Categorify' 'TE_cycle_Categorify' 'chemical_x'
+ 'TE_tracking_times_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_groups_Categorify' 'expected_final_factor_x' 'final_factor_x'
+ 'TE_human_behavior_report_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:09:32,756: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:09:32,824: Feature removed due to low variance: []
+INFO: 2022-10-07 06:09:32,825: Perform feature selection using Lasso
+INFO: 2022-10-07 06:09:33,147: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'chemical_x' 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start']
+INFO: 2022-10-07 06:09:33,149: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'chemical_x' 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start']
+INFO: 2022-10-07 06:09:33,164: Correlated features and Lasso features are same
+INFO: 2022-10-07 06:09:33,266: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 06:09:33,266: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 06:16:26,402: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:16:26,448: Feature removed due to low variance: []
+INFO: 2022-10-07 06:16:26,450: Perform feature selection using Lasso
+INFO: 2022-10-07 06:16:27,216: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_unnamed_7_Categorify' 'first_factor_x'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:16:27,217: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_unnamed_7_Categorify' 'first_factor_x'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:17:37,203: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:17:37,251: Feature removed due to low variance: []
+INFO: 2022-10-07 06:17:37,253: Perform feature selection using Lasso
+INFO: 2022-10-07 06:17:38,009: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'TE_unnamed_7_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:17:38,010: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'TE_unnamed_7_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:17:38,018: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:18:43,705: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:18:43,761: Feature removed due to low variance: []
+INFO: 2022-10-07 06:18:43,762: Perform feature selection using Lasso
+INFO: 2022-10-07 06:18:44,500: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:18:44,501: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:18:44,510: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:23:40,313: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:23:40,368: Feature removed due to low variance: []
+INFO: 2022-10-07 06:23:40,369: Perform feature selection using Lasso
+INFO: 2022-10-07 06:23:41,129: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'TE_unnamed_7_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:23:41,130: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'TE_unnamed_7_Categorify' 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:23:41,138: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:24:37,568: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:24:37,617: Feature removed due to low variance: []
+INFO: 2022-10-07 06:24:37,619: Perform feature selection using Lasso
+INFO: 2022-10-07 06:24:38,380: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:24:38,381: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:24:38,391: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:25:17,211: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:25:17,259: Feature removed due to low variance: []
+INFO: 2022-10-07 06:25:17,260: Perform feature selection using Lasso
+INFO: 2022-10-07 06:25:18,052: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'first_factor_x' 'TE_cycle_Categorify' 'human_measure']
+INFO: 2022-10-07 06:25:18,053: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'first_factor_x' 'TE_cycle_Categorify' 'human_measure']
+INFO: 2022-10-07 06:25:18,061: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:26:03,933: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:26:03,979: Feature removed due to low variance: []
+INFO: 2022-10-07 06:26:03,980: Perform feature selection using Lasso
+INFO: 2022-10-07 06:26:04,752: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'tracking'
+ 'expected_final_factor_x' 'TE_unnamed_7_Categorify' 'TE_cycle_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:26:04,753: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'tracking'
+ 'expected_final_factor_x' 'TE_unnamed_7_Categorify' 'TE_cycle_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:26:04,760: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:26:29,206: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:26:29,264: Feature removed due to low variance: []
+INFO: 2022-10-07 06:26:29,266: Perform feature selection using Lasso
+INFO: 2022-10-07 06:26:30,158: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'first_factor_x' 'etherium_before_start']
+INFO: 2022-10-07 06:26:30,159: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'TE_cycle_Categorify'
+ 'first_factor_x' 'etherium_before_start']
+INFO: 2022-10-07 06:26:30,169: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:28:31,443: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:28:31,490: Feature removed due to low variance: []
+INFO: 2022-10-07 06:28:31,491: Perform feature selection using Lasso
+INFO: 2022-10-07 06:28:32,241: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:28:32,243: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:28:32,251: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:29:06,897: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:29:06,949: Feature removed due to low variance: []
+INFO: 2022-10-07 06:29:06,950: Perform feature selection using Lasso
+INFO: 2022-10-07 06:29:07,761: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:29:07,763: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x'
+ 'CE_TE_crystal_supergroup_Categorify' 'TE_ts_weekday_Categorify'
+ 'expected_final_factor_x' 'tracking' 'first_factor_x'
+ 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:29:07,778: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:30:54,091: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:30:54,139: Feature removed due to low variance: []
+INFO: 2022-10-07 06:30:54,141: Perform feature selection using Lasso
+INFO: 2022-10-07 06:30:54,858: Selected features using Lasso: ['chemical_x' 'previous_adamantium' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'first_factor_x' 'TE_unnamed_7_Categorify'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:30:54,859: Find correlaion in the following columns: ['chemical_x' 'previous_adamantium' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'first_factor_x' 'TE_unnamed_7_Categorify'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:30:54,871: Correlated features: ['previous_adamantium', 'final_factor_x', 'chemical_x']
+INFO: 2022-10-07 06:31:32,383: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:31:32,432: Feature removed due to low variance: []
+INFO: 2022-10-07 06:31:32,433: Perform feature selection using Lasso
+INFO: 2022-10-07 06:31:33,266: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_unnamed_7_Categorify' 'first_factor_x'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:31:33,267: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_unnamed_7_Categorify' 'first_factor_x'
+ 'TE_cycle_Categorify']
+INFO: 2022-10-07 06:31:33,278: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:32:30,540: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:32:30,595: Feature removed due to low variance: []
+INFO: 2022-10-07 06:32:30,596: Perform feature selection using Lasso
+INFO: 2022-10-07 06:32:31,361: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'tracking'
+ 'expected_final_factor_x' 'first_factor_x' 'TE_cycle_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:32:31,362: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'tracking'
+ 'expected_final_factor_x' 'first_factor_x' 'TE_cycle_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:32:31,370: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:33:01,543: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:33:01,597: Feature removed due to low variance: []
+INFO: 2022-10-07 06:33:01,599: Perform feature selection using Lasso
+INFO: 2022-10-07 06:33:02,340: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:33:02,341: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:33:02,349: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:34:32,939: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:34:32,987: Feature removed due to low variance: []
+INFO: 2022-10-07 06:34:32,989: Perform feature selection using Lasso
+INFO: 2022-10-07 06:34:33,730: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:34:33,730: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_day_Categorify']
+INFO: 2022-10-07 06:34:33,739: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:35:44,866: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:35:44,912: Feature removed due to low variance: []
+INFO: 2022-10-07 06:35:44,913: Perform feature selection using Lasso
+INFO: 2022-10-07 06:35:45,697: Selected features using Lasso: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'first_factor_x'
+ 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:35:45,699: Find correlaion in the following columns: ['previous_adamantium' 'chemical_x' 'TE_groups_Categorify'
+ 'TE_ts_day_Categorify' 'TE_crystal_type_Categorify' 'argon'
+ 'TE_ts_month_Categorify' 'final_factor_x' 'TE_ts_weekday_Categorify'
+ 'CE_TE_crystal_supergroup_Categorify' 'expected_final_factor_x'
+ 'tracking' 'TE_cycle_Categorify' 'first_factor_x'
+ 'TE_unnamed_7_Categorify']
+INFO: 2022-10-07 06:35:45,706: Correlated features: ['final_factor_x', 'previous_adamantium', 'chemical_x']
+INFO: 2022-10-07 06:36:52,153: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:36:52,197: Feature removed due to low variance: []
+INFO: 2022-10-07 06:36:52,199: Perform feature selection using Lasso
+INFO: 2022-10-07 06:36:52,949: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify' 'final_factor_x'
+ 'TE_crystal_type_Categorify' 'previous_adamantium'
+ 'TE_ts_month_Categorify' 'expected_final_factor_x'
+ 'TE_ts_weekday_Categorify' 'previous_factor_x' 'tracking' 'pure_seastone'
+ 'TE_cycle_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_human_behavior_report_Categorify' 'CE_TE_groups_Categorify']
+INFO: 2022-10-07 06:36:52,950: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify' 'final_factor_x'
+ 'TE_crystal_type_Categorify' 'previous_adamantium'
+ 'TE_ts_month_Categorify' 'expected_final_factor_x'
+ 'TE_ts_weekday_Categorify' 'previous_factor_x' 'tracking' 'pure_seastone'
+ 'TE_cycle_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_human_behavior_report_Categorify' 'CE_TE_groups_Categorify']
+INFO: 2022-10-07 06:36:52,959: Correlated features: ['previous_adamantium', 'final_factor_x']
+INFO: 2022-10-07 06:36:53,565: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 06:36:53,565: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 06:41:41,489: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 06:41:41,543: Feature removed due to low variance: []
+INFO: 2022-10-07 06:41:41,545: Perform feature selection using Lasso
+INFO: 2022-10-07 06:41:41,771: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 06:41:41,772: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 06:41:41,781: Correlated features and Lasso features are same
+INFO: 2022-10-07 06:41:41,839: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 06:41:41,840: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:32:01,996: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:32:01,997: Feature selection of continous variables
+INFO: 2022-10-07 07:32:02,052: Feature removed due to low variance: []
+INFO: 2022-10-07 07:32:02,053: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:32:02,054: Perform feature selection using Lasso
+INFO: 2022-10-07 07:32:02,325: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:32:02,325: Find correlated features
+INFO: 2022-10-07 07:32:02,325: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:32:02,337: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:32:02,337: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:32:02,338: Feature selection of categorical variables
+INFO: 2022-10-07 07:32:02,389: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:32:02,389: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:37:48,226: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:37:48,226: Feature selection of continous variables
+INFO: 2022-10-07 07:37:48,281: Feature removed due to low variance: []
+INFO: 2022-10-07 07:37:48,281: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:37:48,282: Perform feature selection using Lasso
+INFO: 2022-10-07 07:37:48,520: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:37:48,520: Find correlated features
+INFO: 2022-10-07 07:37:48,520: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:37:48,534: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:37:48,534: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:37:48,535: Feature selection of categorical variables
+INFO: 2022-10-07 07:37:48,621: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:37:48,621: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:41:07,230: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:41:07,230: Feature selection of continous variables
+INFO: 2022-10-07 07:41:20,550: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:41:20,550: Feature selection of continous variables
+INFO: 2022-10-07 07:41:20,593: Feature removed due to low variance: []
+INFO: 2022-10-07 07:41:20,593: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:41:20,594: Perform feature selection using Lasso
+INFO: 2022-10-07 07:41:20,836: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_ts_weekday_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:41:20,836: Find correlated features
+INFO: 2022-10-07 07:41:20,837: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_ts_weekday_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:41:20,852: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:41:20,852: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:41:20,853: Feature selection of categorical variables
+INFO: 2022-10-07 07:41:20,901: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:41:20,902: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:44:04,042: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:44:04,042: Feature selection of continous variables
+INFO: 2022-10-07 07:44:04,113: Feature removed due to low variance: []
+INFO: 2022-10-07 07:44:04,114: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:44:04,115: Perform feature selection using Lasso
+INFO: 2022-10-07 07:44:04,370: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:44:04,370: Find correlated features
+INFO: 2022-10-07 07:44:04,370: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:44:04,382: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:44:04,382: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:44:04,383: Feature selection of categorical variables
+INFO: 2022-10-07 07:44:04,432: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:44:04,432: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:45:02,835: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:45:02,835: Feature selection of continous variables
+INFO: 2022-10-07 07:45:02,881: Feature removed due to low variance: []
+INFO: 2022-10-07 07:45:02,881: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:45:02,882: Perform feature selection using Lasso
+INFO: 2022-10-07 07:45:03,136: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:45:03,136: Find correlated features
+INFO: 2022-10-07 07:45:03,137: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:45:03,147: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:45:03,147: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:45:03,147: Feature selection of categorical variables
+INFO: 2022-10-07 07:45:03,197: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:45:03,198: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:52:51,713: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:52:51,713: Feature selection of continous variables
+INFO: 2022-10-07 07:52:51,774: Feature removed due to low variance: []
+INFO: 2022-10-07 07:52:51,774: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:52:51,775: Perform feature selection using Lasso
+INFO: 2022-10-07 07:52:52,009: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:52:52,010: Find correlated features
+INFO: 2022-10-07 07:52:52,010: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:52:52,019: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:52:52,019: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:52:52,020: Feature selection of categorical variables
+INFO: 2022-10-07 07:52:52,067: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:52:52,067: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:55:58,940: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:55:58,940: Feature selection of continous variables
+INFO: 2022-10-07 07:55:58,992: Feature removed due to low variance: []
+INFO: 2022-10-07 07:55:58,992: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:55:58,993: Perform feature selection using Lasso
+INFO: 2022-10-07 07:55:59,231: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:55:59,231: Find correlated features
+INFO: 2022-10-07 07:55:59,231: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:55:59,241: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:55:59,241: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:55:59,242: Feature selection of categorical variables
+INFO: 2022-10-07 07:55:59,286: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:55:59,287: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 07:59:43,823: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 07:59:43,824: Feature selection of continous variables
+INFO: 2022-10-07 07:59:43,889: Feature removed due to low variance: []
+INFO: 2022-10-07 07:59:43,889: Performing feature selection using lasso regression
+INFO: 2022-10-07 07:59:43,890: Perform feature selection using Lasso
+INFO: 2022-10-07 07:59:44,129: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:59:44,129: Find correlated features
+INFO: 2022-10-07 07:59:44,130: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 07:59:44,139: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 07:59:44,140: Correlated features and Lasso features are same
+INFO: 2022-10-07 07:59:44,140: Feature selection of categorical variables
+INFO: 2022-10-07 07:59:44,191: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 07:59:44,191: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:00:39,144: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:00:39,144: Feature selection of continous variables
+INFO: 2022-10-07 08:00:39,229: Feature removed due to low variance: []
+INFO: 2022-10-07 08:00:39,229: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:00:39,230: Perform feature selection using Lasso
+INFO: 2022-10-07 08:00:39,585: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:00:39,585: Find correlated features
+INFO: 2022-10-07 08:00:39,585: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:00:39,599: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:00:39,599: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:00:39,600: Feature selection of categorical variables
+INFO: 2022-10-07 08:00:39,691: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:00:39,691: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:01:40,321: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:01:40,321: Feature selection of continous variables
+INFO: 2022-10-07 08:01:40,374: Feature removed due to low variance: []
+INFO: 2022-10-07 08:01:40,375: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:01:40,375: Perform feature selection using Lasso
+INFO: 2022-10-07 08:01:40,612: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:01:40,612: Find correlated features
+INFO: 2022-10-07 08:01:40,612: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:01:40,622: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:01:40,622: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:01:40,623: Feature selection of categorical variables
+INFO: 2022-10-07 08:01:40,689: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:01:40,689: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:04:28,102: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:04:28,102: Feature selection of continous variables
+INFO: 2022-10-07 08:04:28,168: Feature removed due to low variance: []
+INFO: 2022-10-07 08:04:28,168: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:04:28,169: Perform feature selection using Lasso
+INFO: 2022-10-07 08:04:28,481: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:04:28,481: Find correlated features
+INFO: 2022-10-07 08:04:28,481: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:04:28,494: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:04:28,494: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:04:28,495: Feature selection of categorical variables
+INFO: 2022-10-07 08:04:28,547: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:04:28,547: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:05:45,860: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:05:45,861: Feature selection of continous variables
+INFO: 2022-10-07 08:05:45,961: Feature removed due to low variance: []
+INFO: 2022-10-07 08:05:45,961: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:05:45,962: Perform feature selection using Lasso
+INFO: 2022-10-07 08:05:46,304: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:05:46,304: Find correlated features
+INFO: 2022-10-07 08:05:46,304: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:05:46,315: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:05:46,315: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:05:46,316: Feature selection of categorical variables
+INFO: 2022-10-07 08:05:46,427: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:05:46,428: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:08:25,269: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:08:25,269: Feature selection of continous variables
+INFO: 2022-10-07 08:08:25,334: Feature removed due to low variance: []
+INFO: 2022-10-07 08:08:25,334: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:08:25,335: Perform feature selection using Lasso
+INFO: 2022-10-07 08:08:25,574: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:08:25,574: Find correlated features
+INFO: 2022-10-07 08:08:25,574: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:08:25,586: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:08:25,586: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:08:25,587: Feature selection of categorical variables
+INFO: 2022-10-07 08:08:25,645: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:08:25,645: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:18:04,186: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:18:04,187: Feature selection of continous variables
+INFO: 2022-10-07 08:18:04,241: Feature removed due to low variance: []
+INFO: 2022-10-07 08:18:04,242: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:18:04,243: Perform feature selection using Lasso
+INFO: 2022-10-07 08:18:04,480: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:18:04,480: Find correlated features
+INFO: 2022-10-07 08:18:04,480: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:18:04,489: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:18:04,489: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:18:04,490: Feature selection of categorical variables
+INFO: 2022-10-07 08:18:04,537: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:18:04,537: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:19:25,921: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:19:25,921: Feature selection of continous variables
+INFO: 2022-10-07 08:19:25,971: Feature removed due to low variance: []
+INFO: 2022-10-07 08:19:25,971: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:19:25,971: Perform feature selection using Lasso
+INFO: 2022-10-07 08:19:26,207: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_ts_weekday_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:19:26,207: Find correlated features
+INFO: 2022-10-07 08:19:26,207: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_ts_weekday_Categorify' 'TE_unnamed_7_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:19:26,216: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:19:26,216: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:19:26,217: Feature selection of categorical variables
+INFO: 2022-10-07 08:19:26,264: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:19:26,264: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:21:21,429: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:21:21,430: Feature selection of continous variables
+INFO: 2022-10-07 08:21:21,493: Feature removed due to low variance: []
+INFO: 2022-10-07 08:21:21,493: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:21:21,494: Perform feature selection using Lasso
+INFO: 2022-10-07 08:21:21,784: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:21:21,784: Find correlated features
+INFO: 2022-10-07 08:21:21,784: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:21:21,794: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:21:21,795: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:21:21,795: Feature selection of categorical variables
+INFO: 2022-10-07 08:21:21,846: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:21:21,847: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:42:53,675: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:42:53,675: Feature selection of continous variables
+INFO: 2022-10-07 08:42:53,727: Feature removed due to low variance: []
+INFO: 2022-10-07 08:42:53,727: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:42:53,728: Perform feature selection using Lasso
+INFO: 2022-10-07 08:42:54,005: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:42:54,005: Find correlated features
+INFO: 2022-10-07 08:42:54,005: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:42:54,018: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:42:54,018: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:42:54,020: Feature selection of categorical variables
+INFO: 2022-10-07 08:42:54,067: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:42:54,067: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:44:10,988: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:44:10,988: Feature selection of continous variables
+INFO: 2022-10-07 08:44:11,038: Feature removed due to low variance: []
+INFO: 2022-10-07 08:44:11,038: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:44:11,039: Perform feature selection using Lasso
+INFO: 2022-10-07 08:44:11,279: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:44:11,279: Find correlated features
+INFO: 2022-10-07 08:44:11,279: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:44:11,288: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:44:11,288: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:44:11,289: Feature selection of categorical variables
+INFO: 2022-10-07 08:44:11,336: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:44:11,337: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:49:36,136: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:49:36,136: Feature selection of continous variables
+INFO: 2022-10-07 08:49:36,225: Feature removed due to low variance: []
+INFO: 2022-10-07 08:49:36,225: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:49:36,226: Perform feature selection using Lasso
+INFO: 2022-10-07 08:49:36,504: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:49:36,504: Find correlated features
+INFO: 2022-10-07 08:49:36,504: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:49:36,514: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:49:36,514: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:49:36,515: Feature selection of categorical variables
+INFO: 2022-10-07 08:49:36,572: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:49:36,573: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:52:52,546: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:52:52,546: Feature selection of continous variables
+INFO: 2022-10-07 08:52:52,621: Feature removed due to low variance: []
+INFO: 2022-10-07 08:52:52,621: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:52:52,622: Perform feature selection using Lasso
+INFO: 2022-10-07 08:52:53,022: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:52:53,022: Find correlated features
+INFO: 2022-10-07 08:52:53,023: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:52:53,035: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:52:53,036: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:52:53,037: Feature selection of categorical variables
+INFO: 2022-10-07 08:52:53,115: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:52:53,116: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']
+INFO: 2022-10-07 08:58:27,308: Reading the feature engineered data and performing feature selection
+INFO: 2022-10-07 08:58:27,308: Feature selection of continous variables
+INFO: 2022-10-07 08:58:27,391: Feature removed due to low variance: []
+INFO: 2022-10-07 08:58:27,392: Performing feature selection using lasso regression
+INFO: 2022-10-07 08:58:27,393: Perform feature selection using Lasso
+INFO: 2022-10-07 08:58:27,832: Selected features using Lasso: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:58:27,832: Find correlated features
+INFO: 2022-10-07 08:58:27,832: Find correlaion in the following columns: ['TE_groups_Categorify' 'TE_ts_day_Categorify'
+ 'TE_crystal_type_Categorify' 'TE_ts_month_Categorify' 'tracking'
+ 'TE_unnamed_7_Categorify' 'TE_ts_weekday_Categorify'
+ 'CE_TE_ts_month_Categorify' 'CE_TE_ts_day_Categorify'
+ 'CE_TE_ts_weekday_Categorify' 'pure_seastone' 'argon' 'raw_kryptonite'
+ 'etherium_before_start' 'previous_adamantium']
+INFO: 2022-10-07 08:58:27,844: remove features with low mi score from the highly correlated features
+INFO: 2022-10-07 08:58:27,844: Correlated features and Lasso features are same
+INFO: 2022-10-07 08:58:27,845: Feature selection of categorical variables
+INFO: 2022-10-07 08:58:27,934: Feature removed due to low variance: ['place_Categorify', 'tracking_times_Categorify', 'crystal_supergroup_Categorify', 'NA_crystal_weight', 'NA_first_factor_x', 'NA_final_factor_x', 'NA_previous_adamantium', 'NA_etherium_before_start', 'NA_expected_start', 'NA_start_subprocess1', 'NA_start_critical_subprocess1', 'NA_predicted_process_end', 'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower', 'NA_opened', 'NA_raw_kryptonite', 'NA_argon', 'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', 'crystal_supergroup', 'ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3', 'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
+INFO: 2022-10-07 08:58:27,937: Perform anova test for the following columns: ['super_hero_group_Categorify', 'crystal_type_Categorify', 'unnamed_7_Categorify', 'human_behavior_report_Categorify', 'cycle_Categorify', 'groups_Categorify', 'groups', 'unnamed_7', 'human_behavior_report', 'cycle']

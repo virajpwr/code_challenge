@@ -101,6 +101,21 @@ class FeatEngg(object):
             self.logger.info("performing gaussrank on column: {}".format(col))
         return self.df
 
+    def standard_scalar(self):
+        """_summary_: A function to standardize the continous columns using standard_scalar function from utils.
+        parameters:
+            None
+        returns:
+            df {dataframe}: A dataframe with the standardized columns
+        """
+        self.logger.info("Standardizing the continous columns")
+        for col in self.config["continous_cols"]:
+            self.df = standard_scalar(self.df, col)
+            self.logger.info(
+                "performing standard scaling on column: {}".format(col))
+
+        return self.df
+        
     def split_datetime_col(self):
         """_summary_: A function to split the datetime columns into year, month, day for the column 'when'.
         parameters:

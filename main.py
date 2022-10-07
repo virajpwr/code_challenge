@@ -56,7 +56,7 @@ def main():
         pd.to_datetime)  # Convert the date columns to datetime format
     df = preprocess.drop_duplicate_rows()  # Drop the duplicate rows
     df = preprocess.remove_outliers()  # Remove the outliers using the IQR method
-    df.to_csv('./data/interim/preprocessed_data.csv', index=False)
+    df.to_parquet('./data/interim/preprocessed_data.parquet.gzip', index=False,compression='gzip')
 
 # # ---------------------------------------------------------- Feature Engineering ----------------------------------------------------------------------------- #
 #     # Feature engineering
@@ -74,7 +74,8 @@ def main():
     df = feat_engg.count_encode_columns()  # count encode the categorical columns
     # transform to gaussian distribution.
     df = feat_engg.transforming_target_continuous()
-    df.to_csv('./data/interim/feature_engg_tranformed.csv', index=False)
+
+    df.to_parquet('./data/interim/feature_engg_tranformed.parquet.gzip', index=False, compression='gzip')
 
 #---------------------------------------------------------- Feature Selection ----------------------------------------------------------------------------- #
 #  Feature selection process for continous variables
@@ -83,26 +84,32 @@ def main():
         "Reading the feature engineered data and performing feature selection")
 
     # Feature selection using lasso regression
-
+    logger.info("Feature selection of continous variables")
     cont_features = features_selection_continous_var(
         df, config['continous_col_feature_selection'], config['target_col'], config['lasso_params']['params'], logger)
+    
+    logger
     var_sel_features = cont_features.variance_threshold()  # Variance threshold
 
     cont_features.var_list = var_sel_features
-    print("variance threshold features: ", var_sel_features)
+    logger.info("Performing feature selection using lasso regression")
     lasso_var = cont_features.lasso_reg(var_sel_features)
-    print("Lasso regression features: ", lasso_var)
     cont_features.var_list = lasso_var
-    # df[lasso_var].to_csv('./data/interim/lasso_features.csv', index=False)
+
+    logger.info("Find correlated features")
     corr_features = cont_features.find_correlated_feature(lasso_var)
     print("Correlated features: ", corr_features)
+    
+    logger.info("remove features with low mi score from the highly correlated features")
     final_continous_features = cont_features.mutual_info(
         corr_features, lasso_var)
     print("Mutual information score: ", final_continous_features)
 
     # Feature selection for categorical variables
+    logger.info("Feature selection of categorical variables")
     cat_features_selection = features_selection_cat_var(
         df, config['cat_cols_feature_selection'], logger)
+    
     var_sel_cat = cat_features_selection.variance_threshold()
     print("Variance threshold features: ", var_sel_cat)
     cat_features_selection.var_list = var_sel_cat
@@ -112,7 +119,7 @@ def main():
 
     selected_features = [i for i in selected_features if i not in config['remove_cols']]
     df[selected_features].to_parquet(
-        './data/processed/final_features_data.parquet', index=False)
+        './data/processed/final_features.parquet.gzip', index=False, compression='gzip')
 
 #--------------------------------------------- Model Training ----------------------------------------------------------------------------- #
     # Model training
@@ -187,6 +194,8 @@ def main():
     plots.model = xgb_model
     logger.info("Creating plots for XGBoost model")
     plots.plot_learning_curve_xgb(xgb_model)
-
+    
+    plots.model = random_forest_model
+    plots.tree_interpreter(random_forest_model)
 if __name__ == "__main__":
     main()

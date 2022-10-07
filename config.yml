@@ -30,12 +30,28 @@ parameter_grid_rf:
     param_grid : {
     'bootstrap': [True], # Consider bootstapping
     'max_features': [2, 3, 4, 5, 6], # number of features to consider at every split
-    'n_estimators': [100, 200, 500, 600, 1000], # Number of trees in random forest
-    'max_depth': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100], # Maximum number of levels in tree
+    'n_estimators': [100, 200, 500], # Number of trees in random forest
+    'max_depth': [10, 20, 30, 40, 50, 60, 70, 80], # Maximum number of levels in tree
     'min_samples_split': [2, 5, 10], # Minimum number of samples required to split a node
     'min_samples_leaf': [1, 2, 4], # Minimum number of samples required at each leaf node
-    'random_state': [2022]
-}
+    'random_state': [2022] # Random state
+    }
+
+
+
+# parameter_grid_rf:
+#     param_grid : {
+#     'bootstrap': [True], # Consider bootstapping
+#     'max_features': [2], # number of features to consider at every split
+#     'n_estimators': [100], # Number of trees in random forest
+#     'max_depth': [10, 20, 30], # Maximum number of levels in tree
+#     'min_samples_split': [2], # Minimum number of samples required to split a node
+#     'min_samples_leaf': [1, 2, 4], # Minimum number of samples required at each leaf node
+#     'random_state': [2022]
+# }
+
+
+
 
 lasso_params: 
     params : {
@@ -62,7 +78,7 @@ lasso_params:
 lasso : ['TE_crystal_supergroup_Categorify' ,'TE_crystal_type_Categorify',
  'TE_groups_Categorify', 'previous_adamantium','TE_ts_weekday_Categorify',
  'TE_ts_day_Categorify', 'TE_tracking_times_Categorify',
- 'TE_ts_month_Categorify' ,'chemical_x', 'TE_cycle_Categorify',
+ 'TE_ts_month_Categorify' , 'TE_cycle_Categorify',
  'TE_human_behavior_report_Categorify', 'TE_unnamed_7_Categorify',
  'CE_TE_groups_Categorify', 'expected_final_factor_x', 'final_factor_x']
 
@@ -72,7 +88,7 @@ cat_cols: ['super_hero_group', 'place','tracking_times','crystal_supergroup', 'c
 
 continous_cols_before_preprocess: ['tracking', 'human_measure', 'crystal_weight','expected_factor_x',
  'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
-'chemical_x','raw_kryptonite','argon','pure_seastone']
+'raw_kryptonite','argon','pure_seastone']
 
 
 remove_cols: ['super_hero_group_Categorify', 'groups']
@@ -88,7 +104,7 @@ continous_cols: ['TE_super_hero_group_Categorify',
        'CE_TE_unnamed_7_Categorify', 'CE_TE_human_behavior_report_Categorify',
        'CE_TE_cycle_Categorify', 'CE_TE_groups_Categorify', 'tracking', 'human_measure', 'crystal_weight','expected_factor_x',
         'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
-        'chemical_x','raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
+        'raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
         'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify','TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 'TE_ts_month_Categorify']
 
 one_hot_encoded_weekday: ['ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3',
@@ -107,7 +123,6 @@ vars_with_na : ['crystal_weight',
  'subprocess1_end',
  'reported_on_tower',
  'opened',
- 'chemical_x',
  'raw_kryptonite',
  'argon',
  'pure_seastone',
@@ -129,7 +144,7 @@ cat_cols_feature_selection: ['super_hero_group_Categorify',
   'NA_expected_start', 'NA_start_subprocess1',
   'NA_start_critical_subprocess1', 'NA_predicted_process_end',
   'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower',
-  'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
+  'NA_opened', 'NA_raw_kryptonite', 'NA_argon',
   'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', unnamed_7,'human_behavior_report', 'crystal_supergroup',
   'cycle','ts_weekday_0', 'ts_weekday_1', 'ts_weekday_2', 'ts_weekday_3',
   'ts_weekday_4', 'ts_weekday_5', 'ts_weekday_6']
@@ -146,7 +161,7 @@ continous_col_feature_selection: ['TE_super_hero_group_Categorify',
        'CE_TE_unnamed_7_Categorify', 'CE_TE_human_behavior_report_Categorify',
        'CE_TE_cycle_Categorify', 'CE_TE_groups_Categorify', 'tracking', 'human_measure', 'crystal_weight','expected_factor_x',
        'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
-       'chemical_x','raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
+       'raw_kryptonite','argon','pure_seastone','CE_TE_ts_weekday_Categorify', 
        'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify','TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 
        'TE_ts_month_Categorify']
 
@@ -179,7 +194,7 @@ required_columns : ['super_hero_group_Categorify',
   'NA_expected_start', 'NA_start_subprocess1',
   'NA_start_critical_subprocess1', 'NA_predicted_process_end',
   'NA_process_end', 'NA_subprocess1_end', 'NA_reported_on_tower',
-  'NA_opened', 'NA_chemical_x', 'NA_raw_kryptonite', 'NA_argon',
+  'NA_opened',  'NA_raw_kryptonite', 'NA_argon',
   'NA_pure_seastone', 'NA_groups', 'place', 'tracking_times', unnamed_7,'human_behavior_report', 'crystal_supergroup',
   'cycle','TE_super_hero_group_Categorify',
        'TE_place_Categorify', 'TE_tracking_times_Categorify',
@@ -192,6 +207,6 @@ required_columns : ['super_hero_group_Categorify',
        'CE_TE_unnamed_7_Categorify', 'CE_TE_human_behavior_report_Categorify',
        'CE_TE_cycle_Categorify', 'CE_TE_groups_Categorify', 'tracking', 'human_measure', 'crystal_weight','expected_factor_x',
         'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
-        'chemical_x','raw_kryptonite','argon','pure_seastone', 
+        'raw_kryptonite','argon','pure_seastone', 
         'TE_ts_weekday_Categorify', 'TE_ts_day_Categorify', 'TE_ts_month_Categorify', 'ts_weekday_Categorify', 'ts_day_Categorify', 'ts_month_Categorify', 'ts_weekday', 'ts_day', 'ts_month',
         'CE_TE_ts_weekday_Categorify', 'CE_TE_ts_day_Categorify', 'CE_TE_ts_month_Categorify']
