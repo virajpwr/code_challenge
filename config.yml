@@ -4,32 +4,28 @@ PATHS:
     data_path: 'data/'
 
 train_file_name: data_merged.parquet
-model_name : xgboost.dat
-model_name_random_forest : rf.dat
+model_name : xgboost.pkl
+model_name_random_forest : rf.pkl
 final_feature_list : final_features.csv
 feature_list_before_fs: final_features_before_fs.csv
 predictions_file_name: predictions.csv
-base_model : linear_reg.dat
+base_model : baseline_model.pkl
 best_params_rf: best_params_rf.json
 
-logging_params:
-      num_rounds: 500
-      xgb: {
-        max_depth : 18,  # control model complexity.
-        min_child_weight: 7.0, # control model complexity.
-        reg_lambda: 0.39,  # L2 regularization term on weights.
-        reg_alpha: 42.0, # L1 regularization
-        subsample : 1.0, # add randomness to make training robust to noise.
-        colsample_bytree : 0.96, # add randomness to make training robust to noise.
-        eta: 0.5, # step size shrinkage used in update to prevents overfitting. Also called learning rate.
-        gamma: 2.95,  # control model complexity. Used for pruning the tree. gain-gamma is the minimum loss reduction required to make a split.
-        eval_metric : ['rmse'], # evaluation metric
-        objective : 'reg:squarederror',
-        tree_method : 'gpu_hist',
-        seed : 2022
-        }
+
+param_grid :
+    xgb : { 
+          colsample_bytree: [0.7, 0.3],
+          gamma: [0, 0.1, 0.2,0.5],
+          learning_rate: [0.003, 0.3],
+          max_depth: [2,3,4,5,6],
+          n_estimators : [100,200,300,400,500], 
+          subsample: [0.7, 0.3]
+         }
+
+
 # Parameters for random forest regressor
-# Create the parameter grid based on the results of random search 
+# Create the parameter grid based on the results of random search
 parameter_grid_rf:
     param_grid : {
     'bootstrap': [True], # Consider bootstapping
@@ -40,35 +36,28 @@ parameter_grid_rf:
     'min_samples_leaf': [1, 2, 4], # Minimum number of samples required at each leaf node
     'random_state': [2022]
 }
-# A parameter grid for XGBoost
-
-# parameter_grid:
-#     params : {
-#     'n_estimators':[100, 200, 300, 500],
-#     'min_child_weight': [1, 2, 3, 4], 
-#     'gamma':[0.3,0.4,0.5],  
-#     'subsample':[0.6, 0.7, 0.8, 0.9, 1.0],
-#     'colsample_bytree':[0.6, 0.7, 0.8, 0.9, 1.0], 
-#     'max_depth': [2,3,4,6,7],
-#     'booster': ['gbtree', 'gblinear'],
-#     'eval_metric': ['rmse'],
-#     'eta': [0.3,0.4,0.5],
-#     }
-
-parameter_grid_xgboost:
-    params : {
-    'n_estimators': [100, 500, 900, 1100, 1500], # Number of trees in random forest
-    'max_depth': [2, 3, 5, 10, 15], # Maximum number of levels in tree
-    'learning_rate': [0.05, 0.1, 0.15, 0.20], # Boosting learning rate
-    'min_child_weight': [1, 2, 3, 4] # Minimum number of data points required in a child node
-    }
 
 lasso_params: 
     params : {
-        'alpha':[0.02, 0.024, 0.025, 0.026, 0.03]} # Tuning parameter for the Lasso model that controls the degree of regularization.
+        'alpha':[0.02, 0.024, 0.025, 0.026, 0.03]
+        } # Tuning parameter for the Lasso model that controls the degree of regularization.
 
-
-test_file_name: dataset_00_with_header.csv
+# logging_params:
+#       num_rounds: 500
+#       xgb: {
+#         max_depth : 18,  # control model complexity.
+#         min_child_weight: 7.0, # control model complexity.
+#         reg_lambda: 0.39,  # L2 regularization term on weights.
+#         reg_alpha: 42.0, # L1 regularization
+#         subsample : 1.0, # add randomness to make training robust to noise.
+#         colsample_bytree : 0.96, # add randomness to make training robust to noise.
+#         eta: 0.5, # step size shrinkage used in update to prevents overfitting. Also called learning rate.
+#         gamma: 2.95,  # control model complexity. Used for pruning the tree. gain-gamma is the minimum loss reduction required to make a split.
+#         eval_metric : ['rmse'], # evaluation metric
+#         objective : 'reg:squarederror',
+#         tree_method : 'gpu_hist',
+#         seed : 2022
+#         }
 
 lasso : ['TE_crystal_supergroup_Categorify' ,'TE_crystal_type_Categorify',
  'TE_groups_Categorify', 'previous_adamantium','TE_ts_weekday_Categorify',
@@ -84,6 +73,9 @@ cat_cols: ['super_hero_group', 'place','tracking_times','crystal_supergroup', 'c
 continous_cols_before_preprocess: ['tracking', 'human_measure', 'crystal_weight','expected_factor_x',
  'previous_factor_x','first_factor_x','expected_final_factor_x','final_factor_x','previous_adamantium','etherium_before_start',
 'chemical_x','raw_kryptonite','argon','pure_seastone']
+
+
+remove_cols: ['super_hero_group_Categorify', 'groups']
 
 continous_cols: ['TE_super_hero_group_Categorify',
        'TE_place_Categorify', 'TE_tracking_times_Categorify',

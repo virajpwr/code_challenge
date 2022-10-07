@@ -1,3 +1,4 @@
+from re import L
 from imports import *
 
 
@@ -14,7 +15,8 @@ class visualize(object):
 
     """
 
-    def __init__(self, X_test, y_test, y_pred_baseline, y_pred_random_forest, model, df, selected_features) -> None:
+    def __init__(self, X_test, y_test, y_pred_baseline, y_pred_random_forest, y_pred_xgb,
+                 model, df, selected_features) -> None:
         """
         Initialize the class with the required parameters
         parameters:
@@ -95,11 +97,6 @@ class visualize(object):
     def pred_plot(self):
         """_summary_: This function is used to plot the actual vs predicted plot for the random forest model.
                         and save the plot in reports/plots folder.
-        parameters:
-            y_pred_random_forest {np.array}: The predicted values from random forest model
-
-        returns:
-            None
         """
         # plot predicted vs actual
         plt.figure(figsize=(10, 10))
@@ -113,7 +110,10 @@ class visualize(object):
         plt.savefig('./reports/plots/actual_vs_predicted_random_forest.png')
     
     def actual_fitted_plot(self):
-        """_summary_: This function is used to plot the actual vs fitted distribution plot for the random forest model."""
+        """_summary_: This function is used to plot the actual vs fitted 
+            distribution plot for the random forest model. 
+            The plot is saved in reports/plots folder.
+        """
         plt.figure(figsize=(10, 10))
         ax = sns.distplot(self.y_test, hist=False, color="r", label="Actual Value") 
         sns.distplot(self.y_pred_random_forest, hist=False, color="b", label="Fitted Values" , ax=ax)
@@ -149,3 +149,27 @@ class visualize(object):
                   fontsize=18, y=1.03)
         plt.legend()
         plt.savefig('./reports/plots/learning_curve.png')
+
+    def plot_learning_curve_xgb(self, xgb_model):
+        """_summary_: This function is used to plot the learning curve for the xgboost model.
+                        and save the plot in reports/plots folder.
+
+        parameters:
+            model {sklearn model}: The xgboost model
+
+        returns:
+            None
+
+        """
+        self.model = xgb_model
+        eval = xgb_model.evals_result()
+        epochs = len(eval['validation_0']['rmse'])
+        x_axis = range(0, epochs)
+        # plot log loss
+        fig, ax = plt.subplots()
+        ax.plot(x_axis, eval['validation_0']['rmse'], label='Train')
+        ax.plot(x_axis, eval['validation_1']['rmse'], label='Test')
+        ax.legend()
+        plt.ylabel('RMSE')
+        plt.title('Learning curve for XGBoost')
+        plt.savefig('./reports/plots/learning_curve_xgb.png')

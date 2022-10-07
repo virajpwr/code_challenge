@@ -187,10 +187,10 @@ def split_datetime(df: pd.DataFrame, colname: str) -> pd.DataFrame:
 
 
 def categorify(df: pd.DataFrame, cat: str, freq_treshhold=20, unkown_id=1, lowfrequency_id=0) -> pd.DataFrame:
-    """__summary__: This function is used perform label encoding on the categorical features. 
+    """__summary__: This function is used perform encoding categorical features. 
     A frequency threshold is used to replace the categories with low frequency with a single category. 
     To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
-    The category id 1 or 0 is reserved for unknown and low frequency categories respectively. 
+    he category Ids 0 or 1 for a placeholder for the low frequency and unkown category.
     parameters: 
         df {pd.DataFrame} -- [dataframe]
         cat {str} -- [name of the categorical column]
@@ -389,10 +389,10 @@ def interpolate_date_time_features(df: pd.DataFrame, config) -> pd.DataFrame:
     df = shuffle(df)
     # Interpolate the date time features
     for col in df[config]:
-        df[col] = pd.to_datetime(df[col], errors='coerce')
-        df[col] = df[col].values.astype('int64')
-        df[col][df[col] < 0] = np.nan
-        df[col] = pd.to_datetime(df[col].interpolate(), unit='ns')
+        df[col] = pd.to_datetime(df[col], errors='coerce') # Convert to datetime
+        df[col] = df[col].values.astype('int64') # Convert to int64
+        df[col][df[col] < 0] = np.nan # Replace negative values with nan
+        df[col] = pd.to_datetime(df[col].interpolate(), unit='ns') # Interpolate the values
     return df
 
 

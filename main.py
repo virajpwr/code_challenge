@@ -109,8 +109,10 @@ def main():
     final_cat_var = cat_features_selection.perform_anova_test(var_sel_cat)
     print('final cat', final_cat_var)
     selected_features = list(final_continous_features) + list(final_cat_var)
-    df[selected_features].to_csv(
-        './data/processed/final_features_data.csv', index=False)
+
+    selected_features = [i for i in selected_features if i not in config['remove_cols']]
+    df[selected_features].to_parquet(
+        './data/processed/final_features_data.parquet', index=False)
 
 #--------------------------------------------- Model Training ----------------------------------------------------------------------------- #
     # Model training
@@ -122,53 +124,54 @@ def main():
         df, config['target_col'], selected_features, config, logger)  # Instantiate the model training class
 
     # Split the data into train and test
-    X_train, X_test, y_train, y_test = train_model.split_data()
-    # log the splits
-    logger.info(f"X_train shape: {X_train.shape}")
-    logger.info(f"X_test shape: {X_test.shape}")
+    X_test, y_test = train_model.split_data()
 
     # Train baseline model
     logger.info("Training the baseline model")
-    theta = train_model.base_model(X_train, y_train)
-
-    # XGB model
-    logger.info("Training the XGB model")
-    dtest, test_set = train_model.convert_to_DMatrix()
-    xgb = train_model.train_xgb()
+    base_line_model = train_model.base_model()
+    logger.info("Hyperparameter tuning of XGBoost model")
+    # Hyperparameter tuning of XGBoost model
+    train_model.xgb_hyperparameters()
+    # Train the XGBoost model
+    logger.info("Training the XGBoost model with best hyperparameters")
+    
+    xgb_model = train_model.train_xgb()
 
     # Hyper parameter tuning for random forest
     logger.info("Hyper parameter tuning for random forest")
 
     # hyperparameter tuning for random forest
-    params = train_model.hyperparameter_tuning_randomforest()
+    train_model.hyperparameter_tuning_randomforest()
     # Train the random forest model on the best parameters
-    rf_model = train_model.train_random_forest_from_best_params(
-        params, X_train, y_train)
+    random_forest_model = train_model.train_random_forest()
 
-    train_model.save_model()  # save models
-# # #------------------------------------------------------ Model Evaluation ----------------------------------------------------------#
+#------------------------------------------------------ Model Evaluation ----------------------------------------------------------#
 
     # predict on test data using baseline model
     logger = logs(path="logs/", file="model_evaluation.logs")
     logger.info("Predicting on test data using baseline model")
 
-    pred = model_predictions(theta, X_test, y_test, logger)
-    y_pred_reg = pred.predict_linear_reg()  # predict on test data
 
-    # make predictions for test data using random forest trained on best params returned by hyperparameter tuning.
-    logger.info("Predicting on test data using random forest")
-    pred.model = rf_model  # assign the model to the model attribute
-    y_pred_rf = pred.predict_rf_model(rf_model)  # predict on test data
-    # feature_imp = pred.rf_feature_importance(rf_model)
+    # # Evaluate trained model and save the evaluation metric in reports/eval folder
+    
+    logger.info("Evaluating the baseline model")
+    # Evaluation of baseline model
+    evaluation = model_eval(base_line_model, X_test,y_test, logger )
+    y_pred_baseline = evaluation.predict_linear_reg()
 
-    # predict on test data using xgb model
-    pred.model = xgb
-    pred.predict_xgb(dtest, test_set, xgb)
+    logger.info("Evaluating the XGBoost model")
+    # evaluation of random forest model
+    evaluation.model = random_forest_model
+    y_pred_rf = evaluation.predict_rf_model(random_forest_model)
 
+    logger.info("Evaluating the random forest model")
+    # evaluation of xgboost model
+    evaluation.model = xgb_model
+    y_pred_xgb = evaluation.predict_xgb(xgb_model)
 
 #----------------------------------------- Create plots ----------------------------------------------------------#
     logger.info("Creating plots")
-    plots = visualize(X_test, y_test, y_pred_reg , y_pred_rf,  rf_model, df, selected_features)
+    plots = visualize(X_test, y_test, y_pred_baseline , y_pred_rf, y_pred_xgb, random_forest_model, df, selected_features)
     
     logger.info("Creating plots for baseline model")
     plots.base_model_plots()  # Plot for baseline model
@@ -180,6 +183,10 @@ def main():
     plots.visualize_learning_curve()
     plots.pred_plot()  # plot actual vs predicted for random forest
     plots.actual_fitted_plot()  # plot actual vs fitted for random forest
+    
+    plots.model = xgb_model
+    logger.info("Creating plots for XGBoost model")
+    plots.plot_learning_curve_xgb(xgb_model)
 
 if __name__ == "__main__":
     main()

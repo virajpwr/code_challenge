@@ -8,7 +8,7 @@ __version__ = '0.1.0'
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 
 # Load the model
-with open(f"{BASE_DIR}/models/randomforest-{__version__}.dat", "rb") as f:
+with open(f"{BASE_DIR}/models/randomforest-{__version__}.pkl", "rb") as f:
     model = joblib.load(f)
 
 
@@ -26,8 +26,7 @@ def get_model_response(input:json) -> json:
 
     logger.info('Loading the model')
     # convert json to dataframe
-    X = pd.json_normalize(input
-    )
+    X = pd.json_normalize(input)
     # X = pd.json_normalize(input.__dict__)
 
     # logger.info('the input is {}'.format(type(X)))

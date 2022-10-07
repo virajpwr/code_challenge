@@ -1,38 +1,21 @@
-.PHONY: help lint run
+# define the name of the virtual environment directory
+VENV := venv
 
-# Makefile variables
-VENV_NAME:=venv
-PYTHON=${VENV_NAME}/bin/python3
+# default target, when make executed without arguments
+all: venv
 
-.DEFAULT: help
-help:
-	@echo "make venv"
-	@echo "       prepare development environment, use only once"
-	@echo "make lint"
-	@echo "       run pylint"
-	@echo "make run"
-	@echo "       run project"
+$(VENV)/Scripts/activate: requirements.txt
+	python3 -m venv $(VENV)
+	./$(VENV)/Scripts/pip install -r requirements.txt
 
-# Comment this when using Linux
-# venv: $(VENV_NAME)/Scripts/activate
-# $(VENV_NAME)/Scripts/activate: setup.py
-# 	test -d $(VENV_NAME) || python3 -m venv $(VENV_NAME)
-# 	${PYTHON} -m pip install -U pip
-# 	${PYTHON} -m pip install -e .
-# 	rm -rf ./*.egg-info
-# 	touch $(VENV_NAME)/Scripts/activate
-
-# Comment this when using windows
-venv: $(VENV_NAME)/bin/activate
-$(VENV_NAME)/bin/activate: setup.py
-	test -d $(VENV_NAME) || python3 -m venv $(VENV_NAME)
-	${PYTHON} -m pip install -U pip
-	${PYTHON} -m pip install -e .
-	rm -rf ./*.egg-info
-	touch $(VENV_NAME)/bin/activate
-
-lint: venv
-	${PYTHON} -m pylint main.py
+# venv is a shortcut target
+venv: $(VENV)/Scripts/activate
 
 run: venv
-	${PYTHON} main.py
+	./$(VENV)/Scripts/python3 main.py
+
+clean:
+	rm -rf $(VENV)
+	find . -type f -name '*.pyc' -delete
+
+.PHONY: all venv run clean

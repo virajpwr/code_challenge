@@ -56,10 +56,10 @@ The following steps were taken to solve the problem:
 
 1. Drop duplicate column 'Unnamed: 17' which is a copy of 'first_factor_x'.
 2. Convert datatypes of the features.
-3. Replace values for columns cycle, crystal_supergroup, etherium_before_start.
-4. Replace missing values of continous variables with the median of the variable and missing values of categorical variables with the mode of the variable.
+3. Replace values for columns cycle (label encode ['33', '1ª', '2ª', '3ª', '131']), crystal_supergroup (replace '1ª' with 0), etherium_before_start (replace datetime value with the mean of this column)
+4. Replace missing values of continuous variables with the median of the variable and missing values of categorical variables with the mode of the variable.
 5. Interpolate datetime columns.
-6. Drop duplicate rows by start column.
+6. Drop duplicate rows by 'start' column.
 7. Remove outliers with IQR method.
 
 #### The flow chart below shows the steps taken to preprocess the data.
@@ -72,8 +72,10 @@ The following steps were taken to solve the problem:
 
 1. Spit the 'when' column in day, weekday, month. Perform one hot encoding on the weekday column.
 2. Calculate time difference between timestamps
-3. label encoding for categorical columns. To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
-4. Target encoding done to deal with high cardinality in the categorical columns. Calculate mean for the target variable grouped by the unique values of the categorical feauters. Since target encoding lacks to generalize well and it will tend to overfit. Smoothing is used to generalize the target encoding. The smoothing parameter is calculated using the formula below
+3. Encoding for categorical columns. To deal with high cardinality and overfitting, we will replace the categories with low frequency with a single category.
+4. Target encoding done to deal with high cardinality in the categorical columns.
+   Target Encoding (TE) calculates the statistics from a target variable grouped by the unique values of one or more categorical features.
+   Calculate mean for the target variable grouped by the unique values of the categorical features. Since target encoding lacks to generalize well and it will tend to overfit. Smoothing is used to generalize the target encoding. The smoothing parameter is calculated using the formula below
 
 ```
 TE = (count(cat) * mean(target) + smoothing  * global mean(target))
@@ -102,8 +104,8 @@ TE = (count(cat) * mean(target) + smoothing  * global mean(target))
 #### Categorical variable:
 
 1. Removes all the low variance features from the dataset that are of no great use in model training. Drop Columns that are 75% or more similar.
-2. Perform oneway ANOVA test on categorical variables and target.
-3. Take variables with p value < 0.05.
+2. Perform oneway ANOVA test on categorical variables and target to check if there is any statistical differences among the means of two or more groups.
+3. Take variables with p value < 0.05. since it rejects the null hypothesis that the means of the groups are equal.
 
 #### The flow chart below shows the steps taken to select features.
 
@@ -116,7 +118,7 @@ TE = (count(cat) * mean(target) + smoothing  * global mean(target))
 1. Build a baseline model on the selected features. Multiple regression model was used as the baseline model.
 2. Perform hyperparameter tuning on random forest model using randomized search CV.
 3. Build Random forest model on best parameters from random search cv.
-4. Build XGBoost model.
+4. Perform hyperparameter tuninng on xgboost model using randomized serach CV. Then train xgboost model on best parameters from random search cv.
 
 #### The flow chart below shows the steps taken to build the model.
 
@@ -134,59 +136,66 @@ TE = (count(cat) * mean(target) + smoothing  * global mean(target))
 
 ![](flowchart/model%20evaluation.jpeg)
 
-#### Results:
+#### Evaluation:
 
-Baseline model: RMSE = 0.65 , VIF = 1.17, mean_residuals = 0.01
-Random forest model with best parameters: RMSE = 0.51, OOB error = 0.54
-XGBoost model: RMSE = 0.61
+Baseline model: RMSE = 0.64 , VIF = 1.05, mean_residuals = 0.02
+Random forest model with best parameters: RMSE = 0.54, OOB error = 0.61
+XGBoost model: RMSE = 0.52
 
 #### Interpretation:
 
 1. Baseline model: The Value of Root mean squared error is 0.65. and Normalized RMSE = 0.09. The value of VIF is 1.16. This means that there is no multicollinearity in the model. The mean_residuals is 0.01.
-2. Random forest model: The value of Root mean squared error is 0.51. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting.
-3. XGBoost model: The value of Root mean squared error is 0.63.
+2. Random forest model: The value of Root mean squared error is 0.54. and Normalized RMSE = 0.07. The value of OOB error is 0.54. The model will make an error of 54% on test data. The model is overfitting.
+3. XGBoost model: The value of Root mean squared error is 0.52.
 
 #### Plots:
 
 1. Actual vs predicted plot for baseline model, Residual plot and histogram of residual for baseline model.
    ![](reports/plots/linear_regression_plots.png)
+   From the above actual vs predicted plot, we can see that there is no linear relation between actual and predicted values. So the linear assumption is violated.
 
-From the above actual vs predicted plot, we can see that there is no linear relation between actual and predicted valeues. So the linear assumption is violated.
+   In residual plot we can see that the residuals are not close to zero. The predictions are not accurate and contains mix of high and low errors. The assumption of Homoscedasticity is violated.
 
-In residual plot we can see that the residuals are not close to zero. The predictions are not
-accurate and contains mix of high and low errors. The assumption of Homoscedasticity is violated.
-
-The histogram shows that residuals is normally distributed.
+   The histogram shows that residuals is normally distributed.
 
 2. Learning curve for random forest model.
-   The gap between training and validation score is large. Due to high variance the model is overfitting. To overcome this, we can do the following: Increase the number of training examples. Use regularization. Reduce the features. Train model on important features.
+   The gap between training and validation score is large. The plot below shows the error for different training size Due to high variance the model is overfitting. The training error is low while the validataion while the validation error is high.  
+   To overcome this, we can do the following: Increase the number of training examples. Use regularization. Reduce the features.
    ![](reports/plots/learning_curve.png)
 
 3. Actual vs prediction plot for random forest model:
-   The plot below shows the scatter plot of actual and predicted values. The plot shows that the model is not able to predict the values accurately. The predictions are not along the line of best fit.
-
-![](reports/plots/actual_vs_predicted.png)
+   The plot below shows the scatter plot of actual and predicted values. The prediction are not close to the
+   ![](reports/plots/actual_vs_predicted.png)
 
 4. Actual vs prediction distribution plot for random forest model:
    The plot below shows the distribution of actual and predicted values. The distribution of predicted value is not similar to the distribution of actual values.
-
-![](reports/plots/actual_vs_fitted_random_forest.png)
+   ![](reports/plots/actual_vs_predicted_random_forest.png)
 
 5. Feature Impotance plot for random forest model.
    From the plot we can see that which features are important for the model which is determined by the number of times a feature is used to split the data across all trees. The features with higher number of splits are more important. The features with lower number of splits are less important. The features with zero splits are not important.
 
 ![](reports/plots/rf_feature_importance.png)
 
+6. Actual vs prediction plot for XGBoost model:
+   The plot below shows the learning curve of xgboost model. The early stopping parameter was set to 20. It is used to stop training when the validation loss starts to increase. From the plot below we can see that the optimal number of trees are 98 and the rmse for validation set is the lowest at 98 trees.
+
+![](reports/plots/learning_curve_xgb.png)
+
+#### Model interpretation:
+
+1. Random forest:
+
 #### Conclusion:
 
-1. The Random forest model performs comparitively better than the baseline model and XGBoost model. However, futher improvement needs to be done since the model is overfitting.
+1. The XGBoost model performs better than the baseline model and random forest model.
 
 #### Further improvements:
 
 1. Use more data to train the model.
-2. Try different feature selection techniques like wrapper method like recursive feature elimination.
-3. Try different feature engineering techniques.
-4. Try different models. Use Regression-Enhanced Random Forests (RERF) model.
+2. Try entity embedding for categorical variables
+3. Try different feature selection techniques like wrapper method like recursive feature elimination.
+4. Try different feature engineering techniques.
+5. Try different models. Use Regression-Enhanced Random Forests (RERF) model.
 
 ### Folder structure
 

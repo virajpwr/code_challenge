@@ -5,4 +5,4 @@ services:
     ports:
       - "8000:8000"
   python:
-    image: "tiangolo/uvicorn-gunicorn-fastapi:python3.7"
+    image: "tiangolo/uvicorn-gunicorn-fastapi:python3.9"

@@ -20,7 +20,6 @@ import numpy as np
 import xgboost as xgb
 import joblib
 import pickle
-import shap
 import matplotlib.pyplot as plt
 from scipy import stats
 import seaborn as sns
@@ -32,7 +31,7 @@ from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_regression
 from sklearn.feature_selection import mutual_info_regression
 from sklearn.ensemble import RandomForestRegressor
-from xgboost.sklearn import XGBRegressor
+# from xgboost.sklearn import XGBRegressor
 from sklearn.model_selection import learning_curve
 from sklearn import metrics
 from sklearn.feature_selection import RFECV
@@ -41,6 +40,6 @@ from src.data.read_data import *
 from src.features.feature_engg import *
 from src.features.feature_selection import *
 from src.features.preprocessing import *
-from src.models.train_model import *
-from src.models.predict_model import *
+from src.train.train import *
+from src.train.eval import *
 from src.visualization.visualize import *
